@@ -1,0 +1,31 @@
+<Vocabularies xmlns="urn:nhs-itk:ns:201005">
+	<vocabulary version="1.0" status="active" name="TelehealthDeviceTypeSnCT" id="">
+		<concept code="258057004">
+			<displayName>Non-invasive blood pressure monitor</displayName>
+		</concept>
+		<concept code="354068006">
+			<displayName>Blood glucose monitoring equipment</displayName>
+		</concept>
+		<concept code="395440001">
+			<displayName>Blood coagulation testing equipment</displayName>
+		</concept>
+		<concept code="27991004">
+			<displayName>Thermometer</displayName>
+		</concept>
+		<concept code="21079000">
+			<displayName>Carbon monoxide analyser</displayName>
+		</concept>
+		<concept code="303501006">
+			<displayName>Spirometer</displayName>
+		</concept>
+		<concept code="334990001">
+			<displayName>Peak flow meter</displayName>
+		</concept>
+		<concept code="59181002">
+			<displayName>Oximeter</displayName>
+		</concept>
+		<concept code="86184003">
+			<displayName>Electrocardiographic monitor and recorder</displayName>
+		</concept>
+	</vocabulary>
+</Vocabularies>

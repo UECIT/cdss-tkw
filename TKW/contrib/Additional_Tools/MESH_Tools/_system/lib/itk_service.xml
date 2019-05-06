@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<itk_services>
+	<itk_service webservice="urn:nhs-itk:services:201005:SendCDADocument-v2-0" itk_ver="2.1">
+		<Domain name="Non_Coded_CDA_v1.0" tla="NCD" mesh_workflow_id="UNCOD_DMS">
+			<interaction name="urn:nhs-itk:interaction:primaryRecipientNonCodedCDADocument-v2-0"/>
+			<interaction name="urn:nhs-itk:interaction:copyRecipientNonCodedCDADocument-v2-0"/>
+			<interaction name="urn:nhs-itk:interaction:nullifyNonCodedCDADocument-v1-0"/>
+		</Domain>
+		<Domain name="Ambulance_v1.0" tla="AMB" mesh_workflow_id="AMB_DMS">
+			<interaction name="urn:nhs-itk:interaction:primaryRecipientAmbulanceServicePatientReport-v1-0"/>
+			<interaction name="urn:nhs-itk:interaction:copyRecipientAmbulanceServicePatientReport-v1-0"/>
+			<interaction name="urn:nhs-itk:interaction:nullifyAmbulanceServicePatientReport-v1-0"/>
+		</Domain>
+		<Domain name="Discharge_v1.0" tla="DIS" mesh_workflow_id="DISCH_DMS">
+			<interaction name="urn:nhs-itk:interaction:primaryRecipientDischargeReport-v1-0"/>
+			<interaction name="urn:nhs-itk:interaction:copyRecipientDischargeReport-v1-0"/>
+			<interaction name="urn:nhs-itk:interaction:nullifyDischargeReport-v1-0"/>
+		</Domain>
+		<Domain name="Emergency_Department_v1.0" tla="EGY" mesh_workflow_id="AE_DMS">
+			<interaction name="urn:nhs-itk:interaction:primaryRecipientEmergencyDepartmentReport-v1-0"/>
+			<interaction name="urn:nhs-itk:interaction:copyRecipientEmergencyDepartmentReport-v1-0"/>
+			<interaction name="urn:nhs-itk:interaction:nullifyEmergencyDepartmentReport-v1-0"/>
+		</Domain>
+		<Domain name="Out_of_Hours_v1.0" tla="OOH" mesh_workflow_id="OOH_DMS">
+			<interaction name="urn:nhs-itk:interaction:primaryRecipientOutOfHoursReport-v1-0"/>
+			<interaction name="urn:nhs-itk:interaction:copyRecipientOutOfHoursReport-v1-0"/>
+			<interaction name="urn:nhs-itk:interaction:nullifyOutOfHoursReport-v1-0"/>
+		</Domain>
+		<Domain name="Outpatient_v1.0" tla="OUT" mesh_workflow_id="OUTP_ATT_DMS">
+			<interaction name="urn:nhs-itk:interaction:primaryRecipientOutpatientReport-v1-0"/>
+			<interaction name="urn:nhs-itk:interaction:copyRecipientOutpatientReport-v1-0"/>
+			<interaction name="urn:nhs-itk:interaction:nullifyOutpatientReport-v1-0"/>
+		</Domain>
+	</itk_service>
+	<itk_service webservice="urn:nhs-itk:services:201005:sendDistEnvelope" itk_ver="2.2">
+		<Domain name="Transfer_of_care_v1.0" tla="TOC" mesh_workflow_id="TOC_DISCH_DMS">
+			<interaction name="urn:nhs-itk:interaction:primaryRecipienteDischargeInpatientDischargeSummaryDocument-v1-0"/>
+			<interaction name="urn:nhs-itk:interaction:copyRecipienteDischargeInpatientDischargeSummaryDocument-v1-0"/>
+			<interaction name="urn:nhs-itk:interaction:nullifyeDischargeInpatientDischargeSummaryDocument-v1-0"/>
+		</Domain>
+	</itk_service>
+	<itk_service webservice="urn:nhs-itk:services:201005:sendRecvDistEnvelope" itk_ver="2.2">
+		<Domain name="Transfer_of_care_v1.0" tla="TOC" mesh_workflow_id="TOC_DISCH_DMS">
+			<interaction name="urn:nhs-itk:interaction:primaryRecipienteDischargeInpatientDischargeSummaryDocument-v1-0"/>
+			<interaction name="urn:nhs-itk:interaction:copyRecipienteDischargeInpatientDischargeSummaryDocument-v1-0"/>
+			<interaction name="urn:nhs-itk:interaction:nullifyeDischargeInpatientDischargeSummaryDocument-v1-0"/>
+		</Domain>
+	</itk_service>
+	<!--Acks-->
+	<!--2.1-->
+	<itk_service webservice="urn:nhs-itk:services:201005:SendInfrastructureAck-v1-0" itk_ver="2.1">
+		<Domain name="Transfer_of_care_v1.0" tla="TOC" mesh_workflow_id="TOC_DISCH_DMS_ACK">
+			<interaction name="urn:nhs-itk:interaction:ITKInfrastructureAcknowledgement-v1-0"/>
+		</Domain>
+	</itk_service>
+	<itk_service webservice="urn:nhs-itk:services:201005:SendBusinessAck-v1-0" itk_ver="2.1">
+		<Domain name="Transfer_of_care_v1.0" tla="TOC" mesh_workflow_id="TOC_DISCH_DMS_ACK">
+			<interaction name="urn:nhs-itk:interaction:ITKBusinessAcknowledgement-v1-0"/>
+		</Domain>
+	</itk_service>
+	<!--2.2-->
+	<itk_service webservice="urn:nhs-itk:services:201005:sendDistEnvelope" itk_ver="2.2">
+		<Domain name="Transfer_of_care_v1.0" tla="TOC" mesh_workflow_id="TOC_DISCH_DMS_ACK">
+			<interaction name="urn:nhs-itk:interaction:ITKInfrastructureAcknowledgement-v1-0"/>
+			<interaction name="urn:nhs-itk:interaction:ITKBusinessAcknowledgement-v1-0"/>
+		</Domain>
+	</itk_service>
+	<itk_service webservice="urn:nhs-itk:services:201005:sendRecvDistEnvelope" itk_ver="2.2">
+		<Domain name="Transfer_of_care_v1.0" tla="TOC" mesh_workflow_id="TOC_DISCH_DMS_ACK">
+			<interaction name="urn:nhs-itk:interaction:ITKInfrastructureAcknowledgement-v1-0"/>
+			<interaction name="urn:nhs-itk:interaction:ITKBusinessAcknowledgement-v1-0"/>
+		</Domain>
+	</itk_service>
+</itk_services>

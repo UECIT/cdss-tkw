@@ -1,0 +1,22 @@
+<Vocabularies xmlns="urn:nhs-itk:ns:201005">
+	<vocabulary version="2.0" status="active" name="LanguageAbilityProficiency" id="2.16.840.1.113883.5.61">
+		<concept code="E">
+			<displayName>Excellent</displayName>
+		</concept>
+		<concept code="F">
+			<displayName>Fair</displayName>
+		</concept>
+		<concept code="G">
+			<displayName>Good</displayName>
+		</concept>
+		<concept code="P">
+			<displayName>Poor</displayName>
+		</concept>
+		<concept code="0">
+			<displayName>Interpreter not required</displayName>
+		</concept>
+		<concept code="1">
+			<displayName>Interpreter required</displayName>
+		</concept>
+	</vocabulary>
+</Vocabularies>

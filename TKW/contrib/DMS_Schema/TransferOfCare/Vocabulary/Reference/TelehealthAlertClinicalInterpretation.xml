@@ -1,0 +1,16 @@
+<Vocabularies xmlns="urn:nhs-itk:ns:201005">
+	<vocabulary version="1.0" status="active" name="TelehealthAlertClinicalInterpretation" id="">
+		<concept code="CSH">
+			<displayName>Clinical Severity: High</displayName>
+		</concept>
+		<concept code="CSM">
+			<displayName>Clinical Severity: Medium</displayName>
+		</concept>
+		<concept code="CSL">
+			<displayName>Clinical Severity: Low</displayName>
+		</concept>
+		<concept code="CSNA">
+			<displayName>Clinical Severity: None Applied</displayName>
+		</concept>
+	</vocabulary>
+</Vocabularies>

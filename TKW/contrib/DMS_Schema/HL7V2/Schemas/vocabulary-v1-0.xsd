@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="vocabulary" type="vocabularyType"/>
+	<xs:complexType name="vocabularyType">
+		<xs:sequence>
+			<xs:element name="concept" type="conceptType" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute name="name" type="xs:string" use="required"/>
+		<xs:attribute name="version" type="xs:string" use="required"/>
+		<xs:attribute name="status" type="xs:string" use="required"/>
+		<xs:attribute name="id" type="xs:string" use="required"/>
+		<xs:attribute name="setId" type="xs:string"/>
+		<xs:attribute name="memberCount" type="xs:integer"/>
+		<xs:attribute name="type" type="xs:string"/>
+	</xs:complexType>
+	<xs:complexType name="conceptType">
+		<xs:sequence>
+			<xs:element name="displayName" type="displayNameType" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute name="code" type="xs:string"/>
+	</xs:complexType>
+	<xs:complexType name="displayNameType" mixed="true">
+		<xs:attribute name="lang" type="xs:string"/>
+		<xs:attribute name="type" type="xs:string"/>
+	</xs:complexType>
+</xs:schema>

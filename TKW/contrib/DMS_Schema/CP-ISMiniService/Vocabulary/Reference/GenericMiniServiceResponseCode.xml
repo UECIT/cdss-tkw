@@ -1,0 +1,25 @@
+<Vocabularies xmlns="urn:nhs-itk:ns:201005">
+	<vocabulary version="1.0" status="created" name="GenericMiniServiceResponseCode" id="">
+		<concept code="SMSP-0000">
+			<displayName>Success</displayName>
+		</concept>
+		<concept code="SMSP-0001">
+			<displayName>Input message validation error</displayName>
+		</concept>
+		<concept code="SMSP-0002">
+			<displayName>Response message validation error</displayName>
+		</concept>
+		<concept code="SMSP-0003">
+			<displayName>Data returned from local store, Spine unavailable</displayName>
+		</concept>
+		<concept code="SMSP-0004">
+			<displayName>Could not connect to Spine</displayName>
+		</concept>
+		<concept code="SMSP-0005">
+			<displayName>Author credentials error</displayName>
+		</concept>
+		<concept code="SMSP-9999">
+			<displayName>Generic Spine Mini Service Provider software failure</displayName>
+		</concept>
+	</vocabulary>
+</Vocabularies>

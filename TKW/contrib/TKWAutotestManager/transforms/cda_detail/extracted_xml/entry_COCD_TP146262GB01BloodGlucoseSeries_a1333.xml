@@ -1,0 +1,532 @@
+<entry xmlns="urn:hl7-org:v3" xmlns:hl7v2="urn:hl7-org:v2xml" xmlns:itk="urn:nhs-itk:ns:201005" xmlns:npfitlc="NPFIT:HL7:Localisation" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:wsa="http://www.w3.org/2005/08/addressing" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" typeCode="COMP" contextConductionInd="true">
+	<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP146262GB01#BloodGlucoseSeries"/>
+	<observation classCode="OBSSER" moodCode="EVN">
+		<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146262GB01#BloodGlucoseSeries"/>
+		<id root="FEE0ECF4-AD0C-A902-E040-950AE0737DEC"/>
+		<code codeSystem="2.16.840.1.113883.2.1.3.2.4.17.220" code="BGOBSSER" displayName="Blood Glucose Observation Series">
+			<originalText>
+				<reference value="#a1333"/>
+			</originalText>
+		</code>
+		<statusCode code="completed"/>
+		<effectiveTime>
+			<low value="20140619080000"/>
+			<high value="20140626220000"/>
+		</effectiveTime>
+		<participant contextControlCode="OP" typeCode="LOC">
+			<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146262GB01#location"/>
+			<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP145223GB01#Location"/>
+			<participantRole classCode="ROL">
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP145223GB01#Location"/>
+				<code code="309984004" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="General surgical department"/>
+				<playingEntity determinerCode="INSTANCE" classCode="PLC">
+					<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP145223GB01#playingPlace"/>
+					<name>PlaceName</name>
+				</playingEntity>
+				<scopingEntity determinerCode="INSTANCE" classCode="ORG">
+					<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP145223GB01#scopingOrganization"/>
+					<id root="2.16.840.1.113883.2.1.3.2.4.19.1" extension="RES"/>
+					<desc>NORTH MERSEY COMMUNITY NHS TRUST</desc>
+				</scopingEntity>
+			</participantRole>
+		</participant>
+		<participant contextControlCode="OP" typeCode="DEV">
+			<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146262GB01#participant"/>
+			<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP148027UK02#DeviceRoleRef"/>
+			<participantRole classCode="MANU">
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP148027UK02#DeviceRoleRef"/>
+				<id root="FEE0ECF4-A78B-A902-E040-950AE0737DEC"/>
+			</participantRole>
+		</participant>
+		<entryRelationship typeCode="REFR" contextConductionInd="false">
+			<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146262GB01#entryRelationship1"/>
+			<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP147283GB02#BloodGlucoseThresholdRef"/>
+			<seperatableInd value="false"/>
+			<observation classCode="OBS" moodCode="EVN">
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP147283GB02#BloodGlucoseThresholdRef"/>
+				<id root="FEE0ECF4-AD0D-A902-E040-950AE0737DEC"/>
+				<code nullFlavor="NA"/>
+			</observation>
+		</entryRelationship>
+		<entryRelationship typeCode="COMP" contextConductionInd="true">
+			<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146262GB01#entryRelationship"/>
+			<seperatableInd value="false"/>
+			<observation classCode="OBS" moodCode="EVN">
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146262GB01#bloodGlucose"/>
+				<id root="FEE0ECF4-AE57-A902-E040-950AE0737DEC"/>
+				<code code="434912009" displayName="blood glucose concentration" codeSystem="2.16.840.1.113883.2.1.3.2.4.15">
+					<originalText>
+						<reference value="#C101933"/>
+					</originalText>
+				</code>
+				<effectiveTime value="20140619080030"/>
+				<value xsi:type="PQ" value="12.5" unit="mmol/L"/>
+			</observation>
+		</entryRelationship>
+		<entryRelationship typeCode="COMP" contextConductionInd="true">
+			<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146262GB01#entryRelationship"/>
+			<seperatableInd value="false"/>
+			<observation classCode="OBS" moodCode="EVN">
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146262GB01#bloodGlucose"/>
+				<id root="FEE0ECF4-AE58-A902-E040-950AE0737DEC"/>
+				<code code="434912009" displayName="blood glucose concentration" codeSystem="2.16.840.1.113883.2.1.3.2.4.15">
+					<originalText>
+						<reference value="#C101934"/>
+					</originalText>
+				</code>
+				<effectiveTime value="20140619120005"/>
+				<value xsi:type="PQ" value="11.3" unit="mmol/L"/>
+			</observation>
+		</entryRelationship>
+		<entryRelationship typeCode="COMP" contextConductionInd="true">
+			<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146262GB01#entryRelationship"/>
+			<seperatableInd value="false"/>
+			<observation classCode="OBS" moodCode="EVN">
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146262GB01#bloodGlucose"/>
+				<id root="FEE0ECF4-AE59-A902-E040-950AE0737DEC"/>
+				<code code="434912009" displayName="blood glucose concentration" codeSystem="2.16.840.1.113883.2.1.3.2.4.15">
+					<originalText>
+						<reference value="#C101935"/>
+					</originalText>
+				</code>
+				<effectiveTime value="20140619170049"/>
+				<value xsi:type="PQ" value="10.5" unit="mmol/L"/>
+			</observation>
+		</entryRelationship>
+		<entryRelationship typeCode="COMP" contextConductionInd="true">
+			<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146262GB01#entryRelationship"/>
+			<seperatableInd value="false"/>
+			<observation classCode="OBS" moodCode="EVN">
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146262GB01#bloodGlucose"/>
+				<id root="FEE0ECF4-AE5A-A902-E040-950AE0737DEC"/>
+				<code code="434912009" displayName="blood glucose concentration" codeSystem="2.16.840.1.113883.2.1.3.2.4.15">
+					<originalText>
+						<reference value="#C101936"/>
+					</originalText>
+				</code>
+				<effectiveTime value="20140619220057"/>
+				<value xsi:type="PQ" value="9.5" unit="mmol/L"/>
+			</observation>
+		</entryRelationship>
+		<entryRelationship typeCode="COMP" contextConductionInd="true">
+			<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146262GB01#entryRelationship"/>
+			<seperatableInd value="false"/>
+			<observation classCode="OBS" moodCode="EVN">
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146262GB01#bloodGlucose"/>
+				<id root="FEE0ECF4-AE5B-A902-E040-950AE0737DEC"/>
+				<code code="434912009" displayName="blood glucose concentration" codeSystem="2.16.840.1.113883.2.1.3.2.4.15">
+					<originalText>
+						<reference value="#C101937"/>
+					</originalText>
+				</code>
+				<effectiveTime value="20140620080016"/>
+				<value xsi:type="PQ" value="12.5" unit="mmol/L"/>
+			</observation>
+		</entryRelationship>
+		<entryRelationship typeCode="COMP" contextConductionInd="true">
+			<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146262GB01#entryRelationship"/>
+			<seperatableInd value="false"/>
+			<observation classCode="OBS" moodCode="EVN">
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146262GB01#bloodGlucose"/>
+				<id root="FEE0ECF4-AE5C-A902-E040-950AE0737DEC"/>
+				<code code="434912009" displayName="blood glucose concentration" codeSystem="2.16.840.1.113883.2.1.3.2.4.15">
+					<originalText>
+						<reference value="#C101938"/>
+					</originalText>
+				</code>
+				<effectiveTime value="20140620120030"/>
+				<value xsi:type="PQ" value="11.3" unit="mmol/L"/>
+			</observation>
+		</entryRelationship>
+		<entryRelationship typeCode="COMP" contextConductionInd="true">
+			<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146262GB01#entryRelationship"/>
+			<seperatableInd value="false"/>
+			<observation classCode="OBS" moodCode="EVN">
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146262GB01#bloodGlucose"/>
+				<id root="FEE0ECF4-AE5D-A902-E040-950AE0737DEC"/>
+				<code code="434912009" displayName="blood glucose concentration" codeSystem="2.16.840.1.113883.2.1.3.2.4.15">
+					<originalText>
+						<reference value="#C101939"/>
+					</originalText>
+				</code>
+				<effectiveTime value="20140620170047"/>
+				<value xsi:type="PQ" value="10.6" unit="mmol/L"/>
+			</observation>
+		</entryRelationship>
+		<entryRelationship typeCode="COMP" contextConductionInd="true">
+			<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146262GB01#entryRelationship"/>
+			<seperatableInd value="false"/>
+			<observation classCode="OBS" moodCode="EVN">
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146262GB01#bloodGlucose"/>
+				<id root="FEE0ECF4-AE5E-A902-E040-950AE0737DEC"/>
+				<code code="434912009" displayName="blood glucose concentration" codeSystem="2.16.840.1.113883.2.1.3.2.4.15">
+					<originalText>
+						<reference value="#C101940"/>
+					</originalText>
+				</code>
+				<effectiveTime value="20140620220029"/>
+				<value xsi:type="PQ" value="9.5" unit="mmol/L"/>
+			</observation>
+		</entryRelationship>
+		<entryRelationship typeCode="COMP" contextConductionInd="true">
+			<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146262GB01#entryRelationship"/>
+			<seperatableInd value="false"/>
+			<observation classCode="OBS" moodCode="EVN">
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146262GB01#bloodGlucose"/>
+				<id root="FEE0ECF4-AE5F-A902-E040-950AE0737DEC"/>
+				<code code="434912009" displayName="blood glucose concentration" codeSystem="2.16.840.1.113883.2.1.3.2.4.15">
+					<originalText>
+						<reference value="#C101941"/>
+					</originalText>
+				</code>
+				<effectiveTime value="20140621080000"/>
+				<value xsi:type="PQ" value="9.5" unit="mmol/L"/>
+			</observation>
+		</entryRelationship>
+		<entryRelationship typeCode="COMP" contextConductionInd="true">
+			<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146262GB01#entryRelationship"/>
+			<seperatableInd value="false"/>
+			<observation classCode="OBS" moodCode="EVN">
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146262GB01#bloodGlucose"/>
+				<id root="FEE0ECF4-AE60-A902-E040-950AE0737DEC"/>
+				<code code="434912009" displayName="blood glucose concentration" codeSystem="2.16.840.1.113883.2.1.3.2.4.15">
+					<originalText>
+						<reference value="#C101942"/>
+					</originalText>
+				</code>
+				<effectiveTime value="20140621120000"/>
+				<value xsi:type="PQ" value="10.6" unit="mmol/L"/>
+			</observation>
+		</entryRelationship>
+		<entryRelationship typeCode="COMP" contextConductionInd="true">
+			<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146262GB01#entryRelationship"/>
+			<seperatableInd value="false"/>
+			<observation classCode="OBS" moodCode="EVN">
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146262GB01#bloodGlucose"/>
+				<id root="FEE0ECF4-AE61-A902-E040-950AE0737DEC"/>
+				<code code="434912009" displayName="blood glucose concentration" codeSystem="2.16.840.1.113883.2.1.3.2.4.15">
+					<originalText>
+						<reference value="#C101943"/>
+					</originalText>
+				</code>
+				<effectiveTime value="20140621170000"/>
+				<value xsi:type="PQ" value="11.3" unit="mmol/L"/>
+			</observation>
+		</entryRelationship>
+		<entryRelationship typeCode="COMP" contextConductionInd="true">
+			<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146262GB01#entryRelationship"/>
+			<seperatableInd value="false"/>
+			<observation classCode="OBS" moodCode="EVN">
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146262GB01#bloodGlucose"/>
+				<id root="FEE0ECF4-AE62-A902-E040-950AE0737DEC"/>
+				<code code="434912009" displayName="blood glucose concentration" codeSystem="2.16.840.1.113883.2.1.3.2.4.15">
+					<originalText>
+						<reference value="#C101944"/>
+					</originalText>
+				</code>
+				<effectiveTime value="20140621220000"/>
+				<value xsi:type="PQ" value="12.5" unit="mmol/L"/>
+			</observation>
+		</entryRelationship>
+		<entryRelationship typeCode="COMP" contextConductionInd="true">
+			<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146262GB01#entryRelationship"/>
+			<seperatableInd value="false"/>
+			<observation classCode="OBS" moodCode="EVN">
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146262GB01#bloodGlucose"/>
+				<id root="FEE0ECF4-AE63-A902-E040-950AE0737DEC"/>
+				<code code="434912009" displayName="blood glucose concentration" codeSystem="2.16.840.1.113883.2.1.3.2.4.15">
+					<originalText>
+						<reference value="#C101945"/>
+					</originalText>
+				</code>
+				<effectiveTime value="20140622080000"/>
+				<value xsi:type="PQ" value="12.5" unit="mmol/L"/>
+			</observation>
+		</entryRelationship>
+		<entryRelationship typeCode="COMP" contextConductionInd="true">
+			<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146262GB01#entryRelationship"/>
+			<seperatableInd value="false"/>
+			<observation classCode="OBS" moodCode="EVN">
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146262GB01#bloodGlucose"/>
+				<id root="FEE0ECF4-AE64-A902-E040-950AE0737DEC"/>
+				<code code="434912009" displayName="blood glucose concentration" codeSystem="2.16.840.1.113883.2.1.3.2.4.15">
+					<originalText>
+						<reference value="#C101946"/>
+					</originalText>
+				</code>
+				<effectiveTime value="20140622120000"/>
+				<value xsi:type="PQ" value="11.3" unit="mmol/L"/>
+			</observation>
+		</entryRelationship>
+		<entryRelationship typeCode="COMP" contextConductionInd="true">
+			<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146262GB01#entryRelationship"/>
+			<seperatableInd value="false"/>
+			<observation classCode="OBS" moodCode="EVN">
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146262GB01#bloodGlucose"/>
+				<id root="FEE0ECF4-AE65-A902-E040-950AE0737DEC"/>
+				<code code="434912009" displayName="blood glucose concentration" codeSystem="2.16.840.1.113883.2.1.3.2.4.15">
+					<originalText>
+						<reference value="#C101947"/>
+					</originalText>
+				</code>
+				<effectiveTime value="20140622170000"/>
+				<value xsi:type="PQ" value="10.6" unit="mmol/L"/>
+			</observation>
+		</entryRelationship>
+		<entryRelationship typeCode="COMP" contextConductionInd="true">
+			<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146262GB01#entryRelationship"/>
+			<seperatableInd value="false"/>
+			<observation classCode="OBS" moodCode="EVN">
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146262GB01#bloodGlucose"/>
+				<id root="FEE0ECF4-AE66-A902-E040-950AE0737DEC"/>
+				<code code="434912009" displayName="blood glucose concentration" codeSystem="2.16.840.1.113883.2.1.3.2.4.15">
+					<originalText>
+						<reference value="#C101948"/>
+					</originalText>
+				</code>
+				<effectiveTime value="20140622220000"/>
+				<value xsi:type="PQ" value="9.5" unit="mmol/L"/>
+			</observation>
+		</entryRelationship>
+		<entryRelationship typeCode="COMP" contextConductionInd="true">
+			<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146262GB01#entryRelationship"/>
+			<seperatableInd value="false"/>
+			<observation classCode="OBS" moodCode="EVN">
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146262GB01#bloodGlucose"/>
+				<id root="FEE0ECF4-AE67-A902-E040-950AE0737DEC"/>
+				<code code="434912009" displayName="blood glucose concentration" codeSystem="2.16.840.1.113883.2.1.3.2.4.15">
+					<originalText>
+						<reference value="#C101949"/>
+					</originalText>
+				</code>
+				<effectiveTime value="20140623080000"/>
+				<value xsi:type="PQ" value="11.3" unit="mmol/L"/>
+			</observation>
+		</entryRelationship>
+		<entryRelationship typeCode="COMP" contextConductionInd="true">
+			<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146262GB01#entryRelationship"/>
+			<seperatableInd value="false"/>
+			<observation classCode="OBS" moodCode="EVN">
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146262GB01#bloodGlucose"/>
+				<id root="FEE0ECF4-AE68-A902-E040-950AE0737DEC"/>
+				<code code="434912009" displayName="blood glucose concentration" codeSystem="2.16.840.1.113883.2.1.3.2.4.15">
+					<originalText>
+						<reference value="#C101950"/>
+					</originalText>
+				</code>
+				<effectiveTime value="20140623120000"/>
+				<value xsi:type="PQ" value="12.5" unit="mmol/L"/>
+			</observation>
+		</entryRelationship>
+		<entryRelationship typeCode="COMP" contextConductionInd="true">
+			<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146262GB01#entryRelationship"/>
+			<seperatableInd value="false"/>
+			<observation classCode="OBS" moodCode="EVN">
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146262GB01#bloodGlucose"/>
+				<id root="FEE0ECF4-AE69-A902-E040-950AE0737DEC"/>
+				<code code="434912009" displayName="blood glucose concentration" codeSystem="2.16.840.1.113883.2.1.3.2.4.15">
+					<originalText>
+						<reference value="#C101951"/>
+					</originalText>
+				</code>
+				<effectiveTime value="20140623170000"/>
+				<value xsi:type="PQ" value="12.5" unit="mmol/L"/>
+			</observation>
+		</entryRelationship>
+		<entryRelationship typeCode="COMP" contextConductionInd="true">
+			<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146262GB01#entryRelationship"/>
+			<seperatableInd value="false"/>
+			<observation classCode="OBS" moodCode="EVN">
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146262GB01#bloodGlucose"/>
+				<id root="FEE0ECF4-AE6A-A902-E040-950AE0737DEC"/>
+				<code code="434912009" displayName="blood glucose concentration" codeSystem="2.16.840.1.113883.2.1.3.2.4.15">
+					<originalText>
+						<reference value="#C101952"/>
+					</originalText>
+				</code>
+				<effectiveTime value="20140623220000"/>
+				<value xsi:type="PQ" value="11.3" unit="mmol/L"/>
+			</observation>
+		</entryRelationship>
+		<entryRelationship typeCode="COMP" contextConductionInd="true">
+			<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146262GB01#entryRelationship"/>
+			<seperatableInd value="false"/>
+			<observation classCode="OBS" moodCode="EVN">
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146262GB01#bloodGlucose"/>
+				<id root="FEE0ECF4-AE6B-A902-E040-950AE0737DEC"/>
+				<code code="434912009" displayName="blood glucose concentration" codeSystem="2.16.840.1.113883.2.1.3.2.4.15">
+					<originalText>
+						<reference value="#C101953"/>
+					</originalText>
+				</code>
+				<effectiveTime value="20140624080000"/>
+				<value xsi:type="PQ" value="11.3" unit="mmol/L"/>
+			</observation>
+		</entryRelationship>
+		<entryRelationship typeCode="COMP" contextConductionInd="true">
+			<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146262GB01#entryRelationship"/>
+			<seperatableInd value="false"/>
+			<observation classCode="OBS" moodCode="EVN">
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146262GB01#bloodGlucose"/>
+				<id root="FEE0ECF4-AE6C-A902-E040-950AE0737DEC"/>
+				<code code="434912009" displayName="blood glucose concentration" codeSystem="2.16.840.1.113883.2.1.3.2.4.15">
+					<originalText>
+						<reference value="#C101954"/>
+					</originalText>
+				</code>
+				<effectiveTime value="20140624120000"/>
+				<value xsi:type="PQ" value="12.5" unit="mmol/L"/>
+			</observation>
+		</entryRelationship>
+		<entryRelationship typeCode="COMP" contextConductionInd="true">
+			<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146262GB01#entryRelationship"/>
+			<seperatableInd value="false"/>
+			<observation classCode="OBS" moodCode="EVN">
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146262GB01#bloodGlucose"/>
+				<id root="FEE0ECF4-AE6D-A902-E040-950AE0737DEC"/>
+				<code code="434912009" displayName="blood glucose concentration" codeSystem="2.16.840.1.113883.2.1.3.2.4.15">
+					<originalText>
+						<reference value="#C101955"/>
+					</originalText>
+				</code>
+				<effectiveTime value="20140624170000"/>
+				<value xsi:type="PQ" value="12.5" unit="mmol/L"/>
+			</observation>
+		</entryRelationship>
+		<entryRelationship typeCode="COMP" contextConductionInd="true">
+			<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146262GB01#entryRelationship"/>
+			<seperatableInd value="false"/>
+			<observation classCode="OBS" moodCode="EVN">
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146262GB01#bloodGlucose"/>
+				<id root="FEE0ECF4-AE6E-A902-E040-950AE0737DEC"/>
+				<code code="434912009" displayName="blood glucose concentration" codeSystem="2.16.840.1.113883.2.1.3.2.4.15">
+					<originalText>
+						<reference value="#C101956"/>
+					</originalText>
+				</code>
+				<effectiveTime value="20140624220000"/>
+				<value xsi:type="PQ" value="11.3" unit="mmol/L"/>
+			</observation>
+		</entryRelationship>
+		<entryRelationship typeCode="COMP" contextConductionInd="true">
+			<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146262GB01#entryRelationship"/>
+			<seperatableInd value="false"/>
+			<observation classCode="OBS" moodCode="EVN">
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146262GB01#bloodGlucose"/>
+				<id root="FEE0ECF4-AE6F-A902-E040-950AE0737DEC"/>
+				<code code="434912009" displayName="blood glucose concentration" codeSystem="2.16.840.1.113883.2.1.3.2.4.15">
+					<originalText>
+						<reference value="#C101957"/>
+					</originalText>
+				</code>
+				<effectiveTime value="20140625080000"/>
+				<value xsi:type="PQ" value="11.3" unit="mmol/L"/>
+			</observation>
+		</entryRelationship>
+		<entryRelationship typeCode="COMP" contextConductionInd="true">
+			<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146262GB01#entryRelationship"/>
+			<seperatableInd value="false"/>
+			<observation classCode="OBS" moodCode="EVN">
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146262GB01#bloodGlucose"/>
+				<id root="FEE0ECF4-AE70-A902-E040-950AE0737DEC"/>
+				<code code="434912009" displayName="blood glucose concentration" codeSystem="2.16.840.1.113883.2.1.3.2.4.15">
+					<originalText>
+						<reference value="#C101958"/>
+					</originalText>
+				</code>
+				<effectiveTime value="20140625120000"/>
+				<value xsi:type="PQ" value="12.8" unit="mmol/L"/>
+			</observation>
+		</entryRelationship>
+		<entryRelationship typeCode="COMP" contextConductionInd="true">
+			<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146262GB01#entryRelationship"/>
+			<seperatableInd value="false"/>
+			<observation classCode="OBS" moodCode="EVN">
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146262GB01#bloodGlucose"/>
+				<id root="FEE0ECF4-AE71-A902-E040-950AE0737DEC"/>
+				<code code="434912009" displayName="blood glucose concentration" codeSystem="2.16.840.1.113883.2.1.3.2.4.15">
+					<originalText>
+						<reference value="#C101959"/>
+					</originalText>
+				</code>
+				<effectiveTime value="20140625170000"/>
+				<value xsi:type="PQ" value="12.5" unit="mmol/L"/>
+			</observation>
+		</entryRelationship>
+		<entryRelationship typeCode="COMP" contextConductionInd="true">
+			<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146262GB01#entryRelationship"/>
+			<seperatableInd value="false"/>
+			<observation classCode="OBS" moodCode="EVN">
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146262GB01#bloodGlucose"/>
+				<id root="FEE0ECF4-AE72-A902-E040-950AE0737DEC"/>
+				<code code="434912009" displayName="blood glucose concentration" codeSystem="2.16.840.1.113883.2.1.3.2.4.15">
+					<originalText>
+						<reference value="#C101960"/>
+					</originalText>
+				</code>
+				<effectiveTime value="20140625220000"/>
+				<value xsi:type="PQ" value="11.3" unit="mmol/L"/>
+			</observation>
+		</entryRelationship>
+		<entryRelationship typeCode="COMP" contextConductionInd="true">
+			<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146262GB01#entryRelationship"/>
+			<seperatableInd value="false"/>
+			<observation classCode="OBS" moodCode="EVN">
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146262GB01#bloodGlucose"/>
+				<id root="FEE0ECF4-AE73-A902-E040-950AE0737DEC"/>
+				<code code="434912009" displayName="blood glucose concentration" codeSystem="2.16.840.1.113883.2.1.3.2.4.15">
+					<originalText>
+						<reference value="#C101961"/>
+					</originalText>
+				</code>
+				<effectiveTime value="20140626080000"/>
+				<value xsi:type="PQ" value="11.3" unit="mmol/L"/>
+			</observation>
+		</entryRelationship>
+		<entryRelationship typeCode="COMP" contextConductionInd="true">
+			<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146262GB01#entryRelationship"/>
+			<seperatableInd value="false"/>
+			<observation classCode="OBS" moodCode="EVN">
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146262GB01#bloodGlucose"/>
+				<id root="FEE0ECF4-AE74-A902-E040-950AE0737DEC"/>
+				<code code="434912009" displayName="blood glucose concentration" codeSystem="2.16.840.1.113883.2.1.3.2.4.15">
+					<originalText>
+						<reference value="#C101962"/>
+					</originalText>
+				</code>
+				<effectiveTime value="20140626120000"/>
+				<value xsi:type="PQ" value="12.5" unit="mmol/L"/>
+			</observation>
+		</entryRelationship>
+		<entryRelationship typeCode="COMP" contextConductionInd="true">
+			<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146262GB01#entryRelationship"/>
+			<seperatableInd value="false"/>
+			<observation classCode="OBS" moodCode="EVN">
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146262GB01#bloodGlucose"/>
+				<id root="FEE0ECF4-AE75-A902-E040-950AE0737DEC"/>
+				<code code="434912009" displayName="blood glucose concentration" codeSystem="2.16.840.1.113883.2.1.3.2.4.15">
+					<originalText>
+						<reference value="#C101963"/>
+					</originalText>
+				</code>
+				<effectiveTime value="20140626170000"/>
+				<value xsi:type="PQ" value="12.5" unit="mmol/L"/>
+			</observation>
+		</entryRelationship>
+		<entryRelationship typeCode="COMP" contextConductionInd="true">
+			<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146262GB01#entryRelationship"/>
+			<seperatableInd value="false"/>
+			<observation classCode="OBS" moodCode="EVN">
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146262GB01#bloodGlucose"/>
+				<id root="FEE0ECF4-AE76-A902-E040-950AE0737DEC"/>
+				<code code="434912009" displayName="blood glucose concentration" codeSystem="2.16.840.1.113883.2.1.3.2.4.15">
+					<originalText>
+						<reference value="#C101964"/>
+					</originalText>
+				</code>
+				<effectiveTime value="20140626220000"/>
+				<value xsi:type="PQ" value="11.3" unit="mmol/L"/>
+			</observation>
+		</entryRelationship>
+	</observation>
+</entry>

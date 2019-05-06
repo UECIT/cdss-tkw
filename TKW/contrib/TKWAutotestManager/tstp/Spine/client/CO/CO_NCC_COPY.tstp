@@ -1,0 +1,29 @@
+SCRIPT CO_NCC_COPY
+# $Id: CO_Client_ITK_Trunk_skel.tst 87 2016-05-06 09:58:33Z sfarrow $
+# Section 6 Correspondence Positive Client Tests Test Script File
+# Automatically generated from CO_Client_ITK_Trunk_skel.tst 
+#
+
+VALIDATOR __TKWROOT__/config/ITK_Correspondence/validator_config/validator.conf
+
+SIMULATOR __SIMULATOR__
+
+STOP WHEN COMPLETE
+
+BEGIN SCHEDULES
+CO_NCC_COPY TESTS CO_NCC_COPY___INTERACTION_ID___test1
+END SCHEDULES
+
+BEGIN TESTS
+CO_NCC_COPY___INTERACTION_ID___test1 ASYNC CO_NCC_COPY_test1 PROMPT "Test Condition:__TEST_CONDITION__ - Send an ITK Trunk message __INTERACTION_ID__ to __FROM_URL__" WITH_PROPERTYSET base+spinetools
+END TESTS
+
+BEGIN PROPERTYSETS
+spinetools
+	SET tks.SpineToolsTransport.listenport __LISTEN_PORT_NUMBER__
+	SET tks.SpineToolsTransport.listenaddr  __LISTEN_ADDR__
+END PROPERTYSETS
+
+BEGIN PASSFAIL
+CO_NCC_COPY_test1 asynchronousxpath /itk:DistributionEnvelope/itk:header/itk:handlingSpecification/itk:spec[@key='urn:nhs-itk:ns:201005:interaction']/@value matches "^__INTERACTION_ID__$"
+END PASSFAIL

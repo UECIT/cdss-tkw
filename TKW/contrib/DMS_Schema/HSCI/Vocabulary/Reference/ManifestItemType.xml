@@ -1,0 +1,10 @@
+<Vocabularies xmlns="urn:nhs-itk:ns:201005">
+	<vocabulary version="1.0" status="active" name="ManifestItemType" id="">
+		<concept code="interaction">
+			<displayName>Interaction id of the payload item</displayName>
+		</concept>
+		<concept code="batchSeqNo">
+			<displayName>batch sequence number of the payload item</displayName>
+		</concept>
+	</vocabulary>
+</Vocabularies>

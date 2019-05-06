@@ -1,0 +1,10 @@
+<Vocabularies xmlns="urn:nhs-itk:ns:201005">
+	<vocabulary version="1.0" status="created" name="TherapiesReportCompleted" id="">
+		<concept code="TRC">
+			<displayName>Therapies report completed.</displayName>
+		</concept>
+		<concept code="TRNC">
+			<displayName>Therapies report not completed</displayName>
+		</concept>
+	</vocabulary>
+</Vocabularies>

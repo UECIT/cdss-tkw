@@ -1,0 +1,10 @@
+<Vocabularies xmlns="urn:nhs-itk:ns:201005">
+	<vocabulary version="1.0" status="active" name="x_DocumentSubject" id="2.16.840.1.113883.1.11.19368">
+		<concept code="PAT">
+			<displayName>patient</displayName>
+		</concept>
+		<concept code="PRS">
+			<displayName>personal relationship</displayName>
+		</concept>
+	</vocabulary>
+</Vocabularies>

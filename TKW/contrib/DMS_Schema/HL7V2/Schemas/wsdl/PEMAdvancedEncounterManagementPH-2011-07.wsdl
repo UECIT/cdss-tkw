@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  
+*****************************************************************************************************************
+* 
+* 	Copyright (c) 2010 NHS Conneccting For Health. All rights reserved.
+*   
+*  	Redistribution and use in source and binary forms, with or without
+*  	modification, are permitted provided that the following conditions
+*  	are met:
+*  		1. Redistributions of source code must retain the above copyright
+*     		notice, this list of conditions and the following disclaimer.
+*  		2. Redistributions in binary form must reproduce the above copyright
+*     		notice, this list of conditions and the following disclaimer in the
+*     		documentation and/or other materials provided with the distribution.
+*  		3. All advertising materials mentioning features or use of this software
+*     		must display the following acknowledgement:
+*       This product includes software developed by Health Level Seven.
+*  	THIS SOFTWARE IS PROVIDED BY NHS Conneccting For Health. AND CONTRIBUTORS "AS IS" AND
+*  	ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+*  	IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+*  	ARE DISCLAIMED.  IN NO EVENT SHALL THE REGENTS OR CONTRIBUTORS BE LIABLE
+*  	FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+*  	DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+*  	OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+*  	HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+*  	LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+*  	OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+*  	SUCH DAMAGE.
+*
+* CHANGE HISTORY:
+*
+* VERSION   DATE       AUTHOR                   LABEL   DESCRIPTION
+* =======   ========== ======================   ======  ===========================================================
+* 1.0       31-03-2010 Cord Oestmann                    Created this WSDL
+* 2.0       16-05-2010 Interoperability Team            Amended this WSDL to make changes to the namespace declarations and the action and callbacks.
+*
+********************************************************************************************************************
+-->
+<wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:itk="urn:nhs-itk:ns:201005" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="advancedEncounterManagement" targetNamespace="urn:nhs-itk:ns:201005">
+	<wsdl:types>
+		<xsd:schema targetNamespace="urn:nhs-itk:ns:201005" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+			<xsd:include schemaLocation="../distributionEnvelope-v2-0.xsd"/>
+			<xsd:include schemaLocation="../ITKMessageTypes-2010-05.xsd"/>
+		</xsd:schema>
+	</wsdl:types>
+	<wsdl:message name="HL7PipeAndHatContentMessage">
+		<wsdl:part name="HL7PipeAndHatContentMessage" element="itk:DistributionEnvelope"/>
+	</wsdl:message>
+	<wsdl:message name="acknowledgementResponse">
+		<wsdl:part name="acknowledgementResponse" element="itk:SimpleMessageResponse"/>
+	</wsdl:message>
+	<wsdl:message name="faultResponse">
+		<wsdl:part name="faultResponse" element="itk:ToolkitErrorInfo"/>
+	</wsdl:message>
+	<wsdl:portType name="leaveOfAbsencePH_ptt">
+		<wsdl:operation name="leaveOfAbsencePH-v1-0">
+			<wsdl:input message="itk:HL7PipeAndHatContentMessage"/>
+			<wsdl:output message="itk:acknowledgementResponse"/>
+			<wsdl:fault name="standardFault" message="itk:faultResponse"/>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:portType name="returnFromLeaveOfAbsencePH_ptt">
+		<wsdl:operation name="returnFromLeaveOfAbsencePH-v1-0">
+			<wsdl:input message="itk:HL7PipeAndHatContentMessage"/>
+			<wsdl:output message="itk:acknowledgementResponse"/>
+			<wsdl:fault name="standardFault" message="itk:faultResponse"/>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:portType name="cancelLeaveOfAbsencePH_ptt">
+		<wsdl:operation name="cancelLeaveOfAbsencePH-v1-0">
+			<wsdl:input message="itk:HL7PipeAndHatContentMessage"/>
+			<wsdl:output message="itk:acknowledgementResponse"/>
+			<wsdl:fault name="standardFault" message="itk:faultResponse"/>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:portType name="cancelReturnFromLeaveOfAbsencePH_ptt">
+		<wsdl:operation name="cancelReturnFromLeaveOfAbsencePH-v1-0">
+			<wsdl:input message="itk:HL7PipeAndHatContentMessage"/>
+			<wsdl:output message="itk:acknowledgementResponse"/>
+			<wsdl:fault name="standardFault" message="itk:faultResponse"/>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:binding name="leaveOfAbsencePH_pttBinding" type="itk:leaveOfAbsencePH_ptt">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdl:operation name="leaveOfAbsencePH-v1-0">
+			<soap:operation soapAction="urn:nhs-itk:services:201005:leaveOfAbsencePH-v1-0" style="document"/>
+			<wsdl:input>
+				<soap:body parts="HL7PipeAndHatContentMessage" use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body parts="acknowledgementResponse" use="literal"/>
+			</wsdl:output>
+			<wsdl:fault name="standardFault">
+				<soap:fault name="standardFault" use="literal"/>
+			</wsdl:fault>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:binding name="returnFromLeaveOfAbsencePH_pttBinding" type="itk:returnFromLeaveOfAbsencePH_ptt">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdl:operation name="returnFromLeaveOfAbsencePH-v1-0">
+			<soap:operation soapAction="urn:nhs-itk:services:201005:returnFromLeaveOfAbsencePH-v1-0" style="document"/>
+			<wsdl:input>
+				<soap:body parts="HL7PipeAndHatContentMessage" use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body parts="acknowledgementResponse" use="literal"/>
+			</wsdl:output>
+			<wsdl:fault name="standardFault">
+				<soap:fault name="standardFault" use="literal"/>
+			</wsdl:fault>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:binding name="cancelLeaveOfAbsencePH_pttBinding" type="itk:cancelLeaveOfAbsencePH_ptt">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdl:operation name="cancelLeaveOfAbsencePH-v1-0">
+			<soap:operation soapAction="urn:nhs-itk:services:201005:cancelLeaveOfAbsencePH-v1-0" style="document"/>
+			<wsdl:input>
+				<soap:body parts="HL7PipeAndHatContentMessage" use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body parts="acknowledgementResponse" use="literal"/>
+			</wsdl:output>
+			<wsdl:fault name="standardFault">
+				<soap:fault name="standardFault" use="literal"/>
+			</wsdl:fault>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:binding name="cancelReturnFromLeaveOfAbsencePH_pttBinding" type="itk:cancelReturnFromLeaveOfAbsencePH_ptt">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdl:operation name="cancelReturnFromLeaveOfAbsencePH-v1-0">
+			<soap:operation soapAction="urn:nhs-itk:services:201005:cancelReturnFromLeaveOfAbsencePH-v1-0" style="document"/>
+			<wsdl:input>
+				<soap:body parts="HL7PipeAndHatContentMessage" use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body parts="acknowledgementResponse" use="literal"/>
+			</wsdl:output>
+			<wsdl:fault name="standardFault">
+				<soap:fault name="standardFault" use="literal"/>
+			</wsdl:fault>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:service name="leaveOfAbsencePH-v1-0">
+		<wsdl:documentation>This service is used to broadcast the leaveOfAbsence Event ADT^A21 with the payload using Pipe and Hat.
+                          From the service consumer perspective it is a fire-and-forget integration pattern.
+                          It returns a receipt acknowledgement from the Toolkit.</wsdl:documentation>
+		<wsdl:port name="leaveOfAbsencePH_pttPort" binding="itk:leaveOfAbsencePH_pttBinding">
+			<soap:address location="urn:nhs-itk:services:eaveOfAbsencePH-v1-0"/>
+		</wsdl:port>
+	</wsdl:service>
+	<wsdl:service name="cancelLeaveOfAbsencePH-v1-0">
+		<wsdl:documentation>This service is used to broadcast the cancelLeaveOfAbsence Event ADT^A22 with the payload using Pipe and Hat.
+                          From the service consumer perspective it is a fire-and-forget integration pattern.
+                          It returns a receipt acknowledgement from the Toolkit.</wsdl:documentation>
+		<wsdl:port name="cancelLeaveOfAbsencePH_pttPort" binding="itk:cancelLeaveOfAbsencePH_pttBinding">
+			<soap:address location="urn:nhs-itk:services:cancelLeaveOfAbsencePH-v1-0"/>
+		</wsdl:port>
+	</wsdl:service>
+	<wsdl:service name="returnFromLeaveOfAbsencePH-v1-0">
+		<wsdl:documentation>This service is used to broadcast the returnFromLeaveOfAbsence Event ADT^A52 with the payload using Pipe and Hat.
+                          From the service consumer perspective it is a fire-and-forget integration pattern.
+                          It returns a receipt acknowledgement from the Toolkit.</wsdl:documentation>
+		<wsdl:port name="returnFromLeaveOfAbsencePH_pttPort" binding="itk:returnFromLeaveOfAbsencePH_pttBinding">
+			<soap:address location="urn:nhs-itk:services:returnFromLeaveOfAbsencePH-v1-0"/>
+		</wsdl:port>
+	</wsdl:service>
+	<wsdl:service name="cancelReturnFromLeaveOfAbsencePH-v1-0">
+		<wsdl:documentation>This service is used to broadcast the cancelReturnFromLeaveOfAbsence Event ADT^A53 with the payload using Pipe and Hat.
+                          From the service consumer perspective it is a fire-and-forget integration pattern.
+                          It returns a receipt acknowledgement from the Toolkit.</wsdl:documentation>
+		<wsdl:port name="cancelReturnFromLeaveOfAbsencePH_pttPort" binding="itk:cancelReturnFromLeaveOfAbsencePH_pttBinding">
+			<soap:address location="urn:nhs-itk:services:cancelReturnFromLeaveOfAbsencePH-v1-0"/>
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>

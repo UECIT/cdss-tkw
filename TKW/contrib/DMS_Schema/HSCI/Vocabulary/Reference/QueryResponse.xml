@@ -1,0 +1,13 @@
+<Vocabularies xmlns="urn:nhs-itk:ns:201005">
+	<vocabulary version="5.0" status="active" name="QueryResponse" id="">
+		<concept code="ID">
+			<displayName>Issue detected</displayName>
+		</concept>
+		<concept code="NF">
+			<displayName>No data found</displayName>
+		</concept>
+		<concept code="OK">
+			<displayName>Data found</displayName>
+		</concept>
+	</vocabulary>
+</Vocabularies>

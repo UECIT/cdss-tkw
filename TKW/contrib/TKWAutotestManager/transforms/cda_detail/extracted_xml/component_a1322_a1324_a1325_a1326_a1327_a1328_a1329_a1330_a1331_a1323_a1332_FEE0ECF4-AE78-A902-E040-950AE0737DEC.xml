@@ -1,0 +1,133 @@
+<component xmlns="urn:hl7-org:v3" xmlns:hl7v2="urn:hl7-org:v2xml" xmlns:itk="urn:nhs-itk:ns:201005" xmlns:npfitlc="NPFIT:HL7:Localisation" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:wsa="http://www.w3.org/2005/08/addressing" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" typeCode="COMP" contextConductionInd="true">
+	<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP146250GB01#Section1"/>
+	<section classCode="DOCSECT" moodCode="EVN">
+		<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146250GB01#Section1"/>
+		<id root="FEE0ECF4-AE78-A902-E040-950AE0737DEC"/>
+		<title>Alert Information</title>
+		<text>
+			<table width="100%">
+				<tbody>
+					<tr>
+						<th colspan="5">Blood Glucose Threshold</th>
+					</tr>
+					<tr>
+						<td>
+							<content styleCode="Bold">Alert Type</content>
+						</td>
+						<td>
+							<content styleCode="Bold">Date/Time Raised</content>
+						</td>
+						<td>
+							<content styleCode="Bold">Date/Time Closed</content>
+						</td>
+						<td>
+							<content styleCode="Bold">Status of Alert</content>
+						</td>
+						<td>
+							<content styleCode="Bold">Comments</content>
+						</td>
+					</tr>
+					<tr>
+						<td align="left">
+							<content ID="a1322">Telehealth maximum threshold alert</content>
+						</td>
+						<td>26-Jun-14 12:00 (Thu)</td>
+						<td>26-Jun-14 12:00 (Thu)</td>
+						<td>active</td>
+						<td/>
+					</tr>
+					<tr>
+						<td align="left">
+							<content ID="a1324">Telehealth maximum threshold alert</content>
+						</td>
+						<td>26-Jun-14 08:00 (Thu)</td>
+						<td>26-Jun-14 08:00 (Thu)</td>
+						<td>completed</td>
+						<td/>
+					</tr>
+					<tr>
+						<td align="left">
+							<content ID="a1325">Telehealth maximum threshold alert</content>
+						</td>
+						<td>25-Jun-14 12:00 (Wed)</td>
+						<td>25-Jun-14 12:00 (Wed)</td>
+						<td>completed</td>
+						<td/>
+					</tr>
+					<tr>
+						<td align="left">
+							<content ID="a1326">Telehealth maximum threshold alert</content>
+						</td>
+						<td>25-Jun-14 08:00 (Wed)</td>
+						<td>25-Jun-14 08:00 (Wed)</td>
+						<td>completed</td>
+						<td/>
+					</tr>
+					<tr>
+						<td align="left">
+							<content ID="a1327">Telehealth maximum threshold alert</content>
+						</td>
+						<td>24-Jun-14 12:00 (Tue)</td>
+						<td>24-Jun-14 12:00 (Tue)</td>
+						<td>completed</td>
+						<td/>
+					</tr>
+					<tr>
+						<td align="left">
+							<content ID="a1328">Telehealth maximum threshold alert</content>
+						</td>
+						<td>24-Jun-14 08:00 (Tue)</td>
+						<td>24-Jun-14 08:00 (Tue)</td>
+						<td>completed</td>
+						<td/>
+					</tr>
+					<tr>
+						<td align="left">
+							<content ID="a1329">Telehealth maximum threshold alert</content>
+						</td>
+						<td>23-Jun-14 12:00 (Mon)</td>
+						<td>23-Jun-14 12:00 (Mon)</td>
+						<td>completed</td>
+						<td/>
+					</tr>
+					<tr>
+						<td align="left">
+							<content ID="a1330">Telehealth maximum threshold alert</content>
+						</td>
+						<td>23-Jun-14 08:00 (Mon)</td>
+						<td>23-Jun-14 08:00 (Mon)</td>
+						<td>completed</td>
+						<td/>
+					</tr>
+					<tr>
+						<td align="left">
+							<content ID="a1331">Telehealth maximum threshold alert</content>
+						</td>
+						<td>22-Jun-14 12:00 (Sun)</td>
+						<td>22-Jun-14 12:00 (Sun)</td>
+						<td>completed</td>
+						<td/>
+					</tr>
+					<tr>
+						<td align="left">
+							<content ID="a1323">Telehealth rate of change alert</content>
+						</td>
+						<td>22-Jun-14 08:00 (Sun)</td>
+						<td>22-Jun-14 08:00 (Sun)</td>
+						<td>active</td>
+						<td/>
+					</tr>
+					<tr>
+						<td align="left">
+							<content ID="a1332">Telehealth maximum threshold alert</content>
+						</td>
+						<td>21-Jun-14 12:00 (Sat)</td>
+						<td>21-Jun-14 12:00 (Sat)</td>
+						<td>completed</td>
+						<td/>
+					</tr>
+				</tbody>
+			</table>
+		</text>
+	</section>
+</component>

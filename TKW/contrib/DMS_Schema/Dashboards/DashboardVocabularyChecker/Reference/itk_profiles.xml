@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ProfileConfigurations xmlns="urn:nhs-itk:ns:201005" xmlns:itk="urn:nhs-itk:ns:201005" domain="Urgent Care Dashboards" version="1.0RC1">
+	<ProfileConfig xmlns="urn:nhs-itk:ns:201005" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+		<profileId root="2.16.840.1.113883.2.1.3.2.4.18.28" extension="urn:nhs-en:profile:OOHWICFeed-v1-0"/>
+		<configGroup type="Vocabulary">
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.17.312" codeSystemName="ActivityLocationType" codeSystemVersion="1.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.17.286" codeSystemName="ClinicalDashboardsObservationType" codeSystemVersion="1.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.17.292" codeSystemName="ContactType" codeSystemVersion="1.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.17.310" codeSystemName="DashboardMessageType" codeSystemVersion="1.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.17.290" codeSystemName="DashboardOrganisationType" codeSystemVersion="1.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.17.311" codeSystemName="PriorityAfterAssessment" codeSystemVersion="1.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.17.291" codeSystemName="WalkInEncounterType" codeSystemVersion="1.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.16.25" codeSystemName="Sex" codeSystemVersion="1.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.17.302" codeSystemName="OverseasVisitorStatusClassification" codeSystemVersion="1.0"/>
+		</configGroup>
+		<configGroup type="Templates">
+			<configItem code="COCT_TP000018GB01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="PMIContent"/>
+		</configGroup>
+	</ProfileConfig>
+	<ProfileConfig xmlns="urn:nhs-itk:ns:201005" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+		<profileId root="2.16.840.1.113883.2.1.3.2.4.18.28" extension="urn:nhs-en:profile:AEFeed-v1-0"/>
+		<configGroup type="Vocabulary">
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.17.296" codeSystemName="AEArrivalMode" codeSystemVersion="1.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.17.297" codeSystemName="AEAttendanceCategory" codeSystemVersion="1.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.17.299" codeSystemName="AEDepartmentType" codeSystemVersion="1.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.17.298" codeSystemName="AEDisposalMethod" codeSystemVersion="1.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.17.293" codeSystemName="AEIncidentLocationType" codeSystemVersion="1.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.17.309" codeSystemName="AEInitialAssessmentTriageCategory" codeSystemVersion="1.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.17.294" codeSystemName="AEPatientGroup" codeSystemVersion="1.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.17.295" codeSystemName="AESourceOfReferral" codeSystemVersion="1.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.17.286" codeSystemName="ClinicalDashboardsObservationType" codeSystemVersion="1.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.17.310" codeSystemName="DashboardMessageType" codeSystemVersion="1.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.17.290" codeSystemName="DashboardOrganisationType" codeSystemVersion="1.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.17.313" codeSystemName="DischargeSummaryStatus" codeSystemVersion="1.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.16.25" codeSystemName="Sex" codeSystemVersion="1.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.17.302" codeSystemName="OverseasVisitorStatusClassification" codeSystemVersion="1.0"/>
+		</configGroup>
+		<configGroup type="Templates">
+			<configItem code="COCT_TP000018GB01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="PMIContent"/>
+		</configGroup>
+	</ProfileConfig>
+	<ProfileConfig xmlns="urn:nhs-itk:ns:201005" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+		<profileId root="2.16.840.1.113883.2.1.3.2.4.18.28" extension="urn:nhs-en:profile:BatchMessage-v1-0"/>
+		<configGroup type="Vocabulary">
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.17.310" codeSystemName="DashboardMessageType" codeSystemVersion="1.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.17.286" codeSystemName="ClinicalDashboardsObservationType" codeSystemVersion="1.0"/>
+		</configGroup>
+	</ProfileConfig>
+</ProfileConfigurations>

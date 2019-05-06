@@ -1,0 +1,53 @@
+SCRIPT SO_EXHEAD
+# $Id: SO_EXHEAD.tst 87 2016-05-06 09:58:33Z sfarrow $
+# SO_EXHEAD expects a success not a failure
+# Automatically generated from SO_EXHEAD.tst 
+
+VALIDATOR __TKWROOT__/config/ITK_Acknowledgements/validator_config/validator.conf
+
+SIMULATOR __SIMULATOR__
+
+STOP WHEN COMPLETE
+
+BEGIN SCHEDULES
+SO_EXHEAD TESTS SO_EXHEAD___INTERACTION_ID___test1 SO_EXHEAD___INTERACTION_ID___test2 SO_EXHEAD___INTERACTION_ID___test3 SO_EXHEAD___INTERACTION_ID___test4
+END SCHEDULES
+
+BEGIN TESTS
+SO_EXHEAD___INTERACTION_ID___test1 SEND_TKW SO_EXHEAD TO __TO_URL__ FROM __FROM_URL__/__FROM_CONTEXT_PATH__ __REPLY_TO_SECTION__ PRETRANSFORM __TKWROOT__/contrib/TKWAutotestManager/transforms/SO_EXHEAD.xslt APPLYPRETRANSFORMTO data SYNC ok WITH_PROPERTYSET base+webservices
+#removed the following 2 tests because this does not work for Pattern 1 messages as it was looking for a simple response, it is enough to check for the correct response
+#SO_EXHEAD___INTERACTION_ID___test2 CHAIN SYNC respexists
+#SO_EXHEAD___INTERACTION_ID___test3 CHAIN SYNC respok
+
+#three underscores required for merge to identify the test case id and perform the substitution
+SO_EXHEAD___INTERACTION_ID___test2 CHAIN SYNC SO_EXHEAD___actioncorrect
+SO_EXHEAD___INTERACTION_ID___test3 CHAIN SYNC synctimestampok
+SO_EXHEAD___INTERACTION_ID___test4 CHAIN SYNC syncmessageidsok
+END TESTS
+
+BEGIN MESSAGES
+SO_EXHEAD USING SO_EXHEAD___HAPPY_PATH_SERVICE___template WITH NULL SOAPACTION __HAPPY_PATH_SERVICE__
+END MESSAGES
+
+BEGIN TEMPLATES
+SO_EXHEAD___HAPPY_PATH_SERVICE___template  __TKWROOT__/contrib/ITK_2_01_Test_Messages/__HAPPY_PATH_MSG__
+END TEMPLATES
+
+BEGIN PROPERTYSETS
+increasetimeout
+	SET tks.autotest.synchronous.log.delay 30000
+webservices
+	SET tks.HttpTransport.listenport __LISTEN_PORT_NUMBER__
+	SET tks.HttpTransport.listenaddr  __LISTEN_ADDR__
+END PROPERTYSETS
+
+BEGIN PASSFAIL
+ok httpok
+#respexists synchronousxpath /soap:Envelope/soap:Body/itk:SimpleMessageResponse exists
+#respok synchronousxpath /soap:Envelope/soap:Body/itk:SimpleMessageResponse/text() matches ".+"
+
+#three underscores required for merge to identify the test case id and perform the substitution
+SO_EXHEAD___actioncorrect synchronousxpath /soap:Envelope/soap:Header/wsa:Action matches "^__HAPPY_PATH_SERVICE__Response$"
+synctimestampok synctimestampislater
+syncmessageidsok syncmessageidsdiffer
+END PASSFAIL

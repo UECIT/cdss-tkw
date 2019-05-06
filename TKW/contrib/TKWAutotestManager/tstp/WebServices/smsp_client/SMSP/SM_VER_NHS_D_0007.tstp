@@ -1,0 +1,31 @@
+SCRIPT SM_VER_NHS_D_0007
+# $Id: SMSP_Client_skel.tst 74 2016-03-07 13:03:27Z sfarrow $
+# Section 8 Client Tests Test Script File
+# Automatically generated from CO_client_skel.tst 
+#
+
+VALIDATOR __TKWROOT__/config/ITK_SMS_PDS/validator_config/validator.conf
+
+SIMULATOR __SIMULATOR__
+
+STOP WHEN COMPLETE
+
+BEGIN SCHEDULES
+SM_VER_NHS_D_0007 TESTS SM_VER_NHS_D_0007___SERVICE___test1
+END SCHEDULES
+
+BEGIN TESTS
+SM_VER_NHS_D_0007___SERVICE___test1 ASYNC SM_VER_NHS_D_0007_test1 PROMPT "Test Condition:__TEST_CONDITION__ - Send a synchronous request message __SERVICE__ to __FROM_URL__/__FROM_CONTEXT_PATH__" WITH_PROPERTYSET base+webservices+D_0007
+END TESTS
+
+BEGIN PROPERTYSETS
+webservices
+	SET tks.HttpTransport.listenport __LISTEN_PORT_NUMBER__
+	SET tks.HttpTransport.listenaddr  __LISTEN_ADDR__
+D_0007
+	SET tks.rules.configuration.file __TKWROOT__/config/ITK_Autotest/simulator_config/smsp_client/SM_D_0007.txt
+END PROPERTYSETS
+
+BEGIN PASSFAIL
+SM_VER_NHS_D_0007_test1 asynchronousxpath /soap:Envelope/soap:Header/wsa:Action matches "^__SERVICE__$"
+END PASSFAIL

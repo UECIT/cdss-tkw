@@ -1,0 +1,28 @@
+<Vocabularies xmlns="urn:nhs-itk:ns:201005">
+<vocabulary id="2.16.840.1.113883.2.1.3.2.4.17.294" status="created" name="AEPatientGroup" version="1.0">
+	<concept code="10">
+		<displayName>Road traffic accident</displayName>
+	</concept>
+	<concept code="20">
+		<displayName>Assault</displayName>
+	</concept>
+	<concept code="30">
+		<displayName>Deliberate self-harm</displayName>
+	</concept>
+	<concept code="40">
+		<displayName>Sports injury</displayName>
+	</concept>
+	<concept code="50">
+		<displayName>Firework injury</displayName>
+	</concept>
+	<concept code="60">
+		<displayName>Other accident</displayName>
+	</concept>
+	<concept code="70">
+		<displayName>Brought in dead</displayName>
+	</concept>
+	<concept code="80">
+		<displayName>Other than above</displayName>
+	</concept>
+</vocabulary>
+</Vocabularies>

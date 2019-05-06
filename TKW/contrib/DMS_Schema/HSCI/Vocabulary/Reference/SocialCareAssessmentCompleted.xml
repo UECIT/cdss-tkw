@@ -1,0 +1,10 @@
+<Vocabularies xmlns="urn:nhs-itk:ns:201005">
+	<vocabulary version="1.0" status="created" name="SocialCareAssessmentCompleted" id="">
+		<concept code="SCAC">
+			<displayName>Social Care Assessment has been completed.</displayName>
+		</concept>
+		<concept code="SCANC">
+			<displayName>Social Care Assessment has not been completed.</displayName>
+		</concept>
+	</vocabulary>
+</Vocabularies>

@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This example message for Scenario 5 Universal FastTrack -> Accept-->
+<ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:npfitlc="NPFIT:HL7:Localisation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 ..\..\Schemas\POCD_MT010008GB02.xsd" moodCode="EVN" classCode="DOCCLIN">
+	<code code="766761000000103" codeSystem="2.16.840.1.113883.2.1.3.2.4.15"/>
+	<confidentialityCode codeSystem="2.16.840.1.113883.5.25" code="V" displayName="very restricted"/>
+	<effectiveTime value="201010201515"/>
+	<id root="7D5E5B01-AE1A-11DB-96AB-B18E1E0994CD"/>
+	<npfitlc:messageType root="2.16.840.1.113883.2.1.3.2.4.18.17" extension="POCD_MT010008GB02"/>
+	<setId root="7D5E5B02-AE1A-11DB-96AC-B18E1E0994CD"/>
+	<title>NHS Continuing Healthcare Fast Track Tool</title>
+	<typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
+	<versionNumber value="1"/>
+	<author typeCode="AUT" contextControlCode="OP">
+		<npfitlc:contentId extension="COCD_TP145200GB01#AssignedAuthor" root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+		<functionCode codeSystem="2.16.840.1.113883.2.1.3.2.4.17.178" displayName="Originating Author" code="OA"/>
+		<time value="201010201515"/>
+		<COCD_TP145200GB01.AssignedAuthor classCode="ASSIGNED">
+			<code codeSystem="2.16.840.1.113883.2.1.3.2.4.17.124" code="NR0620" displayName="Staff Nurse"/>
+			<id root="2.16.840.1.113883.2.1.3.2.4.18.24" extension="103016311990"/>
+			<templateId extension="COCD_TP145200GB01#AssignedAuthor" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<assignedPerson classCode="PSN" determinerCode="INSTANCE">
+				<name>
+					<prefix>Mr</prefix>
+					<family>Corbett</family>
+					<given>Steve</given>
+				</name>
+				<templateId extension="COCD_TP145200GB01#assignedPerson" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			</assignedPerson>
+			<representedOrganization determinerCode="INSTANCE" classCode="ORG">
+				<id root="2.16.840.1.113883.2.1.3.2.4.19.1" extension="V396AD"/>
+				<name>Stockport NHS Foundation Trust</name>
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP145200GB01#representedOrganization"/>
+			</representedOrganization>
+		</COCD_TP145200GB01.AssignedAuthor>
+	</author>
+	<component typeCode="COMP" contextConductionInd="true">
+		<structuredBody moodCode="EVN" classCode="DOCBODY">
+			<component typeCode="COMP" contextConductionInd="true">
+				<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP146219GB01#ClassificationSection"/>
+				<COCD_TP146219GB01.ClassificationSection classCode="DOCSECT" moodCode="EVN">
+					<id root="7D5E5B00-AE1A-11DB-96AD-B18E1E0994CD"/>
+					<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146219GB01#ClassificationSection"/>
+					<component typeCode="COMP" contextConductionInd="true">
+						<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP146061UK02#Section1"/>
+						<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146219GB01#component"/>
+						<COCD_TP146061UK02.Section1 moodCode="EVN" classCode="DOCSECT">
+							<id root="7D5E5B00-AE1A-11DB-96AE-B18E1E0994CD"/>
+							<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146061UK02#Section1"/>
+							<title>Administrative Details</title>
+							<component1 typeCode="COMP" contextConductionInd="true">
+								<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146061UK02#component1"/>
+								<section2 moodCode="EVN" classCode="DOCSECT">
+									<id root="7D5E5B00-AE1A-11DB-96AF-B18E1E0994CD"/>
+									<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146061UK02#section2"/>
+									<text>
+										<table width="100%">
+											<tbody>
+												<tr char="10">
+													<td>
+														<content styleCode="Bold">Date of completion of Fast Track Tool:</content>
+													</td>
+													<td>20-Oct-2010</td>
+												</tr>
+											</tbody>
+										</table>
+										<br/>
+										<table width="100%">
+											<thead>
+												<tr>
+													<th colspan="4">Contact Details of the Referring Clinician</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>
+														<content styleCode="Bold">Name:</content>
+													</td>
+													<td colspan="3">Dr Phil Preston</td>
+												</tr>
+												<tr>
+													<td>
+														<content styleCode="Bold">Role:</content>
+													</td>
+													<td colspan="3">Consultant</td>
+												</tr>
+												<tr>
+													<td>
+														<content styleCode="Bold">Organisation:</content>
+													</td>
+													<td colspan="3">NHS Stockport, Regent House, 8th Floor, Stockport SK4 1LL </td>
+												</tr>
+												<tr>
+													<td>
+														<content styleCode="Bold">Telephone Number:</content>
+													</td>
+													<td>0161 2347800 Ext 3200</td>
+													<td>
+														<content styleCode="Bold">Bleep Number:</content>
+													</td>
+													<td>3200</td>
+												</tr>
+												<tr>
+													<td>
+														<content styleCode="Bold">Email:</content>
+													</td>
+													<td colspan="3">phil.preston@nhs.net</td>
+												</tr>
+											</tbody>
+										</table>
+									</text>
+								</section2>
+							</component1>
+						</COCD_TP146061UK02.Section1>
+					</component>
+					<component typeCode="COMP" contextConductionInd="true">
+						<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP146061UK02#Section1"/>
+						<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146219GB01#component"/>
+						<COCD_TP146061UK02.Section1 moodCode="EVN" classCode="DOCSECT">
+							<id root="7D5E5B00-AE1A-19DB-96AE-B18E1F0994CD"/>
+							<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146061UK02#Section1"/>
+							<title>Mental Capacity</title>
+							<component1 typeCode="COMP" contextConductionInd="true">
+								<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146061UK02#component1"/>
+								<section2 moodCode="EVN" classCode="DOCSECT">
+									<id root="7D5E5B00-AE1A-12DB-96AF-B18E1E0994CD"/>
+									<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146061UK02#section2"/>
+									<text>
+										<table width="100%">
+											<tbody>
+												<tr>
+													<th colspan="2">Mental Capacity to Consent</th>
+												</tr>
+												<tr>
+													<td>
+														<content styleCode="Bold">Does the patient have the mental capacity to consent or dissent to the undertaking of the assessment?</content>
+													</td>
+													<td>Yes</td>
+												</tr>
+												<tr>
+													<td>
+														<content styleCode="Bold">If No, Has a Best Interests Decision has been made on behalf of the patient</content>
+													</td>
+													<td/>
+												</tr>
+												<tr>
+													<td>
+														<content styleCode="Bold">If No, Has a Third Party with Lasting Power of Attorney (Welfare), given consent on behalf of the patient</content>
+													</td>
+													<td/>
+												</tr>
+												<tr>
+													<td>
+														<content styleCode="Bold">If No, Has a Third Party appointed Welfare Deputy by the Court of Protection, given consent on behalf of the patient</content>
+													</td>
+													<td/>
+												</tr>
+												<tr>
+													<td>
+														<content styleCode="Bold">The Independent Mental Capacity Advocate has been consulted</content>
+													</td>
+													<td>No</td>
+												</tr>
+											</tbody>
+										</table>
+										<br/>
+										<table width="100%">
+											<tbody>
+												<tr>
+													<th colspan="2">
+														<content styleCode="Bold">The contact details of the individual providing consent on behalf of the patient</content>
+													</th>
+												</tr>
+												<tr align="left" valign="top">
+													<td>
+														<content styleCode="Bold">Name:</content>
+													</td>
+													<td/>
+												</tr>
+												<tr align="left" valign="top">
+													<td>
+														<content styleCode="Bold">Address:</content>
+													</td>
+													<td>
+														<paragraph/>
+														<paragraph/>
+														<paragraph/>
+														<paragraph/>
+														<paragraph/>
+													</td>
+												</tr>
+												<tr align="left" valign="top">
+													<td>
+														<content styleCode="Bold">Telephone Number:</content>
+													</td>
+													<td>
+														<content styleCode="Bold">Bleep Number:</content>
+													</td>
+												</tr>
+												<tr align="left" valign="top">
+													<td>
+														<content styleCode="Bold">Email:</content>
+													</td>
+													<td/>
+												</tr>
+											</tbody>
+										</table>
+									</text>
+								</section2>
+							</component1>
+						</COCD_TP146061UK02.Section1>
+					</component>
+					<component typeCode="COMP" contextConductionInd="true">
+						<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP146061UK02#Section1"/>
+						<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146219GB01#component"/>
+						<COCD_TP146061UK02.Section1 moodCode="EVN" classCode="DOCSECT">
+							<id root="7D5E5B00-AE1A-12DB-96AE-B18E1E0994CD"/>
+							<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146061UK02#Section1"/>
+							<title>Reason for the Fast Track Recommendation</title>
+							<component1 typeCode="COMP" contextConductionInd="true">
+								<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146061UK02#component1"/>
+								<section2 moodCode="EVN" classCode="DOCSECT">
+									<id root="7D5E5B00-AE1A-13DB-96AF-B18E1E0994CD"/>
+									<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146061UK02#section2"/>
+									<text>
+										<table width="100%">
+											<tbody>
+												<tr>
+													<td>
+														<content>Patient terminally ill - on last days of life care pathway. Husband dependent on limited availability of palliative. care respite for breaks. Sitting with patient if none available.
+															<br/>
+															<br/>
+														</content>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</text>
+								</section2>
+							</component1>
+						</COCD_TP146061UK02.Section1>
+					</component>
+					<component typeCode="COMP" contextConductionInd="true">
+						<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP146061UK02#Section1"/>
+						<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146219GB01#component"/>
+						<COCD_TP146061UK02.Section1 moodCode="EVN" classCode="DOCSECT">
+							<id root="7D5E5B00-AE1A-13DB-96AE-B18E1E0994CD"/>
+							<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146061UK02#Section1"/>
+							<title>The Referring Clinician</title>
+							<component1 typeCode="COMP" contextConductionInd="true">
+								<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146061UK02#component1"/>
+								<section2 moodCode="EVN" classCode="DOCSECT">
+									<id root="7D5E5B00-AE1A-13DB-96AF-B18E1E0994CD"/>
+									<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146061UK02#section2"/>
+									<text>
+										<table width="100%">
+											<tbody>
+												<tr>
+													<td>
+														<content styleCode="Bold">Name:</content>
+													</td>
+													<td colspan="3">Dr Phil Preston</td>
+												</tr>
+												<tr>
+													<td>
+														<content styleCode="Bold">Date of Referral:</content>
+													</td>
+													<td colspan="3">20-Oct-2010</td>
+												</tr>
+											</tbody>
+										</table>
+									</text>
+								</section2>
+							</component1>
+						</COCD_TP146061UK02.Section1>
+					</component>
+				</COCD_TP146219GB01.ClassificationSection>
+			</component>
+		</structuredBody>
+	</component>
+	<componentOf typeCode="COMP">
+		<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP146200GB01#EncompassingEncounter"/>
+		<COCD_TP146200GB01.EncompassingEncounter classCode="ENC" moodCode="EVN">
+			<code code="772081000000100" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Continuing Healthcare Process Encounter"/>
+			<dischargeDispositionCode nullFlavor="NA"/>
+			<effectiveTime>
+				<low value="20101010"/>
+			</effectiveTime>
+			<id root="3D616840-AE1A-11DB-9739-B18E1E0994CD"/>
+			<templateId extension="COCD_TP146200GB01#EncompassingEncounter" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<location typeCode="LOC">
+				<npfitlc:contentId extension="COCD_TP145211GB01#HealthCareFacility" root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+				<templateId extension="COCD_TP146200GB01#location" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+				<COCD_TP145211GB01.HealthCareFacility classCode="SDLOC">
+					<code code="42665001" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="nursing home"/>
+					<id root="2.16.840.1.113883.2.1.3.2.4.19.2" extension="V396A"/>
+					<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP145211GB01#HealthCareFacility"/>
+				</COCD_TP145211GB01.HealthCareFacility>
+			</location>
+			<responsibleParty typeCode="RESP">
+				<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP145210GB01#AssignedEntity"/>
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146200GB01#responsibleParty"/>
+				<COCD_TP145210GB01.AssignedEntity classCode="ASSIGNED">
+					<code code="CO" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.124" displayName="Consultant"/>
+					<id root="2.16.840.1.113883.2.1.3.2.4.19.2" extension="1234512353"/>
+					<templateId extension="COCD_TP145210GB01#AssignedEntity" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+					<assignedPerson classCode="PSN" determinerCode="INSTANCE">
+						<name>Dr Preston</name>
+						<templateId extension="COCD_TP145210GB01#assignedPerson" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+					</assignedPerson>
+					<representedOrganization classCode="ORG" determinerCode="INSTANCE">
+						<id root="2.16.840.1.113883.2.1.3.2.4.19.1" extension="V396AD"/>
+						<name>NHS Stockport Primary Care Trust</name>
+						<templateId extension="COCD_TP145210GB01#representedOrganization" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+					</representedOrganization>
+				</COCD_TP145210GB01.AssignedEntity>
+			</responsibleParty>
+		</COCD_TP146200GB01.EncompassingEncounter>
+	</componentOf>
+	<custodian typeCode="CST">
+		<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP145018UK03#AssignedCustodian"/>
+		<COCD_TP145018UK03.AssignedCustodian classCode="ASSIGNED">
+			<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP145018UK03#AssignedCustodian"/>
+			<representedCustodianOrganization determinerCode="INSTANCE" classCode="ORG">
+				<id root="2.16.840.1.113883.2.1.3.2.4.19.1" extension="V396AD"/>
+				<name>NHS Stockport PCT</name>
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP145018UK03#representedCustodianOrganization"/>
+			</representedCustodianOrganization>
+		</COCD_TP145018UK03.AssignedCustodian>
+	</custodian>
+	<informationRecipient typeCode="PRCP">
+		<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP145204GB02#RecipientWorkgroup"/>
+		<COCD_TP145204GB02.RecipientWorkgroup classCode="ASSIGNED">
+			<id root="2.16.840.1.113883.2.1.3.2.4.18.24" extension="102016308888"/>
+			<npfitlc:recipientRoleCode code="01" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.266" displayName="CHC Team"/>
+			<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP145204GB02#RecipientWorkgroup"/>
+			<representedOrganization classCode="ORG" determinerCode="INSTANCE">
+				<id extension="V396AD" root="2.16.840.1.113883.2.1.3.2.4.19.1"/>
+				<name>Stockport NHS Foundation Trust</name>
+				<templateId extension="COCD_TP145204GB02#representedOrganization" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			</representedOrganization>
+		</COCD_TP145204GB02.RecipientWorkgroup>
+	</informationRecipient>
+	<recordTarget typeCode="RCT" contextControlCode="OP">
+		<npfitlc:contentId extension="COCD_TP145201GB02#PatientRole" root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+		<COCD_TP145201GB02.PatientRole classCode="PAT">
+			<addr use="H">
+				<streetAddressLine>Arbour Court</streetAddressLine>
+				<streetAddressLine>Nursing Home</streetAddressLine>
+				<city>Stockport</city>
+				<postalCode>SK3 2PU</postalCode>
+			</addr>
+			<id extension="L12345" root="2.16.840.1.113883.2.1.3.2.4.18.24"/>
+			<id extension="3456789123" root="2.16.840.1.113883.2.1.3.2.4.18.23"/>
+			<telecom value="tel:0161 7456670" use="H"/>
+			<telecom value="mailto: jane.smith@emailfree.co.uk" use="H"/>
+			<templateId extension="COCD_TP145201GB02#PatientRole" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<patientPatient classCode="PSN" determinerCode="INSTANCE">
+				<administrativeGenderCode codeSystem="2.16.840.1.113883.2.1.3.2.4.16.25" displayName="Female" code="2"/>
+				<birthTime value="19410302"/>
+				<name>
+					<prefix>Mrs</prefix>
+					<family>Smith</family>
+					<given>Jane</given>
+				</name>
+				<templateId extension="COCD_TP145201GB02#patientPatient" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+				<languageCommunication>
+					<languageCode  code="en"/>
+					<templateId extension="COCD_TP145201GB02#languageCommunication" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+				</languageCommunication>
+			</patientPatient>
+			<providerOrganization classCode="ORG" determinerCode="INSTANCE">
+				<addr use="WP">
+					<streetAddressLine>Riverbank Street</streetAddressLine>
+					<city>Stockport</city>
+					<postalCode>SK4 2RB</postalCode>
+				</addr>
+				<id root="2.16.840.1.113883.2.1.3.2.4.19.1" extension="V396F"/>
+				<name>Weller Medical Practice</name>
+				<standardIndustryClassCode code="001" displayName="GP Practice" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.289"/>
+				<telecom value="tel:01433 111333" use="WP"/>
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP145201GB02#providerOrganization"/>
+			</providerOrganization>
+		</COCD_TP145201GB02.PatientRole>
+	</recordTarget>
+	<tracker typeCode="TRC">
+		<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP145203GB02#IntendedRecipient"/>
+		<COCD_TP145203GB02.IntendedRecipient classCode="ASSIGNED">
+			<telecom nullFlavor="NI"/>
+			<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP145203GB02#IntendedRecipient"/>
+			<representedOrganization classCode="ORG" determinerCode="INSTANCE">
+				<id root="2.16.840.1.113883.2.1.3.2.4.19.1" extension="V396"/>
+				<name>Stockport PCT</name>
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP145203GB02#representedOrganization"/>
+			</representedOrganization>
+		</COCD_TP145203GB02.IntendedRecipient>
+	</tracker>
+</ClinicalDocument>

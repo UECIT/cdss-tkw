@@ -1,0 +1,62 @@
+SCRIPT AF_ACK_HOST_SEND_BA
+# $Id: CO_ACK_001.tst 87 2016-05-06 09:58:33Z sfarrow $
+# used by CO,CS, HSCI and Telehealth  Generates tests AF_ACK_HOST_SEND_IA and AF_ACK_HOST_SEND_BA
+# host ack tests generates a bundle specific request requiring inf ack and bus ack responses
+# looks for the bus_ack acknowledgement from the host
+# Automatically generated from CO_ACK_001.tst
+
+VALIDATOR __TKWROOT__/config/ITK_Telehealth/validator_config/validator.conf
+
+SIMULATOR __SIMULATOR__
+
+STOP WHEN COMPLETE
+
+BEGIN SCHEDULES
+AF_ACK_HOST_SEND_BA TESTS AF_ACK_HOST_SEND_BA___HAPPY_PATH_SERVICE___test1 AF_ACK_HOST_SEND_BA___HAPPY_PATH_SERVICE___test2 AF_ACK_HOST_SEND_BA___HAPPY_PATH_SERVICE___test3 AF_ACK_HOST_SEND_BA___HAPPY_PATH_SERVICE___test4 AF_ACK_HOST_SEND_BA___HAPPY_PATH_SERVICE___test5 AF_ACK_HOST_SEND_BA___HAPPY_PATH_SERVICE___test6 AF_ACK_HOST_SEND_BA___HAPPY_PATH_SERVICE___test7
+END SCHEDULES
+
+BEGIN TESTS
+AF_ACK_HOST_SEND_BA___HAPPY_PATH_SERVICE___test1 SEND_TKW AF_ACK_HOST_SEND_BA TO __TO_URL__ FROM __FROM_URL__/syncsoap __PROFILE_ID_SECTION__ PRETRANSFORM __TKWROOT__/contrib/TKWAutotestManager/transforms/extract_payload.xslt APPLYPRETRANSFORMTO data SYNC ok CORRELATIONCOUNT 2 CORRELATOR BasicTrackingIdCorrelator WITH_PROPERTYSET base+webservices
+AF_ACK_HOST_SEND_BA___HAPPY_PATH_SERVICE___test2 CHAIN ASYNC bus_ack 
+AF_ACK_HOST_SEND_BA___HAPPY_PATH_SERVICE___test3 CHAIN ASYNC bus_ack_asynctimestampok 
+AF_ACK_HOST_SEND_BA___HAPPY_PATH_SERVICE___test4 CHAIN ASYNC bus_ack_asyncmessageidsok 
+AF_ACK_HOST_SEND_BA___HAPPY_PATH_SERVICE___test5 CHAIN ASYNC bus_ack_test5
+AF_ACK_HOST_SEND_BA___HAPPY_PATH_SERVICE___test6 CHAIN ASYNC bus_ack_test6
+AF_ACK_HOST_SEND_BA___HAPPY_PATH_SERVICE___test7 CHAIN ASYNC bus_ack_test7
+END TESTS
+
+BEGIN MESSAGES
+AF_ACK_HOST_SEND_BA USING AF_ACK_HOST_SEND_BA___HAPPY_PATH_SERVICE__ WITH patients ID __INTERACTION_ID___IA_NS_BA_T DISTRIBUTIONENVELOPEWRAP SOAPWRAP AUDITIDENTITY urn:nhs-uk:identity:ods:XZ901 SOAPACTION __HAPPY_PATH_SERVICE__ MIMETYPE __MIME_TYPE__
+END MESSAGES
+
+BEGIN TEMPLATES
+AF_ACK_HOST_SEND_BA___HAPPY_PATH_SERVICE__ __TKWROOT__/contrib/ITK_2_01_Test_Messages/__HAPPY_PATH_MSG__
+END TEMPLATES
+
+BEGIN DATASOURCES
+patients circularwritabletdv __TKWROOT__/contrib/TKWAutotestManager/tstp/patients.tdv
+END DATASOURCES
+
+BEGIN PROPERTYSETS
+webservices
+	SET tks.HttpTransport.listenport __LISTEN_PORT_NUMBER__
+	SET tks.HttpTransport.listenaddr  __LISTEN_ADDR__
+END PROPERTYSETS
+
+BEGIN PASSFAIL
+inf_ack asynchronousxpath /soap:Envelope/soap:Body/itk:DistributionEnvelope/itk:payloads/itk:payload/itk:InfrastructureResponse exists
+bus_ack secondresponsexpath /soap:Envelope/soap:Body/itk:DistributionEnvelope/itk:payloads/itk:payload/hl7:BusinessResponseMessage exists
+ok httpok
+respexists synchronousxpath /soap:Envelope/soap:Body/itk:SimpleMessageResponse exists
+respok synchronousxpath /soap:Envelope/soap:Body/itk:SimpleMessageResponse/text() matches "^(OK|TEST_HARNESS_ID.*)$"
+inf_ack_asynctimestampok asynctimestampislater
+inf_ack_asyncmessageidsok asyncmessageidsdiffer
+bus_ack_asynctimestampok secondresponseasynctimestampislater
+bus_ack_asyncmessageidsok secondresponseasyncmessageidsdiffer
+inf_ack_test5 asyncmessagetrackingidtrackingidrefsmatch
+inf_ack_test6 asyncmessagetimestampinfrastructureresponsetimestampmatch
+inf_ack_test7 asyncmessagetrackingidtrackingidnomatch
+bus_ack_test5 secondresponsesynctrackingidackby3match
+bus_ack_test6 secondresponsesynctrackingidackby2match
+bus_ack_test7 secondresponsesynctrackingidsdiffer
+END PASSFAIL

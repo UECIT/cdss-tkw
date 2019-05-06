@@ -1,0 +1,22 @@
+<Vocabularies xmlns="urn:nhs-itk:ns:201005">
+	<vocabulary version="1.0" status="active" name="TelehealthThresholdAlertType" id="">
+		<concept code="01">
+			<displayName>Telehealth maximum threshold alert</displayName>
+		</concept>
+		<concept code="02">
+			<displayName>Telehealth minimum threshold alert</displayName>
+		</concept>
+		<concept code="03">
+			<displayName>Telehealth target threshold alert</displayName>
+		</concept>
+		<concept code="04">
+			<displayName>Telehealth rate of change alert</displayName>
+		</concept>
+		<concept code="05">
+			<displayName>Telehealth threshold invalid</displayName>
+		</concept>
+		<concept code="06">
+			<displayName>Telehealth threshold expired</displayName>
+		</concept>
+	</vocabulary>
+</Vocabularies>

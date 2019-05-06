@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  
+*****************************************************************************************************************
+* 
+* 	Copyright (c) 2010 NHS Conneccting For Health. All rights reserved.
+*   
+*  	Redistribution and use in source and binary forms, with or without
+*  	modification, are permitted provided that the following conditions
+*  	are met:
+*  		1. Redistributions of source code must retain the above copyright
+*     		notice, this list of conditions and the following disclaimer.
+*  		2. Redistributions in binary form must reproduce the above copyright
+*     		notice, this list of conditions and the following disclaimer in the
+*     		documentation and/or other materials provided with the distribution.
+*  		3. All advertising materials mentioning features or use of this software
+*     		must display the following acknowledgement:
+*       This product includes software developed by Health Level Seven.
+*  	THIS SOFTWARE IS PROVIDED BY NHS Conneccting For Health. AND CONTRIBUTORS "AS IS" AND
+*  	ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+*  	IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+*  	ARE DISCLAIMED.  IN NO EVENT SHALL THE REGENTS OR CONTRIBUTORS BE LIABLE
+*  	FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+*  	DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+*  	OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+*  	HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+*  	LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+*  	OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+*  	SUCH DAMAGE.
+*
+* CHANGE HISTORY:
+*
+* VERSION   DATE       AUTHOR                   LABEL   DESCRIPTION
+* =======   ========== ======================   ======  ===========================================================
+* 1.0       31-03-2010 Cord Oestmann                    Created this WSDL
+* 2.0       16-05-2010 Interoperability Team            Amended this WSDL to make changes to the namespace declarations and the action and callbacks.
+*
+********************************************************************************************************************
+-->
+<wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:itk="urn:nhs-itk:ns:201005" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="advancedEncounterManagement" targetNamespace="urn:nhs-itk:ns:201005">
+	<wsdl:types>
+		<xsd:schema targetNamespace="urn:nhs-itk:ns:201005" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+			<xsd:include schemaLocation="../distributionEnvelope-v2-0.xsd"/>
+			<xsd:include schemaLocation="../ITKMessageTypes-2010-05.xsd"/>
+		</xsd:schema>
+	</wsdl:types>
+	<wsdl:message name="leaveOfAbsenceRequest">
+		<wsdl:part name="leaveOfAbsenceRequest" element="itk:DistributionEnvelope"/>
+	</wsdl:message>
+	<wsdl:message name="returnFromLeaveOfAbsenceRequest">
+		<wsdl:part name="returnFromLeaveOfAbsenceRequest" element="itk:DistributionEnvelope"/>
+	</wsdl:message>
+	<wsdl:message name="cancelLeaveOfAbsenceRequest">
+		<wsdl:part name="cancelLeaveOfAbsenceRequest" element="itk:DistributionEnvelope"/>
+	</wsdl:message>
+	<wsdl:message name="cancelReturnFromLeaveOfAbsenceRequest">
+		<wsdl:part name="cancelReturnFromLeaveOfAbsenceRequest" element="itk:DistributionEnvelope"/>
+	</wsdl:message>
+	<wsdl:message name="acknowledgementResponse">
+		<wsdl:part name="acknowledgementResponse" element="itk:SimpleMessageResponse"/>
+	</wsdl:message>
+	<wsdl:message name="faultResponse">
+		<wsdl:part name="faultResponse" element="itk:ToolkitErrorInfo"/>
+	</wsdl:message>
+	<wsdl:portType name="leaveOfAbsence_ptt">
+		<wsdl:operation name="leaveOfAbsence-v1-0">
+			<wsdl:input message="itk:leaveOfAbsenceRequest"/>
+			<wsdl:output message="itk:acknowledgementResponse"/>
+			<wsdl:fault name="standardFault" message="itk:faultResponse"/>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:portType name="returnFromLeaveOfAbsence_ptt">
+		<wsdl:operation name="returnFromLeaveOfAbsence-v1-0">
+			<wsdl:input message="itk:returnFromLeaveOfAbsenceRequest"/>
+			<wsdl:output message="itk:acknowledgementResponse"/>
+			<wsdl:fault name="standardFault" message="itk:faultResponse"/>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:portType name="cancelLeaveOfAbsence_ptt">
+		<wsdl:operation name="cancelLeaveOfAbsence-v1-0">
+			<wsdl:input message="itk:cancelLeaveOfAbsenceRequest"/>
+			<wsdl:output message="itk:acknowledgementResponse"/>
+			<wsdl:fault name="standardFault" message="itk:faultResponse"/>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:portType name="cancelReturnFromLeaveOfAbsence_ptt">
+		<wsdl:operation name="cancelReturnFromLeaveOfAbsence-v1-0">
+			<wsdl:input message="itk:cancelReturnFromLeaveOfAbsenceRequest"/>
+			<wsdl:output message="itk:acknowledgementResponse"/>
+			<wsdl:fault name="standardFault" message="itk:faultResponse"/>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:binding name="leaveOfAbsence_pttBinding" type="itk:leaveOfAbsence_ptt">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdl:operation name="leaveOfAbsence-v1-0">
+			<soap:operation soapAction="urn:nhs-itk:services:201005:leaveOfAbsence-v1-0" style="document"/>
+			<wsdl:input>
+				<soap:body parts="leaveOfAbsenceRequest" use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body parts="acknowledgementResponse" use="literal"/>
+			</wsdl:output>
+			<wsdl:fault name="standardFault">
+				<soap:fault name="standardFault" use="literal"/>
+			</wsdl:fault>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:binding name="returnFromLeaveOfAbsence_pttBinding" type="itk:returnFromLeaveOfAbsence_ptt">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdl:operation name="returnFromLeaveOfAbsence-v1-0">
+			<soap:operation soapAction="urn:nhs-itk:services:201005:returnFromLeaveOfAbsence-v1-0" style="document"/>
+			<wsdl:input>
+				<soap:body parts="returnFromLeaveOfAbsenceRequest" use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body parts="acknowledgementResponse" use="literal"/>
+			</wsdl:output>
+			<wsdl:fault name="standardFault">
+				<soap:fault name="standardFault" use="literal"/>
+			</wsdl:fault>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:binding name="cancelLeaveOfAbsence_pttBinding" type="itk:cancelLeaveOfAbsence_ptt">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdl:operation name="cancelLeaveOfAbsence-v1-0">
+			<soap:operation soapAction="urn:nhs-itk:services:201005:cancelLeaveOfAbsence-v1-0" style="document"/>
+			<wsdl:input>
+				<soap:body parts="cancelLeaveOfAbsenceRequest" use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body parts="acknowledgementResponse" use="literal"/>
+			</wsdl:output>
+			<wsdl:fault name="standardFault">
+				<soap:fault name="standardFault" use="literal"/>
+			</wsdl:fault>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:binding name="cancelReturnFromLeaveOfAbsence_pttBinding" type="itk:cancelReturnFromLeaveOfAbsence_ptt">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdl:operation name="cancelReturnFromLeaveOfAbsence-v1-0">
+			<soap:operation soapAction="urn:nhs-itk:services:201005:cancelReturnFromLeaveOfAbsence-v1-0" style="document"/>
+			<wsdl:input>
+				<soap:body parts="cancelReturnFromLeaveOfAbsenceRequest" use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body parts="acknowledgementResponse" use="literal"/>
+			</wsdl:output>
+			<wsdl:fault name="standardFault">
+				<soap:fault name="standardFault" use="literal"/>
+			</wsdl:fault>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:service name="leaveOfAbsence-v1-0">
+		<wsdl:documentation>This service is used to broadcast the leaveOfAbsence Event ADT^A21.
+                          From the service consumer perspective it is a fire-and-forget integration pattern.
+                          It returns a receipt acknowledgement from the Toolkit.</wsdl:documentation>
+		<wsdl:port name="leaveOfAbsence_pttPort" binding="itk:leaveOfAbsence_pttBinding">
+			<soap:address location="urn:nhs-itk:services:leaveOfAbsence-v1-0"/>
+		</wsdl:port>
+	</wsdl:service>
+	<wsdl:service name="cancelLeaveOfAbsence-v1-0">
+		<wsdl:documentation>This service is used to broadcast the cancelLeaveOfAbsence Event ADT^A22.
+                          From the service consumer perspective it is a fire-and-forget integration pattern.
+                          It returns a receipt acknowledgement from the Toolkit.</wsdl:documentation>
+		<wsdl:port name="cancelLeaveOfAbsence_pttPort" binding="itk:cancelLeaveOfAbsence_pttBinding">
+			<soap:address location="urn:nhs-itk:services:cancelLeaveOfAbsence-v1-0"/>
+		</wsdl:port>
+	</wsdl:service>
+	<wsdl:service name="returnFromLeaveOfAbsence-v1-0">
+		<wsdl:documentation>This service is used to broadcast the returnFromLeaveOfAbsence Event ADT^A52.
+                          From the service consumer perspective it is a fire-and-forget integration pattern.
+                          It returns a receipt acknowledgement from the Toolkit.</wsdl:documentation>
+		<wsdl:port name="returnFromLeaveOfAbsence_pttPort" binding="itk:returnFromLeaveOfAbsence_pttBinding">
+			<soap:address location="urn:nhs-itk:services:returnFromLeaveOfAbsence-v1-0"/>
+		</wsdl:port>
+	</wsdl:service>
+	<wsdl:service name="cancelReturnFromLeaveOfAbsence-v1-0">
+		<wsdl:documentation>This service is used to broadcast the cancelReturnFromLeaveOfAbsence Event ADT^A53.
+                          From the service consumer perspective it is a fire-and-forget integration pattern.
+                          It returns a receipt acknowledgement from the Toolkit.</wsdl:documentation>
+		<wsdl:port name="cancelReturnFromLeaveOfAbsence_pttPort" binding="itk:cancelReturnFromLeaveOfAbsence_pttBinding">
+			<soap:address location="urn:nhs-itk:services:cancelReturnFromLeaveOfAbsence-v1-0"/>
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>

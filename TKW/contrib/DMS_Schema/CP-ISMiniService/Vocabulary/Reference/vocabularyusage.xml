@@ -1,0 +1,37 @@
+<Vocabularies xmlns="urn:nhs-itk:ns:201005">
+	<vocabulary version="" status="" name="Vocabulary Usage" id="">
+		<concept code="REPC_RM000012GB01">
+			<displayName>TotalReturnedAccessRecords</displayName>
+		</concept>
+		<concept code="REPC_RM000012GB01">
+			<displayName>TotalReturnedChildRecords</displayName>
+		</concept>
+		<concept code="COCT_TP146103GB01">
+			<displayName>LACInformation</displayName>
+		</concept>
+		<concept code="COCT_TP146103GB01">
+			<displayName>LACStartDate</displayName>
+		</concept>
+		<concept code="COCT_TP146103GB01">
+			<displayName>LACEndDate</displayName>
+		</concept>
+		<concept code="COCT_TP146104GB01">
+			<displayName>UCPInformation</displayName>
+		</concept>
+		<concept code="COCT_TP146104GB01">
+			<displayName>UCPStartDate</displayName>
+		</concept>
+		<concept code="COCT_TP146104GB01">
+			<displayName>UCPEndDate</displayName>
+		</concept>
+		<concept code="COCT_TP146105GB01">
+			<displayName>CPPInformation</displayName>
+		</concept>
+		<concept code="COCT_TP146105GB01">
+			<displayName>CPPStartDate</displayName>
+		</concept>
+		<concept code="COCT_TP146105GB01">
+			<displayName>CPPEndDate</displayName>
+		</concept>
+	</vocabulary>
+</Vocabularies>

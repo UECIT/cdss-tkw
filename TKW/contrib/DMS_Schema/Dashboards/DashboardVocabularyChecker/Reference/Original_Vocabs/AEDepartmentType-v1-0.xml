@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vocabulary id="2.16.840.1.113883.2.1.3.2.4.17.299" status="created" name="AEDepartmentType" version="1.0">
+	<concept code="01">
+		<displayName>Emergency departments are a consultant led 24 hour service with full resuscitation facilities and designated accommodation for the reception of accident and emergency patients</displayName>
+	</concept>
+	<concept code="02">
+		<displayName>Consultant led mono specialty accident and emergency service (e.g. ophthalmology, dental) with designated accommodation for the reception of patients</displayName>
+	</concept>
+	<concept code="03">
+		<displayName>Other type of A&amp;E/minor injury activity with designated accommodation for the reception of accident and emergency patients. The department may be doctor led or nurse led and treats at least minor injuries and illnesses and can be routinely accessed without appointment. A service mainly or entirely appointment based (for example a GP Practice or Out-Patient Clinic) is excluded even though it may treat a number of patients with minor illness or injury. Excludes NHS walk-in centres</displayName>
+	</concept>
+	<concept code="04">
+		<displayName>NHS walk in centres</displayName>
+	</concept>
+</vocabulary>

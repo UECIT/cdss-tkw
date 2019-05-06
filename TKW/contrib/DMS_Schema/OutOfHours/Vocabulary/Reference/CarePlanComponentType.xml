@@ -1,0 +1,7 @@
+<Vocabularies xmlns="urn:nhs-itk:ns:201005">
+	<vocabulary version="1.0" status="active" name="CarePlanComponentType" id="">
+		<concept code="CPC">
+			<displayName>Care Plan Component</displayName>
+		</concept>
+	</vocabulary>
+</Vocabularies>

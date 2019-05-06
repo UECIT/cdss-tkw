@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProfileConfigs>
+	<ProfileConfig xmlns:iops="urn:GB-en-NHS:iops">
+		<profileId extension="urn:nhs-en:profile:outOfHoursReport-v1-1" root="2.16.840.1.113883.2.1.3.2.4.18.28"/>
+		<messageType code="POCD_MT020001UK01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.17" displayName="Out of Hours Report"/>
+		<configGroup type="Templates">
+			<configItem code="COCD_TP145001UK03" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="AuthorSDS"/>
+			<configItem code="COCD_TP145002UK03" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="AuthorNonSDSWithOrgNonSDS"/>
+			<configItem code="COCD_TP145003UK03" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="AuthorNonSDSWithOrgSDS"/>
+			<configItem code="COCD_TP145004UK03" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="EntitySDS"/>
+			<configItem code="COCD_TP145005UK03" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="EntityNonSDSWithOrgSDS"/>
+			<configItem code="COCD_TP145006UK03" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="EntityNonSDSWithOrgNonSDS"/>
+			<configItem code="COCD_TP145007UK03" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="RelatedEntity"/>
+			<configItem code="COCD_TP145007UK04" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="RelatedEntity"/>
+			<configItem code="COCD_TP145008UK03" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="ServiceDeliveryLocationSDS"/>
+			<configItem code="COCD_TP145012UK03" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="NonNamedPersonWithOrgSDS"/>
+			<configItem code="COCD_TP145013UK03" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="NonNamedPersonUniversal"/>
+			<configItem code="COCD_TP145014UK03" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="IncidentalLocation"/>
+			<configItem code="COCD_TP145017UK03" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="RecipientOrganization"/>
+			<configItem code="COCD_TP145018UK03" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="CustodianOrganizationUniversal"/>
+			<configItem code="COCD_TP145020UK03" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="Patient"/>
+			<configItem code="COCD_TP145021UK04" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="RecipientEntitySDS"/>
+			<configItem code="COCD_TP145021UK05" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="RecipientEntitySDS"/>
+			<configItem code="COCD_TP145022UK02" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="EntitySDSWithRequiredRoleProfileId"/>
+			<configItem code="COCD_TP145024UK01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="HealthCareFacility"/>
+			<configItem code="COCD_TP145025UK01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="ServiceDeliveryLocationUniversal"/>
+			<configItem code="COCD_TP145200GB01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="AuthorPersonUniversal"/>
+			<configItem code="COCD_TP145201GB01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="PatientUniversal"/>
+			<configItem code="COCD_TP145202GB01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="RecipientPersonUniversal"/>
+			<configItem code="COCD_TP145202GB02" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="RecipientPersonUniversal"/>
+			<configItem code="COCD_TP145203GB02" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="RecipientOrganizationUniversal"/>
+			<configItem code="COCD_TP145203GB03" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="RecipientOrganizationUniversal"/>
+			<configItem code="COCD_TP145205GB01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="PersonUniversal"/>
+			<configItem code="COCD_TP145207GB01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="AuthorDeviceUniversal"/>
+			<configItem code="COCD_TP145208GB01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="AuthorNonNamedPersonUniversal"/>
+			<configItem code="COCD_TP145210GB01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="PersonWithOrganizationUniversal"/>
+			<configItem code="COCD_TP145211GB01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="HealthCareFacilityUniversal"/>
+			<configItem code="COCD_TP145212GB02" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="WorkgroupUniversal"/>
+			<configItem code="COCD_TP145213GB01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="RelatedSubject"/>
+			<configItem code="COCD_TP145220GB01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="PersonParticipantWithOrganizationUniversal"/>
+			<configItem code="COCD_TP146001UK04" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="LifeStyleSNOMEDCT"/>
+			<configItem code="COCD_TP146002UK04" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="SmokingSNOMEDCT"/>
+			<configItem code="COCD_TP146003UK04" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="AlcoholIntakeSNOMEDCT"/>
+			<configItem code="COCD_TP146004UK04" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="SocialOrPersonalCircumstanceSNOMEDCT"/>
+			<configItem code="COCD_TP146005UK04" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="CareEventSNOMEDCT"/>
+			<configItem code="COCD_TP146005UK05" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="CareEventSNOMEDCT"/>
+			<configItem code="COCD_TP146006UK04" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="ProblemSNOMEDCT"/>
+			<configItem code="COCD_TP146007UK04" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="LinkAssertionSNOMEDCT"/>
+			<configItem code="COCD_TP146008UK04" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="ProblemMemberAssertionSNOMEDCT"/>
+			<configItem code="COCD_TP146009UK04" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="ProblemLinkAssertionSNOMEDCT"/>
+			<configItem code="COCD_TP146010UK04" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="RiskToPersonSNOMEDCT"/>
+			<configItem code="COCD_TP146011UK04" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="DiagnosisSNOMEDCT"/>
+			<configItem code="COCD_TP146012UK04" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="FindingSNOMEDCT"/>
+			<configItem code="COCD_TP146013UK04" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="BloodPressureSNOMEDCT"/>
+			<configItem code="COCD_TP146014UK04" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="WeightSNOMEDCT"/>
+			<configItem code="COCD_TP146015UK04" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="HeightSNOMEDCT"/>
+			<configItem code="COCD_TP146016UK04" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="TemperatureSNOMEDCT"/>
+			<configItem code="COCD_TP146017UK04" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="OrganizedFindingSNOMEDCT"/>
+			<configItem code="COCD_TP146018UK04" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="FamilyHistorySNOMEDCT"/>
+			<configItem code="COCD_TP146019UK04" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="InvestigationSNOMEDCT"/>
+			<configItem code="COCD_TP146020UK04" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="PersonalPreferenceSNOMEDCT"/>
+			<configItem code="COCD_TP146021UK05" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="ServiceSNOMEDCT"/>
+			<configItem code="COCD_TP146021UK06" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="ServiceSNOMEDCT"/>
+			<configItem code="COCD_TP146022UK04" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="AllergicOrAdverseReactionEventSNOMEDCT"/>
+			<configItem code="COCD_TP146023UK04" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="ProvisionOfAdviceAndInformationSNOMEDCT"/>
+			<configItem code="COCD_TP146024UK04" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="AdministrativeProcedureSNOMEDCT"/>
+			<configItem code="COCD_TP146025UK04" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="AllergyPropensitySNOMEDCT"/>
+			<configItem code="COCD_TP146026UK04" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="RiskToPatientSNOMEDCT"/>
+			<configItem code="COCD_TP146027UK04" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="TreatmentSNOMEDCT"/>
+			<configItem code="COCD_TP146029UK04" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="MedicationAdministrationDoseSNOMEDCT"/>
+			<configItem code="COCD_TP146030UK04" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="MedicationAdministrationCourseSNOMEDCT"/>
+			<configItem code="COCD_TP146032UK04" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="RequestMedicationSupplySNOMEDCT"/>
+			<configItem code="COCD_TP146033UK04" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="SupplyMedicationSNOMEDCT"/>
+			<configItem code="COCD_TP146033UK05" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="SupplyMedicationSNOMEDCT"/>
+			<configItem code="COCD_TP146037UK04" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="PatientMovementSNOMEDCT"/>
+			<configItem code="COCD_TP146060UK01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="EncompassingEncounterSNOMEDCT"/>
+			<configItem code="COCD_TP146061UK01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="TextSection"/>
+			<configItem code="COCD_TP146061UK02" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="TextSection"/>
+			<configItem code="COCD_TP146062UK01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="CRETypeListSNOMEDCT"/>
+			<configItem code="COCD_TP146224GB01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="Attachment"/>
+			<configItem code="COCD_TP146224GB02" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="Attachment"/>
+			<configItem code="COCD_TP146301GB01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="LifeStyle"/>
+			<configItem code="COCD_TP146302GB01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="Smoking"/>
+			<configItem code="COCD_TP146303GB01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="AlcoholIntake"/>
+			<configItem code="COCD_TP146304GB01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="SocialOrPersonalCircumstance"/>
+			<configItem code="COCD_TP146305GB02" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="CareEvent"/>
+			<configItem code="COCD_TP146306GB01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="Problem"/>
+			<configItem code="COCD_TP146307GB01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="LinkAssertion"/>
+			<configItem code="COCD_TP146308GB01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="ProblemMemberAssertion"/>
+			<configItem code="COCD_TP146309GB01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="ProblemLinkAssertion"/>
+			<configItem code="COCD_TP146310GB01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="RiskToPerson"/>
+			<configItem code="COCD_TP146311GB01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="Diagnosis"/>
+			<configItem code="COCD_TP146312GB01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="Finding"/>
+			<configItem code="COCD_TP146313GB01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="BloodPressure"/>
+			<configItem code="COCD_TP146314GB01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="Weight"/>
+			<configItem code="COCD_TP146315GB01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="Height"/>
+			<configItem code="COCD_TP146316GB01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="Temperature"/>
+			<configItem code="COCD_TP146317GB01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="OrganizedFinding"/>
+			<configItem code="COCD_TP146318GB01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="FamilyHistory"/>
+			<configItem code="COCD_TP146319GB01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="Investigation"/>
+			<configItem code="COCD_TP146320GB01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="PersonalPreference"/>
+			<configItem code="COCD_TP146321GB02" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="Service"/>
+			<configItem code="COCD_TP146322GB01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="AllergicOrAdverseReactionEvent"/>
+			<configItem code="COCD_TP146323GB01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="ProvisionOfAdviceAndInformation"/>
+			<configItem code="COCD_TP146324GB01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="AdministrativeProcedure"/>
+			<configItem code="COCD_TP146325GB01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="AllergyPropensity"/>
+			<configItem code="COCD_TP146326GB01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="RiskToPatient"/>
+			<configItem code="COCD_TP146327GB01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="Treatment"/>
+			<configItem code="COCD_TP146329GB01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="MedicationAdministrationDose"/>
+			<configItem code="COCD_TP146330GB01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="MedicationAdministrationCourse"/>
+			<configItem code="COCD_TP146332GB01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="RequestMedicationSupply"/>
+			<configItem code="COCD_TP146333GB01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="SupplyMedication"/>
+			<configItem code="COCD_TP146337GB01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="PatientMovement"/>
+			<configItem code="COCD_TP146360GB01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="EncompassingEncounter"/>
+			<configItem code="COCD_TP146360GB02" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="EncompassingEncounter"/>
+			<configItem code="COCD_TP147001UK03" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="LifeStyleRef"/>
+			<configItem code="COCD_TP147002UK03" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="SmokingRef"/>
+			<configItem code="COCD_TP147003UK03" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="AlcoholIntakeRef"/>
+			<configItem code="COCD_TP147004UK03" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="SocialOrPersonalCircumstanceRef"/>
+			<configItem code="COCD_TP147005UK03" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="CareEventRef"/>
+			<configItem code="COCD_TP147006UK03" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="ProblemRef"/>
+			<configItem code="COCD_TP147010UK03" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="RiskToPersonRef"/>
+			<configItem code="COCD_TP147011UK03" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="DiagnosisRef"/>
+			<configItem code="COCD_TP147012UK03" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="FindingRef"/>
+			<configItem code="COCD_TP147013UK03" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="BloodPressureRef"/>
+			<configItem code="COCD_TP147014UK03" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="WeightRef"/>
+			<configItem code="COCD_TP147015UK03" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="HeightRef"/>
+			<configItem code="COCD_TP147016UK03" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="TemperatureRef"/>
+			<configItem code="COCD_TP147017UK03" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="FindingOrganizerRef"/>
+			<configItem code="COCD_TP147018UK03" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="FamilyHistoryRef"/>
+			<configItem code="COCD_TP147019UK03" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="InvestigationRef"/>
+			<configItem code="COCD_TP147020UK03" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="PersonalPreferenceRef"/>
+			<configItem code="COCD_TP147021UK03" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="ServiceRef"/>
+			<configItem code="COCD_TP147022UK03" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="AllergicOrAdverseReactionEventRef"/>
+			<configItem code="COCD_TP147023UK03" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="ProvisionOfAdviceAndInformationRef"/>
+			<configItem code="COCD_TP147024UK03" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="AdministrativeProcedureRef"/>
+			<configItem code="COCD_TP147025UK03" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="AllergyPropensityRef"/>
+			<configItem code="COCD_TP147026UK03" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="RiskToPatientRef"/>
+			<configItem code="COCD_TP147027UK03" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="TreatmentRef"/>
+			<configItem code="COCD_TP147029UK04" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="MedicationAdministrationDoseRef"/>
+			<configItem code="COCD_TP147030UK04" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="MedicationAdministrationCourseRef"/>
+			<configItem code="COCD_TP147031UK04" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="PlanMedicationAdministrationRef"/>
+			<configItem code="COCD_TP147032UK03" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="RequestMedicationSupplyRef"/>
+			<configItem code="COCD_TP147033UK03" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="SupplyMedicationRef"/>
+			<configItem code="COCD_TP147034UK03" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="RequestMedicationAdministrationRef"/>
+			<configItem code="COCD_TP147037UK03" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="PatientMovementRef"/>
+			<configItem code="COCD_TP147038UK03" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="DischargeRef"/>
+			<configItem code="COCD_TP147065UK01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="AssessmentEventRef"/>
+			<configItem code="COCD_TP147066UK01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="PhysicalWellBeingRef"/>
+			<configItem code="COCD_TP147067UK01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="ActivityOfDailyLivingRef"/>
+			<configItem code="COCD_TP147068UK01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="HousingRef"/>
+			<configItem code="COCD_TP147069UK01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="MobilityRef"/>
+			<configItem code="COCD_TP147070UK01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="MentalEmotionalWellBeingRef"/>
+			<configItem code="COCD_TP147071UK01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="FinancesRef"/>
+			<configItem code="COCD_TP147072UK01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="SecurityAbuseDiscriminationRef"/>
+			<configItem code="COCD_TP147073UK01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="EmploymentRef"/>
+			<configItem code="COCD_TP147074UK01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="AccommodationRef"/>
+			<configItem code="COCD_TP147075UK01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="CarePlanRef"/>
+			<configItem code="COCD_TP147100UK01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="AssessmentRef"/>
+			<configItem code="COCD_TP147301GB01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="LifeStyleRef"/>
+			<configItem code="COCD_TP147302GB01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="SmokingRef"/>
+			<configItem code="COCD_TP147303GB01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="AlcoholIntakeRef"/>
+			<configItem code="COCD_TP147304GB01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="SocialOrPersonalCircumstanceRef"/>
+			<configItem code="COCD_TP147305GB02" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="CareEventRef"/>
+			<configItem code="COCD_TP147306GB01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="ProblemRef"/>
+			<configItem code="COCD_TP147310GB01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="RiskToPersonRef"/>
+			<configItem code="COCD_TP147311GB01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="DiagnosisRef"/>
+			<configItem code="COCD_TP147312GB01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="FindingRef"/>
+			<configItem code="COCD_TP147313GB01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="BloodPressureRef"/>
+			<configItem code="COCD_TP147314GB01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="WeightRef"/>
+			<configItem code="COCD_TP147315GB01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="HeightRef"/>
+			<configItem code="COCD_TP147316GB01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="TemperatureRef"/>
+			<configItem code="COCD_TP147317GB01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="FindingOrganizerRef"/>
+			<configItem code="COCD_TP147318GB01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="FamilyHistoryRef"/>
+			<configItem code="COCD_TP147319GB01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="InvestigationRef"/>
+			<configItem code="COCD_TP147320GB01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="PersonalPreferenceRef"/>
+			<configItem code="COCD_TP147321GB02" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="ServiceRef"/>
+			<configItem code="COCD_TP147322GB01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="AllergyEventRef"/>
+			<configItem code="COCD_TP147323GB01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="ProvisionOfAdviceAndInformationRef"/>
+			<configItem code="COCD_TP147324GB01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="AdministrativeProcedureRef"/>
+			<configItem code="COCD_TP147325GB01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="AllergyRef"/>
+			<configItem code="COCD_TP147326GB01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="RiskToPatientRef"/>
+			<configItem code="COCD_TP147327GB01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="TreatmentRef"/>
+			<configItem code="COCD_TP147329GB01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="MedicationAdministrationDoseRef"/>
+			<configItem code="COCD_TP147330GB01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="MedicationAdministrationCourseRef"/>
+			<configItem code="COCD_TP147331GB01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="PlanMedicationAdministrationRef"/>
+			<configItem code="COCD_TP147332GB01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="RequestMedicationSupplyRef"/>
+			<configItem code="COCD_TP147333GB01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="SupplyMedicationRef"/>
+			<configItem code="COCD_TP147334GB01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="RequestMedicationAdministrationRef"/>
+			<configItem code="COCD_TP147337GB01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="PatientMovementRef"/>
+			<configItem code="COCD_TP147338GB01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="DischargeRef"/>
+			<configItem code="COCD_TP147365GB02" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="AssessmentEventRef"/>
+			<configItem code="COCD_TP147366GB01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="PhysicalWellBeingRef"/>
+			<configItem code="COCD_TP147367GB01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="ActivityOfDailyLivingRef"/>
+			<configItem code="COCD_TP147368GB01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="HousingRef"/>
+			<configItem code="COCD_TP147369GB01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="MobilityRef"/>
+			<configItem code="COCD_TP147370GB01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="MentalEmotionalWellBeingRef"/>
+			<configItem code="COCD_TP147371GB01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="FinancesRef"/>
+			<configItem code="COCD_TP147372GB01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="SecurityAbuseDiscriminationRef"/>
+			<configItem code="COCD_TP147373GB01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="EmploymentRef"/>
+			<configItem code="COCD_TP147374GB01" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="AccommodationRef"/>
+			<configItem code="COCD_TP147375GB02" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2" displayName="CarePlanRef"/>
+		</configGroup>
+		<configGroup type="Vocabularies">
+			<configItem codeSystem="2.16.840.1.113883.5.14" codeSystemName="ActStatus" codeSystemVersion="1.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.15" codeSystemName="AdministrationSnCT" codeSystemVersion="2.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.15" codeSystemName="AdministrativeProcedureTypeSnCT" codeSystemVersion="2.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.15" codeSystemName="AdviceAndInformationSnCT" codeSystemVersion="3.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.15" codeSystemName="AlcoholSnCT" codeSystemVersion="3.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.15" codeSystemName="AllergyOrAdverseReactionDESnCT" codeSystemVersion="2.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.15" codeSystemName="AllergyOrAdverseReactionIdentSnCT" codeSystemVersion="2.0"/>-->
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.17.178" codeSystemName="AuthorFunctionType" codeSystemVersion="1.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.15" codeSystemName="BloodPressureSnCT" codeSystemVersion="2.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.15" codeSystemName="BodyWeightSnCT" codeSystemVersion="2.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.17.185" codeSystemName="CDAAdministrationType" codeSystemVersion="1.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.15" codeSystemName="CDACareSettingTypeSnCT" codeSystemVersion="2.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.17.223" codeSystemName="CDADocumentSectionType" codeSystemVersion="6.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.15" codeSystemName="CDADocumentTypeSnCT" codeSystemVersion="5.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.15" codeSystemName="CDAEncounterSnCT" codeSystemVersion="2.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.17.186" codeSystemName="CDAJobRoleName" codeSystemVersion="4.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.17.289" codeSystemName="CDAOrganizationProviderType" codeSystemVersion="1.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.17.191" codeSystemName="CDAOrganizationType" codeSystemVersion="1.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.16.45" codeSystemName="CDAPersonRelationshipType" codeSystemVersion="4.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.17.192" codeSystemName="CDAPrescriptionAnnotation" codeSystemVersion="1.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.17.314" codeSystemName="CodedEntryCode" codeSystemVersion="1.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.15" codeSystemName="CRETypeSnCT" codeSystemVersion="2.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.15" codeSystemName="DiagnosisTypeSnCT" codeSystemVersion="2.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.15" codeSystemName="EncounterDispositionSnCT" codeSystemVersion="1.0"/>
+			<configItem codeSystem="2.16.840.1.113883.5.30" codeSystemName="EntityDeterminer" codeSystemVersion="1.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.15" codeSystemName="FamilyHistorySnCT" codeSystemVersion="2.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.15" codeSystemName="FindingTypeSnCT" codeSystemVersion="2.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.15" codeSystemName="HeightSnCT" codeSystemVersion="3.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.17.70" codeSystemName="HumanLanguage" codeSystemVersion="4.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.15" codeSystemName="IncidentalLocationTypeSnCT" codeSystemVersion="2.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.15" codeSystemName="InvestigationTypeSnCT" codeSystemVersion="2.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.17.124" codeSystemName="JobRoleName" codeSystemVersion="3.0"/>
+			<configItem codeSystem="2.16.840.1.113883.5.60" codeSystemName="LanguageAbilityMode" codeSystemVersion="1.0"/>
+			<configItem codeSystem="2.16.840.1.113883.5.61" codeSystemName="LanguageAbilityProficiency" codeSystemVersion="1.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.15" codeSystemName="LifestyleSnCT" codeSystemVersion="2.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.15" codeSystemName="LinkAssertionSnCT" codeSystemVersion="2.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.15" codeSystemName="ManufacturedMaterialSnCT" codeSystemVersion="2.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.17.332" codeSystemName="ManufacturerModelName" codeSystemVersion="1.0"/>
+			<configItem codeSystem="2.16.840.1.113883.5.83" codeSystemName="ObservationInterpretation" codeSystemVersion="1.0"/>
+			<configItem codeSystem="2.16.840.1.113883.5.1064" codeSystemName="ParticipationMode" codeSystemVersion="1.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.15" codeSystemName="PersonalPreferenceSnCT" codeSystemVersion="2.0"/>
+			<configItem codeSystem="2.16.840.1.113883.1.11.19563" codeSystemName="PersonalRelationshipRoleType" codeSystemVersion="1.0"/>
+			<configItem codeSystem="2.16.840.1.113883.1.11.16100" codeSystemName="PlaceEntityType" codeSystemVersion="1.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.15" codeSystemName="RiskToPersonSnCT" codeSystemVersion="2.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.17.196" codeSystemName="SDSJobRoleName" codeSystemVersion="3.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.15" codeSystemName="ServicesSnCT" codeSystemVersion="2.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.16.25" codeSystemName="Sex" codeSystemVersion="1.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.15" codeSystemName="SmokingSnCT" codeSystemVersion="3.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.15" codeSystemName="SnomedCT" codeSystemVersion="1.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.15" codeSystemName="SocialOrPersonalCircumstanceSnCT" codeSystemVersion="2.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.17.333" codeSystemName="SoftwareName" codeSystemVersion="1.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.15" codeSystemName="SpecimenMaterialTypeSnCT" codeSystemVersion="2.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.15" codeSystemName="SupplyRequestSnCT" codeSystemVersion="2.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.15" codeSystemName="SupplySnCT" codeSystemVersion="2.0"/>
+			<configItem codeSystem="2.16.840.1.113883.5.137" codeSystemName="TargetAwareness" codeSystemVersion="1.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.15" codeSystemName="TemperatureObservationTypeSnCT" codeSystemVersion="2.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.15" codeSystemName="TreatmentTypeSnCT" codeSystemVersion="2.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.17.266" codeSystemName="WorkgroupRoleName" codeSystemVersion="1.0"/>
+			<configItem codeSystem="2.16.840.1.113883.1.11.16926" codeSystemName="x_BasicConfidentialityKind" codeSystemVersion="1.0"/>
+			<configItem codeSystem="2.16.840.1.113883.1.11.19368" codeSystemName="x_DocumentSubject" codeSystemVersion="1.0"/>
+			<configItem codeSystem="2.16.840.1.113883.1.11.19600" codeSystemName="x_EncounterParticipant" codeSystemVersion="1.0"/>
+		</configGroup>
+		<configGroup type="TemplateConstraints">
+			<configItem name="NPFIT-000001#Act" version="2.0"/>
+			<configItem name="NPFIT-000001#ActRef" version="6.0"/>
+			<configItem name="NPFIT-000001#Role" version="4.0"/>
+			<configItem name="NPFIT-000001#Section" version="7.0"/>
+			<configItem name="NPFIT-000002#ActRef" version="4.0"/>
+			<configItem name="NPFIT-000002#Role" version="5.0"/>
+			<configItem name="NPFIT-000003#ActRef" version="3.0"/>
+			<configItem name="NPFIT-000003#Role" version="5.0"/>
+			<configItem name="NPFIT-000004#ActRef" version="4.0"/>
+			<configItem name="NPFIT-000004#Role" version="4.0"/>
+			<configItem name="NPFIT-000005#ActRef" version="4.0"/>
+			<configItem name="NPFIT-000005#Role" version="4.0"/>
+			<configItem name="NPFIT-000006#ActRef" version="4.0"/>
+			<configItem name="NPFIT-000006#Role" version="4.0"/>
+			<configItem name="NPFIT-000007#ActRef" version="3.0"/>
+			<configItem name="NPFIT-000007#Role" version="5.0"/>
+			<configItem name="NPFIT-000008#Act" version="3.0"/>
+			<configItem name="NPFIT-000008#Role" version="7.0"/>
+			<configItem name="NPFIT-000009#ActRef" version="4.0"/>
+			<configItem name="NPFIT-000010#ActRef" version="2.0"/>
+			<configItem name="NPFIT-000011#ActRef" version="5.0"/>
+			<configItem name="NPFIT-000013#ActRef" version="4.0"/>
+			<configItem name="NPFIT-000014#ActRef" version="3.0"/>
+			<configItem name="NPFIT-000014#Role" version="6.0"/>
+			<configItem name="NPFIT-000015#ActRef" version="3.0"/>
+			<configItem name="NPFIT-000016#Role" version="6.0"/>
+			<configItem name="NPFIT-000018#Act" version="3.0"/>
+			<configItem name="NPFIT-000018#ActRef" version="1.0"/>
+			<configItem name="NPFIT-000019#Role" version="6.0"/>
+			<configItem name="NPFIT-000020#ActRef" version="1.0"/>
+			<configItem name="NPFIT-000021#Role" version="5.0"/>
+			<configItem name="NPFIT-000024#Role" version="6.0"/>
+			<configItem name="NPFIT-000026#Role" version="3.0"/>
+			<configItem name="NPFIT-000027#Act" version="1.0"/>
+			<configItem name="NPFIT-000027#ActRef" version="1.0"/>
+			<configItem name="NPFIT-000027#Role" version="2.0"/>
+			<configItem name="NPFIT-000028#Role" version="6.0"/>
+			<configItem name="NPFIT-000032#Section" version="5.0"/>
+			<configItem name="NPFIT-000033#Section" version="3.0"/>
+			<configItem name="NPFIT-000044#Role" version="1.0"/>
+			<configItem name="NPFIT-000070#Role" version="1.0"/>
+			<configItem name="NPFIT-000081#Role" version="1.0"/>
+			<configItem name="NPFIT-000085#Role" version="1.0"/>
+			<configItem name="NPFIT-000301#ActRef" version="1.0"/>
+			<configItem name="NPFIT-000302#ActRef" version="1.0"/>
+			<configItem name="NPFIT-000303#ActRef" version="1.0"/>
+			<configItem name="NPFIT-000304#ActRef" version="1.0"/>
+			<configItem name="NPFIT-000305#ActRef" version="1.0"/>
+			<configItem name="NPFIT-000306#ActRef" version="1.0"/>
+			<configItem name="NPFIT-000307#ActRef" version="1.0"/>
+			<configItem name="NPFIT-000308#Act" version="1.0"/>
+			<configItem name="NPFIT-000309#ActRef" version="1.0"/>
+			<configItem name="NPFIT-000310#ActRef" version="1.0"/>
+			<configItem name="NPFIT-000311#ActRef" version="1.0"/>
+			<configItem name="NPFIT-000313#ActRef" version="1.0"/>
+			<configItem name="NPFIT-000314#ActRef" version="1.0"/>
+			<configItem name="NPFIT-000315#ActRef" version="1.0"/>
+			<configItem name="NPFIT-000318#Act" version="1.0"/>
+			<configItem name="NPFIT-000318#ActRef" version="1.0"/>
+			<configItem name="NPFIT-000320#ActRef" version="1.0"/>
+			<configItem name="NPFIT-000327#Act" version="1.0"/>
+		</configGroup>
+		<configGroup type="CoreSchemas">
+			<configItem schemaName="CDAVocab.xsd" version="BaselineCDA2005_1.0"/>
+			<configItem schemaName="InfVocab.xsd" version="BaselineCDA2005_1.0"/>
+			<configItem schemaName="datatypes.xsd" version="BaselineCDA2005_1.0"/>
+			<configItem schemaName="datatypeflavours.xsd" version="BaselineCDA2005_1.0"/>
+			<configItem schemaName="infrastructureRoot.xsd" version="1.0"/>
+			<configItem schemaName="datatypes-2005.xsd" version="BaselineCDA2005_1.0"/>
+			<configItem schemaName="NarrativeBlock.xsd" version="1.0"/>
+			<configItem schemaName="NHSLocalisation.xsd" version="BaselineCDA2005_1.0"/>
+			<configItem schemaName="TemplateConfig.xsd" version="1.0"/>
+			<configItem schemaName="xhtmlNPfIT.xsd" version="1.0"/>
+			<configItem schemaName="xhtmlNPfITPresentationText.xsd" version="1.0"/>
+			<configItem schemaName="NHSVocab.xsd" version="3.0"/>
+			<configItem schemaName="commonInclude.xsd" version="1.0"/>
+			<configItem schemaName="voc.xsd" version="BaselineCDA2005_1.0"/>
+		</configGroup>
+	</ProfileConfig>
+</ProfileConfigs>

@@ -1,0 +1,13 @@
+<Vocabularies xmlns="urn:nhs-itk:ns:201005">
+	<vocabulary version="1.0" status="active" name="WithdrawalReason" id="">
+		<concept code="01">
+			<displayName>Sent in error</displayName>
+		</concept>
+		<concept code="02">
+			<displayName>Sent to wrong patient record</displayName>
+		</concept>
+		<concept code="03">
+			<displayName>Sent with incorrect information</displayName>
+		</concept>
+	</vocabulary>
+</Vocabularies>

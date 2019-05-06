@@ -1,0 +1,10 @@
+<Vocabularies xmlns="urn:nhs-itk:ns:201005">
+	<vocabulary version="1.0" status="active" name="GuardianOrganisationType" id="">
+		<concept code="01">
+			<displayName>Local authority</displayName>
+		</concept>
+		<concept code="99">
+			<displayName>Other guardian organisation</displayName>
+		</concept>
+	</vocabulary>
+</Vocabularies>

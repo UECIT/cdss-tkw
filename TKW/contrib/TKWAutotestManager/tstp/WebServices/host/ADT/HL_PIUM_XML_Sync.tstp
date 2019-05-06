@@ -1,0 +1,46 @@
+SCRIPT HL_PIUM_XML_Sync
+# $Id: ADT_sync_p1_skel.tst 74 2016-03-07 13:03:27Z sfarrow $
+# Section 5 ADT HL7v2 Pattern 1 Sync/Async  sync versions Script File skeleton
+# Automatically generated from ADT_sync_p1_skel.tst
+
+VALIDATOR __TKWROOT__/config/ITK_ADT/validator_config/validator.conf
+
+SIMULATOR __SIMULATOR__
+
+STOP WHEN COMPLETE
+
+BEGIN SCHEDULES
+HL_PIUM_XML_Sync TESTS HL_PIUM_XML_Sync___SERVICE___test1 HL_PIUM_XML_Sync___SERVICE___test2 HL_PIUM_XML_Sync___SERVICE___test3 HL_PIUM_XML_Sync___SERVICE___test4 
+END SCHEDULES
+
+BEGIN TESTS
+HL_PIUM_XML_Sync___SERVICE___test1 SEND_TKW HL_PIUM_XML_Sync TO __TO_URL__ FROM __FROM_URL__/syncsoap SYNC ok WITH_PROPERTYSET  base+webservices
+#three underscores required for merge to identify the test case id and perform the substitution
+HL_PIUM_XML_Sync___SERVICE___test2 CHAIN SYNC HL_PIUM_XML_Sync___actioncorrect
+HL_PIUM_XML_Sync___SERVICE___test3 CHAIN SYNC synctimestampok
+HL_PIUM_XML_Sync___SERVICE___test4 CHAIN SYNC syncmessageidsok
+END TESTS
+
+BEGIN MESSAGES
+HL_PIUM_XML_Sync USING HL_PIUM_XML_Sync___SERVICE___template WITH NULL SOAPACTION __SERVICE__
+END MESSAGES
+
+BEGIN TEMPLATES
+HL_PIUM_XML_Sync___SERVICE___template __TKWROOT__/contrib/ITK_2_01_Test_Messages/__SAMPLE_FILE__
+END TEMPLATES
+
+BEGIN PROPERTYSETS
+webservices
+	SET tks.HttpTransport.listenport __LISTEN_PORT_NUMBER__
+	SET tks.HttpTransport.listenaddr  __LISTEN_ADDR__
+END PROPERTYSETS
+
+BEGIN PASSFAIL
+ok httpok
+respexists synchronousxpath /soap:Envelope/soap:Body/itk:SimpleMessageResponse exists
+respok synchronousxpath /soap:Envelope/soap:Body/itk:SimpleMessageResponse/text() matches "^(OK|TEST_HARNESS_ID.*)$"
+#three underscores required for merge to identify the test case id and perform the substitution
+HL_PIUM_XML_Sync___actioncorrect synchronousxpath /soap:Envelope/soap:Header/wsa:Action matches "^__SERVICE__Response$"
+synctimestampok synctimestampislater
+syncmessageidsok syncmessageidsdiffer
+END PASSFAIL

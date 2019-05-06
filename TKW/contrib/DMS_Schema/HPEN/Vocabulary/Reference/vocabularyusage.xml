@@ -1,0 +1,16 @@
+<Vocabularies xmlns="urn:nhs-itk:ns:201005">
+	<vocabulary version="" status="" name="Vocabulary Usage" id="">
+		<concept code="POCD_RM000020GB01">
+			<displayName>ClinicalDocument</displayName>
+		</concept>
+		<concept code="POCD_RM000020GB01">
+			<displayName>ParentDocument</displayName>
+		</concept>
+		<concept code="POCD_RM000021GB01">
+			<displayName>ClinicalDocument</displayName>
+		</concept>
+		<concept code="POCD_RM000021GB01">
+			<displayName>ParentDocument</displayName>
+		</concept>
+	</vocabulary>
+</Vocabularies>

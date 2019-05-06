@@ -1,0 +1,50 @@
+SCRIPT HL_PIUM_XML_Async
+# $Id: ADT_async_p1_skel.tst 74 2016-03-07 13:03:27Z sfarrow $
+# Section 5 ADT HL7v2 Asynchronous XML payload Test Script File skeleton
+# Automatically generated from ADT_async_p1_skel.tst
+
+# NB this references the *internal* autotest simulator rules applied when listening for async messages not the rule set autotest applies which are referenced in the main properties file
+
+VALIDATOR __TKWROOT__/config/ITK_ADT/validator_config/validator.conf
+
+SIMULATOR __SIMULATOR__
+
+STOP WHEN COMPLETE
+
+BEGIN SCHEDULES
+HL_PIUM_XML_Async TESTS HL_PIUM_XML_Async___SERVICE___test1_async HL_PIUM_XML_Async___SERVICE___test2_async HL_PIUM_XML_Async___SERVICE___test3_async HL_PIUM_XML_Async___SERVICE___test4_async HL_PIUM_XML_Async___SERVICE___test5_async HL_PIUM_XML_Async___SERVICE___test6_async
+END SCHEDULES
+
+BEGIN TESTS
+HL_PIUM_XML_Async___SERVICE___test1_async SEND_TKW HL_PIUM_XML_Async TO __TO_URL__ FROM __FROM_URL__/asyncsoap REPLYTO __FROM_URL__/syncsoap PRETRANSFORM __TKWROOT__/contrib/TKWAutotestManager/transforms/extract_de.xslt APPLYPRETRANSFORMTO data SYNC accepted WITH_PROPERTYSET base+webservices
+HL_PIUM_XML_Async___SERVICE___test2_async CHAIN SYNC contentlengthok
+#three underscores required for merge to identify the test case id and perform the substitution
+HL_PIUM_XML_Async___SERVICE___test3_async CHAIN ASYNC HL_PIUM_XML_Async___actioncorrect
+HL_PIUM_XML_Async___SERVICE___test4_async CHAIN ASYNC asyncrelatestook
+HL_PIUM_XML_Async___SERVICE___test5_async CHAIN ASYNC asynctimestampok
+HL_PIUM_XML_Async___SERVICE___test6_async CHAIN ASYNC asyncmessageidsok
+END TESTS
+
+BEGIN MESSAGES
+HL_PIUM_XML_Async USING HL_PIUM_XML_Async___SERVICE___template_async WITH NULL SOAPWRAP SOAPACTION __SERVICE__ 
+END MESSAGES
+
+BEGIN TEMPLATES
+HL_PIUM_XML_Async___SERVICE___template_async __TKWROOT__/contrib/ITK_2_01_Test_Messages/__SAMPLE_FILE__
+END TEMPLATES
+
+BEGIN PROPERTYSETS
+webservices
+	SET tks.HttpTransport.listenport __LISTEN_PORT_NUMBER__
+	SET tks.HttpTransport.listenaddr  __LISTEN_ADDR__
+END PROPERTYSETS
+
+BEGIN PASSFAIL
+accepted httpaccepted
+#three underscores required for merge to identify the test case id and perform the substitution
+HL_PIUM_XML_Async___actioncorrect asynchronousxpath /soap:Envelope/soap:Header/wsa:Action matches "^__SERVICE__Response$"
+asynctimestampok asynctimestampislater
+asyncmessageidsok asyncmessageidsdiffer
+asyncrelatestook asyncrelatestomatches
+contentlengthok zerocontentlength
+END PASSFAIL

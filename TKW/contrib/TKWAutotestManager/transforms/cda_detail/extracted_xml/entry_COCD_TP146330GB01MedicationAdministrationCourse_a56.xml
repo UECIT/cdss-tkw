@@ -1,0 +1,80 @@
+<entry xmlns="urn:hl7-org:v3" xmlns:hl7v2="urn:hl7-org:v2xml" xmlns:itk="urn:nhs-itk:ns:201005" xmlns:npfitlc="NPFIT:HL7:Localisation" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:wsa="http://www.w3.org/2005/08/addressing" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" typeCode="COMP" contextConductionInd="true">
+	<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP146330GB01#MedicationAdministrationCourse"/>
+	<substanceAdministration classCode="SBADM" moodCode="EVN">
+		<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146330GB01#MedicationAdministrationCourse"/>
+		<id root="01FF5CFE-4974-D07D-E050-950AE0731D36"/>
+		<code codeSystem="2.16.840.1.113883.2.1.3.2.4.14" code="X90jp" displayName="Venous line (physical object)">
+			<originalText>
+				<reference value="#a56"/>
+			</originalText>
+		</code>
+		<statusCode code="completed"/>
+		<effectiveTime value="20130129000000"/>
+		<consumable typeCode="CSM">
+			<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146330GB01#consumable"/>
+			<manufacturedProduct classCode="MANU">
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146330GB01#manufacturedProduct"/>
+				<manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+					<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146330GB01#manufacturedMaterial"/>
+					<code codeSystem="2.16.840.1.113883.2.1.3.2.4.14" code="bv1.." displayName="Streptokinase (product)"/>
+				</manufacturedMaterial>
+			</manufacturedProduct>
+		</consumable>
+		<entryRelationship typeCode="REFR" contextConductionInd="false">
+			<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146330GB01#entryRelationship9"/>
+			<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP147332GB01#RequestMedicationSupplyRef"/>
+			<supply classCode="SPLY" moodCode="RQO">
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP147332GB01#RequestMedicationSupplyRef"/>
+				<id root="01FF5CFE-4977-D07D-E050-950AE0731D36"/>
+				<code nullFlavor="NA"/>
+			</supply>
+		</entryRelationship>
+		<entryRelationship typeCode="COMP" contextConductionInd="true">
+			<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146330GB01#entryRelationship4"/>
+			<seperatableInd value="false"/>
+			<supply classCode="SPLY" moodCode="EVN">
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146330GB01#daysSupply"/>
+				<id root="01FF5CFE-4FF1-D07D-E050-950AE0731D36"/>
+				<code codeSystem="2.16.840.1.113883.2.1.3.2.4.14" code="Ub0zW" displayName="Duration of course of treatment (qualifier value)"/>
+				<expectedUseTime>
+					<width value="7" unit="d"/>
+				</expectedUseTime>
+			</supply>
+		</entryRelationship>
+		<entryRelationship typeCode="COMP" contextConductionInd="true">
+			<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146330GB01#entryRelationship5"/>
+			<seperatableInd value="false"/>
+			<supply classCode="SPLY" moodCode="EVN">
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146330GB01#medicationQuantity"/>
+				<code codeSystem="2.16.840.1.113883.2.1.3.2.4.14" code="X75QM7" displayName="Quantity (attribute)"/>
+				<quantity value="1500000" unit="units"/>
+			</supply>
+		</entryRelationship>
+		<entryRelationship typeCode="RSON" contextConductionInd="false">
+			<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146330GB01#entryRelationship7"/>
+			<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP147322GB01#AllergyEventRef"/>
+			<observation classCode="OBS" moodCode="EVN">
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP147322GB01#AllergyEventRef"/>
+				<id root="01FF5CFE-4976-D07D-E050-950AE0731D36"/>
+				<code nullFlavor="NA"/>
+			</observation>
+		</entryRelationship>
+		<entryRelationship typeCode="COMP" contextConductionInd="true">
+			<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146330GB01#entryRelationship1"/>
+			<seperatableInd value="false"/>
+			<observation classCode="OBS" moodCode="EVN">
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146330GB01#administrationDetails"/>
+				<code code="AD" displayName="Medication administration Instructions" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.192"/>
+				<value xsi:type="ST">1500000 units given.</value>
+			</observation>
+		</entryRelationship>
+		<entryRelationship typeCode="COMP" contextConductionInd="true">
+			<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146330GB01#entryRelationship3"/>
+			<observation classCode="OBS" moodCode="EVN">
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146330GB01#administrationType"/>
+				<code code="AT" displayName="Medication administration type" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.192"/>
+				<value xsi:type="CV" code="CO" displayName="administration of a complete course" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.185"/>
+			</observation>
+		</entryRelationship>
+	</substanceAdministration>
+</entry>

@@ -1,0 +1,22 @@
+<participant xmlns="urn:hl7-org:v3" xmlns:hl7v2="urn:hl7-org:v2xml" xmlns:itk="urn:nhs-itk:ns:201005" xmlns:npfitlc="NPFIT:HL7:Localisation" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:wsa="http://www.w3.org/2005/08/addressing" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" typeCode="REFT" contextControlCode="OP">
+	<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP145214GB01#AssociatedEntity"/>
+	<associatedEntity classCode="ASSIGNED">
+		<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP145214GB01#AssociatedEntity"/>
+		<id root="2.16.840.1.113883.2.1.3.2.4.18.24" extension="C1092043" assigningAuthorityName="RES:NORTH MERSEY COMMUNITY NHS TRUST"/>
+		<code code="R0050" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.124" displayName="Consultant"/>
+		<addr use="WP"/>
+		<associatedPerson classCode="PSN" determinerCode="INSTANCE">
+			<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP145214GB01#associatedPerson"/>
+			<name>
+				<prefix>MR</prefix>
+				<given>STEPH</given>
+				<family>DARBY</family>
+			</name>
+		</associatedPerson>
+		<scopingOrganization classCode="ORG" determinerCode="INSTANCE">
+			<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP145214GB01#scopingOrganization"/>
+			<id root="2.16.840.1.113883.2.1.3.2.4.19.2" extension="RES"/>
+			<name>NORTH MERSEY COMMUNITY NHS TRUST</name>
+		</scopingOrganization>
+	</associatedEntity>
+</participant>

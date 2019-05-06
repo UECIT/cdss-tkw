@@ -1,0 +1,49 @@
+<Vocabularies xmlns="urn:nhs-itk:ns:201005">
+	<vocabulary version="1.0" status="created" name="ResponderPriority" id="">
+		<concept code="1">
+			<displayName>First responder</displayName>
+		</concept>
+		<concept code="2">
+			<displayName>Second responder</displayName>
+		</concept>
+		<concept code="3">
+			<displayName>Third responder</displayName>
+		</concept>
+		<concept code="4">
+			<displayName>Fourth responder</displayName>
+		</concept>
+		<concept code="5">
+			<displayName>Fifth responder</displayName>
+		</concept>
+		<concept code="6">
+			<displayName>Sixth responder</displayName>
+		</concept>
+		<concept code="7">
+			<displayName>Seventh responder</displayName>
+		</concept>
+		<concept code="8">
+			<displayName>Eighth responder</displayName>
+		</concept>
+		<concept code="9">
+			<displayName>Ninth responder</displayName>
+		</concept>
+		<concept code="10">
+			<displayName>Tenth responder</displayName>
+		</concept>
+		<concept code="11">
+			<displayName>Eleventh responder</displayName>
+		</concept>
+		<concept code="12">
+			<displayName>Twelth responder</displayName>
+		</concept>
+		<concept code="13">
+			<displayName>Thirteenth responder</displayName>
+		</concept>
+		<concept code="14">
+			<displayName>Fourteenth responder</displayName>
+		</concept>
+		<concept code="15">
+			<displayName>Fifteenth responder</displayName>
+		</concept>
+	</vocabulary>
+</Vocabularies>

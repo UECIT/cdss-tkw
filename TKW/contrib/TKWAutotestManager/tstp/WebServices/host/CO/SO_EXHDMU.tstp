@@ -1,0 +1,61 @@
+SCRIPT SO_EXHDMU
+# $Id: SO_EXHDMU.tst 87 2016-05-06 09:58:33Z sfarrow $
+# SO_EXHDMU expect a success not a failure
+# foreign soap header with mustUnderstand = 0 and wsa:MessageID with mustUnderstand=1
+# Automatically generated from SO_EXHDMU.tst 
+
+VALIDATOR __TKWROOT__/config/ITK_Correspondence/validator_config/validator.conf
+
+SIMULATOR __SIMULATOR__
+
+STOP WHEN COMPLETE
+
+BEGIN SCHEDULES
+SO_EXHDMU TESTS SO_EXHDMU___INTERACTION_ID___test1 SO_EXHDMU___INTERACTION_ID___test2 SO_EXHDMU___INTERACTION_ID___test3 SO_EXHDMU___INTERACTION_ID___test4 SO_EXHDMU___INTERACTION_ID___test5 SO_EXHDMU___INTERACTION_ID___test6 SO_EXHDMU___INTERACTION_ID___test7 SO_EXHDMU___INTERACTION_ID___test8 
+END SCHEDULES
+
+BEGIN TESTS
+SO_EXHDMU___INTERACTION_ID___test1 SEND_TKW SO_EXHDMU TO __TO_URL__ FROM __FROM_URL__/__FROM_CONTEXT_PATH__ __REPLY_TO_SECTION__ PRETRANSFORM __TKWROOT__/contrib/TKWAutotestManager/transforms/SO_EXHDMU.xslt APPLYPRETRANSFORMTO data SYNC ok WITH_PROPERTYSET base+webservices
+#Defect 1312 - remove the checks for the simple response message as this fails for Pattern 1 responses incorrectly
+#SO_EXHDMU___INTERACTION_ID___test2 CHAIN SYNC respexists
+#SO_EXHDMU___INTERACTION_ID___test3 CHAIN SYNC respok
+
+#three underscores required for merge to identify the test case id and perform the substitution
+SO_EXHDMU___INTERACTION_ID___test2 CHAIN SYNC SO_EXHDMU___actioncorrect
+SO_EXHDMU___INTERACTION_ID___test3 CHAIN SYNC synctimestampok
+SO_EXHDMU___INTERACTION_ID___test4 CHAIN SYNC syncmessageidsok
+SO_EXHDMU___INTERACTION_ID___test5 SEND_TKW SO_EXHDMU TO __TO_URL__ FROM __FROM_URL__/__FROM_CONTEXT_PATH__ __REPLY_TO_SECTION__ PRETRANSFORM __TKWROOT__/contrib/TKWAutotestManager/transforms/SO_EXHDMU_1.xslt APPLYPRETRANSFORMTO data SYNC ok 
+#Defect 1312 - remove the checks for the simple response message as this fails for Pattern 1 responses incorrectly
+#SO_EXHDMU___INTERACTION_ID___test8 CHAIN SYNC respexists
+#SO_EXHDMU___INTERACTION_ID___test9 CHAIN SYNC respok
+
+#three underscores required for merge to identify the test case id and perform the substitution
+SO_EXHDMU___INTERACTION_ID___test6 CHAIN SYNC SO_EXHDMU___actioncorrect
+SO_EXHDMU___INTERACTION_ID___test7 CHAIN SYNC synctimestampok
+SO_EXHDMU___INTERACTION_ID___test8 CHAIN SYNC syncmessageidsok
+END TESTS
+
+BEGIN MESSAGES
+SO_EXHDMU USING SO_EXHDMU___HAPPY_PATH_SERVICE___template WITH NULL SOAPACTION __HAPPY_PATH_SERVICE__
+END MESSAGES
+
+BEGIN TEMPLATES
+SO_EXHDMU___HAPPY_PATH_SERVICE___template  __TKWROOT__/contrib/ITK_2_01_Test_Messages/__HAPPY_PATH_MSG__
+END TEMPLATES
+
+BEGIN PROPERTYSETS
+webservices
+	SET tks.HttpTransport.listenport __LISTEN_PORT_NUMBER__
+	SET tks.HttpTransport.listenaddr  __LISTEN_ADDR__
+END PROPERTYSETS
+
+BEGIN PASSFAIL
+ok httpok
+#respexists synchronousxpath /soap:Envelope/soap:Body/itk:SimpleMessageResponse exists
+#respok synchronousxpath /soap:Envelope/soap:Body/itk:SimpleMessageResponse/text() matches ".+"
+
+#three underscores required for merge to identify the test case id and perform the substitution
+SO_EXHDMU___actioncorrect synchronousxpath /soap:Envelope/soap:Header/wsa:Action matches "^__HAPPY_PATH_SERVICE__Response$"
+synctimestampok synctimestampislater
+syncmessageidsok syncmessageidsdiffer
+END PASSFAIL

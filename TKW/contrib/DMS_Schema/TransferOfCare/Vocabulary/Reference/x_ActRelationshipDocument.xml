@@ -1,0 +1,13 @@
+<Vocabularies xmlns="urn:nhs-itk:ns:201005">
+	<vocabulary version="1.0" status="active" name="x_ActRelationshipDocument" id="">
+		<concept code="RPLC">
+			<displayName>replaces</displayName>
+		</concept>
+		<concept code="APND">
+			<displayName>is appendage</displayName>
+		</concept>
+		<concept code="XFRM">
+			<displayName>transformation</displayName>
+		</concept>
+	</vocabulary>
+</Vocabularies>

@@ -1,0 +1,29 @@
+SCRIPT 111_OS_RC_DOCSET
+# $Id: 111_Client_skel.tst 87 2016-05-06 09:58:33Z sfarrow $
+# Section 14 NHS 111 Positive Client Tests Test Script File
+# Automatically generated from 111_Client_skel.tst
+#
+
+VALIDATOR __TKWROOT__/config/ITK_111/validator_config/validator.conf
+
+SIMULATOR __SIMULATOR__
+
+STOP WHEN COMPLETE
+
+BEGIN SCHEDULES
+111_OS_RC_DOCSET TESTS 111_OS_RC_DOCSET___INTERACTION_ID___test1
+END SCHEDULES
+
+BEGIN TESTS
+111_OS_RC_DOCSET___INTERACTION_ID___test1 ASYNC 111_OS_RC_DOCSET_test1 PROMPT "Test Condition:__TEST_CONDITION__ - Send a synchronous request message __INTERACTION_ID__ to __FROM_URL__/__FROM_CONTEXT_PATH__" WITH_PROPERTYSET base+webservices
+END TESTS
+
+BEGIN PROPERTYSETS
+webservices
+	SET tks.HttpTransport.listenport __LISTEN_PORT_NUMBER__
+	SET tks.HttpTransport.listenaddr  __LISTEN_ADDR__
+END PROPERTYSETS
+
+BEGIN PASSFAIL
+111_OS_RC_DOCSET_test1 asynchronousxpath /soap:Envelope/soap:Body/itk:DistributionEnvelope/itk:header/itk:handlingSpecification/itk:spec[@key='urn:nhs-itk:ns:201005:interaction']/@value matches "^__INTERACTION_ID__$"
+END PASSFAIL

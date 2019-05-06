@@ -1,0 +1,28 @@
+<Vocabularies xmlns="urn:nhs-itk:ns:201005">
+	<vocabulary version="3.0" status="active" name="UkInternalCode" id="">
+		<concept code="1">
+			<displayName>England</displayName>
+		</concept>
+		<concept code="2">
+			<displayName>Scotland</displayName>
+		</concept>
+		<concept code="3">
+			<displayName>Wales</displayName>
+		</concept>
+		<concept code="4">
+			<displayName>Northern Ireland</displayName>
+		</concept>
+		<concept code="7">
+			<displayName>Sark</displayName>
+		</concept>
+		<concept code="9">
+			<displayName>Alderney</displayName>
+		</concept>
+		<concept code="10">
+			<displayName>Channel Islands</displayName>
+		</concept>
+		<concept code="5">
+			<displayName>Isle of Man</displayName>
+		</concept>
+	</vocabulary>
+</Vocabularies>

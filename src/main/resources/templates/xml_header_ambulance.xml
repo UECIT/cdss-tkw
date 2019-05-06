@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This example message is provided for illustrative purposes only. It has had no clinical validation. Whilst every effort has been taken to ensure that the examples are consistent with the message specification contained within the MiM, where there are conflicts with the written message specification or schema, the specification or schema shall be considered to take precedence-->
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:wsa="http://www.w3.org/2005/08/addressing" xmlns:itk="urn:nhs-itk:ns:201005">
+	<soap:Header>
+		<wsa:MessageID>__MESSAGEID__</wsa:MessageID>
+		<wsa:Action>urn:nhs-itk:services:201005:SendNHS111Report-v2-0</wsa:Action>
+		<wsa:To>__SENDTO__</wsa:To>
+		<wsa:From>
+			<wsa:Address>http://localhost:4000</wsa:Address>
+		</wsa:From>
+		<wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+			<wsu:Timestamp xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" wsu:Id="D6CD5232-14CF-11DF-9423-1F9A910D4703">
+				<wsu:Created>__TIMESTAMP__</wsu:Created>
+				<wsu:Expires>__EXPIRES__</wsu:Expires>
+			</wsu:Timestamp>
+			<wsse:UsernameToken>
+				<wsse:Username>TKS Server test</wsse:Username>
+			</wsse:UsernameToken>
+		</wsse:Security>
+	</soap:Header>
+	<soap:Body>
+<itk:DistributionEnvelope xmlns:itk="urn:nhs-itk:ns:201005" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:nhs-itk:ns:201005 ..\..\Schemas\distributionEnvelope-v2-0.xsd">
+ <!--
+ the header of the distribution envelope contains a service name - this is a best guess for now!  and a generated DCE UUID trackingId
+-->
+<itk:header service="RequestAmbulanceDispatch-v2-0" trackingid="7D6F23E0-AE1A-11DB-9808-B18E1E0777CD">
+ <!--
+ the address list is not needed, as the end point has been looked up and is in the SOAP header 
+	<itk:addresslist>
+		<itk:address uri="urn:nhs-uk:addressing:ods:AMB123"></itk:address>
+	</itk:addresslist> 
+-->
+ <!--
+ an audit identification of the sending organisation - use the send organisation's ODS site code 
+-->
+<itk:auditIdentity>
+<itk:id uri="urn:nhs-uk:identity:ods:5L399"/>
+</itk:auditIdentity>
+ <!--
+ for 111 ambulance request, the manifest should only have 1 item 
+-->
+<itk:manifest count="1">
+ <!--
+ ambulance request have a mimetype of text/xml. id is the id of the ambulance request payload (<payload@id>) 
+-->
+ <!--
+ note that the manifestItem@id and payload@id should match, and recommended to be a DCE_UUID prefixed with "uuid_" as
+					shown here 
+-->
+ <!--
+ for more details of manifest attributes see the ITK Core pack 
+-->
+<itk:manifestitem mimetype="text/xml" id="uuid_7D73B7C0-AE1A-11DB-982E-B18E1E0994CD" profileid="urn:nhs-en:profile:IntegratedUrgentCareAmbulanceRequest-v2-1"/>
+</itk:manifest>
+ <!--
+ the sender address - use the ODS org site code of the sender, with a SDS idenifier of the sending person if available 
+-->
+<itk:senderAddress uri="urn:nhs-uk:addressing:ods:5L399:8666463078"/>
+ <!--
+ handlingSpecification contains the interaction id from the 111 specification - key is always fixed; value varies depending on recipient 
+-->
+<itk:handlingSpecification>
+<itk:spec value="urn:nhs-itk:interaction:primaryNHS111RequestforAmbulance-v2-0" key="urn:nhs-itk:ns:201005:interaction"/>
+</itk:handlingSpecification>
+</itk:header>
+<itk:payloads count="1">
+ <!--
+ this matches the manifestitem@id for the payload being referenced by the manifest 
+-->
+<itk:payload id="uuid_7D73B7C0-AE1A-11DB-982E-B18E1E0994CD">

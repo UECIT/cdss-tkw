@@ -1,0 +1,22 @@
+<Vocabularies xmlns="urn:nhs-itk:ns:201005">
+	<vocabulary version="1.0" status="active" name="CDAPrescriptionAnnotation" id="">
+		<concept code="SI">
+			<displayName>Supply Instructions</displayName>
+		</concept>
+		<concept code="DI">
+			<displayName>Dose Instructions</displayName>
+		</concept>
+		<concept code="AI">
+			<displayName>Additional Instructions</displayName>
+		</concept>
+		<concept code="AD">
+			<displayName>Medication administration Instructions</displayName>
+		</concept>
+		<concept code="AT">
+			<displayName>Medication administration type</displayName>
+		</concept>
+		<concept code="ASF">
+			<displayName>Acute Script Flag</displayName>
+		</concept>
+	</vocabulary>
+</Vocabularies>

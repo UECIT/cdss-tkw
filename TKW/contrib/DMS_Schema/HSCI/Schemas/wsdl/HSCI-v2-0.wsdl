@@ -1,0 +1,587 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--*****************************************************************************************************************
+* 
+* 	Copyright (c) 2010NHS Connecting For Health. All rights reserved.
+*   
+*  	Redistribution and use in source and binary forms, with or without
+*  	modification, are permitted provided that the following conditions
+*  	are met:
+*  		1. Redistributions of source code must retain the above copyright
+*     		notice, this list of conditions and the following disclaimer.
+*  		2. Redistributions in binary form must reproduce the above copyright
+*     		notice, this list of conditions and the following disclaimer in the
+*     		documentation and/or other materials provided with the distribution.
+*  		3. All advertising materials mentioning features or use of this software
+*     		must display the following acknowledgement:
+*       This product includes software developed by Health Level Seven.
+*  	THIS SOFTWARE IS PROVIDED BY NHS Connecting For Health. AND CONTRIBUTORS "AS IS" AND
+*  	ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+*  	IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+*  	ARE DISCLAIMED.  IN NO EVENT SHALL THE REGENTS OR CONTRIBUTORS BE LIABLE
+*  	FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+*  	DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+*  	OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+*  	HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+*  	LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+*  	OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+*  	SUCH DAMAGE.
+*
+* CHANGE HISTORY:
+*
+* VERSION   DATE            AUTHOR                                 DESCRIPTION
+* =======   ========== ======================    ===========================================================
+* 1.0          07-06-2011   Interoperability Team               Created this WSDL
+*
+********************************************************************************************************************
+-->
+<wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:itk="urn:nhs-itk:ns:201005" xmlns:hl7v3="urn:hl7-org:v3" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns="xhtml:NPfIT:PresentationText" name="test" targetNamespace="urn:nhs-itk:ns:201005">
+	<wsdl:types>
+		<xsd:schema targetNamespace="urn:nhs-itk:ns:201005" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+			<xsd:include schemaLocation="../ITKMessageTypes-2010-05.xsd"/>
+			<xsd:include schemaLocation="../distributionEnvelope-v2-0.xsd"/>
+		</xsd:schema>
+	</wsdl:types>
+	<wsdl:message name="acknowledgementResponse">
+		<wsdl:part name="acknowledgementResponse" element="itk:SimpleMessageResponse"/>
+	</wsdl:message>
+	<wsdl:message name="faultResponse">
+		<wsdl:part name="faultResponse" element="itk:ToolkitErrorInfo"/>
+	</wsdl:message>
+	<wsdl:message name="SendAssessmentNotificationSection2-v1-0">
+		<wsdl:part name="SendAssessmentNotificationSection2-v1-0" element="itk:DistributionEnvelope"/>
+	</wsdl:message>
+	<wsdl:message name="SendSection2NotificationAccept-v1-0">
+		<wsdl:part name="SendSection2NotificationAccept-v1-0" element="itk:DistributionEnvelope"/>
+	</wsdl:message>
+	<wsdl:message name="SendSection2NotificationReject-v1-0">
+		<wsdl:part name="SendSection2NotificationReject-v1-0" element="itk:DistributionEnvelope"/>
+	</wsdl:message>
+	<wsdl:message name="SendDischargeNotificationSection5-v1-0">
+		<wsdl:part name="SendDischargeNotificationSection5-v1-0" element="itk:DistributionEnvelope"/>
+	</wsdl:message>
+	<wsdl:message name="SendSection5NotificationAccept-v1-0">
+		<wsdl:part name="SendSection5NotificationAccept-v1-0" element="itk:DistributionEnvelope"/>
+	</wsdl:message>
+	<wsdl:message name="SendSection5NotificationReject-v1-0">
+		<wsdl:part name="SendSection5NotificationReject-v1-0" element="itk:DistributionEnvelope"/>
+	</wsdl:message>
+	<wsdl:message name="SendDischargeNotificationCancellation-v1-0">
+		<wsdl:part name="SendDischargeNotificationCancellation-v1-0" element="itk:DistributionEnvelope"/>
+	</wsdl:message>
+	<wsdl:message name="SendFastTrackPathwayTool-v1-0">
+		<wsdl:part name="SendFastTrackPathwayTool-v1-0" element="itk:DistributionEnvelope"/>
+	</wsdl:message>
+	<wsdl:message name="SendFastTrackPathwayToolAccept-v1-0">
+		<wsdl:part name="SendFastTrackPathwayToolAccept-v1-0" element="itk:DistributionEnvelope"/>
+	</wsdl:message>
+	<wsdl:message name="SendFastTrackPathwayToolRejection-v1-0">
+		<wsdl:part name="SendFastTrackPathwayToolRejection-v1-0" element="itk:DistributionEnvelope"/>
+	</wsdl:message>
+	<wsdl:message name="SendCHCCancellation-v1-0">
+		<wsdl:part name="SendCHCCancellation-v1-0" element="itk:DistributionEnvelope"/>
+	</wsdl:message>
+	<wsdl:message name="SendCHCChecklistAssessment-v1-0">
+		<wsdl:part name="SendCHCChecklistAssessment-v1-0" element="itk:DistributionEnvelope"/>
+	</wsdl:message>
+	<wsdl:message name="SendCHCChecklistAssessmentAccept-v1-0">
+		<wsdl:part name="SendCHCChecklistAssessmentAccept-v1-0" element="itk:DistributionEnvelope"/>
+	</wsdl:message>
+	<wsdl:message name="SendCHCChecklistAssessmentRejection-v1-0">
+		<wsdl:part name="SendCHCChecklistAssessmentRejection-v1-0" element="itk:DistributionEnvelope"/>
+	</wsdl:message>
+	<wsdl:message name="SendCHCAssessmentRequest-v1-0">
+		<wsdl:part name="SendCHCAssessmentRequest-v1-0" element="itk:DistributionEnvelope"/>
+	</wsdl:message>
+	<wsdl:message name="SendCHCAssessmentRequestAccept-v1-0">
+		<wsdl:part name="SendCHCAssessmentRequestAccept-v1-0" element="itk:DistributionEnvelope"/>
+	</wsdl:message>
+	<wsdl:message name="SendCHCAssessmentRequestRejection-v1-0">
+		<wsdl:part name="SendCHCAssessmentRequestRejection-v1-0" element="itk:DistributionEnvelope"/>
+	</wsdl:message>
+		<wsdl:message name="SendPrimaryReferralRejectResponse-v1-0">
+		<wsdl:part name="SendPrimaryReferralRejectResponse-v1-0" element="itk:DistributionEnvelope"/>
+	</wsdl:message>
+			<wsdl:message name="SendPrimaryReferralAcceptResponse-v1-0">
+		<wsdl:part name="SendPrimaryReferralAcceptResponse-v1-0" element="itk:DistributionEnvelope"/>
+	</wsdl:message>
+	<wsdl:portType name="SendAssessmentNotificationSection2-v1-0_ptt">
+		<wsdl:operation name="SendAssessmentNotificationSection2-v1-0">
+			<wsdl:input message="itk:SendAssessmentNotificationSection2-v1-0"/>
+			<wsdl:output message="itk:acknowledgementResponse"/>
+			<wsdl:fault name="standardFault" message="itk:faultResponse"/>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:portType name="SendSection2NotificationAccept-v1-0_ptt">
+		<wsdl:operation name="SendSection2NotificationAccept-v1-0">
+			<wsdl:input message="itk:SendSection2NotificationAccept-v1-0"/>
+			<wsdl:output message="itk:acknowledgementResponse"/>
+			<wsdl:fault name="standardFault" message="itk:faultResponse"/>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:portType name="SendSection2NotificationReject-v1-0_ptt">
+		<wsdl:operation name="SendSection2NotificationReject-v1-0">
+			<wsdl:input message="itk:SendSection2NotificationReject-v1-0"/>
+			<wsdl:output message="itk:acknowledgementResponse"/>
+			<wsdl:fault name="standardFault" message="itk:faultResponse"/>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:portType name="SendDischargeNotificationSection5-v1-0_ptt">
+		<wsdl:operation name="SendDischargeNotificationSection5-v1-0">
+			<wsdl:input message="itk:SendDischargeNotificationSection5-v1-0"/>
+			<wsdl:output message="itk:acknowledgementResponse"/>
+			<wsdl:fault name="standardFault" message="itk:faultResponse"/>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:portType name="SendSection5NotificationAccept-v1-0_ptt">
+		<wsdl:operation name="SendSection5NotificationAccept-v1-0">
+			<wsdl:input message="itk:SendSection5NotificationAccept-v1-0"/>
+			<wsdl:output message="itk:acknowledgementResponse"/>
+			<wsdl:fault name="standardFault" message="itk:faultResponse"/>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:portType name="SendSection5NotificationReject-v1-0_ptt">
+		<wsdl:operation name="SendSection5NotificationReject-v1-0">
+			<wsdl:input message="itk:SendSection5NotificationReject-v1-0"/>
+			<wsdl:output message="itk:acknowledgementResponse"/>
+			<wsdl:fault name="standardFault" message="itk:faultResponse"/>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:portType name="SendDischargeNotificationCancellation-v1-0_ptt">
+		<wsdl:operation name="SendDischargeNotificationCancellation-v1-0">
+			<wsdl:input message="itk:SendDischargeNotificationCancellation-v1-0"/>
+			<wsdl:output message="itk:acknowledgementResponse"/>
+			<wsdl:fault name="standardFault" message="itk:faultResponse"/>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:portType name="SendFastTrackPathwayTool-v1-0_ptt">
+		<wsdl:operation name="SendFastTrackPathwayTool-v1-0">
+			<wsdl:input message="itk:SendFastTrackPathwayTool-v1-0"/>
+			<wsdl:output message="itk:acknowledgementResponse"/>
+			<wsdl:fault name="standardFault" message="itk:faultResponse"/>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:portType name="SendFastTrackPathwayToolAccept-v1-0_ptt">
+		<wsdl:operation name="SendFastTrackPathwayToolAccept-v1-0">
+			<wsdl:input message="itk:SendFastTrackPathwayToolAccept-v1-0"/>
+			<wsdl:output message="itk:acknowledgementResponse"/>
+			<wsdl:fault name="standardFault" message="itk:faultResponse"/>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:portType name="SendFastTrackPathwayToolRejection-v1-0_ptt">
+		<wsdl:operation name="SendFastTrackPathwayToolRejection-v1-0">
+			<wsdl:input message="itk:SendFastTrackPathwayToolRejection-v1-0"/>
+			<wsdl:output message="itk:acknowledgementResponse"/>
+			<wsdl:fault name="standardFault" message="itk:faultResponse"/>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:portType name="SendCHCCancellation-v1-0_ptt">
+		<wsdl:operation name="SendCHCCancellation-v1-0">
+			<wsdl:input message="itk:SendCHCCancellation-v1-0"/>
+			<wsdl:output message="itk:acknowledgementResponse"/>
+			<wsdl:fault name="standardFault" message="itk:faultResponse"/>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:portType name="SendCHCChecklistAssessment-v1-0_ptt">
+		<wsdl:operation name="SendCHCChecklistAssessment-v1-0">
+			<wsdl:input message="itk:SendCHCChecklistAssessment-v1-0"/>
+			<wsdl:output message="itk:acknowledgementResponse"/>
+			<wsdl:fault name="standardFault" message="itk:faultResponse"/>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:portType name="SendCHCChecklistAssessmentAccept-v1-0_ptt">
+		<wsdl:operation name="SendCHCChecklistAssessmentAccept-v1-0">
+			<wsdl:input message="itk:SendCHCChecklistAssessmentAccept-v1-0"/>
+			<wsdl:output message="itk:acknowledgementResponse"/>
+			<wsdl:fault name="standardFault" message="itk:faultResponse"/>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:portType name="SendCHCChecklistAssessmentRejection-v1-0_ptt">
+		<wsdl:operation name="SendCHCChecklistAssessmentRejection-v1-0">
+			<wsdl:input message="itk:SendCHCChecklistAssessmentRejection-v1-0"/>
+			<wsdl:output message="itk:acknowledgementResponse"/>
+			<wsdl:fault name="standardFault" message="itk:faultResponse"/>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:portType name="SendCHCAssessmentRequest-v1-0_ptt">
+		<wsdl:operation name="SendCHCAssessmentRequest-v1-0">
+			<wsdl:input message="itk:SendCHCAssessmentRequest-v1-0"/>
+			<wsdl:output message="itk:acknowledgementResponse"/>
+			<wsdl:fault name="standardFault" message="itk:faultResponse"/>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:portType name="SendCHCAssessmentRequestAccept-v1-0_ptt">
+		<wsdl:operation name="SendCHCAssessmentRequestAccept-v1-0">
+			<wsdl:input message="itk:SendCHCAssessmentRequestAccept-v1-0"/>
+			<wsdl:output message="itk:acknowledgementResponse"/>
+			<wsdl:fault name="standardFault" message="itk:faultResponse"/>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:portType name="SendCHCAssessmentRequestRejection-v1-0_ptt">
+		<wsdl:operation name="SendCHCAssessmentRequestRejection-v1-0">
+			<wsdl:input message="itk:SendCHCAssessmentRequestRejection-v1-0"/>
+			<wsdl:output message="itk:acknowledgementResponse"/>
+			<wsdl:fault name="standardFault" message="itk:faultResponse"/>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:portType name="SendPrimaryReferralRejectResponse-v1-0_ptt">
+		<wsdl:operation name="SendPrimaryReferralRejectResponse-v1-0">
+			<wsdl:input message="itk:SendPrimaryReferralRejectResponse-v1-0"/>
+			<wsdl:output message="itk:acknowledgementResponse"/>
+			<wsdl:fault name="standardFault" message="itk:faultResponse"/>
+		</wsdl:operation>
+	</wsdl:portType>	
+		<wsdl:portType name="SendPrimaryReferralAcceptResponse-v1-0_ptt">
+		<wsdl:operation name="SendPrimaryReferralAcceptResponse-v1-0">
+			<wsdl:input message="itk:SendPrimaryReferralAcceptResponse-v1-0"/>
+			<wsdl:output message="itk:acknowledgementResponse"/>
+			<wsdl:fault name="standardFault" message="itk:faultResponse"/>
+		</wsdl:operation>
+	</wsdl:portType>	
+	
+	
+	<wsdl:binding name="SendAssessmentNotificationSection2-v1-0_pttBinding" type="itk:SendAssessmentNotificationSection2-v1-0_ptt">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdl:operation name="SendAssessmentNotificationSection2-v1-0">
+			<soap:operation soapAction="urn:nhs-itk:services:201005:SendAssessmentNotificationSection2-v1-0" style="document"/>
+			<wsdl:input>
+				<soap:body parts="SendAssessmentNotificationSection2-v1-0" use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body parts="acknowledgementResponse" use="literal"/>
+			</wsdl:output>
+			<wsdl:fault name="standardFault"/>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:binding name="SendSection2NotificationAccept-v1-0_pttBinding" type="itk:SendSection2NotificationAccept-v1-0_ptt">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdl:operation name="SendSection2NotificationAccept-v1-0">
+			<soap:operation soapAction="urn:nhs-itk:services:201005:SendSection2NotificationAccept-v1-0" style="document"/>
+			<wsdl:input>
+				<soap:body parts="SendSection2NotificationAccept-v1-0" use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body parts="acknowledgementResponse" use="literal"/>
+			</wsdl:output>
+			<wsdl:fault name="standardFault"/>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:binding name="SendSection2NotificationReject-v1-0_pttBinding" type="itk:SendSection2NotificationReject-v1-0_ptt">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdl:operation name="SendSection2NotificationReject-v1-0">
+			<soap:operation soapAction="urn:nhs-itk:services:201005:SendSection2NotificationReject-v1-0" style="document"/>
+			<wsdl:input>
+				<soap:body parts="SendSection2NotificationReject-v1-0" use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body parts="acknowledgementResponse" use="literal"/>
+			</wsdl:output>
+			<wsdl:fault name="standardFault"/>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:binding name="SendDischargeNotificationSection5-v1-0_pttBinding" type="itk:SendDischargeNotificationSection5-v1-0_ptt">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdl:operation name="SendDischargeNotificationSection5-v1-0">
+			<soap:operation soapAction="urn:nhs-itk:services:201005:SendDischargeNotificationSection5-v1-0" style="document"/>
+			<wsdl:input>
+				<soap:body parts="SendDischargeNotificationSection5-v1-0" use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body parts="acknowledgementResponse" use="literal"/>
+			</wsdl:output>
+			<wsdl:fault name="standardFault"/>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:binding name="SendSection5NotificationAccept-v1-0_pttBinding" type="itk:SendSection5NotificationAccept-v1-0_ptt">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdl:operation name="SendSection5NotificationAccept-v1-0">
+			<soap:operation soapAction="urn:nhs-itk:services:201005:SendSection5NotificationAccept-v1-0" style="document"/>
+			<wsdl:input>
+				<soap:body parts="SendSection5NotificationAccept-v1-0" use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body parts="acknowledgementResponse" use="literal"/>
+			</wsdl:output>
+			<wsdl:fault name="standardFault"/>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:binding name="SendSection5NotificationReject-v1-0_pttBinding" type="itk:SendSection5NotificationReject-v1-0_ptt">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdl:operation name="SendSection5NotificationReject-v1-0">
+			<soap:operation soapAction="urn:nhs-itk:services:201005:SendSection5NotificationReject-v1-0" style="document"/>
+			<wsdl:input>
+				<soap:body parts="SendSection5NotificationReject-v1-0" use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body parts="acknowledgementResponse" use="literal"/>
+			</wsdl:output>
+			<wsdl:fault name="standardFault"/>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:binding name="SendDischargeNotificationCancellation-v1-0_pttBinding" type="itk:SendDischargeNotificationCancellation-v1-0_ptt">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdl:operation name="SendDischargeNotificationCancellation-v1-0">
+			<soap:operation soapAction="urn:nhs-itk:services:201005:SendDischargeNotificationCancellation-v1-0" style="document"/>
+			<wsdl:input>
+				<soap:body parts="SendDischargeNotificationCancellation-v1-0" use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body parts="acknowledgementResponse" use="literal"/>
+			</wsdl:output>
+			<wsdl:fault name="standardFault"/>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:binding name="SendFastTrackPathwayTool-v1-0_pttBinding" type="itk:SendFastTrackPathwayTool-v1-0_ptt">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdl:operation name="SendFastTrackPathwayTool-v1-0">
+			<soap:operation soapAction="urn:nhs-itk:services:201005:SendFastTrackPathwayTool-v1-0" style="document"/>
+			<wsdl:input>
+				<soap:body parts="SendFastTrackPathwayTool-v1-0" use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body parts="acknowledgementResponse" use="literal"/>
+			</wsdl:output>
+			<wsdl:fault name="standardFault"/>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:binding name="SendFastTrackPathwayToolAccept-v1-0_pttBinding" type="itk:SendFastTrackPathwayToolAccept-v1-0_ptt">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdl:operation name="SendFastTrackPathwayToolAccept-v1-0">
+			<soap:operation soapAction="urn:nhs-itk:services:201005:SendFastTrackPathwayToolAccept-v1-0" style="document"/>
+			<wsdl:input>
+				<soap:body parts="SendFastTrackPathwayToolAccept-v1-0" use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body parts="acknowledgementResponse" use="literal"/>
+			</wsdl:output>
+			<wsdl:fault name="standardFault"/>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:binding name="SendFastTrackPathwayToolRejection-v1-0_pttBinding" type="itk:SendFastTrackPathwayToolRejection-v1-0_ptt">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdl:operation name="SendFastTrackPathwayToolRejection-v1-0">
+			<soap:operation soapAction="urn:nhs-itk:services:201005:SendFastTrackPathwayToolRejection-v1-0" style="document"/>
+			<wsdl:input>
+				<soap:body parts="SendFastTrackPathwayToolRejection-v1-0" use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body parts="acknowledgementResponse" use="literal"/>
+			</wsdl:output>
+			<wsdl:fault name="standardFault"/>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:binding name="SendCHCCancellation-v1-0_pttBinding" type="itk:SendCHCCancellation-v1-0_ptt">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdl:operation name="SendCHCCancellation-v1-0">
+			<soap:operation soapAction="urn:nhs-itk:services:201005:SendCHCCancellation-v1-0" style="document"/>
+			<wsdl:input>
+				<soap:body parts="SendCHCCancellation-v1-0" use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body parts="acknowledgementResponse" use="literal"/>
+			</wsdl:output>
+			<wsdl:fault name="standardFault"/>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:binding name="SendCHCChecklistAssessment-v1-0_pttBinding" type="itk:SendCHCChecklistAssessment-v1-0_ptt">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdl:operation name="SendCHCChecklistAssessment-v1-0">
+			<soap:operation soapAction="urn:nhs-itk:services:201005:SendCHCChecklistAssessment-v1-0" style="document"/>
+			<wsdl:input>
+				<soap:body parts="SendCHCChecklistAssessment-v1-0" use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body parts="acknowledgementResponse" use="literal"/>
+			</wsdl:output>
+			<wsdl:fault name="standardFault"/>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:binding name="SendCHCChecklistAssessmentAccept-v1-0_pttBinding" type="itk:SendCHCChecklistAssessmentAccept-v1-0_ptt">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdl:operation name="SendCHCChecklistAssessmentAccept-v1-0">
+			<soap:operation soapAction="urn:nhs-itk:services:201005:SendCHCChecklistAssessmentAccept-v1-0" style="document"/>
+			<wsdl:input>
+				<soap:body parts="SendCHCChecklistAssessmentAccept-v1-0" use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body parts="acknowledgementResponse" use="literal"/>
+			</wsdl:output>
+			<wsdl:fault name="standardFault"/>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:binding name="SendCHCChecklistAssessmentRejection-v1-0_pttBinding" type="itk:SendCHCChecklistAssessmentRejection-v1-0_ptt">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdl:operation name="SendCHCChecklistAssessmentRejection-v1-0">
+			<soap:operation soapAction="urn:nhs-itk:services:201005:SendCHCChecklistAssessmentRejection-v1-0" style="document"/>
+			<wsdl:input>
+				<soap:body parts="SendCHCChecklistAssessmentRejection-v1-0" use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body parts="acknowledgementResponse" use="literal"/>
+			</wsdl:output>
+			<wsdl:fault name="standardFault"/>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:binding name="SendCHCAssessmentRequest-v1-0_pttBinding" type="itk:SendCHCAssessmentRequest-v1-0_ptt">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdl:operation name="SendCHCAssessmentRequest-v1-0">
+			<soap:operation soapAction="urn:nhs-itk:services:201005:SendCHCAssessmentRequest-v1-0" style="document"/>
+			<wsdl:input>
+				<soap:body parts="SendCHCAssessmentRequest-v1-0" use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body parts="acknowledgementResponse" use="literal"/>
+			</wsdl:output>
+			<wsdl:fault name="standardFault"/>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:binding name="SendCHCAssessmentRequestAccept-v1-0_pttBinding" type="itk:SendCHCAssessmentRequestAccept-v1-0_ptt">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdl:operation name="SendCHCAssessmentRequestAccept-v1-0">
+			<soap:operation soapAction="urn:nhs-itk:services:201005:SendCHCAssessmentRequestAccept-v1-0" style="document"/>
+			<wsdl:input>
+				<soap:body parts="SendCHCAssessmentRequestAccept-v1-0" use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body parts="acknowledgementResponse" use="literal"/>
+			</wsdl:output>
+			<wsdl:fault name="standardFault"/>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:binding name="SendCHCAssessmentRequestRejection-v1-0_pttBinding" type="itk:SendCHCAssessmentRequestRejection-v1-0_ptt">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdl:operation name="SendCHCAssessmentRequestRejection-v1-0">
+			<soap:operation soapAction="urn:nhs-itk:services:201005:SendCHCAssessmentRequestRejection-v1-0" style="document"/>
+			<wsdl:input>
+				<soap:body parts="SendCHCAssessmentRequestRejection-v1-0" use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body parts="acknowledgementResponse" use="literal"/>
+			</wsdl:output>
+			<wsdl:fault name="standardFault"/>
+		</wsdl:operation>
+	</wsdl:binding>
+	
+		<wsdl:binding name="SendPrimaryReferralRejectResponse-v1-0_pttBinding" type="itk:SendPrimaryReferralRejectResponse-v1-0_ptt">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdl:operation name="SendPrimaryReferralRejectResponse-v1-0">
+			<soap:operation soapAction="urn:nhs-itk:services:201005:SendPrimaryReferralRejectResponse-v1-0" style="document"/>
+			<wsdl:input>
+				<soap:body parts="SendPrimaryReferralRejectResponse-v1-0" use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body parts="acknowledgementResponse" use="literal"/>
+			</wsdl:output>
+			<wsdl:fault name="standardFault"/>
+		</wsdl:operation>
+	</wsdl:binding>
+			<wsdl:binding name="SendPrimaryReferralAcceptResponse-v1-0_pttBinding" type="itk:SendPrimaryReferralAcceptResponse-v1-0_ptt">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdl:operation name="SendPrimaryReferralAcceptResponse-v1-0">
+			<soap:operation soapAction="urn:nhs-itk:services:201005:SendPrimaryReferralAcceptResponse-v1-0" style="document"/>
+			<wsdl:input>
+				<soap:body parts="SendPrimaryReferralAcceptResponse-v1-0" use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body parts="acknowledgementResponse" use="literal"/>
+			</wsdl:output>
+			<wsdl:fault name="standardFault"/>
+		</wsdl:operation>
+	</wsdl:binding>
+	
+	
+	<wsdl:service name="SendAssessmentNotificationSection2-v1-0">
+		<wsdl:port name="SendAssessmentNotificationSection2-v1-0_pttPort" binding="itk:SendAssessmentNotificationSection2-v1-0_pttBinding">
+			<soap:address location="http://server:80/interoperability.toolkit/HL7v3/SendAssessmentNotificationSection2-v1-0"/>
+		</wsdl:port>
+	</wsdl:service>
+	<wsdl:service name="SendSection2NotificationAccept-v1-0">
+		<wsdl:port name="SendSection2NotificationAccept-v1-0_pttPort" binding="itk:SendSection2NotificationAccept-v1-0_pttBinding">
+			<soap:address location="http://server:80/interoperability.toolkit/HL7v3/SendSection2NotificationAccept-v1-0"/>
+		</wsdl:port>
+	</wsdl:service>
+	<wsdl:service name="SendSection2NotificationReject-v1-0">
+		<wsdl:port name="SendSection2NotificationReject-v1-0_pttPort" binding="itk:SendSection2NotificationReject-v1-0_pttBinding">
+			<soap:address location="http://server:80/interoperability.toolkit/HL7v3/SendSection2NotificationReject-v1-0"/>
+		</wsdl:port>
+	</wsdl:service>
+	<wsdl:service name="SendDischargeNotificationSection5-v1-0">
+		<wsdl:port name="SendDischargeNotificationSection5-v1-0_pttPort" binding="itk:SendDischargeNotificationSection5-v1-0_pttBinding">
+			<soap:address location="http://server:80/interoperability.toolkit/HL7v3/SendDischargeNotificationSection5-v1-0"/>
+		</wsdl:port>
+	</wsdl:service>
+	<wsdl:service name="SendSection5NotificationAccept-v1-0">
+		<wsdl:port name="SendSection5NotificationAccept-v1-0_pttPort" binding="itk:SendSection5NotificationAccept-v1-0_pttBinding">
+			<soap:address location="http://server:80/interoperability.toolkit/HL7v3/SendSection5NotificationAccept-v1-0"/>
+		</wsdl:port>
+	</wsdl:service>
+	<wsdl:service name="SendSection5NotificationReject-v1-0">
+		<wsdl:port name="SendSection5NotificationReject-v1-0_pttPort" binding="itk:SendSection5NotificationReject-v1-0_pttBinding">
+			<soap:address location="http://server:80/interoperability.toolkit/HL7v3/SendSection5NotificationReject-v1-0"/>
+		</wsdl:port>
+	</wsdl:service>
+	<wsdl:service name="SendDischargeNotificationCancellation-v1-0">
+		<wsdl:port name="SendDischargeNotificationCancellation-v1-0_pttPort" binding="itk:SendDischargeNotificationCancellation-v1-0_pttBinding">
+			<soap:address location="http://server:80/interoperability.toolkit/HL7v3/SendDischargeNotificationCancellation-v1-0"/>
+		</wsdl:port>
+	</wsdl:service>
+	<wsdl:service name="SendFastTrackPathwayTool-v1-0">
+		<wsdl:port name="SendFastTrackPathwayTool-v1-0_pttPort" binding="itk:SendFastTrackPathwayTool-v1-0_pttBinding">
+			<soap:address location="http://server:80/interoperability.toolkit/HL7v3/SendFastTrackPathwayTool-v1-0"/>
+		</wsdl:port>
+	</wsdl:service>
+	<wsdl:service name="SendFastTrackPathwayToolAccept-v1-0">
+		<wsdl:port name="SendFastTrackPathwayToolAccept-v1-0_pttPort" binding="itk:SendFastTrackPathwayToolAccept-v1-0_pttBinding">
+			<soap:address location="http://server:80/interoperability.toolkit/HL7v3/SendFastTrackPathwayToolAccept-v1-0"/>
+		</wsdl:port>
+	</wsdl:service>
+	<wsdl:service name="SendFastTrackPathwayToolRejection-v1-0">
+		<wsdl:port name="SendFastTrackPathwayToolRejection-v1-0_pttPort" binding="itk:SendFastTrackPathwayToolRejection-v1-0_pttBinding">
+			<soap:address location="http://server:80/interoperability.toolkit/HL7v3/SendFastTrackPathwayToolRejection-v1-0"/>
+		</wsdl:port>
+	</wsdl:service>
+	<wsdl:service name="SendCHCCancellation-v1-0">
+		<wsdl:port name="SendCHCCancellation-v1-0_pttPort" binding="itk:SendCHCCancellation-v1-0_pttBinding">
+			<soap:address location="http://server:80/interoperability.toolkit/HL7v3/SendCHCCancellation-v1-0"/>
+		</wsdl:port>
+	</wsdl:service>
+	<wsdl:service name="SendCHCChecklistAssessment-v1-0">
+		<wsdl:port name="SendCHCChecklistAssessment-v1-0_pttPort" binding="itk:SendCHCChecklistAssessment-v1-0_pttBinding">
+			<soap:address location="http://server:80/interoperability.toolkit/HL7v3/SendCHCChecklistAssessment-v1-0"/>
+		</wsdl:port>
+	</wsdl:service>
+	<wsdl:service name="SendCHCChecklistAssessmentAccept-v1-0">
+		<wsdl:port name="SendCHCChecklistAssessmentAccept-v1-0_pttPort" binding="itk:SendCHCChecklistAssessmentAccept-v1-0_pttBinding">
+			<soap:address location="http://server:80/interoperability.toolkit/HL7v3/SendCHCChecklistAssessmentAccept-v1-0"/>
+		</wsdl:port>
+	</wsdl:service>
+	<wsdl:service name="SendCHCChecklistAssessmentRejection-v1-0">
+		<wsdl:port name="SendCHCChecklistAssessmentRejection-v1-0_pttPort" binding="itk:SendCHCChecklistAssessmentRejection-v1-0_pttBinding">
+			<soap:address location="http://server:80/interoperability.toolkit/HL7v3/SendCHCChecklistAssessmentRejection-v1-0"/>
+		</wsdl:port>
+	</wsdl:service>
+	<wsdl:service name="SendCHCAssessmentRequest-v1-0">
+		<wsdl:port name="SendCHCAssessmentRequest-v1-0_pttPort" binding="itk:SendCHCAssessmentRequest-v1-0_pttBinding">
+			<soap:address location="http://server:80/interoperability.toolkit/HL7v3/SendCHCAssessmentRequest-v1-0"/>
+		</wsdl:port>
+	</wsdl:service>
+	<wsdl:service name="SendCHCAssessmentRequestAccept-v1-0">
+		<wsdl:port name="SendCHCAssessmentRequestAccept-v1-0_pttPort" binding="itk:SendCHCAssessmentRequestAccept-v1-0_pttBinding">
+			<soap:address location="http://server:80/interoperability.toolkit/HL7v3/SendCHCAssessmentRequestAccept-v1-0"/>
+		</wsdl:port>
+	</wsdl:service>
+	<wsdl:service name="SendCHCAssessmentRequestRejection-v1-0">
+		<wsdl:port name="SendCHCAssessmentRequestRejection-v1-0_pttPort" binding="itk:SendCHCAssessmentRequestRejection-v1-0_pttBinding">
+			<soap:address location="http://server:80/interoperability.toolkit/HL7v3/SendCHCAssessmentRequestRejection-v1-0"/>
+		</wsdl:port>
+	</wsdl:service>
+		<wsdl:service name="SendPrimaryReferralRejectResponse-v1-0">
+		<wsdl:port name="SendPrimaryReferralRejectResponse-v1-0_pttPort" binding="itk:SendPrimaryReferralRejectResponse-v1-0_pttBinding">
+			<soap:address location="http://server:80/interoperability.toolkit/HL7v3/SendPrimaryReferralRejectResponse-v1-0"/>
+		</wsdl:port>
+	</wsdl:service>
+		<wsdl:service name="SendPrimaryReferralAcceptResponse-v1-0">
+		<wsdl:port name="SendPrimaryReferralAcceptResponse-v1-0_pttPort" binding="itk:SendPrimaryReferralAcceptResponse-v1-0_pttBinding">
+			<soap:address location="http://server:80/interoperability.toolkit/HL7v3/SendPrimaryReferralAcceptResponse-v1-0"/>
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>

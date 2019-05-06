@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+			This example message is provided for illustrative purposes only. It
+			has had no clinical validation. Whilst every effort has been taken to
+			ensure that the examples are consistent with the message
+			definition contained within the domain message specifications,
+			where there are conflicts	with the written message specification or 
+			schema, the specification or schema shall be considered to take
+			precedence.
+		-->
+<ClinicalDocument xmlns="urn:hl7-org:v3"
+                  xmlns:npfitlc="NPFIT:HL7:Localisation"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:schemaLocation="urn:hl7-org:v3 ..\..\Schemas\POCD_MT200001GB02.xsd">
+   <code xmlns:itk="urn:nhs-itk:ns:201005"
+         xmlns:wsa="http://www.w3.org/2005/08/addressing"
+         xmlns:ns2="NPFIT:HL7:Localisation"
+         xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+         code="1066271000000101"
+         codeSystem="2.16.840.1.113883.2.1.3.2.4.15"/>
+   <confidentialityCode xmlns:itk="urn:nhs-itk:ns:201005"
+                        xmlns:wsa="http://www.w3.org/2005/08/addressing"
+                        xmlns:ns2="NPFIT:HL7:Localisation"
+                        xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+                        code="V"
+                        codeSystem="2.16.840.1.113883.1.11.16926"
+                        displayName="very restricted"/>
+   <effectiveTime xmlns:itk="urn:nhs-itk:ns:201005"
+                  xmlns:wsa="http://www.w3.org/2005/08/addressing"
+                  xmlns:ns2="NPFIT:HL7:Localisation"
+                  xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+                  value="2019-04-04 09:17:20.372"/>
+   <id xmlns:itk="urn:nhs-itk:ns:201005"
+       xmlns:wsa="http://www.w3.org/2005/08/addressing"
+       xmlns:ns2="NPFIT:HL7:Localisation"
+       xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"/>
+   <ns2:messageType xmlns:itk="urn:nhs-itk:ns:201005"
+                    xmlns:wsa="http://www.w3.org/2005/08/addressing"
+                    xmlns:ns2="NPFIT:HL7:Localisation"
+                    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+                    extension="POCD_MT200001GB02"
+                    root="2.16.840.1.113883.2.1.3.2.4.18.17"/>
+   <participant xmlns:itk="urn:nhs-itk:ns:201005"
+                xmlns:wsa="http://www.w3.org/2005/08/addressing"
+                xmlns:ns2="NPFIT:HL7:Localisation"
+                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+                xsi:nil="true"/>
+   <setId xmlns:itk="urn:nhs-itk:ns:201005"
+          xmlns:wsa="http://www.w3.org/2005/08/addressing"
+          xmlns:ns2="NPFIT:HL7:Localisation"
+          xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"/>
+   <title xmlns:itk="urn:nhs-itk:ns:201005"
+          xmlns:wsa="http://www.w3.org/2005/08/addressing"
+          xmlns:ns2="NPFIT:HL7:Localisation"
+          xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+      <reference value="Integrated Urgent Care Report"/>
+   </title>
+   <tracker xmlns:itk="urn:nhs-itk:ns:201005"
+            xmlns:wsa="http://www.w3.org/2005/08/addressing"
+            xmlns:ns2="NPFIT:HL7:Localisation"
+            xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+            xsi:nil="true"/>
+   <versionNumber xmlns:itk="urn:nhs-itk:ns:201005"
+                  xmlns:wsa="http://www.w3.org/2005/08/addressing"
+                  xmlns:ns2="NPFIT:HL7:Localisation"
+                  xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+                  value="1"/>
+   <author xmlns:itk="urn:nhs-itk:ns:201005"
+           xmlns:wsa="http://www.w3.org/2005/08/addressing"
+           xmlns:ns2="NPFIT:HL7:Localisation"
+           xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+           typeCode="AUT">
+      <ns2:contentId extension="COCD_TP145200GB01#AssignedAuthor"
+                     root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+      <functionCode code="OA"
+                    codeSystem="2.16.840.1.113883.2.1.3.2.4.17.178"
+                    displayName="Originating Author"/>
+      <time value="2019-04-04 09:17:20.369"/>
+      <COCD_TP145200GB01.AssignedAuthor classCode="ASSIGNED">
+         <addr xsi:nil="true"/>
+         <code code="NR1690"
+               codeSystem="2.16.840.1.113883.2.1.3.2.4.17.124"
+               displayName="Call Operator"/>
+         <templateId extension="COCD_TP145200GB01#AssignedAuthor"
+                     root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+         <assignedPerson classCode="PSN" determinerCode="INSTANCE">
+            <name use="L">
+                        Jim Bob Walton, Jr
+                    </name>
+            <templateId extension="COCD_TP145200GB01#assignedPerson"
+                        root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+         </assignedPerson>
+         <representedOrganization classCode="ORG" determinerCode="INSTANCE">
+            <id extension="EMS01" root="2.16.840.1.113883.2.1.3.2.4.19.2 "/>
+            <name use="L">
+                        EMS Test Harness
+                    </name>
+            <templateId extension="COCD_TP145200GB01#representedOrganization"
+                        root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+         </representedOrganization>
+      </COCD_TP145200GB01.AssignedAuthor>
+   </author>
+   <authorization xmlns:itk="urn:nhs-itk:ns:201005"
+                  xmlns:wsa="http://www.w3.org/2005/08/addressing"
+                  xmlns:ns2="NPFIT:HL7:Localisation"
+                  xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+                  typeCode="AUTH">
+      <ns2:contentId extension="COCD_TP146226GB02#Consent"
+                     root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+   </authorization>
+   <component xmlns:itk="urn:nhs-itk:ns:201005"
+              xmlns:wsa="http://www.w3.org/2005/08/addressing"
+              xmlns:ns2="NPFIT:HL7:Localisation"
+              xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+              contextConductionInd="true"
+              typeCode="COMP">
+      <structuredBody classCode="DOCBODY" moodCode="EVN">
+         <component contextConductionInd="false" typeCode="COMP">
+            <classificationSection classCode="DOCSECT" moodCode="EVN">
+               <component contextConductionInd="false" typeCode="COMP">
+                  <COCD_TP146246GB01.Section1 classCode="DOCSECT" moodCode="EVN">
+                     <text>
+                                    All okay
+                                </text>
+                     <title>
+                        <titletest xmlns="" xmlns:ns3="urn:hl7-org:v3">
+                                        testTextContent
+                                    </titletest>
+                     </title>
+                  </COCD_TP146246GB01.Section1>
+               </component>
+               <entry contextConductionInd="false" typeCode="COMP">
+                  <COCD_TP146092GB01.ClinicalDiscriminator classCode="OBS" moodCode="EVN">
+                     <value code="cardio"/>
+                  </COCD_TP146092GB01.ClinicalDiscriminator>
+               </entry>
+               <entry contextConductionInd="false" typeCode="COMP">
+                  <COCD_TP146092GB01.ClinicalDiscriminator classCode="OBS" moodCode="EVN">
+                     <value displayName="Chief concern: Palpitations "/>
+                  </COCD_TP146092GB01.ClinicalDiscriminator>
+               </entry>
+               <entry contextConductionInd="false" typeCode="COMP">
+                  <COCD_TP146092GB01.ClinicalDiscriminator classCode="OBS" moodCode="EVN">
+                     <value/>
+                  </COCD_TP146092GB01.ClinicalDiscriminator>
+               </entry>
+               <entry contextConductionInd="false" typeCode="COMP">
+                  <COCD_TP146092GB01.ClinicalDiscriminator classCode="OBS" moodCode="EVN">
+                     <value displayName="Chief concern: Palpitations "/>
+                  </COCD_TP146092GB01.ClinicalDiscriminator>
+               </entry>
+            </classificationSection>
+         </component>
+      </structuredBody>
+   </component>
+   <documentationOf xmlns:itk="urn:nhs-itk:ns:201005"
+                    xmlns:wsa="http://www.w3.org/2005/08/addressing"
+                    xmlns:ns2="NPFIT:HL7:Localisation"
+                    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+                    typeCode="DOC">
+      <COCD_TP146227GB02.ServiceEvent moodCode="EVN"/>
+      <ns2:contentId extension="COCD_TP146227GB02#ServiceEvent"
+                     root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+   </documentationOf>
+   <informant xmlns:itk="urn:nhs-itk:ns:201005"
+              xmlns:wsa="http://www.w3.org/2005/08/addressing"
+              xmlns:ns2="NPFIT:HL7:Localisation"
+              xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+              contextControlCode="OP"
+              typeCode="INF">
+      <ns2:contentId extension="COCD_TP145210GB01#AssignedEntity"
+                     root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+      <COCD_TP145210GB01.AssignedEntity classCode="ASSIGNED"/>
+   </informant>
+   <informationRecipient xmlns:itk="urn:nhs-itk:ns:201005"
+                         xmlns:wsa="http://www.w3.org/2005/08/addressing"
+                         xmlns:ns2="NPFIT:HL7:Localisation"
+                         xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+                         typeCode="PRCP">
+      <ns2:contentId extension="COCD_TP145202GB02#IntendedRecipient"
+                     root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+      <COCD_TP145202GB02.IntendedRecipient classCode="ASSIGNED">
+         <assignedPerson classCode="PSN" determinerCode="INSTANCE">
+            <name use="L">
+                        John Blog Dr
+                    </name>
+         </assignedPerson>
+      </COCD_TP145202GB02.IntendedRecipient>
+   </informationRecipient>
+   <recordTarget xmlns:itk="urn:nhs-itk:ns:201005"
+                 xmlns:wsa="http://www.w3.org/2005/08/addressing"
+                 xmlns:ns2="NPFIT:HL7:Localisation"
+                 xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+                 contextControlCode="OP"
+                 typeCode="RCT">
+      <ns2:contentId extension="COCD_TP145201GB01#PatientRole"
+                     root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+      <COCD_TP145201GB01.PatientRole classCode="PAT">
+         <patientPatient classCode="PSN" determinerCode="INSTANCE">
+            <administrativeGenderCode code="Female"
+                                      codeSystem="http://hl7.org/fhir/administrative-gender"
+                                      displayName="Female"/>
+            <birthTime value="Wed Sep 07 00:00:00 BST 2011"/>
+            <name use="L">
+                        Joanne Bloggs
+                    </name>
+         </patientPatient>
+      </COCD_TP145201GB01.PatientRole>
+   </recordTarget>
+</ClinicalDocument><?xml version="1.0" encoding="UTF-8"?>
+<!--
+			This example message is provided for illustrative purposes only. It
+			has had no clinical validation. Whilst every effort has been taken to
+			ensure that the examples are consistent with the message
+			definition contained within the domain message specifications,
+			where there are conflicts	with the written message specification or 
+			schema, the specification or schema shall be considered to take
+			precedence.
+		-->
+<ClinicalDocument xmlns="urn:hl7-org:v3"
+                  xmlns:npfitlc="NPFIT:HL7:Localisation"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:schemaLocation="urn:hl7-org:v3 ..\..\Schemas\POCD_MT200001GB02.xsd">
+   <code xmlns:ns2="NPFIT:HL7:Localisation"
+         code="1066271000000101"
+         codeSystem="2.16.840.1.113883.2.1.3.2.4.15"/>
+   <confidentialityCode xmlns:ns2="NPFIT:HL7:Localisation"
+                        code="V"
+                        codeSystem="2.16.840.1.113883.1.11.16926"
+                        displayName="very restricted"/>
+   <effectiveTime xmlns:ns2="NPFIT:HL7:Localisation" value="2019-04-04 09:17:20.372"/>
+   <id xmlns:ns2="NPFIT:HL7:Localisation"/>
+   <ns2:messageType xmlns:ns2="NPFIT:HL7:Localisation"
+                    extension="POCD_MT200001GB02"
+                    root="2.16.840.1.113883.2.1.3.2.4.18.17"/>
+   <participant xmlns:ns2="NPFIT:HL7:Localisation" xsi:nil="true"/>
+   <setId xmlns:ns2="NPFIT:HL7:Localisation"/>
+   <title xmlns:ns2="NPFIT:HL7:Localisation">
+      <reference value="Integrated Urgent Care Report"/>
+   </title>
+   <tracker xmlns:ns2="NPFIT:HL7:Localisation" xsi:nil="true"/>
+   <versionNumber xmlns:ns2="NPFIT:HL7:Localisation" value="1"/>
+   <author xmlns:ns2="NPFIT:HL7:Localisation" typeCode="AUT">
+      <ns2:contentId extension="COCD_TP145200GB01#AssignedAuthor"
+                     root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+      <functionCode code="OA"
+                    codeSystem="2.16.840.1.113883.2.1.3.2.4.17.178"
+                    displayName="Originating Author"/>
+      <time value="2019-04-04 09:17:20.369"/>
+      <COCD_TP145200GB01.AssignedAuthor classCode="ASSIGNED">
+         <addr xsi:nil="true"/>
+         <code code="NR1690"
+               codeSystem="2.16.840.1.113883.2.1.3.2.4.17.124"
+               displayName="Call Operator"/>
+         <templateId extension="COCD_TP145200GB01#AssignedAuthor"
+                     root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+         <assignedPerson classCode="PSN" determinerCode="INSTANCE">
+            <name use="L">
+                        Jim Bob Walton, Jr
+                    </name>
+            <templateId extension="COCD_TP145200GB01#assignedPerson"
+                        root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+         </assignedPerson>
+         <representedOrganization classCode="ORG" determinerCode="INSTANCE">
+            <id extension="EMS01" root="2.16.840.1.113883.2.1.3.2.4.19.2 "/>
+            <name use="L">
+                        EMS Test Harness
+                    </name>
+            <templateId extension="COCD_TP145200GB01#representedOrganization"
+                        root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+         </representedOrganization>
+      </COCD_TP145200GB01.AssignedAuthor>
+   </author>
+   <authorization xmlns:ns2="NPFIT:HL7:Localisation" typeCode="AUTH">
+      <ns2:contentId extension="COCD_TP146226GB02#Consent"
+                     root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+   </authorization>
+   <component xmlns:ns2="NPFIT:HL7:Localisation"
+              contextConductionInd="true"
+              typeCode="COMP">
+      <structuredBody classCode="DOCBODY" moodCode="EVN">
+         <component contextConductionInd="false" typeCode="COMP">
+            <classificationSection classCode="DOCSECT" moodCode="EVN">
+               <component contextConductionInd="false" typeCode="COMP">
+                  <COCD_TP146246GB01.Section1 classCode="DOCSECT" moodCode="EVN">
+                     <text>
+                                    All okay
+                                </text>
+                     <title>
+                        <titletest xmlns="" xmlns:ns3="urn:hl7-org:v3">
+                                        testTextContent
+                                    </titletest>
+                     </title>
+                  </COCD_TP146246GB01.Section1>
+               </component>
+               <entry contextConductionInd="false" typeCode="COMP">
+                  <COCD_TP146092GB01.ClinicalDiscriminator classCode="OBS" moodCode="EVN">
+                     <value code="cardio"/>
+                  </COCD_TP146092GB01.ClinicalDiscriminator>
+               </entry>
+               <entry contextConductionInd="false" typeCode="COMP">
+                  <COCD_TP146092GB01.ClinicalDiscriminator classCode="OBS" moodCode="EVN">
+                     <value displayName="Chief concern: Palpitations "/>
+                  </COCD_TP146092GB01.ClinicalDiscriminator>
+               </entry>
+               <entry contextConductionInd="false" typeCode="COMP">
+                  <COCD_TP146092GB01.ClinicalDiscriminator classCode="OBS" moodCode="EVN">
+                     <value/>
+                  </COCD_TP146092GB01.ClinicalDiscriminator>
+               </entry>
+               <entry contextConductionInd="false" typeCode="COMP">
+                  <COCD_TP146092GB01.ClinicalDiscriminator classCode="OBS" moodCode="EVN">
+                     <value displayName="Chief concern: Palpitations "/>
+                  </COCD_TP146092GB01.ClinicalDiscriminator>
+               </entry>
+            </classificationSection>
+         </component>
+      </structuredBody>
+   </component>
+   <documentationOf xmlns:ns2="NPFIT:HL7:Localisation" typeCode="DOC">
+      <COCD_TP146227GB02.ServiceEvent moodCode="EVN"/>
+      <ns2:contentId extension="COCD_TP146227GB02#ServiceEvent"
+                     root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+   </documentationOf>
+   <informant xmlns:ns2="NPFIT:HL7:Localisation"
+              contextControlCode="OP"
+              typeCode="INF">
+      <ns2:contentId extension="COCD_TP145210GB01#AssignedEntity"
+                     root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+      <COCD_TP145210GB01.AssignedEntity classCode="ASSIGNED"/>
+   </informant>
+   <informationRecipient xmlns:ns2="NPFIT:HL7:Localisation" typeCode="PRCP">
+      <ns2:contentId extension="COCD_TP145202GB02#IntendedRecipient"
+                     root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+      <COCD_TP145202GB02.IntendedRecipient classCode="ASSIGNED">
+         <assignedPerson classCode="PSN" determinerCode="INSTANCE">
+            <name use="L">
+                        John Blog Dr
+                    </name>
+         </assignedPerson>
+      </COCD_TP145202GB02.IntendedRecipient>
+   </informationRecipient>
+   <recordTarget xmlns:ns2="NPFIT:HL7:Localisation"
+                 contextControlCode="OP"
+                 typeCode="RCT">
+      <ns2:contentId extension="COCD_TP145201GB01#PatientRole"
+                     root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+      <COCD_TP145201GB01.PatientRole classCode="PAT">
+         <patientPatient classCode="PSN" determinerCode="INSTANCE">
+            <administrativeGenderCode code="Female"
+                                      codeSystem="http://hl7.org/fhir/administrative-gender"
+                                      displayName="Female"/>
+            <birthTime value="Wed Sep 07 00:00:00 BST 2011"/>
+            <name use="L">
+                        Joanne Bloggs
+                    </name>
+         </patientPatient>
+      </COCD_TP145201GB01.PatientRole>
+   </recordTarget>
+</ClinicalDocument>

@@ -1,0 +1,31 @@
+<Vocabularies xmlns="urn:nhs-itk:ns:201005">
+	<vocabulary version="" status="" name="Vocabulary Usage" id="">
+		<concept code="QUPC_RM150001GB01">
+			<displayName>GetSCRStatusRequest</displayName>
+		</concept>
+		<concept code="QUPC_RM150003GB01">
+			<displayName>QueryPTVRequest</displayName>
+		</concept>
+		<concept code="QUPC_RM150004GB01">
+			<displayName>QuerySCRRequest</displayName>
+		</concept>
+		<concept code="REPC_RM150001GB01">
+			<displayName>GetSCRStatusResponse</displayName>
+		</concept>
+		<concept code="REPC_RM150007GB01">
+			<displayName>QueryPTVResponse</displayName>
+		</concept>
+		<concept code="REPC_RM150008GB01">
+			<displayName>CreatePTVRequest</displayName>
+		</concept>
+		<concept code="REPC_RM150009GB01">
+			<displayName>CreatePTVResponse</displayName>
+		</concept>
+		<concept code="REPC_RM150012GB01">
+			<displayName>QuerySCRResponse</displayName>
+		</concept>
+		<concept code="REPC_RM150014GB01">
+			<displayName>QuerySCRActivityResponse</displayName>
+		</concept>
+	</vocabulary>
+</Vocabularies>

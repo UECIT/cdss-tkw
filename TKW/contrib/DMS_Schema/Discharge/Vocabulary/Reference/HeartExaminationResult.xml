@@ -1,0 +1,25 @@
+<Vocabularies xmlns="urn:nhs-itk:ns:201005">
+	<vocabulary version="1.0" status="active" name="HeartExaminationResult" id="">
+		<concept code="00">
+			<displayName>Not tested</displayName>
+		</concept>
+		<concept code="01">
+			<displayName>No abnormalities and no risk factors</displayName>
+		</concept>
+		<concept code="02">
+			<displayName>No abnormalities with risk factors</displayName>
+		</concept>
+		<concept code="03">
+			<displayName>Abnormality suspected with risk factors</displayName>
+		</concept>
+		<concept code="04">
+			<displayName>Abnormality suspected with no risk factors</displayName>
+		</concept>
+		<concept code="09">
+			<displayName>Screen declined</displayName>
+		</concept>
+		<concept code="98">
+			<displayName>Incomplete</displayName>
+		</concept>
+	</vocabulary>
+</Vocabularies>

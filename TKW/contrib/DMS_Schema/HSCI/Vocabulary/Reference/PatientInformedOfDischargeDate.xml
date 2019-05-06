@@ -1,0 +1,10 @@
+<Vocabularies xmlns="urn:nhs-itk:ns:201005">
+	<vocabulary version="1.0" status="created" name="PatientInformedOfDischargeDate" id="">
+		<concept code="PIODD">
+			<displayName>Patient Informed of Discharge Date.</displayName>
+		</concept>
+		<concept code="PNIODD">
+			<displayName>Patient not Informed of Discharge Date.</displayName>
+		</concept>
+	</vocabulary>
+</Vocabularies>

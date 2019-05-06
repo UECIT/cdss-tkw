@@ -1,0 +1,19 @@
+<Vocabularies xmlns="urn:nhs-itk:ns:201005">
+	<vocabulary version="1.0" status="active" name="PlaceEntityType" id="2.16.840.1.113883.1.11.16100">
+		<concept code="BED">
+			<displayName>Bed Location</displayName>
+		</concept>
+		<concept code="BLDG">
+			<displayName>Building Location</displayName>
+		</concept>
+		<concept code="FLOOR">
+			<displayName>Floor Location</displayName>
+		</concept>
+		<concept code="ROOM">
+			<displayName>Room Location</displayName>
+		</concept>
+		<concept code="WING">
+			<displayName>Wing Location</displayName>
+		</concept>
+	</vocabulary>
+</Vocabularies>

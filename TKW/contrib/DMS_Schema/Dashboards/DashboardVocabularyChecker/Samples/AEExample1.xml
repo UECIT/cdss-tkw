@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AEFeed xmlns="urn:hl7-org:v3" xmlns:npfitlc="NPFIT:HL7:Localisation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" classCode="OBS" moodCode="EVN">
+	<id root="2.16.840.1.113883.2.1.3.2.4.18.25" extension="ED-10-000017-1"/>
+	<code code="AE" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.310"/>
+	<effectiveTime value="20101201131100"/>
+	<component typeCode="COMP">
+		<createdDate classCode="OBS" moodCode="EVN">
+			<code code="CDATE" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.286"/>
+			<value value="19000101000000"/>
+		</createdDate>
+	</component>
+	<component1 typeCode="COMP">
+		<modifiedDate classCode="OBS" moodCode="EVN">
+			<code code="MDATE" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.286"/>
+			<value value="19000101000000"/>
+		</modifiedDate>
+	</component1>
+	<component11 typeCode="COMP">
+		<arrivalMode classCode="OBS" moodCode="EVN">
+			<code code="ARRMOD" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.286"/>
+			<value code="6665" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.296"/>
+		</arrivalMode>
+	</component11>
+	<component12 typeCode="COMP">
+		<referralSource classCode="OBS" moodCode="EVN">
+			<code code="RS" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.286"/>
+			<!--Note that the data dictionary value should go here-->
+			<!--else the local OID contained in the specification should be used-->
+			<value code="5921" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.295"/>
+		</referralSource>
+	</component12>
+	<component13 typeCode="COMP">
+		<attendanceCategory classCode="OBS" moodCode="EVN">
+			<code code="ATTCAT" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.286"/>
+			<value code="0" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.297"/>
+		</attendanceCategory>
+	</component13>
+	<component14 typeCode="COMP">
+		<aEDepartmentType classCode="OBS" moodCode="EVN">
+			<code code="AEDT" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.286"/>
+			<value code="1" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.299"/>
+		</aEDepartmentType>
+	</component14>
+	<component15 typeCode="COMP">
+		<deleteFlag classCode="OBS" moodCode="EVN">
+			<code code="DF" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.286"/>
+			<value value="false"/>
+		</deleteFlag>
+	</component15>
+	<component16 typeCode="COMP">
+		<presentingComplaint classCode="OBS" moodCode="EVN">
+			<code code="PC" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.286"/>
+			<text>ABDOMINAL LACERATION</text>
+		</presentingComplaint>
+	</component16>
+	<component26 typeCode="COMP">
+		<medicationSupply classCode="SPLY" moodCode="EVN">
+			<code code="MEDSUP" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.286"/>
+			<text>Drug1</text>
+			<product typeCode="PRD">
+				<manufacturedProduct classCode="MANU">
+					<manufacturedManufacturedMaterial classCode="MMAT" determinerCode="INSTANCE">
+						<!--code and codeSystem to be specified in accordance with tabular view-->
+						<!--example OID 1.1.1 included to ensure schema compliance in example-->
+						<code code="1" codeSystem="1.1.1"/>
+					</manufacturedManufacturedMaterial>
+				</manufacturedProduct>
+			</product>
+		</medicationSupply>
+	</component26>
+	<component26 typeCode="COMP">
+		<medicationSupply classCode="SPLY" moodCode="EVN">
+			<code code="MEDSUP" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.286"/>
+			<text>Drug2</text>
+			<product typeCode="PRD">
+				<manufacturedProduct classCode="MANU">
+					<manufacturedManufacturedMaterial classCode="MMAT" determinerCode="INSTANCE">
+						<!--code and codeSystem to be specified in accordance with tabular view-->
+						<!--example OID 1.1.1 included to ensure schema compliance in example-->
+						<code code="2" codeSystem="1.1.1"/>
+					</manufacturedManufacturedMaterial>
+				</manufacturedProduct>
+			</product>
+		</medicationSupply>
+	</component26>
+	<component26 typeCode="COMP">
+		<medicationSupply classCode="SPLY" moodCode="EVN">
+			<code code="MEDSUP" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.286"/>
+			<text>Drug3</text>
+			<product typeCode="PRD">
+				<manufacturedProduct classCode="MANU">
+					<manufacturedManufacturedMaterial classCode="MMAT" determinerCode="INSTANCE">
+						<!--code and codeSystem to be specified in accordance with tabular view-->
+						<!--example OID 1.1.1 included to ensure schema compliance in example-->
+						<code code="3" codeSystem="1.1.1"/>
+					</manufacturedManufacturedMaterial>
+				</manufacturedProduct>
+			</product>
+		</medicationSupply>
+	</component26>
+	<component27 typeCode="COMP">
+		<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCT_TP000018GB01#PMIContent"/>
+		<COCT_TP000018GB01.PMIContent classCode="OBS" moodCode="EVN">
+			<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCT_TP000018GB01#PMIContent"/>
+			<id root="16C2662F-1C6E-4F38-9B3F-5084F46CE3E1"/>
+			<code code="PMI" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.310"/>
+			<component1 typeCode="COMP">
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCT_TP000018GB01#component1"/>
+				<deleteFlag classCode="OBS" moodCode="EVN">
+					<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCT_TP000018GB01#deleteFlag"/>
+					<code code="DF" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.286"/>
+					<value value="false"/>
+				</deleteFlag>
+			</component1>
+			<component2 typeCode="COMP">
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCT_TP000018GB01#component2"/>
+				<createdDate classCode="OBS" moodCode="EVN">
+					<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCT_TP000018GB01#createdDate"/>
+					<code code="CDATE" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.286"/>
+					<value value="19000101000000"/>
+				</createdDate>
+			</component2>
+			<component3 typeCode="COMP">
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCT_TP000018GB01#component3"/>
+				<modifiedDate classCode="OBS" moodCode="EVN">
+					<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCT_TP000018GB01#modifiedDate"/>
+					<code code="MDATE" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.286"/>
+					<value value="20110111152030"/>
+				</modifiedDate>
+			</component3>
+			<subject typeCode="SBJ">
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCT_TP000018GB01#subject"/>
+				<patient classCode="PAT">
+					<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCT_TP000018GB01#patient"/>
+					<!--This OID is the one to use for NHS Number only-->
+					<id root="2.16.840.1.113883.2.1.4.1" extension="17"/>
+					<addr>
+						<postalCode>BH24 3AA</postalCode>
+					</addr>
+					<patientPerson classCode="PSN" determinerCode="INSTANCE">
+						<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCT_TP000018GB01#patientPerson"/>
+						<name>
+							<family>Patient</family>
+							<given>Test</given>
+						</name>
+						<birthTime value="20071214"/>
+						<deceasedTime value="22000101"/>
+						<gPPractice classCode="SDLOC">
+							<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCT_TP000018GB01#gPPractice"/>
+							<code code="GPP" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.290"/>
+							<locationOrganization classCode="ORG" determinerCode="INSTANCE">
+								<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCT_TP000018GB01#locationOrganization"/>
+								<id root="2.16.840.1.113883.2.1.3.2.4.19.1" extension="D83029"/>
+							</locationOrganization>
+						</gPPractice>
+					</patientPerson>
+				</patient>
+			</subject>
+		</COCT_TP000018GB01.PMIContent>
+	</component27>
+	<component28 typeCode="COMP">
+		<incidentLocationType classCode="OBS" moodCode="EVN">
+			<code code="ITL" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.286"/>
+			<!--Note that the data dictionary value should go here-->
+			<!--else the local OID contained in the specification should be used-->
+			<value code="5891" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.293"/>
+		</incidentLocationType>
+	</component28>
+	<component29 typeCode="COMP">
+		<aEPatientGroup classCode="OBS" moodCode="EVN">
+			<code code="AEPG" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.286"/>
+			<value code="0" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.294"/>
+		</aEPatientGroup>
+	</component29>
+	<component31 typeCode="COMP">
+		<secondaryDiagnosis classCode="OBS" moodCode="EVN">
+			<code code="SD" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.286"/>
+			<!--code and codeSystem to be specified in accordance with tabular view-->
+			<!--example OID 1.1.1 included to ensure schema compliance in example-->
+			<value code="" codeSystem="1.1.1" displayName="SecondardDiag"/>
+		</secondaryDiagnosis>
+	</component31>
+	<component5 typeCode="COMP">
+		<primaryDiagnosis classCode="OBS" moodCode="EVN">
+			<code code="PD" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.286"/>
+			<!--code and codeSystem to be specified in accordance with tabular view-->
+			<!--example OID 1.1.1 included to ensure schema compliance in example-->
+			<value code="" codeSystem="1.1.1" displayName="PrimaryDesc"/>
+		</primaryDiagnosis>
+	</component5>
+	<component6 typeCode="COMP">
+		<initialTriageCategory classCode="OBS" moodCode="EVN">
+			<code code="ITC" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.286"/>
+			<value code="0" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.309"/>
+		</initialTriageCategory>
+	</component6>
+	<component8 typeCode="COMP">
+		<disposalMethod classCode="OBS" moodCode="EVN">
+			<code code="DM" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.286"/>
+			<!--Note that the data dictionary value should go here-->
+			<!--else the local OID contained in the specification should be used-->
+			<value code="6196" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.298"/>
+		</disposalMethod>
+	</component8>
+	<performer typeCode="PRF">
+		<clinician classCode="AGNT">
+			<agentClinicianPerson classCode="PSN" determinerCode="INSTANCE">
+				<name>
+					<family>Name</family>
+					<given>Cons</given>
+				</name>
+			</agentClinicianPerson>
+		</clinician>
+	</performer>
+	<performer1 typeCode="PRF">
+		<serviceOrganisation classCode="SDLOC">
+			<code code="SO" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.290"/>
+			<locationServiceOrganisationDetails classCode="ORG" determinerCode="INSTANCE">
+				<id root="2.16.840.1.113883.2.1.3.2.4.19.1" extension="XXX"/>
+				<name>Org Name</name>
+			</locationServiceOrganisationDetails>
+		</serviceOrganisation>
+	</performer1>
+	<subject1 typeCode="SBJ">
+		<sourceOrganisation classCode="SDLOC">
+			<code/>
+			<locationOrganization classCode="ORG" determinerCode="INSTANCE">
+				<!--ODS code of Orgnisation should be present here-->
+				<id root="2.16.840.1.113883.2.1.3.2.4.19.1" extension="XXX"/>
+				<!--Name of the Organisation should be present here-->
+				<name>Org Name</name>
+			</locationOrganization>
+		</sourceOrganisation>
+	</subject1>
+	<subject2 typeCode="SBJ">
+		<destinationOrganisation classCode="SDLOC">
+			<code/>
+			<locationOrganization classCode="ORG" determinerCode="INSTANCE">
+				<!--ODS code of Orgnisation should be present here-->
+				<id root="2.16.840.1.113883.2.1.3.2.4.19.1" extension="XXX"/>
+				<!--Name of the Organisation should be present here-->
+				<name>XXX</name>
+			</locationOrganization>
+		</destinationOrganisation>
+	</subject2>
+</AEFeed>

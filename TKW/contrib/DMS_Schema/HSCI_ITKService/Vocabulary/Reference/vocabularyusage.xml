@@ -1,0 +1,7 @@
+<Vocabularies xmlns="urn:nhs-itk:ns:201005">
+	<vocabulary version="" status="" name="Vocabulary Usage" id="">
+		<concept code="COCD_TP146067UK01">
+			<displayName>ActivityOfDailyLiving</displayName>
+		</concept>
+	</vocabulary>
+</Vocabularies>

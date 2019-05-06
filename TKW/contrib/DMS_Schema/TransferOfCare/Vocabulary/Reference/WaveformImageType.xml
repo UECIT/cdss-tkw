@@ -1,0 +1,7 @@
+<Vocabularies xmlns="urn:nhs-itk:ns:201005">
+	<vocabulary version="1.0" status="active" name="WaveformImageType" id="">
+		<concept code="HRWFI">
+			<displayName>High resolution waveform image.</displayName>
+		</concept>
+	</vocabulary>
+</Vocabularies>

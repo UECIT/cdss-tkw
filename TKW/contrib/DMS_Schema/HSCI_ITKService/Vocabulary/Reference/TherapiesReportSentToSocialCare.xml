@@ -1,0 +1,10 @@
+<Vocabularies xmlns="urn:nhs-itk:ns:201005">
+	<vocabulary version="1.0" status="active" name="TherapiesReportSentToSocialCare" id="">
+		<concept code="TRSSC">
+			<displayName>Therapies report sent to social care.</displayName>
+		</concept>
+		<concept code="TRNSSC">
+			<displayName>Therapies report not sent to social care</displayName>
+		</concept>
+	</vocabulary>
+</Vocabularies>

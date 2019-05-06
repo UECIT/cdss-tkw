@@ -1,0 +1,1923 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This example message is for scenario 1 Checklist Request ->Accept Response -> DST Outcome-->
+<ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:npfitlc="NPFIT:HL7:Localisation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 ..\..\Schemas\POCD_MT010010GB02.xsd" moodCode="EVN" classCode="DOCCLIN">
+	<code code="766821000000104" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="NHS Continuing Healthcare Decision Support Tool"/>
+	<confidentialityCode codeSystem="2.16.840.1.113883.5.25" code="V" displayName="very restricted"/>
+	<effectiveTime value="201010301515"/>
+	<id root="7D6E5B00-AE1A-11DB-96AB-B18E1E0994CD"/>
+	<npfitlc:messageType root="2.16.840.1.113883.2.1.3.2.4.18.17" extension="POCD_MT010010GB02"/>
+	<setId root="7D7E5B00-AE1A-11DB-96AC-B18E1E0994CD"/>
+	<title>NHS Continuing Healthcare Decision Support Tool</title>
+	<typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
+	<versionNumber value="1"/>
+	<author contextControlCode="OP" typeCode="AUT">
+		<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP145212GB02#Workgroup"/>
+		<functionCode codeSystem="2.16.840.1.113883.2.1.3.2.4.17.178" displayName="Originating Author" code="OA"/>
+		<time value="201010301515"/>
+		<COCD_TP145212GB02.Workgroup classCode="ASSIGNED">
+			<code code="01" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.266" displayName="CHC Team"/>
+			<id root="1.2.826.0.1285.0.2.0.109" extension="102016309999"/>
+			<templateId extension="COCD_TP145212GB02#Workgroup" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<assignedPerson classCode="PSN" determinerCode="INSTANCE">
+				<name>
+					<prefix>Mrs</prefix>
+					<family>Brown</family>
+					<given>Jessica</given>
+				</name>
+				<templateId extension="COCD_TP145212GB02#assignedPerson" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			</assignedPerson>
+			<representedOrganization determinerCode="INSTANCE" classCode="ORG">
+				<id root="2.16.840.1.113883.2.1.3.2.4.19.1" extension="V396AA"/>
+				<name>East Cheshire NHS Trust</name>
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP145212GB02#representedOrganization"/>
+			</representedOrganization>
+		</COCD_TP145212GB02.Workgroup>
+	</author>
+	<component typeCode="COMP" contextConductionInd="true">
+		<structuredBody moodCode="EVN" classCode="DOCBODY">
+			<component typeCode="COMP" contextConductionInd="true">
+				<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP146223GB01#ClassificationSection"/>
+				<COCD_TP146223GB01.ClassificationSection classCode="DOCSECT" moodCode="EVN">
+					<id root="7D5E5B00-AE1A-11DB-96AD-B18E1E0994CD"/>
+					<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146223GB01#ClassificationSection"/>
+					<component01 typeCode="COMP" contextConductionInd="true">
+						<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146223GB01#component01"/>
+						<section1PersonalDetailsSection1 classCode="DOCSECT" moodCode="EVN">
+							<id root="7D5E5B00-AE1A-11DB-96AE-B18E1E0994CD"/>
+							<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146223GB01#section1PersonalDetailsSection1"/>
+							<text>
+								<table width="100%">
+									<tbody>
+										<tr>
+											<td>
+												<content styleCode="Bold">Date of completion of Decision Support Tool:</content>
+											</td>
+											<td>30-Oct-2010</td>
+										</tr>
+									</tbody>
+								</table>
+								<br/>
+								<table width="100%">
+									<tbody>
+										<tr>
+											<td colspan="2">
+												<content styleCode="Bold">Was the individual involved in the completion of the DST?</content>
+											</td>
+											<td colspan="2">Yes</td>
+										</tr>
+										<tr>
+											<td colspan="2">
+												<content styleCode="Bold">Was the individual offered the opportunity to have a representative such as a family member or other advocate present when the DST was completed?</content>
+											</td>
+											<td colspan="2">Yes</td>
+										</tr>
+										<tr>
+											<td colspan="2">
+												<content styleCode="Bold">If yes, did the representative attend the completion of the DST?</content>
+											</td>
+											<td colspan="2">Yes</td>
+										</tr>
+									</tbody>
+								</table>
+								<br/>
+								<table width="100%">
+									<tbody>
+										<tr>
+											<th colspan="2">
+												<content styleCode="Bold">The contact details of the representative</content>
+											</th>
+										</tr>
+										<tr align="left" valign="top">
+											<td>
+												<content styleCode="Bold">Name:</content>
+											</td>
+											<td>Mrs Jeanette Dean</td>
+										</tr>
+										<tr align="left" valign="top">
+											<td>
+												<content styleCode="Bold">Address:</content>
+											</td>
+											<td>
+												<paragraph>32, County Lodge Avenue</paragraph>
+												<paragraph>Woodley</paragraph>
+												<paragraph>Woodtown</paragraph>
+												<paragraph>Cheshire</paragraph>
+												<paragraph>CH7 FR3</paragraph>
+											</td>
+										</tr>
+										<tr align="left" valign="top">
+											<td>
+												<content styleCode="Bold">Telephone Number:</content>
+											</td>
+											<td>01433 445234
+													</td>
+										</tr>
+										<tr align="left" valign="top">
+											<td>
+												<content styleCode="Bold">Email:</content>
+											</td>
+											<td>jeanette.dean@emailfree.co.uk</td>
+										</tr>
+									</tbody>
+								</table>
+							</text>
+							<title>Section 1: Personal Details</title>
+						</section1PersonalDetailsSection1>
+					</component01>
+					<component02 typeCode="COMP" contextConductionInd="true">
+						<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146223GB01#component02"/>
+						<mentalCapacitySection1 classCode="DOCSECT" moodCode="EVN">
+							<id root="7D5E5B00-AE1A-19DB-96AE-B18E1F0994CD"/>
+							<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146223GB01#mentalCapacitySection1"/>
+							<text>
+								<table width="100%">
+									<tbody>
+										<tr>
+											<th colspan="2">Mental Capacity to Consent</th>
+										</tr>
+										<tr>
+											<td>
+												<content styleCode="Bold">Does the patient have the mental capacity to consent or dissent to the undertaking of the assessment?</content>
+											</td>
+											<td>Yes</td>
+										</tr>
+										<tr>
+											<td>
+												<content styleCode="Bold">If No, Has a Best Interests Decision has been made on behalf of the patient</content>
+											</td>
+											<td/>
+										</tr>
+										<tr>
+											<td>
+												<content styleCode="Bold">If No, Has a Third Party with Lasting Power of Attorney (Welfare), given consent on behalf of the patient</content>
+											</td>
+											<td/>
+										</tr>
+										<tr>
+											<td>
+												<content styleCode="Bold">If No, Has a Third Party appointed Welfare Deputy by the Court of Protection, given consent on behalf of the patient</content>
+											</td>
+											<td/>
+										</tr>
+										<tr>
+											<td>
+												<content styleCode="Bold">The Independent Mental Capacity Advocate has been consulted</content>
+											</td>
+											<td>No</td>
+										</tr>
+									</tbody>
+								</table>
+								<br/>
+								<table width="100%">
+									<tbody>
+										<tr>
+											<th colspan="2">
+												<content styleCode="Bold">The contact details of the individual providing consent on behalf of the patient</content>
+											</th>
+										</tr>
+										<tr align="left" valign="top">
+											<td>
+												<content styleCode="Bold">Name:</content>
+											</td>
+											<td/>
+										</tr>
+										<tr align="left" valign="top">
+											<td>
+												<content styleCode="Bold">Address:</content>
+											</td>
+											<td>
+												<paragraph/>
+												<paragraph/>
+												<paragraph/>
+												<paragraph/>
+												<paragraph/>
+											</td>
+										</tr>
+										<tr align="left" valign="top">
+											<td>
+												<content styleCode="Bold">Telephone Number:</content>
+											</td>
+											<td>
+												<content styleCode="Bold">Bleep Number:</content>
+											</td>
+										</tr>
+										<tr align="left" valign="top">
+											<td>
+												<content styleCode="Bold">Email:</content>
+											</td>
+											<td/>
+										</tr>
+									</tbody>
+								</table>
+							</text>
+							<title>Mental Capacity</title>
+						</mentalCapacitySection1>
+					</component02>
+					<component03 typeCode="COMP" contextConductionInd="true">
+						<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146223GB01#component03"/>
+						<summarySection1 classCode="DOCSECT" moodCode="EVN">
+							<id root="7D5E5B00-AE1A-20DB-96AE-B18E1F0994CD"/>
+							<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146223GB01#summarySection1"/>
+							<text>
+								<table width="100%">
+									<thead>
+										<tr valign="top" align="left">
+											<td>
+												<content styleCode="Bold">Summary pen portrait of the individual's situation, relevant history and current needs, including clinical summary and identified significant risks, drawn from the multidisciplinary assessment:</content>
+											</td>
+										</tr>
+									</thead>
+									<tbody>
+										<tr align="left" valign="top">
+											<td>Parkinsons disease
+														<br/>Lewy-Body Dementia
+														<br/>Bladder Tumour - 10 years ago
+														<br/>BCC removed last year
+														<br/>Frequent falls
+														<br/>Mrs Belinda Taylor has a diagnosis of Lewy Body dementia, this has caused communication, comprehension and mobility difficulties.
+														<br/>Mrs Belinda Taylor needs supervision when mobilising.
+														<br/>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<br/>
+								<table width="100%">
+									<thead>
+										<tr valign="top" align="left">
+											<td>
+												<content styleCode="Bold">Individual's view of their care needs and whether they consider that the multidisciplinary assessment accurately reflects these:</content>
+											</td>
+										</tr>
+									</thead>
+									<tbody>
+										<tr align="left" valign="top">
+											<td>No comments made by individual
+														<br/>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<br/>
+								<table width="100%">
+									<tbody>
+										<tr align="left" valign="top">
+											<th>Information about whether and how the individual (or their representative) contributed to the assessment of their needs. If they were not involved, please record whether they were not invited or whether they were not invited or whether they declined to participate.</th>
+										</tr>
+										<tr align="left" valign="top">
+											<td>
+												<paragraph>Ms Dean declined to participate in this assessment.</paragraph>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<br/>
+								<table width="100%">
+									<thead>
+										<tr valign="top" align="left">
+											<th colspan="2">
+												<content styleCode="Bold">The assessments and other key evidence that were taken into account in completing the DST, including the dates of the assessments:</content>
+											</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr align="left" valign="top">
+											<td>Must Nutitional Assessment</td>
+											<td>24-Oct-2010</td>
+										</tr>
+										<tr align="left" valign="top">
+											<td>Fall Risk Assessment</td>
+											<td>24-Oct-2010</td>
+										</tr>
+										<tr align="left" valign="top">
+											<td>Waterflow Scale</td>
+											<td>24-Oct-2010</td>
+										</tr>
+										<tr align="left" valign="top">
+											<td>Personal Handling Plan</td>
+											<td>24-Oct-2010</td>
+										</tr>
+									</tbody>
+								</table>
+							</text>
+							<title>Summary</title>
+						</summarySection1>
+					</component03>
+					<component04 typeCode="COMP" contextConductionInd="true">
+						<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146223GB01#component04"/>
+						<assessorsIncludingMDTMembersSection1 classCode="DOCSECT" moodCode="EVN">
+							<id root="7D5E5B00-AE1A-21DB-96AE-B18E1F0994CD"/>
+							<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146223GB01#assessorsIncludingMDTMembersSection1"/>
+							<text>
+								<table width="100%">
+									<tbody>
+										<tr align="left" valign="top">
+											<th>
+												<content styleCode="Bold">Name of the assessor:</content>
+											</th>
+											<th>Mrs. Jessica Brown</th>
+										</tr>
+										<tr align="left" valign="top">
+											<td>
+												<content styleCode="Bold">Role:</content>
+											</td>
+											<td>
+												<paragraph>CHC Care Coordinator</paragraph>
+											</td>
+										</tr>
+										<tr align="left" valign="top">
+											<td>
+												<content styleCode="Bold">Contact Details:</content>
+											</td>
+											<td>
+												<paragraph>CHC Team</paragraph>
+												<paragraph>East Cheshire NHS Trust</paragraph>
+												<paragraph>Queen Mary Building</paragraph>
+												<paragraph>Kings Street</paragraph>
+												<paragraph>Cheshire</paragraph>
+												<paragraph>CH24 5TR</paragraph>
+											</td>
+										</tr>
+										<tr align="left" valign="top">
+											<td>
+												<content styleCode="Bold">Lead Care Coordinator:</content>
+											</td>
+											<td>
+												<paragraph>Yes</paragraph>
+											</td>
+										</tr>
+										<tr align="left" valign="top">
+											<th>
+												<content styleCode="Bold">Name of the assessor:</content>
+											</th>
+											<th>Mr. Pete Hungerford</th>
+										</tr>
+										<tr align="left" valign="top">
+											<td>
+												<content styleCode="Bold">Role:</content>
+											</td>
+											<td>
+												<paragraph>Senior Nutritionalist Nurse</paragraph>
+											</td>
+										</tr>
+										<tr align="left" valign="top">
+											<td>
+												<content styleCode="Bold">Contact Details:</content>
+											</td>
+											<td>
+												<paragraph>Ward 6</paragraph>
+												<paragraph>East Cheshire NHS Trust</paragraph>
+												<paragraph>Margaret Building</paragraph>
+												<paragraph>Harrogate Street</paragraph>
+												<paragraph>Cheshire</paragraph>
+												<paragraph>CH24 5TS</paragraph>
+											</td>
+										</tr>
+										<tr align="left" valign="top">
+											<th>
+												<content styleCode="Bold">Name of the assessor:</content>
+											</th>
+											<th>Miss Jani Chakrabarti</th>
+										</tr>
+										<tr align="left" valign="top">
+											<td>
+												<content styleCode="Bold">Role:</content>
+											</td>
+											<td>
+												<paragraph>Consultant</paragraph>
+											</td>
+										</tr>
+										<tr align="left" valign="top">
+											<td>
+												<content styleCode="Bold">Contact Details:</content>
+											</td>
+											<td>
+												<paragraph>Ward 10</paragraph>
+												<paragraph>East Cheshire NHS Trust</paragraph>
+												<paragraph>Queen Mary Building</paragraph>
+												<paragraph>Kings Street</paragraph>
+												<paragraph>Cheshire</paragraph>
+												<paragraph>CH24 5TR</paragraph>
+											</td>
+										</tr>
+										<tr align="left" valign="top">
+											<th>
+												<content styleCode="Bold">Name of the assessor:</content>
+											</th>
+											<th>Mrs June Bradwick</th>
+										</tr>
+										<tr align="left" valign="top">
+											<td>
+												<content styleCode="Bold">Role:</content>
+											</td>
+											<td>
+												<paragraph>Staff Nurse</paragraph>
+											</td>
+										</tr>
+										<tr align="left" valign="top">
+											<td>
+												<content styleCode="Bold">Contact Details:</content>
+											</td>
+											<td>
+												<paragraph>Ward 10</paragraph>
+												<paragraph>East Cheshire NHS Trust</paragraph>
+												<paragraph>Queen Mary Building</paragraph>
+												<paragraph>Kings Street</paragraph>
+												<paragraph>Cheshire</paragraph>
+												<paragraph>CH24 5TR</paragraph>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<br/>
+								<table width="100%">
+									<thead>
+										<tr valign="top" align="left">
+											<th colspan="2">
+												<content styleCode="Bold">Contact details of GP and other key professionals involved in the care of the individual</content>
+											</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr align="left" valign="top">
+											<th>
+												<content styleCode="Bold">Name:</content>
+											</th>
+											<th>Dr. Harry Harvey</th>
+										</tr>
+										<tr align="left" valign="top">
+											<td>
+												<content styleCode="Bold">Role:</content>
+											</td>
+											<td>
+												<paragraph>GP</paragraph>
+											</td>
+										</tr>
+										<tr align="left" valign="top">
+											<td>
+												<content styleCode="Bold">Contact Details:</content>
+											</td>
+											<td>
+												<paragraph>Northgate Medical Practice</paragraph>
+												<paragraph>Springer Street</paragraph>
+												<paragraph>Cheshire</paragraph>
+												<paragraph>CH12 5TY</paragraph>
+											</td>
+										</tr>
+										<tr align="left" valign="top">
+											<th>
+												<content styleCode="Bold">Name:</content>
+											</th>
+											<th>Mr. Andrew Pearson</th>
+										</tr>
+										<tr align="left" valign="top">
+											<td>
+												<content styleCode="Bold">Role:</content>
+											</td>
+											<td>
+												<paragraph>Consultant</paragraph>
+											</td>
+										</tr>
+										<tr align="left" valign="top">
+											<td>
+												<content styleCode="Bold">Contact Details:</content>
+											</td>
+											<td>
+												<paragraph>East Cheshire NHS Trust</paragraph>
+												<paragraph>Queen Mary Building</paragraph>
+												<paragraph>Kings Street</paragraph>
+												<paragraph>Cheshire</paragraph>
+												<paragraph>CH24 5TR</paragraph>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</text>
+							<title>Assessor(s) Including MDT Members</title>
+						</assessorsIncludingMDTMembersSection1>
+					</component04>
+					<component05 typeCode="COMP" contextConductionInd="true">
+						<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146223GB01#component05"/>
+						<section2CareDomainsSection1 classCode="DOCSECT" moodCode="EVN">
+							<id root="7D5F5B00-AE1A-11DB-96AE-B18E1E0994CD"/>
+							<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146223GB01#section2CareDomainsSection1"/>
+							<text> </text>
+							<title>Section 2: Care Domain Assessment</title>
+							<component08 contextConductionInd="true" typeCode="COMP">
+								<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146223GB01#component08"/>
+								<behaviourSection2 classCode="DOCSECT" moodCode="EVN">
+									<id root="7D5F5B00-AE1A-11DB-96AE-B18E1E0994CD"/>
+									<templateId extension="COCD_TP146223GB01#behaviourSection2" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<text>
+										<table width="100%">
+											<tbody>
+												<tr valign="top" align="left">
+													<th>Description of the level of need</th>
+													<th>Level</th>
+												</tr>
+												<tr align="left" valign="top">
+													<td>
+														<paragraph>“Challenging” behaviour that follows a predictable pattern. The risk assessment indicates a pattern of behaviour that can be managed by skilled carers or care workers who are able to maintain a level of behaviour that does not pose a risk to self or others. The person is nearly always compliant with care.</paragraph>
+													</td>
+													<td>
+														<paragraph>Moderate</paragraph>
+													</td>
+												</tr>
+												<tr align="left" valign="top">
+													<th colspan="2">Evidence of the level of need</th>
+												</tr>
+												<tr align="left" valign="top">
+													<td colspan="2">Patient has fluctuating mental state. Daily episodes of restlessness and hallucinations which can last several hours. Patient becomes frustrated with inability to communicate needs</td>
+												</tr>
+											</tbody>
+										</table>
+									</text>
+									<title>1. Behaviour</title>
+								</behaviourSection2>
+							</component08>
+							<component09 contextConductionInd="true" typeCode="COMP">
+								<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146223GB01#component09"/>
+								<cognitionSection2 classCode="DOCSECT" moodCode="EVN">
+									<id root="7D5F5B00-AE1A-11DB-96AE-B18E1E0994CD"/>
+									<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146223GB01#cognitionSection2"/>
+									<text>
+										<table width="100%">
+											<tbody>
+												<tr valign="top" align="left">
+													<th>Description of the level of need</th>
+													<th>Level</th>
+												</tr>
+												<tr align="left" valign="top">
+													<td>
+														<paragraph>Cognitive impairment that could include marked short-term memory issues and maybe disorientation in time and place. The individual has awareness of only a limited range of needs and basic risks. Although they may be able to make choices appropriate to need on a limited range of issues they are unable to do so on most issues, even with supervision, prompting or assistance.</paragraph>
+														<paragraph>The individual finds it difficult even with supervision, prompting or assistance to make decisions about key aspects of their lives, which consequently puts them at high risk of harm, neglect or health deterioration.</paragraph>
+													</td>
+													<td>
+														<paragraph>High</paragraph>
+													</td>
+												</tr>
+												<tr align="left" valign="top">
+													<th colspan="2">Evidence of the level of need</th>
+												</tr>
+												<tr align="left" valign="top">
+													<td colspan="2">Marked short term memory loss. Disorientation in time and place. Unable to assess basic risks; for example tries to get up and walk or get out of bed without assistance. Hence this puts him at a high degree of risks or falls. Lewy Body dementia diagnosed - deteriorating condition</td>
+												</tr>
+											</tbody>
+										</table>
+									</text>
+									<title>2. Cognition</title>
+								</cognitionSection2>
+							</component09>
+							<component10 contextConductionInd="true" typeCode="COMP">
+								<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146223GB01#component10"/>
+								<psychologicalandEmotionalNeedsSection2 classCode="DOCSECT" moodCode="EVN">
+									<id root="7D5E5B00-AE1A-11DB-96B3-B18E1E0994CD"/>
+									<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146223GB01#psychologicalandEmotionalNeedsSection2"/>
+									<text>
+										<table width="100%">
+											<tbody>
+												<tr valign="top" align="left">
+													<th>Description of the level of need</th>
+													<th>Level</th>
+												</tr>
+												<tr align="left" valign="top">
+													<td>
+														<paragraph>Mood disturbance, hallucinations or anxiety symptoms, or periods of distress, which do not readily respond to prompts and reassurance and have an increasing impact on the individual's health and/or well-being.</paragraph>
+														<paragraph styleCode="Bold">OR</paragraph>
+														<paragraph>Withdrawn from most attempts to engage them in care planning, support and/or daily activities.</paragraph>
+													</td>
+													<td>
+														<paragraph>Moderate</paragraph>
+													</td>
+												</tr>
+												<tr align="left" valign="top">
+													<th colspan="2">Evidence of the level of need</th>
+												</tr>
+												<tr align="left" valign="top">
+													<td colspan="2">Has regular hallucinations which cause him anxiety. He normally responds to prompts and reassurance and this does affect his health and emotionally wellbeing. Withdrawn from social situations and without intense encouragement from his family will not engage.</td>
+												</tr>
+											</tbody>
+										</table>
+									</text>
+									<title>3. Psychological and Emotional Needs</title>
+								</psychologicalandEmotionalNeedsSection2>
+							</component10>
+							<component11 contextConductionInd="true" typeCode="COMP">
+								<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146223GB01#component11"/>
+								<communicationSection2 classCode="DOCSECT" moodCode="EVN">
+									<id root="7D5E5B00-AE1A-11DB-96B3-B18E1E0994CD"/>
+									<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146223GB01#communicationSection2"/>
+									<text>
+										<table width="100%">
+											<tbody>
+												<tr valign="top" align="left">
+													<th>Description of the level of need</th>
+													<th>Level</th>
+												</tr>
+												<tr align="left" valign="top">
+													<td>
+														<paragraph>Communication about needs is difficult to understand or interpret or the individual is sometimes unable to reliably communicate, even when assisted. Carers or care workers may be able to anticipate needs through non-verbal signs due to familiarity with the individual.</paragraph>
+													</td>
+													<td>
+														<paragraph>Moderate</paragraph>
+													</td>
+												</tr>
+												<tr align="left" valign="top">
+													<th colspan="2">Evidence of the level of need</th>
+												</tr>
+												<tr align="left" valign="top">
+													<td colspan="2">He has great difficultly in expressing himself. He has word finding difficulties which carers need to interpret and this is achieved by familiarity. Sometimes people cannot understand his replies to questions. This is likely to deteriorate as his condition progresses.</td>
+												</tr>
+											</tbody>
+										</table>
+									</text>
+									<title>4. Communication</title>
+								</communicationSection2>
+							</component11>
+							<component12 contextConductionInd="true" typeCode="COMP">
+								<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146223GB01#component12"/>
+								<mobilitySection2 classCode="DOCSECT" moodCode="EVN">
+									<id root="7D5E5B00-AE1A-11DB-96B3-B18E1E0994CD"/>
+									<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146223GB01#mobilitySection2"/>
+									<text>
+										<table width="100%">
+											<tbody>
+												<tr valign="top" align="left">
+													<th>Description of the level of need</th>
+													<th>Level</th>
+												</tr>
+												<tr align="left" valign="top">
+													<td>
+														<paragraph>Completely unable to weight bear and is unable to assist or cooperate with transfers and/or repositioning.</paragraph>
+														<paragraph styleCode="Bold">OR</paragraph>Due to risk of physical harm or loss of muscle tone or pain on movement needs careful positioning and is unable to cooperate.
+														<paragraph styleCode="Bold">OR</paragraph>At a high risk of falls (as evidenced in a falls risk assessment).
+														<br/>
+														<paragraph styleCode="Bold">OR</paragraph>
+														<paragraph>Involuntary spasms or contractures placing themselves and carers or care workers at risk.</paragraph>
+													</td>
+													<td>
+														<paragraph>High</paragraph>
+													</td>
+												</tr>
+												<tr align="left" valign="top">
+													<th colspan="2">Evidence of the level of need</th>
+												</tr>
+												<tr align="left" valign="top">
+													<td colspan="2">Diagnosis of Lewy body Dementia and Parkinson symptoms put him at high risk of falls. His mobility is unpredictable and needs close supervision at all times. He often forgets to walk with a frame.
+														<br/>
+														<br/>Fall risk assessment score 16
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</text>
+									<title>5. Mobility</title>
+								</mobilitySection2>
+							</component12>
+							<component13 contextConductionInd="true" typeCode="COMP">
+								<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146223GB01#component13"/>
+								<nutritionFoodandDrinkSection2 classCode="DOCSECT" moodCode="EVN">
+									<id root="7D5E5B00-AE1A-11DB-96B3-B18E1E0994CD"/>
+									<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146223GB01#nutritionFoodandDrinkSection2"/>
+									<text>
+										<table width="100%">
+											<tbody>
+												<tr valign="top" align="left">
+													<th>Description of the level of need</th>
+													<th>Level</th>
+												</tr>
+												<tr align="left" valign="top">
+													<td>
+														<paragraph>Dysphagia requiring skilled intervention to ensure adequate nutrition/hydration and minimise the risk of choking and aspiration to maintain airway.</paragraph>
+														<paragraph styleCode="Bold">OR</paragraph>Subcutaneous fluids that are managed by the individual or specifically trained carers or care workers.
+														<br/>
+														<paragraph styleCode="Bold">OR</paragraph>Nutritional status “at risk” and may be associated with unintended, significant weight loss.
+														<br/>
+														<paragraph styleCode="Bold">OR</paragraph>
+														<paragraph>Significant weight loss or gain due to identified eating disorder.</paragraph>
+														<paragraph styleCode="Bold">OR</paragraph>
+														<paragraph>Problems relating to a feeding device (for example PEG.) that require skilled assessment and review.</paragraph>
+													</td>
+													<td>
+														<paragraph>High</paragraph>
+													</td>
+												</tr>
+												<tr align="left" valign="top">
+													<th colspan="2">Evidence of the level of need</th>
+												</tr>
+												<tr align="left" valign="top">
+													<td colspan="2">Malnutrition Universal Screening Tool (MUST): High Risk
+														<br/>Significant unintentional weight loss from diagnosis 12 months ago.
+														<br/>Loss of appetite needs a lot encouragement to eat and drink
+														<br/>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</text>
+									<title>6. Nutrition: Food and Drink</title>
+								</nutritionFoodandDrinkSection2>
+							</component13>
+							<component14 contextConductionInd="true" typeCode="COMP">
+								<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146223GB01#component14"/>
+								<continenceSection2 classCode="DOCSECT" moodCode="EVN">
+									<id root="7D5E5B00-AE1A-11DB-96B3-B18E1E0994CD"/>
+									<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146223GB01#continenceSection2"/>
+									<text>
+										<table width="100%">
+											<tbody>
+												<tr valign="top" align="left">
+													<th>Description of the level of need</th>
+													<th>Level</th>
+												</tr>
+												<tr align="left" valign="top">
+													<td>
+														<paragraph>Continence care is routine on a day-to-day basis; Incontinence of urine managed through, for example, medication, regular toileting, use of penile sheaths, etc.</paragraph>
+														<paragraph styleCode="Bold">AND</paragraph>is able to maintain full control over bowel movements or has a stable stoma, or may have occasional faecal incontinence.
+														<br/>
+													</td>
+													<td>
+														<paragraph>Low</paragraph>
+													</td>
+												</tr>
+												<tr align="left" valign="top">
+													<th colspan="2">Evidence of the level of need</th>
+												</tr>
+												<tr align="left" valign="top">
+													<td colspan="2">Incontinence of urine mainly at night , wears pads. His continence is managed during the day with regular toileting.
+														<br/>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</text>
+									<title>7. Continence</title>
+								</continenceSection2>
+							</component14>
+							<component15 contextConductionInd="true" typeCode="COMP">
+								<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146223GB01#component15"/>
+								<skinIncludingTissueViabilitySection2 classCode="DOCSECT" moodCode="EVN">
+									<id root="7D5E5B00-AE1A-11DB-96B3-B18E1E0994CD"/>
+									<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146223GB01#skinIncludingTissueViabilitySection2"/>
+									<text>
+										<table width="100%">
+											<tbody>
+												<tr valign="top" align="left">
+													<th>Description of the level of need</th>
+													<th>Level</th>
+												</tr>
+												<tr align="left" valign="top">
+													<td>
+														<paragraph>Risk of skin breakdown which requires preventative intervention several times each day, without which skin integrity would break down.</paragraph>
+														<paragraph styleCode="Bold">OR</paragraph>
+														<paragraph>Pressure damage or open wound(s), pressure ulcer(s) with ‘partial thickness skin loss involving epidermis and/or dermis', which is responding to treatment.</paragraph>
+														<paragraph styleCode="Bold">OR</paragraph>
+														<paragraph>A skin condition that requires a minimum of daily treatment, or daily monitoring/reassessment to ensure that it is responding to treatment.</paragraph>
+													</td>
+													<td>
+														<paragraph>Moderate</paragraph>
+													</td>
+												</tr>
+												<tr align="left" valign="top">
+													<th colspan="2">Evidence of the level of need</th>
+												</tr>
+												<tr align="left" valign="top">
+													<td colspan="2">
+														<paragraph>There has been pressure damage to heels and sacrum which has responded to treatment. Dermatitis to legs with a potential to ulcerate. Usually responds to treatment but requires regular reassessment.</paragraph>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</text>
+									<title>8. Skin (including tissue viability)</title>
+								</skinIncludingTissueViabilitySection2>
+							</component15>
+							<component16 contextConductionInd="true" typeCode="COMP">
+								<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146223GB01#component16"/>
+								<breathingSection2 classCode="DOCSECT" moodCode="EVN">
+									<id root="7D5E5B00-AE1A-11DB-96B3-B18E1E0994CD"/>
+									<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146223GB01#breathingSection2"/>
+									<text>
+										<table width="100%">
+											<tbody>
+												<tr valign="top" align="left">
+													<th>Description of the level of need</th>
+													<th>Level</th>
+												</tr>
+												<tr align="left" valign="top">
+													<td>
+														<paragraph>Normal breathing, no issues with shortness of breath.</paragraph>
+													</td>
+													<td>
+														<paragraph>No needs</paragraph>
+													</td>
+												</tr>
+												<tr align="left" valign="top">
+													<th colspan="2">Evidence of the level of need</th>
+												</tr>
+												<tr align="left" valign="top">
+													<td colspan="2">Not Applicable
+														<br/>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</text>
+									<title>9. Breathing</title>
+								</breathingSection2>
+							</component16>
+							<component17 contextConductionInd="true" typeCode="COMP">
+								<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146223GB01#component17"/>
+								<drugTherapiesandMedicationSymptomControlSection2 classCode="DOCSECT" moodCode="EVN">
+									<id root="7D5E5B00-AE1A-11DB-96B3-B18E1E0994CD"/>
+									<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146223GB01#drugTherapiesandMedicationSymptomControlSection2"/>
+									<text>
+										<table width="100%">
+											<tbody>
+												<tr valign="top" align="left">
+													<th>Description of the level of need</th>
+													<th>Level</th>
+												</tr>
+												<tr align="left" valign="top">
+													<td>
+														<paragraph>Requires the administration of medication due to: non-concordance or non-compliance, type of medication (for example insulin), or route of medication (for example PEG, liquid medication).</paragraph>
+														<paragraph styleCode="Bold">OR</paragraph>
+														<paragraph>Moderate pain which follows a predictable pattern; or other symptoms which are having a moderate effect on other domains or on the provision of care.</paragraph>
+													</td>
+													<td>
+														<paragraph>Moderate</paragraph>
+													</td>
+												</tr>
+												<tr align="left" valign="top">
+													<th colspan="2">Evidence of the level of need</th>
+												</tr>
+												<tr align="left" valign="top">
+													<td colspan="2">
+														<paragraph>Requires medication to be given needs encouragement to comply. If left alone would not take medication. Has moderate pain and this effects his ability to carry out personal care activities.
+															<br/>
+														</paragraph>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</text>
+									<title>10. Drug Therapies and Medication: Symptom Control</title>
+								</drugTherapiesandMedicationSymptomControlSection2>
+							</component17>
+							<component18 contextConductionInd="true" typeCode="COMP">
+								<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146223GB01#component18"/>
+								<alteredStatesofConsciousnessSection2 classCode="DOCSECT" moodCode="EVN">
+									<id root="7D5E5B00-AE1A-11DB-96B3-B18E1E0994CD"/>
+									<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146223GB01#alteredStatesofConsciousnessSection2"/>
+									<text>
+										<table width="100%">
+											<tbody>
+												<tr valign="top" align="left">
+													<th>Description of the level of need</th>
+													<th>Level</th>
+												</tr>
+												<tr align="left" valign="top">
+													<td>
+														<paragraph>No evidence of altered states of consciousness.</paragraph>
+													</td>
+													<td>
+														<paragraph>No needs</paragraph>
+													</td>
+												</tr>
+												<tr align="left" valign="top">
+													<th colspan="2">Evidence of the level of need</th>
+												</tr>
+												<tr align="left" valign="top">
+													<td colspan="2">Not Applicable
+														<br/>
+														<br/>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</text>
+									<title>11. Altered States of Consciousness</title>
+								</alteredStatesofConsciousnessSection2>
+							</component18>
+							<component19 contextConductionInd="true" typeCode="COMP">
+								<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146223GB01#component19"/>
+								<otherSignificantCareNeedsSection2 classCode="DOCSECT" moodCode="EVN">
+									<id root="7D5E5B00-AE1A-11DB-96B3-B18E1E0994CD"/>
+									<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146223GB01#otherSignificantCareNeedsSection2"/>
+									<text>
+										<table width="100%">
+											<tbody>
+												<tr valign="top" align="left">
+													<th>Description of the level of need</th>
+													<th>Level</th>
+												</tr>
+												<tr align="left" valign="top">
+													<td>
+														<paragraph>Not Applicable</paragraph>
+													</td>
+													<td>
+														<paragraph>No needs</paragraph>
+													</td>
+												</tr>
+												<tr align="left" valign="top">
+													<th colspan="2">Evidence of the level of need</th>
+												</tr>
+												<tr align="left" valign="top">
+													<td colspan="2">Not Applicable
+														<br/>
+														<br/>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</text>
+									<title>12. Other Significant Care Needs to be Taken into Consideration</title>
+								</otherSignificantCareNeedsSection2>
+							</component19>
+							<component20 contextConductionInd="true" typeCode="COMP">
+								<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146223GB01#component20"/>
+								<assessedLevelsofNeedSection2 classCode="DOCSECT" moodCode="EVN">
+									<id root="7D5E5B00-AE1A-11DB-96B3-B18E1E0994CD"/>
+									<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146223GB01#assessedLevelsofNeedSection2"/>
+									<text>
+										<table width="100%">
+											<thead>
+												<tr valign="top">
+													<th>Care Domain</th>
+													<th align="center">Priority</th>
+													<th align="center">Severe</th>
+													<th align="center">High</th>
+													<th align="center">Moderate</th>
+													<th align="center">Low</th>
+													<th align="center">No needs</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr align="left" valign="top">
+													<td>
+														<paragraph>
+															<content ID="a1">Behaviour</content>
+														</paragraph>
+													</td>
+													<td>
+														<paragraph/>
+													</td>
+													<td>
+														<paragraph/>
+													</td>
+													<td>
+														<paragraph/>
+													</td>
+													<td align="center">
+														<paragraph>
+															<content ID="b1">&#10003;</content>
+														</paragraph>
+													</td>
+													<td>
+														<paragraph/>
+													</td>
+													<td>
+														<paragraph/>
+													</td>
+												</tr>
+												<tr align="left" valign="top">
+													<td>
+														<paragraph>
+															<content ID="a2">Cognition</content>
+														</paragraph>
+													</td>
+													<td align="center">
+														<paragraph>N/A</paragraph>
+													</td>
+													<td>
+														<paragraph/>
+													</td>
+													<td align="center">
+														<paragraph>
+															<content ID="b2">&#10003;</content>
+														</paragraph>
+													</td>
+													<td>
+														<paragraph/>
+													</td>
+													<td>
+														<paragraph/>
+													</td>
+													<td>
+														<paragraph/>
+													</td>
+												</tr>
+												<tr align="left" valign="top">
+													<td>
+														<paragraph>
+															<content ID="a3">Psychological Needs</content>
+														</paragraph>
+													</td>
+													<td align="center">
+														<paragraph>N/A</paragraph>
+													</td>
+													<td align="center">
+														<paragraph>N/A</paragraph>
+													</td>
+													<td align="center">
+														<paragraph/>
+													</td>
+													<td align="center">
+														<paragraph>
+															<content ID="b3">&#10003;</content>
+														</paragraph>
+													</td>
+													<td>
+														<paragraph/>
+													</td>
+													<td>
+														<paragraph/>
+													</td>
+												</tr>
+												<tr align="left" valign="top">
+													<td>
+														<paragraph>
+															<content ID="a4">Communication</content>
+														</paragraph>
+													</td>
+													<td align="center">
+														<paragraph>N/A</paragraph>
+													</td>
+													<td align="center">
+														<paragraph>N/A</paragraph>
+													</td>
+													<td>
+														<paragraph/>
+													</td>
+													<td align="center">
+														<paragraph>
+															<content ID="b4">&#10003;</content>
+														</paragraph>
+													</td>
+													<td>
+														<paragraph/>
+													</td>
+													<td>
+														<paragraph/>
+													</td>
+												</tr>
+												<tr align="left" valign="top">
+													<td>
+														<paragraph>
+															<content ID="a5">Mobility</content>
+														</paragraph>
+													</td>
+													<td align="center">
+														<paragraph>N/A</paragraph>
+													</td>
+													<td>
+														<paragraph/>
+													</td>
+													<td align="center">
+														<paragraph>
+															<content ID="b5">&#10003;</content>
+														</paragraph>
+													</td>
+													<td>
+														<paragraph/>
+													</td>
+													<td>
+														<paragraph/>
+													</td>
+													<td>
+														<paragraph/>
+													</td>
+												</tr>
+												<tr align="left" valign="top">
+													<td>
+														<paragraph>
+															<content ID="a6">Nutrition - Food and Drink</content>
+														</paragraph>
+													</td>
+													<td align="center">
+														<paragraph>N/A</paragraph>
+													</td>
+													<td>
+														<paragraph/>
+													</td>
+													<td align="center">
+														<paragraph>
+															<content ID="b6">&#10003;</content>
+														</paragraph>
+													</td>
+													<td>
+														<paragraph/>
+													</td>
+													<td>
+														<paragraph/>
+													</td>
+													<td>
+														<paragraph/>
+													</td>
+												</tr>
+												<tr align="left" valign="top">
+													<td>
+														<paragraph>
+															<content ID="a7">Continence</content>
+														</paragraph>
+													</td>
+													<td align="center">
+														<paragraph>N/A</paragraph>
+													</td>
+													<td align="center">
+														<paragraph>N/A</paragraph>
+													</td>
+													<td>
+														<paragraph/>
+													</td>
+													<td>
+														<paragraph/>
+													</td>
+													<td align="center">
+														<paragraph>
+															<content ID="b7">&#10003;</content>
+														</paragraph>
+													</td>
+													<td>
+														<paragraph/>
+													</td>
+												</tr>
+												<tr align="left" valign="top">
+													<td>
+														<paragraph>
+															<content ID="a8">Skin (including tissue viability)</content>
+														</paragraph>
+													</td>
+													<td align="center">
+														<paragraph>N/A</paragraph>
+													</td>
+													<td>
+														<paragraph/>
+													</td>
+													<td>
+														<paragraph/>
+													</td>
+													<td align="center">
+														<paragraph>
+															<content ID="b8">&#10003;</content>
+														</paragraph>
+													</td>
+													<td>
+														<paragraph/>
+													</td>
+													<td>
+														<paragraph/>
+													</td>
+												</tr>
+												<tr align="left" valign="top">
+													<td>
+														<paragraph>
+															<content ID="a9">Breathing</content>
+														</paragraph>
+													</td>
+													<td>
+														<paragraph/>
+													</td>
+													<td>
+														<paragraph/>
+													</td>
+													<td>
+														<paragraph/>
+													</td>
+													<td>
+														<paragraph/>
+													</td>
+													<td>
+														<paragraph/>
+													</td>
+													<td align="center">
+														<paragraph>
+															<content ID="b9">&#10003;</content>
+														</paragraph>
+													</td>
+												</tr>
+												<tr align="left" valign="top">
+													<td>
+														<paragraph>
+															<content ID="a10">Drug Therapies and Medication - Symptom Control</content>
+														</paragraph>
+													</td>
+													<td>
+														<paragraph/>
+													</td>
+													<td>
+														<paragraph/>
+													</td>
+													<td>
+														<paragraph/>
+													</td>
+													<td align="center">
+														<paragraph>
+															<content ID="b10">&#10003;</content>
+														</paragraph>
+													</td>
+													<td>
+														<paragraph/>
+													</td>
+													<td>
+														<paragraph/>
+													</td>
+												</tr>
+												<tr align="left" valign="top">
+													<td>
+														<paragraph>
+															<content ID="a11">Altered States of Consciousness</content>
+														</paragraph>
+													</td>
+													<td>
+														<paragraph/>
+													</td>
+													<td align="center">
+														<paragraph>N/A</paragraph>
+													</td>
+													<td>
+														<paragraph/>
+													</td>
+													<td>
+														<paragraph/>
+													</td>
+													<td>
+														<paragraph/>
+													</td>
+													<td align="center">
+														<paragraph>
+															<content ID="b11">&#10003;</content>
+														</paragraph>
+													</td>
+												</tr>
+												<tr align="left" valign="top">
+													<td>
+														<paragraph>Other significant care needs</paragraph>
+													</td>
+													<td align="center">
+														<paragraph>N/A</paragraph>
+													</td>
+													<td>
+														<paragraph/>
+													</td>
+													<td>
+														<paragraph/>
+													</td>
+													<td>
+														<paragraph/>
+													</td>
+													<td>
+														<paragraph/>
+													</td>
+													<td align="center">
+														<paragraph>N/A</paragraph>
+													</td>
+												</tr>
+												<tr align="left" valign="top">
+													<td>
+														<paragraph styleCode="Bold">Totals</paragraph>
+													</td>
+													<td align="center">
+														<paragraph styleCode="Bold">0</paragraph>
+													</td>
+													<td align="center">
+														<paragraph styleCode="Bold">0</paragraph>
+													</td>
+													<td align="center">
+														<paragraph styleCode="Bold">3</paragraph>
+													</td>
+													<td align="center">
+														<paragraph styleCode="Bold">5</paragraph>
+													</td>
+													<td align="center">
+														<paragraph styleCode="Bold">1</paragraph>
+													</td>
+													<td align="center">
+														<paragraph styleCode="Bold">2</paragraph>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+										<table width="100%">
+											<thead>
+												<tr>
+													<th>Views of the individual on the completion of the DST that have not been recorded above</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr align="left" valign="top">
+													<td>
+														<paragraph>Mrs Belinda Taylor was present at the meeting. They have agreed to the content of the completed DST.</paragraph>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</text>
+									<title>Assessed Levels of Need (in the table below N/A means not applicable)</title>
+								</assessedLevelsofNeedSection2>
+							</component20>
+						</section2CareDomainsSection1>
+					</component05>
+					<component06 typeCode="COMP" contextConductionInd="true">
+						<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146223GB01#component06"/>
+						<section3RecommendationSection1 moodCode="EVN" classCode="DOCSECT">
+							<id root="95EBDA51-E7A1-42CD-90AC-60FF5E56E23C"/>
+							<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146223GB01#section3RecommendationSection1"/>
+							<text>
+								<table width="100%">
+									<thead>
+										<tr>
+											<th>Eligibity: <content ID="a12">Eligible for Continuing Healthcare</content>
+											</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr align="left" valign="top">
+											<td colspan="5">
+												<paragraph>Mrs Belinda Taylor has a high needs cognition, mobility and nutrition; and moderate needs in behaviour, psychological needs, tissue viability and drugs therapy and medication</paragraph>
+												<paragraph>Because of her needs and the impact this has on her health and wellbeing we recommend she is eligible for NHS Continuing Health Care.</paragraph>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<br/>
+								<table width="100%">
+									<thead>
+										<tr valign="top" align="left">
+											<th colspan="2">
+												<content styleCode="Bold">Date of the CHC Scheduled Review</content>
+											</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr align="left" valign="top">
+											<td colspan="5">
+												<paragraph>30-Jan-2011</paragraph>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<br/>
+								<table width="100%">
+									<thead>
+										<tr valign="top" align="left">
+											<th colspan="2">
+												<content styleCode="Bold">Name(s) of the team member(s)</content>
+											</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr align="left" valign="top">
+											<th>
+												<content styleCode="Bold">Name:</content>
+											</th>
+											<th>Mrs. Jessica Brown</th>
+										</tr>
+										<tr align="left" valign="top">
+											<td>
+												<content styleCode="Bold">Role:</content>
+											</td>
+											<td>
+												<paragraph>CHC Care Coordinator</paragraph>
+											</td>
+										</tr>
+										<tr align="left" valign="top">
+											<td>
+												<content styleCode="Bold">Contact Details:</content>
+											</td>
+											<td>
+												<paragraph>CHC Team</paragraph>
+												<paragraph>East Cheshire NHS Trust</paragraph>
+												<paragraph>Queen Mary Building</paragraph>
+												<paragraph>Kings Street</paragraph>
+												<paragraph>Cheshire</paragraph>
+												<paragraph>CH24 5TR</paragraph>
+											</td>
+										</tr>
+										<tr align="left" valign="top">
+											<th>
+												<content styleCode="Bold">Name:</content>
+											</th>
+											<th>Mr. Pete Hungerford</th>
+										</tr>
+										<tr align="left" valign="top">
+											<td>
+												<content styleCode="Bold">Role:</content>
+											</td>
+											<td>
+												<paragraph>Senior Nutritionalist Nurse</paragraph>
+											</td>
+										</tr>
+										<tr align="left" valign="top">
+											<td>
+												<content styleCode="Bold">Contact Details:</content>
+											</td>
+											<td>
+												<paragraph>Ward 6</paragraph>
+												<paragraph>East Cheshire NHS Trust</paragraph>
+												<paragraph>Margaret Building</paragraph>
+												<paragraph>Harrogate Street</paragraph>
+												<paragraph>Cheshire</paragraph>
+												<paragraph>CH24 5TS</paragraph>
+											</td>
+										</tr>
+										<tr align="left" valign="top">
+											<th>
+												<content styleCode="Bold">Name:</content>
+											</th>
+											<th>Jani Chakrabarti</th>
+										</tr>
+										<tr align="left" valign="top">
+											<td>
+												<content styleCode="Bold">Role:</content>
+											</td>
+											<td>
+												<paragraph>Consultant</paragraph>
+											</td>
+										</tr>
+										<tr align="left" valign="top">
+											<td>
+												<content styleCode="Bold">Contact Details:</content>
+											</td>
+											<td>
+												<paragraph>Ward 10</paragraph>
+												<paragraph>East Cheshire NHS Trust</paragraph>
+												<paragraph>Queen Mary Building</paragraph>
+												<paragraph>Kings Street</paragraph>
+												<paragraph>Cheshire</paragraph>
+												<paragraph>CH24 5TR</paragraph>
+											</td>
+										</tr>
+										<tr align="left" valign="top">
+											<th>
+												<content styleCode="Bold">Name:</content>
+											</th>
+											<th>June Bradwick</th>
+										</tr>
+										<tr align="left" valign="top">
+											<td>
+												<content styleCode="Bold">Role:</content>
+											</td>
+											<td>
+												<paragraph>Staff Nurse</paragraph>
+											</td>
+										</tr>
+										<tr align="left" valign="top">
+											<td>
+												<content styleCode="Bold">Contact Details:</content>
+											</td>
+											<td>
+												<paragraph>Ward 10</paragraph>
+												<paragraph>East Cheshire NHS Trust</paragraph>
+												<paragraph>Queen Mary Building</paragraph>
+												<paragraph>Kings Street</paragraph>
+												<paragraph>Cheshire</paragraph>
+												<paragraph>CH24 5TR</paragraph>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</text>
+							<title>Section 3: Recommendation</title>
+						</section3RecommendationSection1>
+					</component06>
+					<entry typeCode="COMP" contextConductionInd="true">
+						<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP146204GB02#DSTOutcome"/>
+						<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146223GB01#entry"/>
+						<COCD_TP146204GB02.DSTOutcome classCode="BATTERY" moodCode="EVN">
+							<code code="DSTO" displayName="DST Outcome" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.220"/>
+							<effectiveTime>
+								<low value="20101030"/>
+								<high value="20101030"/>
+							</effectiveTime>
+							<id root="7D8E5B00-BE1A-11DB-96AB-B18E1E0994CD"/>
+							<statusCode code="Completed"/>
+							<templateId extension="COCD_TP146204GB02#DSTOutcome" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+							<component typeCode="COMP" contextConductionInd="true">
+								<seperatableInd value="false"/>
+								<sequenceNumber value="1"/>
+								<templateId extension="COCD_TP146204GB02#component" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<dSTCareDomainOutcome classCode="OBS" moodCode="EVN">
+									<code codeSystem="2.16.840.1.113883.2.1.3.2.4.17.277" code="DSTBEH" displayName="Behaviour">
+										<originalText>
+											<reference value="#a1"/>
+										</originalText>
+									</code>
+									<templateId extension="COCD_TP146204GB02#dSTCareDomainOutcome" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<value code="Moderate" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.279" displayName="Some Level of Need Identified">
+										<originalText>
+											<reference value="#b1"/>
+										</originalText>
+									</value>
+								</dSTCareDomainOutcome>
+							</component>
+							<component typeCode="COMP" contextConductionInd="true">
+								<seperatableInd value="false"/>
+								<sequenceNumber value="2"/>
+								<templateId extension="COCD_TP146204GB02#component" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<dSTCareDomainOutcome classCode="OBS" moodCode="EVN">
+									<code codeSystem="2.16.840.1.113883.2.1.3.2.4.17.277" code="DSTCOG" displayName="Cognition">
+										<originalText>
+											<reference value="#a2"/>
+										</originalText>
+									</code>
+									<templateId extension="COCD_TP146204GB02#dSTCareDomainOutcome" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<value code="High" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.279" displayName="High Level of Need Identified">
+										<originalText>
+											<reference value="#b2"/>
+										</originalText>
+									</value>
+								</dSTCareDomainOutcome>
+							</component>
+							<component typeCode="COMP" contextConductionInd="true">
+								<seperatableInd value="false"/>
+								<sequenceNumber value="3"/>
+								<templateId extension="COCD_TP146204GB02#component" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<dSTCareDomainOutcome classCode="OBS" moodCode="EVN">
+									<code codeSystem="2.16.840.1.113883.2.1.3.2.4.17.277" code="DSTPSY" displayName="Psychological and Emotional Needs">
+										<originalText>
+											<reference value="#a3"/>
+										</originalText>
+									</code>
+									<templateId extension="COCD_TP146204GB02#dSTCareDomainOutcome" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<value code="Moderate" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.279" displayName="Some Level of Need Identified">
+										<originalText>
+											<reference value="#b3"/>
+										</originalText>
+									</value>
+								</dSTCareDomainOutcome>
+							</component>
+							<component typeCode="COMP" contextConductionInd="true">
+								<seperatableInd value="false"/>
+								<sequenceNumber value="4"/>
+								<templateId extension="COCD_TP146204GB02#component" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<dSTCareDomainOutcome classCode="OBS" moodCode="EVN">
+									<code codeSystem="2.16.840.1.113883.2.1.3.2.4.17.277" code="DSTCOM" displayName="Communication">
+										<originalText>
+											<reference value="#a4"/>
+										</originalText>
+									</code>
+									<templateId extension="COCD_TP146204GB02#dSTCareDomainOutcome" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<value code="Moderate" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.279" displayName="Some Level of Need Identified">
+										<originalText>
+											<reference value="#b4"/>
+										</originalText>
+									</value>
+								</dSTCareDomainOutcome>
+							</component>
+							<component typeCode="COMP" contextConductionInd="true">
+								<seperatableInd value="false"/>
+								<sequenceNumber value="5"/>
+								<templateId extension="COCD_TP146204GB02#component" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<dSTCareDomainOutcome classCode="OBS" moodCode="EVN">
+									<code codeSystem="2.16.840.1.113883.2.1.3.2.4.17.277" code="DSTMOB" displayName="Mobility">
+										<originalText>
+											<reference value="#a5"/>
+										</originalText>
+									</code>
+									<templateId extension="COCD_TP146204GB02#dSTCareDomainOutcome" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<value code="High" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.279" displayName="High Level of Need Identified">
+										<originalText>
+											<reference value="#b5"/>
+										</originalText>
+									</value>
+								</dSTCareDomainOutcome>
+							</component>
+							<component typeCode="COMP" contextConductionInd="true">
+								<seperatableInd value="false"/>
+								<sequenceNumber value="6"/>
+								<templateId extension="COCD_TP146204GB02#component" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<dSTCareDomainOutcome classCode="OBS" moodCode="EVN">
+									<code codeSystem="2.16.840.1.113883.2.1.3.2.4.17.277" code="DSTNUT" displayName="Nutrition - Food and Drink">
+										<originalText>
+											<reference value="#a6"/>
+										</originalText>
+									</code>
+									<templateId extension="COCD_TP146204GB02#dSTCareDomainOutcome" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<value code="High" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.279" displayName="High Level of Need Identified">
+										<originalText>
+											<reference value="#b6"/>
+										</originalText>
+									</value>
+								</dSTCareDomainOutcome>
+							</component>
+							<component typeCode="COMP" contextConductionInd="true">
+								<seperatableInd value="false"/>
+								<sequenceNumber value="7"/>
+								<templateId extension="COCD_TP146204GB02#component" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<dSTCareDomainOutcome classCode="OBS" moodCode="EVN">
+									<code codeSystem="2.16.840.1.113883.2.1.3.2.4.17.277" code="DSTCON" displayName="Continence">
+										<originalText>
+											<reference value="#a7"/>
+										</originalText>
+									</code>
+									<templateId extension="COCD_TP146204GB02#dSTCareDomainOutcome" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<value code="Low" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.279" displayName="Low Level of Need Identified">
+										<originalText>
+											<reference value="#b7"/>
+										</originalText>
+									</value>
+								</dSTCareDomainOutcome>
+							</component>
+							<component typeCode="COMP" contextConductionInd="true">
+								<seperatableInd value="false"/>
+								<sequenceNumber value="8"/>
+								<templateId extension="COCD_TP146204GB02#component" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<dSTCareDomainOutcome classCode="OBS" moodCode="EVN">
+									<code codeSystem="2.16.840.1.113883.2.1.3.2.4.17.277" code="DSTSKI" displayName="Skin (including tissue viability)">
+										<originalText>
+											<reference value="#a8"/>
+										</originalText>
+									</code>
+									<templateId extension="COCD_TP146204GB02#dSTCareDomainOutcome" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<value code="Moderate" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.279" displayName="Some Level of Need Identified">
+										<originalText>
+											<reference value="#b8"/>
+										</originalText>
+									</value>
+								</dSTCareDomainOutcome>
+							</component>
+							<component typeCode="COMP" contextConductionInd="true">
+								<seperatableInd value="false"/>
+								<sequenceNumber value="9"/>
+								<templateId extension="COCD_TP146204GB02#component" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<dSTCareDomainOutcome classCode="OBS" moodCode="EVN">
+									<code codeSystem="2.16.840.1.113883.2.1.3.2.4.17.277" code="DSTBRE" displayName="Breathing">
+										<originalText>
+											<reference value="#a9"/>
+										</originalText>
+									</code>
+									<templateId extension="COCD_TP146204GB02#dSTCareDomainOutcome" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<value code="NoNeeds" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.279" displayName="No Needs Identified">
+										<originalText>
+											<reference value="#b9"/>
+										</originalText>
+									</value>
+								</dSTCareDomainOutcome>
+							</component>
+							<component typeCode="COMP" contextConductionInd="true">
+								<seperatableInd value="false"/>
+								<sequenceNumber value="10"/>
+								<templateId extension="COCD_TP146204GB02#component" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<dSTCareDomainOutcome classCode="OBS" moodCode="EVN">
+									<code codeSystem="2.16.840.1.113883.2.1.3.2.4.17.277" code="DSTMED" displayName="Drug Therapies and Medication - Symptom Control">
+										<originalText>
+											<reference value="#a10"/>
+										</originalText>
+									</code>
+									<templateId extension="COCD_TP146204GB02#dSTCareDomainOutcome" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<value code="Moderate" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.279" displayName="Some Level of Need Identified">
+										<originalText>
+											<reference value="#b10"/>
+										</originalText>
+									</value>
+								</dSTCareDomainOutcome>
+							</component>
+							<component typeCode="COMP" contextConductionInd="true">
+								<seperatableInd value="false"/>
+								<sequenceNumber value="11"/>
+								<templateId extension="COCD_TP146204GB02#component" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<dSTCareDomainOutcome classCode="OBS" moodCode="EVN">
+									<code codeSystem="2.16.840.1.113883.2.1.3.2.4.17.277" code="DSTCONS" displayName="Altered States of Consciousness">
+										<originalText>
+											<reference value="#a11"/>
+										</originalText>
+									</code>
+									<templateId extension="COCD_TP146204GB02#dSTCareDomainOutcome" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<value code="NoNeeds" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.279" displayName="No Needs Identified">
+										<originalText>
+											<reference value="#b11"/>
+										</originalText>
+									</value>
+								</dSTCareDomainOutcome>
+							</component>
+							<component1 contextConductionInd="true" typeCode="COMP">
+								<seperatableInd value="false"/>
+								<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146204GB02#component1"/>
+								<dSTEligibilityOutcome classCode="OBS" moodCode="EVN">
+									<code code="DSTEO" displayName="DST Eligibility Outcome" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.220"/>
+									<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146204GB02#dSTEligibilityOutcome"/>
+									<value code="CHC" displayName="Eligible for Continuing Healthcare" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.283">
+										<originalText>
+											<reference value="#a12"/>
+										</originalText>
+									</value>
+								</dSTEligibilityOutcome>
+							</component1>
+						</COCD_TP146204GB02.DSTOutcome>
+					</entry>
+				</COCD_TP146223GB01.ClassificationSection>
+			</component>
+		</structuredBody>
+	</component>
+	<componentOf typeCode="COMP">
+		<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP146200GB01#EncompassingEncounter"/>
+		<COCD_TP146200GB01.EncompassingEncounter classCode="ENC" moodCode="EVN">
+			<code code="772081000000100" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Continuing Healthcare Process Encounter"/>
+			<dischargeDispositionCode nullFlavor="NA"/>
+			<effectiveTime>
+				<low value="20101010"/>
+			</effectiveTime>
+			<id root="8D616840-AE1A-11DB-9739-B18E1E0994CD"/>
+			<templateId extension="COCD_TP146200GB01#EncompassingEncounter" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<location typeCode="LOC">
+				<npfitlc:contentId extension="COCD_TP145211GB01#HealthCareFacility" root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+				<templateId extension="COCD_TP146200GB01#location" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+				<COCD_TP145211GB01.HealthCareFacility classCode="SDLOC">
+					<code code="30629002" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="retirement home"/>
+					<id root="2.16.840.1.113883.2.1.3.2.4.19.2" extension="V396A"/>
+					<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP145211GB01#HealthCareFacility"/>
+				</COCD_TP145211GB01.HealthCareFacility>
+			</location>
+			<responsibleParty typeCode="RESP">
+				<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP145210GB01#AssignedEntity"/>
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146200GB01#responsibleParty"/>
+				<COCD_TP145210GB01.AssignedEntity classCode="ASSIGNED">
+					<code code="CO" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.124" displayName="Consultant"/>
+					<id root="2.16.840.1.113883.2.1.3.2.4.19.2" extension="1234512352"/>
+					<templateId extension="COCD_TP145210GB01#AssignedEntity" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+					<assignedPerson classCode="PSN" determinerCode="INSTANCE">
+						<name>Mr Pearson</name>
+						<templateId extension="COCD_TP145210GB01#assignedPerson" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+					</assignedPerson>
+					<representedOrganization classCode="ORG" determinerCode="INSTANCE">
+						<id root="2.16.840.1.113883.2.1.3.2.4.19.1" extension="V396A"/>
+						<name>East Cheshire NHS Trust</name>
+						<templateId extension="COCD_TP145210GB01#representedOrganization" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+					</representedOrganization>
+				</COCD_TP145210GB01.AssignedEntity>
+			</responsibleParty>
+		</COCD_TP146200GB01.EncompassingEncounter>
+	</componentOf>
+	<custodian typeCode="CST">
+		<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP145018UK03#AssignedCustodian"/>
+		<COCD_TP145018UK03.AssignedCustodian classCode="ASSIGNED">
+			<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP145018UK03#AssignedCustodian"/>
+			<representedCustodianOrganization determinerCode="INSTANCE" classCode="ORG">
+				<id root="2.16.840.1.113883.2.1.3.2.4.19.1" extension="V396A"/>
+				<name>East Cheshire NHS Trust</name>
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP145018UK03#representedCustodianOrganization"/>
+			</representedCustodianOrganization>
+		</COCD_TP145018UK03.AssignedCustodian>
+	</custodian>
+	<recordTarget typeCode="RCT" contextControlCode="OP">
+		<npfitlc:contentId extension="COCD_TP145201GB02#PatientRole" root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+		<COCD_TP145201GB02.PatientRole classCode="PAT">
+			<addr use="H">
+				<streetAddressLine>21, County Lodge</streetAddressLine>
+				<streetAddressLine>Woodtown</streetAddressLine>
+				<city>Cheshire</city>
+				<postalCode>CH7 FS1</postalCode>
+			</addr>
+			<addr use="PHYS">
+				<streetAddressLine>The Woodtown Retirement Home</streetAddressLine>
+				<streetAddressLine>23, Seawood Road</streetAddressLine>
+				<streetAddressLine>Woodtown</streetAddressLine>
+				<city>Cheshire</city>
+				<postalCode>CH7 FS5</postalCode>
+			</addr>
+			<id extension="L12345" root="2.16.840.1.113883.2.1.3.2.4.18.24" assigningAuthorityName="V396F:NORTHGATE MEDICAL PRACTICE"/>
+			<id extension="1234567891" root="2.16.840.1.113883.2.1.3.2.4.18.23"/>
+			<telecom value="tel:01433445667" use="H"/>
+			<telecom value="tel:01433631628" use="HV"/>
+			<telecom value="mailto:belinda.taylor@emailfree.co.uk" use="H"/>
+			<templateId extension="COCD_TP145201GB02#PatientRole" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<patientPatient classCode="PSN" determinerCode="INSTANCE">
+				<administrativeGenderCode codeSystem="2.16.840.1.113883.2.1.3.2.4.16.25" displayName="Female" code="2"/>
+				<birthTime value="19410101"/>
+				<name>
+					<prefix>Mrs</prefix>
+					<family>Taylor</family>
+					<given>Belinda</given>
+				</name>
+				<templateId extension="COCD_TP145201GB02#patientPatient" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+				<languageCommunication>
+					<languageCode  code="en"/>
+					<templateId extension="COCD_TP145201GB02#languageCommunication" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+				</languageCommunication>
+			</patientPatient>
+			<providerOrganization classCode="ORG" determinerCode="INSTANCE">
+				<addr use="WP">
+					<streetAddressLine>Springer Street</streetAddressLine>
+					<city>Cheshire</city>
+					<postalCode>CH12 5TY</postalCode>
+				</addr>
+				<id root="2.16.840.1.113883.2.1.3.2.4.19.1" extension="V396F"/>
+				<name>Northgate Medical Practice</name>
+				<standardIndustryClassCode code="001" displayName="GP Practice" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.289"/>
+				<telecom value="tel:01433111222" use="WP"/>
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP145201GB02#providerOrganization"/>
+			</providerOrganization>
+		</COCD_TP145201GB02.PatientRole>
+	</recordTarget>
+	<tracker typeCode="TRC">
+		<npfitlc:contentId extension="COCD_TP145202GB01#IntendedRecipient" root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+		<COCD_TP145202GB01.IntendedRecipient classCode="ASSIGNED">
+			<id root="2.16.840.1.113883.2.1.3.2.4.18.24" extension="1234512350" assigningAuthorityName="V396A:EAST CHESHIRE NHS TRUST"/>
+			<npfitlc:recipientRoleCode codeSystem="2.16.840.1.113883.2.1.3.2.4.17.124" code="NR0600" displayName="Specialist Nurse Practitioner"/>
+			<telecom value="mailto:pete.hungerford@nhs.net"/>
+			<templateId extension="COCD_TP145202GB01#IntendedRecipient" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<assignedPerson classCode="PSN" determinerCode="INSTANCE">
+				<name>
+					<prefix>Mr</prefix>
+					<family>Hungerford</family>
+					<given>Pete</given>
+				</name>
+				<templateId extension="COCD_TP145202GB01#assignedPerson" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			</assignedPerson>
+			<representedOrganization classCode="ORG" determinerCode="INSTANCE">
+				<id extension="V396A" root="2.16.840.1.113883.2.1.3.2.4.19.1"/>
+				<name>East Cheshire NHS Trust</name>
+				<templateId extension="COCD_TP145202GB01#representedOrganization" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			</representedOrganization>
+		</COCD_TP145202GB01.IntendedRecipient>
+	</tracker>
+	<tracker typeCode="TRC">
+		<npfitlc:contentId extension="COCD_TP145202GB01#IntendedRecipient" root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+		<COCD_TP145202GB01.IntendedRecipient classCode="ASSIGNED">
+			<id root="2.16.840.1.113883.2.1.3.2.4.18.24" extension="1234512346" assigningAuthorityName="V396A:EAST CHESHIRE NHS TRUST"/>
+			<npfitlc:recipientRoleCode codeSystem="2.16.840.1.113883.2.1.3.2.4.17.124" code="NR0050" displayName="Consultant"/>
+			<telecom value="mailto:jani.chakrabarti@nhs.net"/>
+			<templateId extension="COCD_TP145202GB01#IntendedRecipient" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<assignedPerson classCode="PSN" determinerCode="INSTANCE">
+				<name>
+					<prefix>Miss</prefix>
+					<family>Chakrabarti</family>
+					<given>Jani</given>
+				</name>
+				<templateId extension="COCD_TP145202GB01#assignedPerson" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			</assignedPerson>
+			<representedOrganization classCode="ORG" determinerCode="INSTANCE">
+				<id extension="V396A" root="2.16.840.1.113883.2.1.3.2.4.19.1"/>
+				<name>East Cheshire NHS Trust</name>
+				<templateId extension="COCD_TP145202GB01#representedOrganization" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			</representedOrganization>
+		</COCD_TP145202GB01.IntendedRecipient>
+	</tracker>
+	<tracker typeCode="TRC">
+		<npfitlc:contentId extension="COCD_TP145202GB01#IntendedRecipient" root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+		<COCD_TP145202GB01.IntendedRecipient classCode="ASSIGNED">
+			<id root="2.16.840.1.113883.2.1.3.2.4.18.24" extension="1234512345" assigningAuthorityName="V396A:EAST CHESHIRE NHS TRUST"/>
+			<npfitlc:recipientRoleCode codeSystem="2.16.840.1.113883.2.1.3.2.4.17.124" code="NR0620" displayName="Staff Nurse"/>
+			<telecom value="mailto:june.bradwick@nhs.net"/>
+			<templateId extension="COCD_TP145202GB01#IntendedRecipient" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<assignedPerson classCode="PSN" determinerCode="INSTANCE">
+				<name>
+					<prefix>Mrs</prefix>
+					<family>Bradwick</family>
+					<given>June</given>
+				</name>
+				<templateId extension="COCD_TP145202GB01#assignedPerson" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			</assignedPerson>
+			<representedOrganization classCode="ORG" determinerCode="INSTANCE">
+				<id extension="V396A" root="2.16.840.1.113883.2.1.3.2.4.19.1"/>
+				<name>East Cheshire NHS Trust</name>
+				<templateId extension="COCD_TP145202GB01#representedOrganization" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			</representedOrganization>
+		</COCD_TP145202GB01.IntendedRecipient>
+	</tracker>
+	<tracker typeCode="TRC">
+		<npfitlc:contentId extension="COCD_TP145202GB01#IntendedRecipient" root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+		<COCD_TP145202GB01.IntendedRecipient classCode="ASSIGNED">
+			<id root="2.16.840.1.113883.2.1.3.2.4.18.24" extension="1234512351" assigningAuthorityName="V396F:NORTHGATE MEDICAL PRACTICE"/>
+			<npfitlc:recipientRoleCode codeSystem="2.16.840.1.113883.2.1.3.2.4.17.124" code="NR0260" displayName="General Medical Practitioner"/>
+			<telecom value="mailto:harry.harvey@nhs.net"/>
+			<templateId extension="COCD_TP145202GB01#IntendedRecipient" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<assignedPerson classCode="PSN" determinerCode="INSTANCE">
+				<name>
+					<prefix>Dr</prefix>
+					<family>Harvey</family>
+					<given>Harry</given>
+				</name>
+				<templateId extension="COCD_TP145202GB01#assignedPerson" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			</assignedPerson>
+			<representedOrganization classCode="ORG" determinerCode="INSTANCE">
+				<id extension="V396F" root="2.16.840.1.113883.2.1.3.2.4.19.1"/>
+				<name>Northgate Medical Practice</name>
+				<templateId extension="COCD_TP145202GB01#representedOrganization" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			</representedOrganization>
+		</COCD_TP145202GB01.IntendedRecipient>
+	</tracker>
+	<tracker typeCode="TRC">
+		<npfitlc:contentId extension="COCD_TP145202GB01#IntendedRecipient" root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+		<COCD_TP145202GB01.IntendedRecipient classCode="ASSIGNED">
+			<id root="2.16.840.1.113883.2.1.3.2.4.18.24" extension="1234512352" assigningAuthorityName="V396A:EAST CHESHIRE NHS TRUST"/>
+			<npfitlc:recipientRoleCode codeSystem="2.16.840.1.113883.2.1.3.2.4.17.124" code="NR0050" displayName="Consultant"/>
+			<telecom value="mailto:andrew.pearson@nhs.net"/>
+			<templateId extension="COCD_TP145202GB01#IntendedRecipient" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<assignedPerson classCode="PSN" determinerCode="INSTANCE">
+				<name>
+					<prefix>Mr</prefix>
+					<family>Pearson</family>
+					<given>Andrew</given>
+				</name>
+				<templateId extension="COCD_TP145202GB01#assignedPerson" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			</assignedPerson>
+			<representedOrganization classCode="ORG" determinerCode="INSTANCE">
+				<id extension="V396A" root="2.16.840.1.113883.2.1.3.2.4.19.1"/>
+				<name>East Cheshire NHS Trust</name>
+				<templateId extension="COCD_TP145202GB01#representedOrganization" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			</representedOrganization>
+		</COCD_TP145202GB01.IntendedRecipient>
+	</tracker>
+</ClinicalDocument>

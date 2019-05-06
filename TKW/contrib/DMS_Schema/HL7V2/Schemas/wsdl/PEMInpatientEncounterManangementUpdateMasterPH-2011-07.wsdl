@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  
+*****************************************************************************************************************
+* 
+* 	Copyright (c) 2010 NHS Conneccting For Health. All rights reserved.
+*   
+*  	Redistribution and use in source and binary forms, with or without
+*  	modification, are permitted provided that the following conditions
+*  	are met:
+*  		1. Redistributions of source code must retain the above copyright
+*     		notice, this list of conditions and the following disclaimer.
+*  		2. Redistributions in binary form must reproduce the above copyright
+*     		notice, this list of conditions and the following disclaimer in the
+*     		documentation and/or other materials provided with the distribution.
+*  		3. All advertising materials mentioning features or use of this software
+*     		must display the following acknowledgement:
+*       This product includes software developed by Health Level Seven.
+*  	THIS SOFTWARE IS PROVIDED BY NHS Conneccting For Health. AND CONTRIBUTORS "AS IS" AND
+*  	ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+*  	IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+*  	ARE DISCLAIMED.  IN NO EVENT SHALL THE REGENTS OR CONTRIBUTORS BE LIABLE
+*  	FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+*  	DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+*  	OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+*  	HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+*  	LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+*  	OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+*  	SUCH DAMAGE.
+*
+* CHANGE HISTORY:
+*
+* VERSION   DATE       AUTHOR                   LABEL   DESCRIPTION
+* =======   ========== ======================   ======  ===========================================================
+* 1.0       31-03-2010 Cord Oestmann                    Created this WSDL
+* 2.0       16-05-2010 Interoperability Team            Amended this WSDL to make changes to the namespace declarations and the action and callbacks.
+*
+********************************************************************************************************************
+-->
+<wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:itk="urn:nhs-itk:ns:201005" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="inpatientEncounterManagementUpdateMaster" targetNamespace="urn:nhs-itk:ns:201005">
+	<wsdl:types>
+		<xsd:schema targetNamespace="urn:nhs-itk:ns:201005" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+			<xsd:include schemaLocation="../distributionEnvelope-v2-0.xsd"/>
+			<xsd:include schemaLocation="../ITKMessageTypes-2010-05.xsd"/>
+		</xsd:schema>
+	</wsdl:types>
+	<wsdl:message name="HL7PipeAndHatContentMessage">
+		<wsdl:part name="HL7PipeAndHatContentMessage" element="itk:DistributionEnvelope"/>
+	</wsdl:message>
+	<wsdl:message name="acknowledgementResponse">
+		<wsdl:part name="acknowledgementResponse" element="itk:SimpleMessageResponse"/>
+	</wsdl:message>
+	<wsdl:message name="faultResponse">
+		<wsdl:part name="faultResponse" element="itk:ToolkitErrorInfo"/>
+	</wsdl:message>
+	<wsdl:portType name="transferPatientUpdateMasterPH_ptt">
+		<wsdl:operation name="transferPatientUpdateMasterPH-v1-0">
+			<wsdl:input message="itk:HL7PipeAndHatContentMessage"/>
+			<wsdl:output message="itk:HL7PipeAndHatContentMessage"/>
+			<wsdl:fault name="standardFault" message="itk:faultResponse"/>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:portType name="cancelTransferPatientUpdateMasterPH_ptt">
+		<wsdl:operation name="cancelTransferPatientUpdateMasterPH-v1-0">
+			<wsdl:input message="itk:HL7PipeAndHatContentMessage"/>
+			<wsdl:output message="itk:HL7PipeAndHatContentMessage"/>
+			<wsdl:fault name="standardFault" message="itk:faultResponse"/>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:binding name="transferPatientUpdateMasterPH_pttBinding" type="itk:transferPatientUpdateMasterPH_ptt">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdl:operation name="transferPatientUpdateMasterPH-v1-0">
+			<soap:operation soapAction="urn:nhs-itk:services:201005:transferPatientUpdateMasterPH-v1-0" style="document"/>
+			<wsdl:input>
+				<soap:body parts="HL7PipeAndHatContentMessage" use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body parts="HL7PipeAndHatContentMessage" use="literal"/>
+			</wsdl:output>
+			<wsdl:fault name="standardFault">
+				<soap:fault name="standardFault" use="literal"/>
+			</wsdl:fault>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:binding name="cancelTransferPatientUpdateMasterPH_pttBinding" type="itk:cancelTransferPatientUpdateMasterPH_ptt">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdl:operation name="cancelTransferPatientUpdateMasterPH-v1-0">
+			<soap:operation soapAction="urn:nhs-itk:services:201005:cancelTransferPatientUpdateMasterPH-v1-0" style="document"/>
+			<wsdl:input>
+				<soap:body parts="HL7PipeAndHatContentMessage" use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body parts="HL7PipeAndHatContentMessage" use="literal"/>
+			</wsdl:output>
+			<wsdl:fault name="standardFault">
+				<soap:fault name="standardFault" use="literal"/>
+			</wsdl:fault>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:service name="transferPatientUpdateMasterPH-v1-0">
+		<wsdl:documentation>This service is used to trigger the TransferPatient Event ADT^A02 on the Patient Master data store
+                          with the payload using Pipe and Hat.
+                          </wsdl:documentation>
+		<wsdl:port name="transferPatientUpdateMasterPH_pttPort" binding="itk:transferPatientUpdateMasterPH_pttBinding">
+			<soap:address location="http://server:80/interoperability.toolkit/HL7v2/transferPatientUpdateMasterPH-v1-0"/>
+		</wsdl:port>
+	</wsdl:service>
+	<wsdl:service name="cancelTransferPatientUpdateMasterPH-v1-0">
+		<wsdl:documentation>This service is used to trigger the cancelTransferPatient ADT^A12 Event on the Patient Master data store
+                          with the payload using Pipe and Hat.
+                          </wsdl:documentation>
+		<wsdl:port name="cancelTransferPatientUpdateMasterPH_pttPort" binding="itk:cancelTransferPatientUpdateMasterPH_pttBinding">
+			<soap:address location="http://server:80/interoperability.toolkit/HL7v2/cancelTransferPatientUpdateMasterPH-v1-0"/>
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>

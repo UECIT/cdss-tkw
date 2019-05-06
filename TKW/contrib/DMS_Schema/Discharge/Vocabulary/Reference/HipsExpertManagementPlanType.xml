@@ -1,0 +1,16 @@
+<Vocabularies xmlns="urn:nhs-itk:ns:201005">
+	<vocabulary version="1.0" status="active" name="HipsExpertManagementPlanType" id="">
+		<concept code="01">
+			<displayName>Discharge</displayName>
+		</concept>
+		<concept code="02">
+			<displayName>Listed for surgery</displayName>
+		</concept>
+		<concept code="03">
+			<displayName>Listed for harness</displayName>
+		</concept>
+		<concept code="04">
+			<displayName>Watchful waiting</displayName>
+		</concept>
+	</vocabulary>
+</Vocabularies>

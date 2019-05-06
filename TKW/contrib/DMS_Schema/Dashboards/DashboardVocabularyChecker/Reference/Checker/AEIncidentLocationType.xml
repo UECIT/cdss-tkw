@@ -1,0 +1,19 @@
+<Vocabularies xmlns="urn:nhs-itk:ns:201005">
+<vocabulary id="2.16.840.1.113883.2.1.3.2.4.17.293" status="created" name="AEIncidentLocationType" version="1.0">
+	<concept code="10">
+		<displayName>Home</displayName>
+	</concept>
+	<concept code="40">
+		<displayName>Work</displayName>
+	</concept>
+	<concept code="50">
+		<displayName>Educational Establishment</displayName>
+	</concept>
+	<concept code="60">
+		<displayName>Public place</displayName>
+	</concept>
+		<concept code="91">
+		<displayName>Other</displayName>
+	</concept>
+</vocabulary>
+</Vocabularies>

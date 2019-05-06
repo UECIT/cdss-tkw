@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vocabulary id="2.16.840.1.113883.2.1.3.2.4.17.292" status="created" name="ContactType" version="1.0">
+	<concept code="01">
+		<displayName>Face to face communication</displayName>
+	</concept>
+	<concept code="02">
+		<displayName>Telephone</displayName>
+	</concept>
+	<concept code="03">
+		<displayName>Telemedicine web camera</displayName>
+	</concept>
+	<concept code="04">
+		<displayName>Talk type for a person unable to speak</displayName>
+	</concept>
+	<concept code="05">
+		<displayName>Email</displayName>
+	</concept>
+	<concept code="06">
+		<displayName>Short Messaging Service (SMS) - Text Messaging</displayName>
+	</concept>
+	<concept code="98">
+		<displayName>Other</displayName>
+	</concept>
+</vocabulary>

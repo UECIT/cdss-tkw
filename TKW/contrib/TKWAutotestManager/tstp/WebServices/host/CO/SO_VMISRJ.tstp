@@ -1,0 +1,54 @@
+SCRIPT SO_VMISRJ
+# $Id: SO_VMISRJ.tst 87 2016-05-06 09:58:33Z sfarrow $
+# SO_VMISRJ SOAP  soapfaultcodeVersionMismatch
+# Automatically generated from SO_VMISRJ.tst
+
+VALIDATOR __TKWROOT__/config/ITK_Correspondence/validator_config/validator.conf
+
+SIMULATOR __SIMULATOR__
+
+STOP WHEN COMPLETE
+
+BEGIN SCHEDULES
+SO_VMISRJ TESTS SO_VMISRJ_test1 SO_VMISRJ_test2 SO_VMISRJ_test3 SO_VMISRJ_test4 SO_VMISRJ_test5 SO_VMISRJ_test6 SO_VMISRJ_test7 SO_VMISRJ_test8
+END SCHEDULES
+
+BEGIN TESTS
+SO_VMISRJ_test1 SEND_TKW SO_VMISRJ TO __TO_URL__ FROM __FROM_URL__/__FROM_CONTEXT_PATH__ __REPLY_TO_SECTION__ PRETRANSFORM __TKWROOT__/contrib/TKWAutotestManager/transforms/SO_VMISRJ.xslt APPLYPRETRANSFORMTO data SYNC fail WITH_PROPERTYSET base+webservices
+SO_VMISRJ_test2 CHAIN SYNC soapfaultcodeexists
+SO_VMISRJ_test3 CHAIN SYNC soapfaultcodeVersionMismatch
+SO_VMISRJ_test4 CHAIN SYNC conditional_errorcodeexists
+SO_VMISRJ_test5 CHAIN SYNC conditional_error_1000
+SO_VMISRJ_test6 CHAIN SYNC messageidexists
+SO_VMISRJ_test7 CHAIN SYNC actionok
+SO_VMISRJ_test8 CHAIN SYNC conditional_errortextcheck
+END TESTS
+
+BEGIN MESSAGES
+SO_VMISRJ USING SO_VMISRJ___HAPPY_PATH_SERVICE___template WITH NULL SOAPACTION __HAPPY_PATH_SERVICE__
+END MESSAGES
+
+BEGIN TEMPLATES
+SO_VMISRJ___HAPPY_PATH_SERVICE___template  __TKWROOT__/contrib/ITK_2_01_Test_Messages/__HAPPY_PATH_MSG__
+END TEMPLATES
+
+BEGIN PROPERTYSETS
+webservices
+	SET tks.HttpTransport.listenport __LISTEN_PORT_NUMBER__
+	SET tks.HttpTransport.listenaddr  __LISTEN_ADDR__
+END PROPERTYSETS
+
+BEGIN PASSFAIL
+fail http500
+soapfaultcodeexists synchronousxpath /soap:Envelope/soap:Body/soap:Fault/faultcode exists
+# the following two must include the namespace prefix used for soap, this *should* be picked up by schema validation
+soapfaultcodeMustUnderstand synchronousxpath /soap:Envelope/soap:Body/soap:Fault/faultcode/text() matches "^.+:MustUnderstand$"
+soapfaultcodeVersionMismatch synchronousxpath /soap:Envelope/soap:Body/soap:Fault/faultcode/text() matches "^.+:VersionMismatch$"
+# these following two are conditional on the detail element existing
+conditional_errorcodeexists implies ( synchronousxpath /soap:Envelope/soap:Body/soap:Fault/detail exists ) ( synchronousxpath /soap:Envelope/soap:Body/soap:Fault/detail/itk:ToolkitErrorInfo/itk:ErrorCode exists )
+conditional_error_1000 implies ( synchronousxpath /soap:Envelope/soap:Body/soap:Fault/detail exists ) ( synchronousxpath /soap:Envelope/soap:Body/soap:Fault/detail/itk:ToolkitErrorInfo/itk:ErrorCode/text() matches "^1000$" )
+messageidexists synchronousxpath /soap:Envelope/soap:Header/wsa:MessageID exists
+actionok synchronousxpath /soap:Envelope/soap:Header/wsa:Action matches "^http://www.w3.org.2005/08/addressing/soap/fault$"
+# this is conditional on the detail element existing
+conditional_errortextcheck implies ( synchronousxpath /soap:Envelope/soap:Body/soap:Fault/detail exists ) ( synchronousxpath /soap:Envelope/soap:Body/soap:Fault/detail/itk:ToolkitErrorInfo/itk:ErrorText check )
+END PASSFAIL

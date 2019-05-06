@@ -1,0 +1,14 @@
+<entry xmlns="urn:hl7-org:v3" xmlns:hl7v2="urn:hl7-org:v2xml" xmlns:itk="urn:nhs-itk:ns:201005" xmlns:npfitlc="NPFIT:HL7:Localisation" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:wsa="http://www.w3.org/2005/08/addressing" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" typeCode="COMP" contextConductionInd="true">
+	<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP146325GB01#Allergy"/>
+	<observation classCode="COND" moodCode="EVN">
+		<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146325GB01#Allergy"/>
+		<id root="01FF5CFE-4D65-D07D-E050-950AE0731D36"/>
+		<code codeSystem="2.16.840.1.113883.2.1.3.2.4.14" code="XUcs9" displayName="Drug allergy (disorder)">
+			<originalText>
+				<reference value="#a1065"/>
+			</originalText>
+		</code>
+		<statusCode code="completed"/>
+		<effectiveTime value="20130129000000"/>
+	</observation>
+</entry>

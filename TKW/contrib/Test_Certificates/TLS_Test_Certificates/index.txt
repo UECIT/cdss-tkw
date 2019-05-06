@@ -1,0 +1,2 @@
+V	220813101453Z		02	unknown	/C=GB/O=ITK Accreditation/OU=ITK Testbench/CN=TLS Sub CA
+R	220813113432Z	120815113711Z	06	unknown	/C=GB/O=ITK Test Systems/OU=ITK TLS Endpoints/CN=Test Endpoint 04

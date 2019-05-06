@@ -1,0 +1,28 @@
+<Vocabularies xmlns="urn:nhs-itk:ns:201005">
+	<vocabulary version="2.0" status="active" name="TextHeadingType" id="">
+		<concept code="GD">
+			<displayName>Goal Details</displayName>
+		</concept>
+		<concept code="SD">
+			<displayName>Summary Details</displayName>
+		</concept>
+		<concept code="SUM">
+			<displayName>Summary Details</displayName>
+		</concept>
+		<concept code="CRI">
+			<displayName>Crisis Plan</displayName>
+		</concept>
+		<concept code="CON">
+			<displayName>Contingency Plan</displayName>
+		</concept>
+		<concept code="STR">
+			<displayName>Individual Strengths</displayName>
+		</concept>
+		<concept code="PRE">
+			<displayName>Care Preferences</displayName>
+		</concept>
+		<concept code="DET">
+			<displayName>Situations Leading to Deterioration</displayName>
+		</concept>
+	</vocabulary>
+</Vocabularies>

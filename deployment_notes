@@ -1,0 +1,1 @@
+to deploy into the elastic beanstalk, first build the tkw-client code into a jar, then zip the entire content of this directory (not the directory itself, just the contents) and deploy through AWS.

@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  
+*****************************************************************************************************************
+* 
+* 	Copyright (c) 2010 NHS Conneccting For Health. All rights reserved.
+*   
+*  	Redistribution and use in source and binary forms, with or without
+*  	modification, are permitted provided that the following conditions
+*  	are met:
+*  		1. Redistributions of source code must retain the above copyright
+*     		notice, this list of conditions and the following disclaimer.
+*  		2. Redistributions in binary form must reproduce the above copyright
+*     		notice, this list of conditions and the following disclaimer in the
+*     		documentation and/or other materials provided with the distribution.
+*  		3. All advertising materials mentioning features or use of this software
+*     		must display the following acknowledgement:
+*       This product includes software developed by Health Level Seven.
+*  	THIS SOFTWARE IS PROVIDED BY NHS Conneccting For Health. AND CONTRIBUTORS "AS IS" AND
+*  	ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+*  	IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+*  	ARE DISCLAIMED.  IN NO EVENT SHALL THE REGENTS OR CONTRIBUTORS BE LIABLE
+*  	FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+*  	DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+*  	OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+*  	HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+*  	LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+*  	OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+*  	SUCH DAMAGE.
+*
+* CHANGE HISTORY:
+*
+* VERSION   DATE       AUTHOR                   LABEL   DESCRIPTION
+* =======   ========== ======================   ======  ===========================================================
+* 1.0       31-03-2010 Cord Oestmann                    Created this WSDL
+* 2.0       16-05-2010 Interoperability Team            Amended this WSDL to make changes to the namespace declarations and the action and callbacks.
+*
+********************************************************************************************************************
+-->
+<wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:itk="urn:nhs-itk:ns:201005" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="pendingEncounterManagement" targetNamespace="urn:nhs-itk:ns:201005">
+	<wsdl:types>
+		<xsd:schema targetNamespace="urn:nhs-itk:ns:201005" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+			<xsd:include schemaLocation="../distributionEnvelope-v2-0.xsd"/>
+			<xsd:include schemaLocation="../ITKMessageTypes-2010-05.xsd"/>
+		</xsd:schema>
+	</wsdl:types>
+	<wsdl:message name="pendingAdmitRequest">
+		<wsdl:part name="pendingAdmitRequest" element="itk:DistributionEnvelope"/>
+	</wsdl:message>
+	<wsdl:message name="pendingTransferRequest">
+		<wsdl:part name="pendingTransferRequest" element="itk:DistributionEnvelope"/>
+	</wsdl:message>
+	<wsdl:message name="pendingDischargeRequest">
+		<wsdl:part name="pendingDischargeRequest" element="itk:DistributionEnvelope"/>
+	</wsdl:message>
+	<wsdl:message name="cancelPendingAdmitRequest">
+		<wsdl:part name="cancelPendingAdmitRequest" element="itk:DistributionEnvelope"/>
+	</wsdl:message>
+	<wsdl:message name="cancelPendingTransferRequest">
+		<wsdl:part name="cancelPendingTransferRequest" element="itk:DistributionEnvelope"/>
+	</wsdl:message>
+	<wsdl:message name="cancelPendingDischargeRequest">
+		<wsdl:part name="cancelPendingDischargeRequest" element="itk:DistributionEnvelope"/>
+	</wsdl:message>
+	<wsdl:message name="acknowledgementResponse">
+		<wsdl:part name="acknowledgementResponse" element="itk:SimpleMessageResponse"/>
+	</wsdl:message>
+	<wsdl:message name="faultResponse">
+		<wsdl:part name="faultResponse" element="itk:ToolkitErrorInfo"/>
+	</wsdl:message>
+	<wsdl:portType name="pendingAdmit_ptt">
+		<wsdl:operation name="pendingAdmit-v1-0">
+			<wsdl:input message="itk:pendingAdmitRequest"/>
+			<wsdl:output message="itk:acknowledgementResponse"/>
+			<wsdl:fault name="standardFault" message="itk:faultResponse"/>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:portType name="pendingTransfer_ptt">
+		<wsdl:operation name="pendingTransfer-v1-0">
+			<wsdl:input message="itk:pendingTransferRequest"/>
+			<wsdl:output message="itk:acknowledgementResponse"/>
+			<wsdl:fault name="standardFault" message="itk:faultResponse"/>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:portType name="pendingDischarge_ptt">
+		<wsdl:operation name="pendingDischarge-v1-0">
+			<wsdl:input message="itk:pendingDischargeRequest"/>
+			<wsdl:output message="itk:acknowledgementResponse"/>
+			<wsdl:fault name="standardFault" message="itk:faultResponse"/>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:portType name="cancelPendingAdmit_ptt">
+		<wsdl:operation name="cancelPendingAdmit-v1-0">
+			<wsdl:input message="itk:cancelPendingAdmitRequest"/>
+			<wsdl:output message="itk:acknowledgementResponse"/>
+			<wsdl:fault name="standardFault" message="itk:faultResponse"/>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:portType name="cancelPendingTransfer_ptt">
+		<wsdl:operation name="cancelPendingTransfer-v1-0">
+			<wsdl:input message="itk:cancelPendingTransferRequest"/>
+			<wsdl:output message="itk:acknowledgementResponse"/>
+			<wsdl:fault name="standardFault" message="itk:faultResponse"/>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:portType name="cancelPendingDischarge_ptt">
+		<wsdl:operation name="cancelPendingDischarge-v1-0">
+			<wsdl:input message="itk:cancelPendingDischargeRequest"/>
+			<wsdl:output message="itk:acknowledgementResponse"/>
+			<wsdl:fault name="standardFault" message="itk:faultResponse"/>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:binding name="pendingAdmit_pttBinding" type="itk:pendingAdmit_ptt">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdl:operation name="pendingAdmit-v1-0">
+			<soap:operation soapAction="urn:nhs-itk:services:201005:pendingAdmit-v1-0" style="document"/>
+			<wsdl:input>
+				<soap:body parts="pendingAdmitRequest" use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body parts="acknowledgementResponse" use="literal"/>
+			</wsdl:output>
+			<wsdl:fault name="standardFault">
+				<soap:fault name="standardFault" use="literal"/>
+			</wsdl:fault>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:binding name="pendingTransfer_pttBinding" type="itk:pendingTransfer_ptt">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdl:operation name="pendingTransfer-v1-0">
+			<soap:operation soapAction="urn:nhs-itk:services:201005:pendingTransfer-v1-0" style="document"/>
+			<wsdl:input>
+				<soap:body parts="pendingTransferRequest" use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body parts="acknowledgementResponse" use="literal"/>
+			</wsdl:output>
+			<wsdl:fault name="standardFault">
+				<soap:fault name="standardFault" use="literal"/>
+			</wsdl:fault>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:binding name="pendingDischarge_pttBinding" type="itk:pendingDischarge_ptt">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdl:operation name="pendingDischarge-v1-0">
+			<soap:operation soapAction="urn:nhs-itk:services:201005:pendingDischarge-v1-0" style="document"/>
+			<wsdl:input>
+				<soap:body parts="pendingDischargeRequest" use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body parts="acknowledgementResponse" use="literal"/>
+			</wsdl:output>
+			<wsdl:fault name="standardFault">
+				<soap:fault name="standardFault" use="literal"/>
+			</wsdl:fault>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:binding name="cancelPendingAdmit_pttBinding" type="itk:cancelPendingAdmit_ptt">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdl:operation name="cancelPendingAdmit-v1-0">
+			<soap:operation soapAction="urn:nhs-itk:services:201005:cancelPendingAdmit-v1-0" style="document"/>
+			<wsdl:input>
+				<soap:body parts="cancelPendingAdmitRequest" use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body parts="acknowledgementResponse" use="literal"/>
+			</wsdl:output>
+			<wsdl:fault name="standardFault">
+				<soap:fault name="standardFault" use="literal"/>
+			</wsdl:fault>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:binding name="cancelPendingTransfer_pttBinding" type="itk:cancelPendingTransfer_ptt">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdl:operation name="cancelPendingTransfer-v1-0">
+			<soap:operation soapAction="urn:nhs-itk:services:201005:cancelPendingTransfer-v1-0" style="document"/>
+			<wsdl:input>
+				<soap:body parts="cancelPendingTransferRequest" use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body parts="acknowledgementResponse" use="literal"/>
+			</wsdl:output>
+			<wsdl:fault name="standardFault">
+				<soap:fault name="standardFault" use="literal"/>
+			</wsdl:fault>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:binding name="cancelPendingDischarge_pttBinding" type="itk:cancelPendingDischarge_ptt">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdl:operation name="cancelPendingDischarge-v1-0">
+			<soap:operation soapAction="urn:nhs-itk:services:201005:cancelPendingDischarge-v1-0" style="document"/>
+			<wsdl:input>
+				<soap:body parts="cancelPendingDischargeRequest" use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body parts="acknowledgementResponse" use="literal"/>
+			</wsdl:output>
+			<wsdl:fault name="standardFault">
+				<soap:fault name="standardFault" use="literal"/>
+			</wsdl:fault>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:service name="pendingAdmit-v1-0">
+		<wsdl:documentation>This service is used to broadcast the pendingAdmit Event ADT^A14.
+                          From the service consumer perspective it is a fire-and-forget integration pattern.
+                          It returns a receipt acknowledgement from the Toolkit.</wsdl:documentation>
+		<wsdl:port name="pendingAdmit_pttPort" binding="itk:pendingAdmit_pttBinding">
+			<soap:address location="http://server:80/interoperability.toolkit/HL7v2/pendingAdmit-v1-0"/>
+		</wsdl:port>
+	</wsdl:service>
+	<wsdl:service name="pendingTransfer-v1-0">
+		<wsdl:documentation>This service is used to broadcast the pendingTransfer Event ADT^A15.
+                          From the service consumer perspective it is a fire-and-forget integration pattern.
+                          It returns a receipt acknowledgement from the Toolkit.</wsdl:documentation>
+		<wsdl:port name="pendingTransfer_pttPort" binding="itk:pendingTransfer_pttBinding">
+			<soap:address location="http://server:80/interoperability.toolkit/HL7v2/pendingTransfer-v1-0"/>
+		</wsdl:port>
+	</wsdl:service>
+	<wsdl:service name="pendingDischarge-v1-0">
+		<wsdl:documentation>This service is used to broadcast the pendingDischarge Event ADT^A16.
+                          From the service consumer perspective it is a fire-and-forget integration pattern.
+                          It returns a receipt acknowledgement from the Toolkit.</wsdl:documentation>
+		<wsdl:port name="pendingDischarge_pttPort" binding="itk:pendingDischarge_pttBinding">
+			<soap:address location="http://server:80/interoperability.toolkit/HL7v2/pendingDischarge-v1-0"/>
+		</wsdl:port>
+	</wsdl:service>
+	<wsdl:service name="cancelPendingAdmit-v1-0">
+		<wsdl:documentation>This service is used to broadcast the cancelPendingAdmit Event ADT^A27.
+                          From the service consumer perspective it is a fire-and-forget integration pattern.
+                          It returns a receipt acknowledgement from the Toolkit.</wsdl:documentation>
+		<wsdl:port name="cancelPendingAdmit_pttPort" binding="itk:cancelPendingAdmit_pttBinding">
+			<soap:address location="http://server:80/interoperability.toolkit/HL7v2/cancelPendingAdmit-v1-0"/>
+		</wsdl:port>
+	</wsdl:service>
+	<wsdl:service name="cancelPendingTransfer-v1-0">
+		<wsdl:documentation>This service is used to broadcast the cancelPendingTransfer Event ADT^A26.
+                          From the service consumer perspective it is a fire-and-forget integration pattern.
+                          It returns a receipt acknowledgement from the Toolkit.</wsdl:documentation>
+		<wsdl:port name="cancelPendingTransfer_pttPort" binding="itk:cancelPendingTransfer_pttBinding">
+			<soap:address location="http://server:80/interoperability.toolkit/HL7v2/cancelPendingTransfer-v1-0"/>
+		</wsdl:port>
+	</wsdl:service>
+	<wsdl:service name="cancelPendingDischarge-v1-0">
+		<wsdl:documentation>This service is used to broadcast the cancelPendingDischarge Event ADT^A25.
+                          From the service consumer perspective it is a fire-and-forget integration pattern.
+                          It returns a receipt acknowledgement from the Toolkit.</wsdl:documentation>
+		<wsdl:port name="cancelPendingDischarge_pttPort" binding="itk:cancelPendingDischarge_pttBinding">
+			<soap:address location="http://server:80/interoperability.toolkit/HL7v2/cancelPendingDischarge-v1-0"/>
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>

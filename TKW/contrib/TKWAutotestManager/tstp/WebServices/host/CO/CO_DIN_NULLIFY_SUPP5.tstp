@@ -1,0 +1,48 @@
+SCRIPT CO_DIN_NULLIFY_SUPP5
+# $Id: CO_skel.tst 74 2016-03-07 13:03:27Z sfarrow $
+# Section 6 - __DOMAIN_TEXT__ Positive Tests Test Script File
+# Automatically generated from CO_skel.tst 
+
+VALIDATOR __TKWROOT__/config/ITK_Correspondence/validator_config/validator.conf
+
+SIMULATOR __SIMULATOR__
+
+STOP WHEN COMPLETE
+
+BEGIN SCHEDULES
+CO_DIN_NULLIFY_SUPP5 TESTS CO_DIN_NULLIFY_SUPP5___INTERACTION_ID___test1 CO_DIN_NULLIFY_SUPP5___INTERACTION_ID___test2 CO_DIN_NULLIFY_SUPP5___INTERACTION_ID___test3 CO_DIN_NULLIFY_SUPP5___INTERACTION_ID___test4 CO_DIN_NULLIFY_SUPP5___INTERACTION_ID___test5 CO_DIN_NULLIFY_SUPP5___INTERACTION_ID___test6
+END SCHEDULES
+
+BEGIN TESTS
+CO_DIN_NULLIFY_SUPP5___INTERACTION_ID___test1 SEND_TKW CO_DIN_NULLIFY_SUPP5 TO __TO_URL__ FROM __FROM_URL__/syncsoap SYNC ok PRETRANSFORM __TKWROOT__/contrib/TKWAutotestManager/transforms/cda_detail/DIN5.xslt APPLYPRETRANSFORMTO final WITH_PROPERTYSET base+webservices
+CO_DIN_NULLIFY_SUPP5___INTERACTION_ID___test2 CHAIN SYNC respexists
+CO_DIN_NULLIFY_SUPP5___INTERACTION_ID___test3 CHAIN SYNC respok
+#three underscores required for merge to identify the test case id and perform the substitution
+CO_DIN_NULLIFY_SUPP5___INTERACTION_ID___test4 CHAIN SYNC CO_DIN_NULLIFY_SUPP5___actioncorrect
+CO_DIN_NULLIFY_SUPP5___INTERACTION_ID___test5 CHAIN SYNC synctimestampok
+CO_DIN_NULLIFY_SUPP5___INTERACTION_ID___test6 CHAIN SYNC syncmessageidsok
+END TESTS
+
+BEGIN MESSAGES
+CO_DIN_NULLIFY_SUPP5 USING CO_DIN_NULLIFY_SUPP5___INTERACTION_ID___template WITH NULL SOAPACTION __SERVICE__
+END MESSAGES
+
+BEGIN TEMPLATES
+CO_DIN_NULLIFY_SUPP5___INTERACTION_ID___template __SAMPLE_TEST_MSG_PATH__/__SAMPLE_FILE__
+END TEMPLATES
+
+BEGIN PROPERTYSETS
+webservices
+	SET tks.HttpTransport.listenport __LISTEN_PORT_NUMBER__
+	SET tks.HttpTransport.listenaddr  __LISTEN_ADDR__
+END PROPERTYSETS
+
+BEGIN PASSFAIL
+ok httpok
+respexists synchronousxpath /soap:Envelope/soap:Body/itk:SimpleMessageResponse exists
+respok synchronousxpath /soap:Envelope/soap:Body/itk:SimpleMessageResponse/text() matches "^(OK|TEST_HARNESS_ID.*)$"
+#three underscores required for merge to identify the test case id and perform the substitution
+CO_DIN_NULLIFY_SUPP5___actioncorrect synchronousxpath /soap:Envelope/soap:Header/wsa:Action matches "^__SERVICE__Response$"
+synctimestampok synctimestampislater
+syncmessageidsok syncmessageidsdiffer
+END PASSFAIL

@@ -1,0 +1,13 @@
+<Vocabularies xmlns="urn:nhs-itk:ns:201005">
+	<vocabulary version="4.0" status="active" name="AcknowledgementDetailType" id="">
+		<concept code="ER">
+			<displayName>Error</displayName>
+		</concept>
+		<concept code="WG">
+			<displayName>Warning</displayName>
+		</concept>
+		<concept code="IF">
+			<displayName>For Information</displayName>
+		</concept>
+	</vocabulary>
+</Vocabularies>

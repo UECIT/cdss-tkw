@@ -1,0 +1,692 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xs:schema xmlns="urn:hl7-org:v3" xmlns:npfitlc="NPFIT:HL7:Localisation" elementFormDefault="qualified" targetNamespace="urn:hl7-org:v3" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <!--
+***************************************************************************
+* XML schema for message type COMT_MT000019GB03
+* Source information:
+* 
+* Rendered by: 	Static Model Designer
+* Rendered on: 	Mon Feb 13 11:13:24 GMT 2012
+* Version : 	03
+* 
+* 
+* Generated for National Health Service XMLITS version NHS CFH XSD ITS Transform 1.0.0
+* 
+* 
+* Copyright (c) 2008,2009,2010 National Health Service .
+*  All rights reserved.Redistribution and use in source and binary forms,
+*  with or without modification, are permitted provided that the following conditions
+*  are met:
+*  1. Redistributions of source code must retain the above copyright
+*     notice, this list of conditions and the following disclaimer.
+*  2. Redistributions in binary form must reproduce the above copyright
+*     notice, this list of conditions and the following disclaimer in the
+*     documentation and/or other materials provided with the distribution.
+*  3. All advertising materials mentioning features or use of this software
+*     must display the following acknowledgement:
+*       This product includes software developed by National Health Service.
+*  THIS SOFTWARE IS PROVIDED BY National Health Service. AND CONTRIBUTORS "AS IS" AND
+*  ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+*  IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+*  ARE DISCLAIMED.  IN NO EVENT SHALL THE REGENTS OR CONTRIBUTORS BE LIABLE
+*  FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+*  DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+*  OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+*  HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+*  LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+*  OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+*  SUCH DAMAGE.
+* 
+***************************************************************************
+-->
+    <xs:annotation>
+        <xs:documentation>
+            <p>RIM :DEFN=UK=RIM=0229R1</p>
+            <p>DATATYPE :DEFN=UV=DT=1.0;DEFN=UK=DT=3.6;</p>
+            <p>VOCABULARY :DEFN=UV=VO=913-20091020;DEFN=UK=VO=7.6;</p>
+        </xs:documentation>
+    </xs:annotation>
+    <xs:include schemaLocation="../dt/infrastructureRoot.xsd"/>
+    <xs:include schemaLocation="../dt/datatypeflavours.xsd"/>
+    <xs:include schemaLocation="../TemplateSchemas/NPFIT-100011_Act.xsd"/>
+    <xs:import namespace="NPFIT:HL7:Localisation" schemaLocation="../dt/NHSLocalisation.xsd"/>
+    <xs:element name="OOHWICFeed" type="COMT_MT000019GB03.OOHWICFeed"/>
+    <xs:complexType name="COMT_MT000019GB03.ActivityLocationType">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElementsGroupAll"/>
+            <xs:element maxOccurs="1" minOccurs="1" name="code">
+				<xs:complexType>
+					<xs:complexContent>
+						<xs:restriction base="CV.NHS.CodedValueType1">
+							<xs:attribute name="code" type="cs" use="required" fixed="ALT"/>
+							<xs:attribute name="codeSystem" type="uid" use="required" fixed="2.16.840.1.113883.2.1.3.2.4.17.286"/>
+						</xs:restriction>
+					</xs:complexContent>
+				</xs:complexType>
+			</xs:element>
+            <xs:element maxOccurs="1" minOccurs="1" name="value" type="CV.NHS.CodedValueType1"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute fixed="OBS" name="classCode" type="cs" use="required"/>
+        <xs:attribute fixed="EVN" name="moodCode" type="cs" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="COMT_MT000019GB03.CancellationReason">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElementsGroupAll"/>
+            <xs:element maxOccurs="1" minOccurs="1" name="code">
+				<xs:complexType>
+					<xs:complexContent>
+						<xs:restriction base="CV.NHS.CodedValueType1">
+							<xs:attribute name="code" type="cs" use="required" fixed="CREA"/>
+							<xs:attribute name="codeSystem" type="uid" use="required" fixed="2.16.840.1.113883.2.1.3.2.4.17.286"/>
+						</xs:restriction>
+					</xs:complexContent>
+				</xs:complexType>
+			</xs:element>
+            <xs:element maxOccurs="1" minOccurs="1" name="value" type="ST"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute fixed="OBS" name="classCode" type="cs" use="required"/>
+        <xs:attribute fixed="EVN" name="moodCode" type="cs" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="COMT_MT000019GB03.CancelledEncounter">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElementsGroupAll"/>
+            <xs:element maxOccurs="1" minOccurs="1" name="code">
+				<xs:complexType>
+					<xs:complexContent>
+						<xs:restriction base="CV.NHS.CodedValueType1">
+							<xs:attribute name="code" type="cs" use="required" fixed="CENC"/>
+							<xs:attribute name="codeSystem" type="uid" use="required" fixed="2.16.840.1.113883.2.1.3.2.4.17.286"/>
+						</xs:restriction>
+					</xs:complexContent>
+				</xs:complexType>
+			</xs:element>
+            <xs:element maxOccurs="1" minOccurs="1" name="value">
+                <xs:complexType>
+                    <xs:complexContent>
+                        <xs:restriction base="BL">
+                            <xs:attribute name="nullFlavor" type="cs_NullFlavor" use="prohibited"/>
+                            <xs:attribute name="updateMode" type="cs" use="prohibited"/>
+                            <xs:attribute name="value" type="bl" use="required"/>
+                        </xs:restriction>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element maxOccurs="1" minOccurs="0" name="component" nillable="true" type="COMT_MT000019GB03.Component3"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute fixed="OBS" name="classCode" type="cs" use="required"/>
+        <xs:attribute fixed="EVN" name="moodCode" type="cs" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="COMT_MT000019GB03.CaseNumber">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElementsGroupAll"/>
+            <xs:element maxOccurs="1" minOccurs="1" name="code">
+				<xs:complexType>
+					<xs:complexContent>
+						<xs:restriction base="CV.NHS.CodedValueType1">
+							<xs:attribute name="code" type="cs" use="required" fixed="CN"/>
+							<xs:attribute name="codeSystem" type="uid" use="required" fixed="2.16.840.1.113883.2.1.3.2.4.17.286"/>
+						</xs:restriction>
+					</xs:complexContent>
+				</xs:complexType>
+			</xs:element>
+            <xs:element maxOccurs="1" minOccurs="1" name="effectiveTime" type="IVL_TS"/>
+            <xs:element maxOccurs="1" minOccurs="1" name="value" type="II.NHS.IdentifierType3"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute fixed="OBS" name="classCode" type="cs" use="required"/>
+        <xs:attribute fixed="EVN" name="moodCode" type="cs" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="COMT_MT000019GB03.Clinician">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElementsGroupAll"/>
+            <xs:element maxOccurs="2" minOccurs="0" name="id" type="II.NHS.IdentifierType3"/>
+            <xs:element maxOccurs="1" minOccurs="0" name="assignedPerson1" nillable="true" type="COMT_MT000019GB03.ClinicianName"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute fixed="ASSIGNED" name="classCode" type="cs" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="COMT_MT000019GB03.ClinicianName">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElementsGroupAll"/>
+            <xs:element maxOccurs="1" minOccurs="1" name="name" type="PN"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute fixed="PSN" name="classCode" type="cs" use="required"/>
+        <xs:attribute fixed="INSTANCE" name="determinerCode" type="cs" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="COMT_MT000019GB03.Component">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElementsGroupAll"/>
+            <xs:element maxOccurs="1" minOccurs="1" name="walkInEncounterType" nillable="true" type="COMT_MT000019GB03.WalkInEncounterType"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute fixed="COMP" name="typeCode" type="cs" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="COMT_MT000019GB03.Component11">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElementsGroupAll"/>
+            <xs:element maxOccurs="1" minOccurs="1" name="deleteFlag" nillable="true" type="COMT_MT000019GB03.DeleteFlag"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute fixed="COMP" name="typeCode" type="cs" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="COMT_MT000019GB03.Component16">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElementsGroupAll"/>
+            <xs:element maxOccurs="1" minOccurs="1" name="createdDate" nillable="true" type="COMT_MT000019GB03.CreatedDate"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute fixed="COMP" name="typeCode" type="cs" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="COMT_MT000019GB03.Component17">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElementsGroupAll"/>
+            <xs:element maxOccurs="1" minOccurs="1" name="modifiedDate" nillable="true" type="COMT_MT000019GB03.ModifiedDate"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute fixed="COMP" name="typeCode" type="cs" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="COMT_MT000019GB03.Component18">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElementsGroupAll"/>
+            <xs:element maxOccurs="1" minOccurs="1" name="presentingComplaintCode" nillable="true" type="COMT_MT000019GB03.PresentingComplaint"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute fixed="COMP" name="typeCode" type="cs" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="COMT_MT000019GB03.Component2">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElementsGroupAll"/>
+            <xs:element maxOccurs="1" minOccurs="1" name="cancelledEncounter" nillable="true" type="COMT_MT000019GB03.CancelledEncounter"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute fixed="COMP" name="typeCode" type="cs" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="COMT_MT000019GB03.Component20">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElementsGroupAll"/>
+            <xs:element maxOccurs="1" minOccurs="1" name="prescribedItems" nillable="true" type="COMT_MT000019GB03.PrescribedItems"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute fixed="COMP" name="typeCode" type="cs" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="COMT_MT000019GB03.Component22">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElementsGroupAll"/>
+            <xs:element maxOccurs="1" minOccurs="1" name="contactType" nillable="true" type="COMT_MT000019GB03.ContactType"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute fixed="COMP" name="typeCode" type="cs" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="COMT_MT000019GB03.Component23">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElementsGroupAll"/>
+            <xs:element maxOccurs="1" minOccurs="1" name="diagnosis" nillable="true" type="COMT_MT000019GB03.Diagnosis"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute fixed="COMP" name="typeCode" type="cs" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="COMT_MT000019GB03.Component24">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElementsGroupAll"/>
+            <xs:element maxOccurs="1" minOccurs="1" name="investigations" nillable="true" type="COMT_MT000019GB03.Investigations"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute fixed="COMP" name="typeCode" type="cs" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="COMT_MT000019GB03.Component26">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElementsGroupAll"/>
+            <xs:element maxOccurs="1" minOccurs="1" ref="npfitlc:contentId"/>
+            <xs:choice>
+                <xs:group ref="NPFIT-100011_Act"/>
+            </xs:choice>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute fixed="COMP" name="typeCode" type="cs" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="COMT_MT000019GB03.Component27">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElementsGroupAll"/>
+            <xs:element maxOccurs="1" minOccurs="1" name="activityLocationType" nillable="true" type="COMT_MT000019GB03.ActivityLocationType"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute fixed="COMP" name="typeCode" type="cs" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="COMT_MT000019GB03.Component3">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElementsGroupAll"/>
+            <xs:element maxOccurs="1" minOccurs="1" name="cancellationReason" nillable="true" type="COMT_MT000019GB03.CancellationReason"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute fixed="COMP" name="typeCode" type="cs" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="COMT_MT000019GB03.Component4">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElementsGroupAll"/>
+            <xs:element maxOccurs="1" minOccurs="1" name="outcomeDescription" nillable="true" type="COMT_MT000019GB03.OutcomeDescription"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute fixed="COMP" name="typeCode" type="cs" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="COMT_MT000019GB03.Component6">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElementsGroupAll"/>
+            <xs:element maxOccurs="1" minOccurs="1" name="priorityAfterAssessment" nillable="true" type="COMT_MT000019GB03.PriorityAfterAssessment"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute fixed="COMP" name="typeCode" type="cs" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="COMT_MT000019GB03.Component8">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElementsGroupAll"/>
+            <xs:element maxOccurs="1" minOccurs="1" name="caseNumber" nillable="true" type="COMT_MT000019GB03.CaseNumber"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute fixed="COMP" name="typeCode" type="cs" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="COMT_MT000019GB03.Consumable">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElementsGroupAll"/>
+            <xs:element maxOccurs="1" minOccurs="1" name="manufacturedProduct" nillable="true" type="COMT_MT000019GB03.ManufacturedProduct"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute fixed="CSM" name="typeCode" type="cs" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="COMT_MT000019GB03.ContactType">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElementsGroupAll"/>
+            <xs:element maxOccurs="1" minOccurs="1" name="code">
+				<xs:complexType>
+					<xs:complexContent>
+						<xs:restriction base="CV.NHS.CodedValueType1">
+							<xs:attribute name="code" type="cs" use="required" fixed="CONTY"/>
+							<xs:attribute name="codeSystem" type="uid" use="required" fixed="2.16.840.1.113883.2.1.3.2.4.17.286"/>
+						</xs:restriction>
+					</xs:complexContent>
+				</xs:complexType>
+			</xs:element>
+            <xs:element maxOccurs="1" minOccurs="1" name="text" type="ST"/>
+            <xs:element maxOccurs="1" minOccurs="1" name="value" type="CV.NHS.CodedValueType1"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute fixed="OBS" name="classCode" type="cs" use="required"/>
+        <xs:attribute fixed="EVN" name="moodCode" type="cs" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="COMT_MT000019GB03.CreatedDate">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElementsGroupAll"/>
+            <xs:element maxOccurs="1" minOccurs="1" name="code">
+				<xs:complexType>
+					<xs:complexContent>
+						<xs:restriction base="CV.NHS.CodedValueType1">
+							<xs:attribute name="code" type="cs" use="required" fixed="CDATE"/>
+							<xs:attribute name="codeSystem" type="uid" use="required" fixed="2.16.840.1.113883.2.1.3.2.4.17.286"/>
+						</xs:restriction>
+					</xs:complexContent>
+				</xs:complexType>
+			</xs:element>
+            <xs:element maxOccurs="1" minOccurs="1" name="value" type="TS.NHS.TimestampType5"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute fixed="OBS" name="classCode" type="cs" use="required"/>
+        <xs:attribute fixed="EVN" name="moodCode" type="cs" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="COMT_MT000019GB03.DeleteFlag">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElementsGroupAll"/>
+            <xs:element maxOccurs="1" minOccurs="1" name="code">
+				<xs:complexType>
+					<xs:complexContent>
+						<xs:restriction base="CV.NHS.CodedValueType1">
+							<xs:attribute name="code" type="cs" use="required" fixed="DF"/>
+							<xs:attribute name="codeSystem" type="uid" use="required" fixed="2.16.840.1.113883.2.1.3.2.4.17.286"/>
+						</xs:restriction>
+					</xs:complexContent>
+				</xs:complexType>
+			</xs:element>
+            <xs:element maxOccurs="1" minOccurs="1" name="value">
+                <xs:complexType>
+                    <xs:complexContent>
+                        <xs:restriction base="BL">
+                            <xs:attribute name="nullFlavor" type="cs_NullFlavor" use="prohibited"/>
+                            <xs:attribute name="updateMode" type="cs" use="prohibited"/>
+                            <xs:attribute name="value" type="bl" use="required"/>
+                        </xs:restriction>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute fixed="OBS" name="classCode" type="cs" use="required"/>
+        <xs:attribute fixed="EVN" name="moodCode" type="cs" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="COMT_MT000019GB03.DestinationOrganisation">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElementsGroupAll"/>
+            <xs:element maxOccurs="1" minOccurs="1" name="code">
+				<xs:complexType>
+					<xs:complexContent>
+						<xs:restriction base="CV.NHS.CodedValueType1">
+							<xs:attribute name="code" type="cs" use="required" fixed="DO"/>
+							<xs:attribute name="codeSystem" type="uid" use="required" fixed="2.16.840.1.113883.2.1.3.2.4.17.290"/>
+						</xs:restriction>
+					</xs:complexContent>
+				</xs:complexType>
+			</xs:element>
+            <xs:element maxOccurs="1" minOccurs="1" name="locationRoutingOrganization" type="COMT_MT000019GB03.RoutingOrganization"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute fixed="SDLOC" name="classCode" type="cs" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="COMT_MT000019GB03.Diagnosis">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElementsGroupAll"/>
+            <xs:element maxOccurs="1" minOccurs="1" name="code">
+				<xs:complexType>
+					<xs:complexContent>
+						<xs:restriction base="CV.NHS.CodedValueType1">
+							<xs:attribute name="code" type="cs" use="required" fixed="DIAG"/>
+							<xs:attribute name="codeSystem" type="uid" use="required" fixed="2.16.840.1.113883.2.1.3.2.4.17.286"/>
+						</xs:restriction>
+					</xs:complexContent>
+				</xs:complexType>
+			</xs:element>
+            <xs:element maxOccurs="1" minOccurs="1" name="text" type="ST"/>
+            <xs:element maxOccurs="1" minOccurs="0" name="value" type="CD"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute fixed="OBS" name="classCode" type="cs" use="required"/>
+        <xs:attribute fixed="EVN" name="moodCode" type="cs" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="COMT_MT000019GB03.Investigations">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElementsGroupAll"/>
+            <xs:element maxOccurs="1" minOccurs="1" name="code">
+				<xs:complexType>
+					<xs:complexContent>
+						<xs:restriction base="CV.NHS.CodedValueType1">
+							<xs:attribute name="code" type="cs" use="required" fixed="INVES"/>
+							<xs:attribute name="codeSystem" type="uid" use="required" fixed="2.16.840.1.113883.2.1.3.2.4.17.286"/>
+						</xs:restriction>
+					</xs:complexContent>
+				</xs:complexType>
+			</xs:element>
+            <xs:element maxOccurs="1" minOccurs="1" name="text" type="ST"/>
+            <xs:element maxOccurs="1" minOccurs="0" name="value" type="CD"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute fixed="OBS" name="classCode" type="cs" use="required"/>
+        <xs:attribute fixed="EVN" name="moodCode" type="cs" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="COMT_MT000019GB03.Location">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElementsGroupAll"/>
+            <xs:element maxOccurs="1" minOccurs="1" name="destinationOrganisation1" nillable="true" type="COMT_MT000019GB03.DestinationOrganisation"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute fixed="LOC" name="typeCode" type="cs" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="COMT_MT000019GB03.Location1">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElementsGroupAll"/>
+            <xs:element maxOccurs="1" minOccurs="1" name="locationType" nillable="true" type="COMT_MT000019GB03.LocationType"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute fixed="LOC" name="typeCode" type="cs" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="COMT_MT000019GB03.Location2">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElementsGroupAll"/>
+            <xs:element maxOccurs="1" minOccurs="1" name="serviceOrganisation" nillable="true" type="COMT_MT000019GB03.ServiceOrganisation"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute fixed="LOC" name="typeCode" type="cs" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="COMT_MT000019GB03.Location3">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElementsGroupAll"/>
+            <xs:element maxOccurs="1" minOccurs="1" name="sourceOrganisation" nillable="true" type="COMT_MT000019GB03.SourceOrganisation"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute fixed="LOC" name="typeCode" type="cs" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="COMT_MT000019GB03.LocationType">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElementsGroupAll"/>
+            <xs:element maxOccurs="1" minOccurs="1" name="code" type="CV.NHS.CodedValueType1"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute fixed="SDLOC" name="classCode" type="cs" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="COMT_MT000019GB03.ManufacturedMaterial">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElementsGroupAll"/>
+            <xs:element maxOccurs="1" minOccurs="1" name="code" type="CD"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute fixed="MMAT" name="classCode" type="cs" use="required"/>
+        <xs:attribute name="determinerCode" type="EntityDeterminer" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="COMT_MT000019GB03.ManufacturedProduct">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElementsGroupAll"/>
+            <xs:element maxOccurs="1" minOccurs="1" name="manufacturedManufacturedMaterial" type="COMT_MT000019GB03.ManufacturedMaterial"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute fixed="MANU" name="classCode" type="cs" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="COMT_MT000019GB03.ModifiedDate">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElementsGroupAll"/>
+            <xs:element maxOccurs="1" minOccurs="1" name="code">
+				<xs:complexType>
+					<xs:complexContent>
+						<xs:restriction base="CV.NHS.CodedValueType1">
+							<xs:attribute name="code" type="cs" use="required" fixed="MDATE"/>
+							<xs:attribute name="codeSystem" type="uid" use="required" fixed="2.16.840.1.113883.2.1.3.2.4.17.286"/>
+						</xs:restriction>
+					</xs:complexContent>
+				</xs:complexType>
+			</xs:element>
+            <xs:element maxOccurs="1" minOccurs="1" name="value" type="TS.NHS.TimestampType5"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute fixed="OBS" name="classCode" type="cs" use="required"/>
+        <xs:attribute fixed="EVN" name="moodCode" type="cs" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="COMT_MT000019GB03.OOHWICFeed">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElementsGroupAll"/>
+            <xs:element maxOccurs="1" minOccurs="1" name="id" type="II.NHS.IdentifierType3"/>
+            <xs:element maxOccurs="1" minOccurs="1" name="code">
+				<xs:complexType>
+					<xs:complexContent>
+						<xs:restriction base="CV.NHS.CodedValueType1">
+							<xs:attribute name="code" type="cs" use="required" fixed="OOHWIC"/>
+							<xs:attribute name="codeSystem" type="uid" use="required" fixed="2.16.840.1.113883.2.1.3.2.4.17.310"/>
+						</xs:restriction>
+					</xs:complexContent>
+				</xs:complexType>
+			</xs:element>
+            <xs:element maxOccurs="1" minOccurs="1" name="effectiveTime" type="IVL_TS"/>
+            <xs:element maxOccurs="1" minOccurs="1" name="component2" type="COMT_MT000019GB03.Component"/>
+            <xs:element maxOccurs="1" minOccurs="1" name="component12" type="COMT_MT000019GB03.Component11"/>
+            <xs:element maxOccurs="1" minOccurs="1" name="component17" type="COMT_MT000019GB03.Component16"/>
+            <xs:element maxOccurs="1" minOccurs="0" name="component18" nillable="true" type="COMT_MT000019GB03.Component17"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="component19" nillable="true" type="COMT_MT000019GB03.Component18"/>
+            <xs:element maxOccurs="1" minOccurs="1" name="component4" type="COMT_MT000019GB03.Component2"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="component21" nillable="true" type="COMT_MT000019GB03.Component20"/>
+            <xs:element maxOccurs="1" minOccurs="1" name="component23" type="COMT_MT000019GB03.Component22"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="component24" nillable="true" type="COMT_MT000019GB03.Component23"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="component25" nillable="true" type="COMT_MT000019GB03.Component24"/>
+            <xs:element maxOccurs="1" minOccurs="1" name="component27" type="COMT_MT000019GB03.Component26"/>
+            <xs:element maxOccurs="1" minOccurs="0" name="component28" nillable="true" type="COMT_MT000019GB03.Component27"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="component5" nillable="true" type="COMT_MT000019GB03.Component4"/>
+            <xs:element maxOccurs="1" minOccurs="0" name="component7" nillable="true" type="COMT_MT000019GB03.Component6"/>
+            <xs:element maxOccurs="1" minOccurs="0" name="component9" nillable="true" type="COMT_MT000019GB03.Component8"/>
+            <xs:element maxOccurs="1" minOccurs="1" name="location" type="COMT_MT000019GB03.Location"/>
+            <xs:element maxOccurs="1" minOccurs="0" name="location1" nillable="true" type="COMT_MT000019GB03.Location1"/>
+            <xs:element maxOccurs="1" minOccurs="1" name="location2" type="COMT_MT000019GB03.Location2"/>
+            <xs:element maxOccurs="1" minOccurs="1" name="location3" type="COMT_MT000019GB03.Location3"/>
+            <xs:element maxOccurs="1" minOccurs="0" name="responsibleParty" nillable="true" type="COMT_MT000019GB03.ResponsibleParty"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute fixed="ENC" name="classCode" type="cs" use="required"/>
+        <xs:attribute fixed="EVN" name="moodCode" type="cs" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="COMT_MT000019GB03.OutcomeDescription">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElementsGroupAll"/>
+            <xs:element maxOccurs="1" minOccurs="1" name="code">
+				<xs:complexType>
+					<xs:complexContent>
+						<xs:restriction base="CV.NHS.CodedValueType1">
+							<xs:attribute name="code" type="cs" use="required" fixed="OUTC"/>
+							<xs:attribute name="codeSystem" type="uid" use="required" fixed="2.16.840.1.113883.2.1.3.2.4.17.286"/>
+						</xs:restriction>
+					</xs:complexContent>
+				</xs:complexType>
+			</xs:element>
+            <xs:element maxOccurs="1" minOccurs="1" name="value" type="ST"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute fixed="OBS" name="classCode" type="cs" use="required"/>
+        <xs:attribute fixed="EVN" name="moodCode" type="cs" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="COMT_MT000019GB03.PrescribedItems">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElementsGroupAll"/>
+            <xs:element maxOccurs="1" minOccurs="1" name="code">
+				<xs:complexType>
+					<xs:complexContent>
+						<xs:restriction base="CV.NHS.CodedValueType1">
+							<xs:attribute name="code" type="cs" use="required" fixed="PIF"/>
+							<xs:attribute name="codeSystem" type="uid" use="required" fixed="2.16.840.1.113883.2.1.3.2.4.17.286"/>
+						</xs:restriction>
+					</xs:complexContent>
+				</xs:complexType>
+			</xs:element>
+            <xs:element maxOccurs="1" minOccurs="1" name="value" type="ST"/>
+            <xs:element maxOccurs="1" minOccurs="0" name="consumable" nillable="true" type="COMT_MT000019GB03.Consumable"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute fixed="OBS" name="classCode" type="cs" use="required"/>
+        <xs:attribute fixed="EVN" name="moodCode" type="cs" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="COMT_MT000019GB03.PresentingComplaint">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElementsGroupAll"/>
+            <xs:element maxOccurs="1" minOccurs="1" name="code">
+				<xs:complexType>
+					<xs:complexContent>
+						<xs:restriction base="CV.NHS.CodedValueType1">
+							<xs:attribute name="code" type="cs" use="required" fixed="PC"/>
+							<xs:attribute name="codeSystem" type="uid" use="required" fixed="2.16.840.1.113883.2.1.3.2.4.17.286"/>
+						</xs:restriction>
+					</xs:complexContent>
+				</xs:complexType>
+			</xs:element>
+            <xs:element maxOccurs="1" minOccurs="1" name="text" type="ST"/>
+            <xs:element maxOccurs="1" minOccurs="0" name="value" type="CD"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute fixed="OBS" name="classCode" type="cs" use="required"/>
+        <xs:attribute fixed="EVN" name="moodCode" type="cs" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="COMT_MT000019GB03.PriorityAfterAssessment">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElementsGroupAll"/>
+            <xs:element maxOccurs="1" minOccurs="1" name="code">
+				<xs:complexType>
+					<xs:complexContent>
+						<xs:restriction base="CV.NHS.CodedValueType1">
+							<xs:attribute name="code" type="cs" use="required" fixed="PAA"/>
+							<xs:attribute name="codeSystem" type="uid" use="required" fixed="2.16.840.1.113883.2.1.3.2.4.17.286"/>
+						</xs:restriction>
+					</xs:complexContent>
+				</xs:complexType>
+			</xs:element>
+            <xs:element maxOccurs="1" minOccurs="1" name="value" type="CV.NHS.CodedValueType1"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute fixed="OBS" name="classCode" type="cs" use="required"/>
+        <xs:attribute fixed="EVN" name="moodCode" type="cs" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="COMT_MT000019GB03.ResponsibleParty">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElementsGroupAll"/>
+            <xs:element maxOccurs="1" minOccurs="1" name="assignedEntity" nillable="true" type="COMT_MT000019GB03.Clinician"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute fixed="RESP" name="typeCode" type="cs" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="COMT_MT000019GB03.RoutingOrganization">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElementsGroupAll"/>
+            <xs:element maxOccurs="1" minOccurs="1" name="id" type="II.NHS.IdentifierType3"/>
+            <xs:element maxOccurs="1" minOccurs="1" name="name" type="ON"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute fixed="ORG" name="classCode" type="cs" use="required"/>
+        <xs:attribute fixed="INSTANCE" name="determinerCode" type="cs" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="COMT_MT000019GB03.ServiceOrganisation">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElementsGroupAll"/>
+            <xs:element maxOccurs="1" minOccurs="1" name="locationOrganization" type="COMT_MT000019GB03.ServiceOrganizationDescription"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute fixed="SDLOC" name="classCode" type="cs" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="COMT_MT000019GB03.ServiceOrganizationDescription">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElementsGroupAll"/>
+            <xs:element maxOccurs="1" minOccurs="1" name="id" type="II.NHS.IdentifierType3"/>
+            <xs:element maxOccurs="1" minOccurs="1" name="name" type="ON"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute fixed="ORG" name="classCode" type="cs" use="required"/>
+        <xs:attribute fixed="INSTANCE" name="determinerCode" type="cs" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="COMT_MT000019GB03.SourceOrganisation">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElementsGroupAll"/>
+            <xs:element maxOccurs="1" minOccurs="1" name="code">
+				<xs:complexType>
+					<xs:complexContent>
+						<xs:restriction base="CV.NHS.CodedValueType1">
+							<xs:attribute name="code" type="cs" use="required" fixed="SO"/>
+							<xs:attribute name="codeSystem" type="uid" use="required" fixed="2.16.840.1.113883.2.1.3.2.4.17.290"/>
+						</xs:restriction>
+					</xs:complexContent>
+				</xs:complexType>
+			</xs:element>
+            <xs:element maxOccurs="1" minOccurs="1" name="locationRoutingOrganization" type="COMT_MT000019GB03.RoutingOrganization"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute fixed="SDLOC" name="classCode" type="cs" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="COMT_MT000019GB03.WalkInEncounterType">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElementsGroupAll"/>
+            <xs:element maxOccurs="1" minOccurs="1" name="code">
+				<xs:complexType>
+					<xs:complexContent>
+						<xs:restriction base="CV.NHS.CodedValueType1">
+							<xs:attribute name="code" type="cs" use="required" fixed="WIEF"/>
+							<xs:attribute name="codeSystem" type="uid" use="required" fixed="2.16.840.1.113883.2.1.3.2.4.17.286"/>
+						</xs:restriction>
+					</xs:complexContent>
+				</xs:complexType>
+			</xs:element>
+            <xs:element maxOccurs="1" minOccurs="1" name="value" type="CV.NHS.CodedValueType1"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute fixed="OBS" name="classCode" type="cs" use="required"/>
+        <xs:attribute fixed="EVN" name="moodCode" type="cs" use="required"/>
+    </xs:complexType>
+</xs:schema>

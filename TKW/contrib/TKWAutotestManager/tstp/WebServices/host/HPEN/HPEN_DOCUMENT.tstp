@@ -1,0 +1,48 @@
+SCRIPT HPEN_DOCUMENT
+# $Id: HPEN_skel.tst 74 2016-03-07 13:03:27Z sfarrow $
+# Section 15 - HealthProtectionElectronicNotification Positive Tests Test Script File
+# Automatically generated from CO_skel.tst 
+
+VALIDATOR __TKWROOT__/config/ITK_HPEN/validator_config/validator.conf
+
+SIMULATOR __SIMULATOR__
+
+STOP WHEN COMPLETE
+
+BEGIN SCHEDULES
+HPEN_DOCUMENT TESTS HPEN_DOCUMENT___INTERACTION_ID___test1 HPEN_DOCUMENT___INTERACTION_ID___test2 HPEN_DOCUMENT___INTERACTION_ID___test3 HPEN_DOCUMENT___INTERACTION_ID___test4 HPEN_DOCUMENT___INTERACTION_ID___test5 HPEN_DOCUMENT___INTERACTION_ID___test6
+END SCHEDULES
+
+BEGIN TESTS
+HPEN_DOCUMENT___INTERACTION_ID___test1 SEND_TKW HPEN_DOCUMENT TO __TO_URL__ FROM __FROM_URL__/syncsoap SYNC ok WITH_PROPERTYSET base+webservices
+HPEN_DOCUMENT___INTERACTION_ID___test2 CHAIN SYNC respexists
+HPEN_DOCUMENT___INTERACTION_ID___test3 CHAIN SYNC respok
+#three underscores required for merge to identify the test case id and perform the substitution
+HPEN_DOCUMENT___INTERACTION_ID___test4 CHAIN SYNC HPEN_DOCUMENT___actioncorrect
+HPEN_DOCUMENT___INTERACTION_ID___test5 CHAIN SYNC synctimestampok
+HPEN_DOCUMENT___INTERACTION_ID___test6 CHAIN SYNC syncmessageidsok
+END TESTS
+
+BEGIN MESSAGES
+HPEN_DOCUMENT USING HPEN_DOCUMENT___INTERACTION_ID___template WITH NULL SOAPACTION __SERVICE__ 
+END MESSAGES
+
+BEGIN TEMPLATES
+HPEN_DOCUMENT___INTERACTION_ID___template __TKWROOT__/contrib/ITK_2_01_Test_Messages/__SAMPLE_FILE__
+END TEMPLATES
+
+BEGIN PROPERTYSETS
+webservices
+	SET tks.HttpTransport.listenport __LISTEN_PORT_NUMBER__
+	SET tks.HttpTransport.listenaddr  __LISTEN_ADDR__
+END PROPERTYSETS
+
+BEGIN PASSFAIL
+ok httpok
+respexists synchronousxpath /soap:Envelope/soap:Body/itk:SimpleMessageResponse exists
+respok synchronousxpath /soap:Envelope/soap:Body/itk:SimpleMessageResponse/text() matches "^(OK|TEST_HARNESS_ID.*)$"
+#three underscores required for merge to identify the test case id and perform the substitution
+HPEN_DOCUMENT___actioncorrect synchronousxpath /soap:Envelope/soap:Header/wsa:Action matches "^__SERVICE__Response$"
+synctimestampok synctimestampislater
+syncmessageidsok syncmessageidsdiffer
+END PASSFAIL

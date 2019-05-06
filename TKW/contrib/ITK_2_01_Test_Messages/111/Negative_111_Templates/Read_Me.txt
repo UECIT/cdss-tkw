@@ -1,0 +1,1 @@
+the templates are based on GeneralPractitionerRecipient_Primary. files must be edited to change the profile id and handling spec - interaction if GeneralPractitionerRecipient_Primary is not in scope. 

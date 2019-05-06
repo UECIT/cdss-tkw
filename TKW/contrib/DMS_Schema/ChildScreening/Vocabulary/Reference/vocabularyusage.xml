@@ -1,0 +1,22 @@
+<Vocabularies xmlns="urn:nhs-itk:ns:201005">
+	<vocabulary version="" status="" name="Vocabulary Usage" id="">
+		<concept code="POCD_RM010000GB01">
+			<displayName>author</displayName>
+		</concept>
+		<concept code="COCD_TP000028GB01">
+			<displayName>author</displayName>
+		</concept>
+		<concept code="COCD_TP146003GB02">
+			<displayName>author</displayName>
+		</concept>
+		<concept code="COCD_TP146004GB01">
+			<displayName>author</displayName>
+		</concept>
+		<concept code="COCD_TP146005GB03">
+			<displayName>author</displayName>
+		</concept>
+		<concept code="COCD_TP146229GB01">
+			<displayName>author</displayName>
+		</concept>
+	</vocabulary>
+</Vocabularies>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProfileConfigs>
+	<ProfileConfig xmlns:itk="urn:nhs-itk:ns:201005">
+		<profileId root="2.16.840.1.113883.2.1.3.2.4.18.28" extension="Ambulance Request"/>
+		<configGroup type="Templates">
+			<configItem code="COCD_TP145007UK03" displayName="RelatedEntity" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP145200GB01" displayName="AuthorPersonUniversal" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP145201GB01" displayName="PatientUniversal" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP145202GB02" displayName="RecipientPersonUniversal" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP145203GB03" displayName="RecipientOrganizationUniversal" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP145204GB03" displayName="RecipientWorkgroupUniversal" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP145207GB01" displayName="AuthorDeviceUniversal" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP145208GB01" displayName="AuthorNonNamedPersonUniversal" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP145210GB01" displayName="PersonWithOrganizationUniversal" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP145212GB02" displayName="WorkgroupUniversal" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP145222GB02" displayName="IncidentalHealthCareFacilityUniversal" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+		</configGroup>
+		<configGroup type="Vocabulary">
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.17.178" codeSystemName="AuthorFunctionType" codeSystemVersion="1.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.17.289" codeSystemName="CDAOrganizationProviderType" codeSystemVersion="1.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.17.191" codeSystemName="CDAOrganizationType" codeSystemVersion="1.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.16.45" codeSystemName="CDAPersonRelationshipType" codeSystemVersion="4.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.17.70" codeSystemName="HumanLanguage" codeSystemVersion="4.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.15.11.94" codeSystemName="IncidentalLocationTypeSnCT" codeSystemVersion="2.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.17.124" codeSystemName="JobRoleName" codeSystemVersion="2.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.16.25" codeSystemName="Sex" codeSystemVersion="1.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.17.266" codeSystemName="WorkgroupRoleName" codeSystemVersion="1.0"/>
+		</configGroup>
+	</ProfileConfig>
+	<ProfileConfig xmlns:itk="urn:nhs-itk:ns:201005">
+		<profileId root="2.16.840.1.113883.2.1.3.2.4.18.28" extension="NHS 111 Report"/>
+		<configGroup type="Templates">
+			<configItem code="COCD_TP145000GB01" displayName="NHS111TriageDevice" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP145007UK03" displayName="RelatedEntity" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP145018UK03" displayName="CustodianOrganizationUniversal" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP145200GB01" displayName="AuthorPersonUniversal" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP145201GB01" displayName="PatientUniversal" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP145202GB02" displayName="RecipientPersonUniversal" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP145203GB03" displayName="RecipientOrganizationUniversal" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP145204GB03" displayName="RecipientWorkgroupUniversal" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP145207GB01" displayName="AuthorDeviceUniversal" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP145208GB01" displayName="AuthorNonNamedPersonUniversal" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP145210GB01" displayName="PersonWithOrganizationUniversal" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP145212GB02" displayName="WorkgroupUniversal" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP145214GB01" displayName="DocumentParticipantUniversal" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP145222GB02" displayName="IncidentalHealthCareFacilityUniversal" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP146002GB01" displayName="TriageAttachment" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP146226GB02" displayName="Consent" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP146227GB02" displayName="ServiceEvent" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP146232GB01" displayName="EncompassingEncounter" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP146246GB01" displayName="NHS111TextSection" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+		</configGroup>
+		<configGroup type="Vocabulary">
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.17.178" codeSystemName="AuthorFunctionType" codeSystemVersion="1.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.15.11.81" codeSystemName="CDADocumentTypeSnCT" codeSystemVersion="2.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.17.289" codeSystemName="CDAOrganizationProviderType" codeSystemVersion="1.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.17.191" codeSystemName="CDAOrganizationType" codeSystemVersion="1.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.16.45" codeSystemName="CDAPersonRelationshipType" codeSystemVersion="4.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.15.11.98" codeSystemName="EncounterDispositionSnCT" codeSystemVersion="1.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.17.70" codeSystemName="HumanLanguage" codeSystemVersion="4.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.15.11.94" codeSystemName="IncidentalLocationTypeSnCT" codeSystemVersion="2.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.17.124" codeSystemName="JobRoleName" codeSystemVersion="2.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.16.25" codeSystemName="Sex" codeSystemVersion="1.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.15" codeSystemName="SnomedCT" codeSystemVersion="1.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.17.266" codeSystemName="WorkgroupRoleName" codeSystemVersion="1.0"/>
+		</configGroup>
+	</ProfileConfig>
+	<ProfileConfig xmlns:itk="urn:nhs-itk:ns:201005">
+		<profileId root="2.16.840.1.113883.2.1.3.2.4.18.28" extension="RepeatCallerQuery"/>
+		<configGroup type="Templates">
+			<configItem code="COCD_TP145200GB01" displayName="AuthorPersonUniversal" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+		</configGroup>
+		<configGroup type="Vocabulary">
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.17.124" codeSystemName="JobRoleName" codeSystemVersion="2.0"/>
+		</configGroup>
+	</ProfileConfig>
+	<ProfileConfig xmlns:itk="urn:nhs-itk:ns:201005">
+		<profileId root="2.16.840.1.113883.2.1.3.2.4.18.28" extension="RepeatCallerResponse"/>
+		<configGroup type="Templates">
+			<configItem code="COCD_TP145202GB02" displayName="RecipientPersonUniversal" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP145208GB01" displayName="AuthorNonNamedPersonUniversal" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+		</configGroup>
+		<configGroup type="Vocabulary">
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.17.191" codeSystemName="CDAOrganizationType" codeSystemVersion="1.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.17.124" codeSystemName="JobRoleName" codeSystemVersion="2.0"/>
+		</configGroup>
+	</ProfileConfig>
+</ProfileConfigs>

@@ -1,0 +1,132 @@
+-----BEGIN CERTIFICATE-----
+MIIEKDCCAxCgAwIBAgIBAjANBgkqhkiG9w0BAQQFADBcMSQwIgYDVQQKExtOYXRp
+b25hbCBJbnRlZ3JhdGlvbiBDZW50cmUxIzAhBgNVBAsTGklUSyBBY2NyZWRpdGF0
+aW9uIFNlcnZpY2VzMQ8wDQYDVQQDEwZTdWIgQ0EwHhcNMTIwOTIxMTYxMTQzWhcN
+MTIwOTIyMTYxMTQzWjBtMSQwIgYDVQQKExtOYXRpb25hbCBJbnRlZ3JhdGlvbiBD
+ZW50cmUxIzAhBgNVBAsTGklUSyBBY2NyZWRpdGF0aW9uIFNlcnZpY2VzMSAwHgYD
+VQQDExd0ZXN0MDMub25lb25lb25lLm5ocy51azCCASIwDQYJKoZIhvcNAQEBBQAD
+ggEPADCCAQoCggEBALOVbB8UfdAac5rxMptP6Py9cMFped0/L+sWoniM+Weaar6k
+gjR/G2BcGMWtcoGOF1Ksy/HT2WheWj7/RaraZbacZJF7TQYSDW+T3J1IY6NztzEK
+XkW1UKAoSM4kQaSy7Gtkko/dlTp4uW72+M/DkGc//P507dXQF3IgFWBxTG6FedqA
+PzNoKcsBLNlbhdEwSQNkjB71T/dLOtxPRMJNnyBAcW2jlBF2iC7Z5pTM5l2MkPFP
+rf9BkiS/Pc9QHmf/ai3zGiQ4B+apBiCh7bGL6XFBhNZkohOkyPyJ6koh3aAOwhMh
+UTiRy+6xXX397KgLmRrCz4C3hGI8QHCuhjMdRlcCAwEAAaOB4zCB4DAJBgNVHRME
+AjAAMCwGCWCGSAGG+EIBDQQfFh1PcGVuU1NMIEdlbmVyYXRlZCBDZXJ0aWZpY2F0
+ZTAdBgNVHQ4EFgQUV542r1Uh7FnyrkxV8wZc6mkm+AEwgYUGA1UdIwR+MHyAFPt+
+KlVrp+QYeupQ6RYKv8JCKpq1oWGkXzBdMSQwIgYDVQQKExtOYXRpb25hbCBJbnRl
+Z3JhdGlvbiBDZW50cmUxIzAhBgNVBAsTGklUSyBBY2NyZWRpdGF0aW9uIFNlcnZp
+Y2VzMRAwDgYDVQQDEwdSb290IENBggEBMA0GCSqGSIb3DQEBBAUAA4IBAQAghEUk
+IYtalIHOj2nErPw+NHV7Wu1ikpZHRdsDaYewgolJxXa/VKmry0ZrcXfEm7oLho4J
+ji8jgqjMSe6hufz6bb1RhzfOqyEDlYdcLd0DWXAD7irvvruKK3v5RNOY7cbNOZM+
+xpRAwYSx6R0iRcfJL1ZOYFsrsue9CWtptQJnVoKfRDoIH+pd+hZYHIShxbdk5rHO
+l3cMvbO/PCduSxPxt3J98UWTnapY6hAbFHDruzVv3kttc7hu7ylLJERV0T7Nz12V
+Mda9r/2papJHP6dNkijrPaO4gkh3aX068RVeCUfs/9kEJg3y8rGP3h9mCWuXwhsa
+PlxSCsiq4fwc5cEx
+-----END CERTIFICATE-----
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 1 (0x1)
+        Signature Algorithm: md5WithRSAEncryption
+        Issuer: O=National Integration Centre, OU=ITK Accreditation Services, CN=Root CA
+        Validity
+            Not Before: Sep 21 15:21:25 2012 GMT
+            Not After : Sep 20 15:21:25 2022 GMT
+        Subject: O=National Integration Centre, OU=ITK Accreditation Services, CN=Sub CA
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+            RSA Public Key: (2048 bit)
+                Modulus (2048 bit):
+                    00:ea:7f:77:62:88:5c:3f:ae:a0:2c:95:83:85:87:
+                    f6:70:dc:7b:38:76:50:2c:6b:3f:0c:da:91:17:fb:
+                    d5:f0:f9:1c:e0:30:8e:8f:6a:6d:86:3b:fa:e7:c2:
+                    e5:a4:cf:b6:1c:90:41:85:1e:e7:76:c4:49:d3:67:
+                    3d:9e:5f:5b:c5:20:9d:da:c7:cc:6c:32:73:36:46:
+                    0f:64:d8:9d:16:19:f4:22:53:43:4e:9d:bd:15:2e:
+                    b7:19:39:8e:ac:0c:90:23:f9:a2:4c:8b:27:fe:40:
+                    a0:d2:7b:39:e4:13:9b:0f:c3:7e:c6:a9:a1:8d:f5:
+                    ac:9b:fa:c0:c8:db:11:09:6f:f7:8f:46:8d:d9:51:
+                    ad:90:c3:ca:ef:6a:36:e9:3a:0a:fc:55:52:fa:8c:
+                    a0:28:12:73:81:6a:92:d7:31:da:4f:65:9b:03:04:
+                    78:82:7a:88:fa:ac:1a:61:fe:29:de:13:72:e9:41:
+                    b8:ba:7e:bf:74:b5:c9:c2:43:a1:4a:c4:41:c4:6f:
+                    8f:19:23:cb:8b:92:57:ce:b7:da:49:fa:d5:84:eb:
+                    7f:6f:11:d7:2c:d9:d0:36:9b:60:8e:70:fb:ad:83:
+                    28:ff:83:83:f7:5a:30:f5:ee:9c:a0:06:c5:de:31:
+                    ea:63:d8:2d:da:49:c5:e3:84:73:b2:bd:74:13:7d:
+                    6e:b1
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Subject Key Identifier: 
+            FB:7E:2A:55:6B:A7:E4:18:7A:EA:50:E9:16:0A:BF:C2:42:2A:9A:B5
+            X509v3 Authority Key Identifier: 
+            keyid:38:63:28:B2:BC:5B:F4:46:35:B3:40:58:DA:C6:35:55:5D:CE:F6:22
+            DirName:/O=National Integration Centre/OU=ITK Accreditation Services/CN=Root CA
+            serial:00
+
+            X509v3 Basic Constraints: 
+            CA:TRUE
+    Signature Algorithm: md5WithRSAEncryption
+        69:6b:a2:37:2d:c9:8f:d4:88:0d:ac:a3:de:78:fa:ff:b9:0f:
+        13:46:a9:b6:5e:15:af:60:16:f3:6c:21:64:45:6d:0d:95:2b:
+        0e:04:2b:b9:3f:e4:3e:06:c2:38:66:10:1b:23:44:75:37:b4:
+        b2:1a:e1:48:34:3e:24:96:23:24:d1:d5:1c:39:c2:f8:22:dd:
+        3d:47:57:c7:50:7c:3b:67:81:6b:12:70:aa:c8:0d:1e:5f:28:
+        18:6f:39:f2:f1:a7:9e:db:65:44:af:b5:ea:07:1a:07:8c:0c:
+        a8:c2:3c:2e:54:8e:96:7f:e3:47:d1:b2:cd:21:c5:00:3c:9c:
+        f2:69:4a:58:60:10:07:83:c3:3b:53:89:d1:22:73:52:96:ab:
+        5d:e5:d1:1e:45:f3:b1:0d:fe:b6:32:a0:81:9c:0c:16:77:53:
+        ad:69:d5:61:54:9c:79:df:23:52:44:ac:76:f8:27:13:b9:33:
+        5d:1b:6d:e2:67:ae:78:cd:f4:e9:ee:a1:db:82:dc:c1:ac:84:
+        c0:2d:9b:27:d9:37:59:70:02:2c:14:7b:02:2f:37:35:c8:9b:
+        ce:44:2a:4e:ed:21:bc:39:00:e4:ec:4c:06:1b:6a:48:1b:e2:
+        01:88:14:2d:9a:a8:86:61:ca:ee:ca:b7:d8:b7:d5:39:96:51:
+        42:80:f5:13
+-----BEGIN CERTIFICATE-----
+MIID7TCCAtWgAwIBAgIBATANBgkqhkiG9w0BAQQFADBdMSQwIgYDVQQKExtOYXRp
+b25hbCBJbnRlZ3JhdGlvbiBDZW50cmUxIzAhBgNVBAsTGklUSyBBY2NyZWRpdGF0
+aW9uIFNlcnZpY2VzMRAwDgYDVQQDEwdSb290IENBMB4XDTEyMDkyMTE1MjEyNVoX
+DTIyMDkyMDE1MjEyNVowXDEkMCIGA1UEChMbTmF0aW9uYWwgSW50ZWdyYXRpb24g
+Q2VudHJlMSMwIQYDVQQLExpJVEsgQWNjcmVkaXRhdGlvbiBTZXJ2aWNlczEPMA0G
+A1UEAxMGU3ViIENBMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA6n93
+YohcP66gLJWDhYf2cNx7OHZQLGs/DNqRF/vV8Pkc4DCOj2pthjv658LlpM+2HJBB
+hR7ndsRJ02c9nl9bxSCd2sfMbDJzNkYPZNidFhn0IlNDTp29FS63GTmOrAyQI/mi
+TIsn/kCg0ns55BObD8N+xqmhjfWsm/rAyNsRCW/3j0aN2VGtkMPK72o26ToK/FVS
++oygKBJzgWqS1zHaT2WbAwR4gnqI+qwaYf4p3hNy6UG4un6/dLXJwkOhSsRBxG+P
+GSPLi5JXzrfaSfrVhOt/bxHXLNnQNptgjnD7rYMo/4OD91ow9e6coAbF3jHqY9gt
+2knF44Rzsr10E31usQIDAQABo4G4MIG1MB0GA1UdDgQWBBT7fipVa6fkGHrqUOkW
+Cr/CQiqatTCBhQYDVR0jBH4wfIAUOGMosrxb9EY1s0BY2sY1VV3O9iKhYaRfMF0x
+JDAiBgNVBAoTG05hdGlvbmFsIEludGVncmF0aW9uIENlbnRyZTEjMCEGA1UECxMa
+SVRLIEFjY3JlZGl0YXRpb24gU2VydmljZXMxEDAOBgNVBAMTB1Jvb3QgQ0GCAQAw
+DAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQQFAAOCAQEAaWuiNy3Jj9SIDayj3nj6
+/7kPE0aptl4Vr2AW82whZEVtDZUrDgQruT/kPgbCOGYQGyNEdTe0shrhSDQ+JJYj
+JNHVHDnC+CLdPUdXx1B8O2eBaxJwqsgNHl8oGG858vGnnttlRK+16gcaB4wMqMI8
+LlSOln/jR9GyzSHFADyc8mlKWGAQB4PDO1OJ0SJzUparXeXRHkXzsQ3+tjKggZwM
+FndTrWnVYVSced8jUkSsdvgnE7kzXRtt4meueM306e6h24LcwayEwC2bJ9k3WXAC
+LBR7Ai83NcibzkQqTu0hvDkA5OxMBhtqSBviAYgULZqohmHK7sq32LfVOZZRQoD1
+Ew==
+-----END CERTIFICATE-----
+-----BEGIN CERTIFICATE-----
+MIID7jCCAtagAwIBAgIBADANBgkqhkiG9w0BAQQFADBdMSQwIgYDVQQKExtOYXRp
+b25hbCBJbnRlZ3JhdGlvbiBDZW50cmUxIzAhBgNVBAsTGklUSyBBY2NyZWRpdGF0
+aW9uIFNlcnZpY2VzMRAwDgYDVQQDEwdSb290IENBMB4XDTEyMDkyMTE1MDMxOVoX
+DTIyMDkyMTE1MDMxOVowXTEkMCIGA1UEChMbTmF0aW9uYWwgSW50ZWdyYXRpb24g
+Q2VudHJlMSMwIQYDVQQLExpJVEsgQWNjcmVkaXRhdGlvbiBTZXJ2aWNlczEQMA4G
+A1UEAxMHUm9vdCBDQTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALS5
+cEMYkDoULnt31Jv88dWpkRlDYSOd7OgCcJi4wjIkD98US9Sm01a8kyKYskHLjtfk
+VRsHSzZAVVhQBbRsLVOXgfYeoVCTqRZIAoFqIyEcE92EbyvyEcZeaWPQoVcGh827
+RvAxM2anO+xwVeoXMqtYk4id79jTRX/OMHzoG8z8glDs3uAFllfygU7nUxe/Jt3u
+Cfv1OhbMXBEchtrGv4Qb8AZh1RilOiIk+HYMnYFUq5qAPskihhmUXn+uR/NEIY5Q
+GJ4VXZpuCPHySacpZNP8DebvlPVfUo+UPBLJxOye5ZnHnlfe8ABf4qodBRWL3Swr
+MvbJHvRR5lMYWYH0YZECAwEAAaOBuDCBtTAdBgNVHQ4EFgQUOGMosrxb9EY1s0BY
+2sY1VV3O9iIwgYUGA1UdIwR+MHyAFDhjKLK8W/RGNbNAWNrGNVVdzvYioWGkXzBd
+MSQwIgYDVQQKExtOYXRpb25hbCBJbnRlZ3JhdGlvbiBDZW50cmUxIzAhBgNVBAsT
+GklUSyBBY2NyZWRpdGF0aW9uIFNlcnZpY2VzMRAwDgYDVQQDEwdSb290IENBggEA
+MAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQEEBQADggEBAKldokjZWHm30mxWdIG1
+zY38MbbTG1GrPnQk8HSkHpDGnMpp1+GvHDggNf0pqZAdPBoNrQED7XMb8FE2Y0ja
+w+AdQrBOAyEjWvzMULuLartGB8TKfpCJpLp1hK3TPe+tZZGyIwGt2Z2M6S2Qi/Jf
+JgnL81ljgz+xTdATlGE3YL4G3B4P93YgQhlBFZCvGkbFl1/oqAQ+PEsUAh4fB27o
+GLCXO4LlKy6A9u1o5zfbvlb66VIt+WIazWo3DhqBEAwbyksNwEWgfSR/yW7Av6In
+g+DbVhCXTaQYRxiuQeRmgPcX7cv2Q7pZHWLBNuf5E7FKcRr3w0WCL85ieEJGZlsv
+Ags=
+-----END CERTIFICATE-----

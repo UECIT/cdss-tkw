@@ -1,0 +1,48 @@
+SCRIPT HL_AEM_LA_XML
+# $Id: ADT_sync_p2_skel.tst 74 2016-03-07 13:03:27Z sfarrow $
+# Section 5 ADT HL7v2 Synchronous pattern 2 (sync only) XML payload Test Script File skeleton
+# Automatically generated from ADT_sync_p2_skel.tst 
+
+VALIDATOR __TKWROOT__/config/ITK_ADT/validator_config/validator.conf
+
+SIMULATOR __SIMULATOR__
+
+STOP WHEN COMPLETE
+
+BEGIN SCHEDULES
+HL_AEM_LA_XML TESTS HL_AEM_LA_XML___SERVICE___test1 HL_AEM_LA_XML___SERVICE___test2 HL_AEM_LA_XML___SERVICE___test3 HL_AEM_LA_XML___SERVICE___test4 HL_AEM_LA_XML___SERVICE___test5 HL_AEM_LA_XML___SERVICE___test6
+END SCHEDULES
+
+BEGIN TESTS
+HL_AEM_LA_XML___SERVICE___test1 SEND_TKW HL_AEM_LA_XML TO __TO_URL__ FROM __FROM_URL__/syncsoap SYNC ok WITH_PROPERTYSET base+webservices
+HL_AEM_LA_XML___SERVICE___test2 CHAIN SYNC respexists
+HL_AEM_LA_XML___SERVICE___test3 CHAIN SYNC respok
+#three underscores required for merge to identify the test case id and perform the substitution
+HL_AEM_LA_XML___SERVICE___test4 CHAIN SYNC HL_AEM_LA_XML___actioncorrect
+HL_AEM_LA_XML___SERVICE___test5 CHAIN SYNC synctimestampok
+HL_AEM_LA_XML___SERVICE___test6 CHAIN SYNC syncmessageidsok
+END TESTS
+
+BEGIN MESSAGES
+HL_AEM_LA_XML USING HL_AEM_LA_XML___SERVICE___template WITH NULL SOAPACTION __SERVICE__
+END MESSAGES
+
+BEGIN TEMPLATES
+HL_AEM_LA_XML___SERVICE___template __TKWROOT__/contrib/ITK_2_01_Test_Messages/__SAMPLE_FILE__
+END TEMPLATES
+
+BEGIN PROPERTYSETS
+webservices
+	SET tks.HttpTransport.listenport __LISTEN_PORT_NUMBER__
+	SET tks.HttpTransport.listenaddr  __LISTEN_ADDR__
+END PROPERTYSETS
+
+BEGIN PASSFAIL
+ok httpok
+respexists synchronousxpath /soap:Envelope/soap:Body/itk:SimpleMessageResponse exists
+respok synchronousxpath /soap:Envelope/soap:Body/itk:SimpleMessageResponse/text() matches "^(OK|TEST_HARNESS_ID.*)$"
+#three underscores required for merge to identify the test case id and perform the substitution
+HL_AEM_LA_XML___actioncorrect synchronousxpath /soap:Envelope/soap:Header/wsa:Action matches "^__SERVICE__Response$"
+synctimestampok synctimestampislater
+syncmessageidsok syncmessageidsdiffer
+END PASSFAIL

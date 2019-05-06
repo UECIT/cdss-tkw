@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html><html xmlns:pack="urn:pack" xmlns:xhtml="http://www.w3.org/1999/xhtml"
+      xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <title>HL7 V2 ADT - HL7 V2 Tables</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <link href="../../../Template/css/bootstrap/bootstrap.min.css" rel="stylesheet"
+            media="screen"/>
+      <link href="../../../Template/css/base.css" rel="stylesheet" media="screen"/>
+      <link href="../../../Template/css/google-code-prettify/prettify.css" rel="stylesheet"
+            media="screen"/>
+   </head>
+   <body>
+      <div id="wrap">
+         <div class="container">
+            <div class="row">
+               <div class="span4">
+                  <img src="../../../Template/images/logo.png"/>
+               </div>
+               <div class="span8">
+                  <h4 class="pack-title text-right">HL7 V2 ADT<br/>Message Specifications</h4>
+               </div>
+            </div>
+            <div class="navbar">
+               <div class="navbar-inner">
+                  <div class="container">
+                     <button type="button" class="btn btn-navbar" data-toggle="collapse"
+                             data-target=".nav-collapse">
+                        <span class="icon-bar"/>
+                        <span class="icon-bar"/>
+                        <span class="icon-bar"/>
+                     </button>
+                     <div class="nav-collapse collapse">
+                        <p class="navbar-text pull-right">
+                           <b>Version: </b>1.1; <b>Status: </b>Final</p>
+                        <ul class="nav">
+                           <li class="dropdown">
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Overview <b class="caret"> </b>
+                              </a>
+                              <ul class="dropdown-menu">
+                                 <li>
+                                    <a href="../../../index.html">About</a>
+                                 </li>
+                                 <li>
+                                    <a href="../../../Core/changehistory.html">Change History</a>
+                                 </li>
+                                 <li>
+                                    <a href="../../../Core/glossary.html">Glossary</a>
+                                 </li>
+                              </ul>
+                           </li>
+                           <li>
+                              <a href="../../../Domains/messages.html">Messages</a>
+                           </li>
+                           <li>
+                              <a href="../../../Vocabulary/HL7v2/HL7v2.html">Tables</a>
+                           </li>
+                           <li>
+                              <a href="../../../Examples/examples.html">Examples</a>
+                           </li>
+                           <li>
+                              <a href="../../../AssociatedSpecifications/AssociatedSpecifications.html">Supporting Artefacts</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div id="content" class="row">
+               <div class="span12">
+                  <h3 xmlns="">0078-AbnormalFlags (<a href="../XML/AbnormalFlags-v1.0.xml" target="_xml">XML</a>)
+		</h3>
+                  <table xmlns="" class="table table-condensed">
+                     <tbody>
+                        <tr>
+                           <th width="20%">OID</th>
+                           <td width="80%">2.16.840.1.113883.12.78</td>
+                        </tr>
+                        <tr>
+                           <th width="20%">Version</th>
+                           <td width="80%">1.0</td>
+                        </tr>
+                        <tr>
+                           <th width="20%">Status</th>
+                           <td width="80%">created</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <h4 xmlns="">Description</h4>This table contains a lookup indicating the normalcy status of the result. 
+					Table type: User<h4 xmlns="">Values</h4>
+                  <table xmlns="" class="table table-condensed table-striped">
+                     <thead>
+                        <tr>
+                           <th width="20%">Code</th>
+                           <th width="40%">Description</th>
+                           <th width="40%">Notes</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td width="20%">&lt;</td>
+                           <td width="40%">Below absolute low-off instrument scale<br/>
+                           </td>
+                           <td width="40%">
+                              <p>
+                                 <p/>
+                                 <p/>
+                                 <p/>
+                                 <p/>
+                              </p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td width="20%">&gt;</td>
+                           <td width="40%">Above absolute high-off instrument scale<br/>
+                           </td>
+                           <td width="40%">
+                              <p>
+                                 <p/>
+                                 <p/>
+                                 <p/>
+                                 <p/>
+                              </p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td width="20%">A</td>
+                           <td width="40%">Abnormal (applies to non-numeric results)<br/>
+                           </td>
+                           <td width="40%">
+								                      <p/>
+								                      <p/>
+							                    </td>
+                        </tr>
+                        <tr>
+                           <td width="20%">AA</td>
+                           <td width="40%">Very abnormal (applies to non-numeric units, analogous to panic limits for numeric units)<br/>
+                           </td>
+                           <td width="40%">
+								                      <p/>
+								                      <p/>
+							                    </td>
+                        </tr>
+                        <tr>
+                           <td width="20%">B</td>
+                           <td width="40%">Better--use when direction not relevant<br/>
+                           </td>
+                           <td width="40%">
+								                      <p/>
+								                      <p/>
+							                    </td>
+                        </tr>
+                        <tr>
+                           <td width="20%">D</td>
+                           <td width="40%">Significant change down<br/>
+                           </td>
+                           <td width="40%">
+								                      <p/>
+								                      <p/>
+							                    </td>
+                        </tr>
+                        <tr>
+                           <td width="20%">H</td>
+                           <td width="40%">Above high normal<br/>
+                           </td>
+                           <td width="40%">
+								                      <p/>
+								                      <p/>
+							                    </td>
+                        </tr>
+                        <tr>
+                           <td width="20%">HH</td>
+                           <td width="40%">Above upper panic limits<br/>
+                           </td>
+                           <td width="40%">
+								                      <p/>
+								                      <p/>
+							                    </td>
+                        </tr>
+                        <tr>
+                           <td width="20%">I</td>
+                           <td width="40%">Intermediate. Indicates for microbiology susceptibilities only.<br/>
+                           </td>
+                           <td width="40%">
+								                      <p/>
+								                      <p/>
+							                    </td>
+                        </tr>
+                        <tr>
+                           <td width="20%">L</td>
+                           <td width="40%">Below low normal<br/>
+                           </td>
+                           <td width="40%">
+								                      <p/>
+								                      <p/>
+							                    </td>
+                        </tr>
+                        <tr>
+                           <td width="20%">LL</td>
+                           <td width="40%">Below lower panic limits<br/>
+                           </td>
+                           <td width="40%">
+								                      <p/>
+								                      <p/>
+							                    </td>
+                        </tr>
+                        <tr>
+                           <td width="20%">MS</td>
+                           <td width="40%">Moderately susceptible. Indicates for microbiology susceptibilities only.<br/>
+                           </td>
+                           <td width="40%">
+								                      <p/>
+								                      <p/>
+							                    </td>
+                        </tr>
+                        <tr>
+                           <td width="20%">N</td>
+                           <td width="40%">Normal (applies to non-numeric results)<br/>
+                           </td>
+                           <td width="40%">
+								                      <p/>
+								                      <p/>
+							                    </td>
+                        </tr>
+                        <tr>
+                           <td width="20%">null</td>
+                           <td width="40%">No range defined, or normal ranges don't apply<br/>
+                           </td>
+                           <td width="40%">
+								                      <p/>
+								                      <p/>
+							                    </td>
+                        </tr>
+                        <tr>
+                           <td width="20%">R</td>
+                           <td width="40%">Resistant. Indicates for microbiology susceptibilities only.<br/>
+                           </td>
+                           <td width="40%">
+								                      <p/>
+								                      <p/>
+							                    </td>
+                        </tr>
+                        <tr>
+                           <td width="20%">S</td>
+                           <td width="40%">Susceptible. Indicates for microbiology susceptibilities only.<br/>
+                           </td>
+                           <td width="40%">
+								                      <p/>
+								                      <p/>
+							                    </td>
+                        </tr>
+                        <tr>
+                           <td width="20%">U</td>
+                           <td width="40%">Significant change up<br/>
+                           </td>
+                           <td width="40%">
+								                      <p/>
+								                      <p/>
+							                    </td>
+                        </tr>
+                        <tr>
+                           <td width="20%">VS</td>
+                           <td width="40%">Very susceptible. Indicates for microbiology susceptibilities only.<br/>
+                           </td>
+                           <td width="40%">
+								                      <p/>
+								                      <p/>
+							                    </td>
+                        </tr>
+                        <tr>
+                           <td width="20%">W</td>
+                           <td width="40%">Worse--use when direction not relevant<br/>
+                           </td>
+                           <td width="40%">
+								                      <p/>
+								                      <p/>
+							                    </td>
+                        </tr>
+                        <tr>
+                           <td width="20%">CC</td>
+                           <td width="40%">Highly Significant Change<br/>
+                           </td>
+                           <td width="40%">
+                              <p/>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td width="20%">UU</td>
+                           <td width="40%">Highly Significant Change Up<br/>
+                           </td>
+                           <td width="40%">
+                              <p/>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td width="20%">DD</td>
+                           <td width="40%">Highly Significant Change Down<br/>
+                           </td>
+                           <td width="40%">
+                              <p/>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td width="20%">C</td>
+                           <td width="40%">Significant Change<br/>
+                           </td>
+                           <td width="40%">
+                              <p/>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+            </div>
+         </div>
+         <div id="push"/>
+      </div>
+      <div id="footer">
+         <div class="container">
+            <div class="row">
+               <div class="span6">
+                  <p class="text-left">
+                     <a href="mailto:interoperabilityteam@hscic.gov.uk">Contact Us</a>
+                  </p>
+               </div>
+               <div class="span6">
+                  <p class="text-right">
+                     <b>Release Date: </b>15-Jul-2014</p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script src="../../../Template/js/jquery/jquery-1.8.3.js"> </script>
+      <script src="../../../Template/js/bootstrap/bootstrap.min.js"> </script>
+      <script src="../../../Template/js/google-code-prettify/prettify.js"> </script>
+      <script>
+				!function ($){$(function(){window.prettyPrint && prettyPrint()})}(window.jQuery)
+				</script>
+   </body>
+</html>

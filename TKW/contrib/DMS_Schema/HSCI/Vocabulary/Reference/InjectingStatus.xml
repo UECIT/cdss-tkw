@@ -1,0 +1,16 @@
+<Vocabularies xmlns="urn:nhs-itk:ns:201005">
+	<vocabulary version="1.0" status="active" name="InjectingStatus" id="2.16.840.1.113883.2.1.3.2.4.17.233">
+		<concept code="CI">
+			<displayName>Currently Injecting</displayName>
+		</concept>
+		<concept code="PI">
+			<displayName>Previously Injected</displayName>
+		</concept>
+		<concept code="NI">
+			<displayName>Never Injected</displayName>
+		</concept>
+		<concept code="NK">
+			<displayName>Not Known</displayName>
+		</concept>
+	</vocabulary>
+</Vocabularies>

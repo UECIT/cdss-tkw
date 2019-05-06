@@ -1,0 +1,10 @@
+<Vocabularies xmlns="urn:nhs-itk:ns:201005">
+	<vocabulary version="1.0" status="active" name="PatientLivesAlone" id="">
+		<concept code="01">
+			<displayName>Yes</displayName>
+		</concept>
+		<concept code="02">
+			<displayName>No</displayName>
+		</concept>
+	</vocabulary>
+</Vocabularies>

@@ -1,0 +1,34 @@
+<Vocabularies xmlns="urn:nhs-itk:ns:201005">
+	<vocabulary version="2.0" status="active" name="SCDScreeningResult" id="">
+		<concept code="01">
+			<displayName>Specimen received in laboratory</displayName>
+		</concept>
+		<concept code="02">
+			<displayName>Screening declined</displayName>
+		</concept>
+		<concept code="03">
+			<displayName>Further sample required</displayName>
+		</concept>
+		<concept code="04">
+			<displayName>Condition not suspected</displayName>
+		</concept>
+		<concept code="05">
+			<displayName>Carrier</displayName>
+		</concept>
+		<concept code="06">
+			<displayName>Sickle Cell Disease not suspected, carrier of other haemoglobin</displayName>
+		</concept>
+		<concept code="07">
+			<displayName>Condition not suspected, other disorders follow up</displayName>
+		</concept>
+		<concept code="08">
+			<displayName>Condition suspected</displayName>
+		</concept>
+		<concept code="09">
+			<displayName>Not screened/screening incomplete</displayName>
+		</concept>
+		<concept code="10">
+			<displayName>Sickle Cell Disease not suspected (by DNA) No other haemoglobin/thalassemia excluded</displayName>
+		</concept>
+	</vocabulary>
+</Vocabularies>

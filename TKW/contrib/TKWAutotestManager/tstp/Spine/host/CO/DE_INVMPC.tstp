@@ -1,0 +1,52 @@
+SCRIPT DE_INVMPC
+# $Id: Generic_Fault_ITK_Trunk_skel.tst 87 2016-05-06 09:58:33Z sfarrow $
+# Sections 1 & 2 Negative Tests Test Script File
+# Automatically generated from Generic_Fault_ITK_Trunk_skel.tst 
+
+VALIDATOR __TKWROOT__/config/ITK_Correspondence/validator_config/validator.conf
+
+SIMULATOR __SIMULATOR__
+
+STOP WHEN COMPLETE
+
+BEGIN SCHEDULES
+DE_INVMPC TESTS DE_INVMPC_test1 DE_INVMPC_test2 DE_INVMPC_test3 DE_INVMPC_test4 DE_INVMPC_test5
+END SCHEDULES
+
+BEGIN TESTS
+DE_INVMPC_test1 SEND_TKW DE_INVMPC TO __TO_URL__ FROM __FROM_URL__  __PROFILE_ID_SECTION__ PRETRANSFORM __TKWROOT__/contrib/TKWAutotestManager/transforms/extract_payload.xslt+__TKWROOT__/contrib/TKWAutotestManager/transforms/DE_INVMPC.xslt APPLYPRETRANSFORMTO predistributionenvelope+postdistributionenvelope SYNC ok CORRELATIONCOUNT 1 CORRELATOR BasicTrackingIdCorrelator WITH_PROPERTYSET base+spinetools
+DE_INVMPC_test2 CHAIN ASYNC inf_ack
+DE_INVMPC_test3 CHAIN ASYNC inf_ack_test3
+DE_INVMPC_test4 CHAIN ASYNC inf_ack_test4
+DE_INVMPC_test5 CHAIN ASYNC inf_ack_test5
+END TESTS
+
+BEGIN MESSAGES
+DE_INVMPC USING DE_INVMPC___HAPPY_PATH_SERVICE___template WITH patients ID __INTERACTION_ID___IA_T_BA_F DISTRIBUTIONENVELOPEWRAP AUDITIDENTITY urn:nhs-uk:identity:AAA:XZ901  SOAPACTION __HAPPY_PATH_SERVICE__ MIMETYPE __MIME_TYPE__
+END MESSAGES
+
+BEGIN TEMPLATES
+DE_INVMPC___HAPPY_PATH_SERVICE___template  __TKWROOT__/contrib/ITK_2_01_Test_Messages/__HAPPY_PATH_MSG__
+END TEMPLATES
+
+BEGIN PROPERTYSETS
+spinetools
+	SET tks.SpineToolsTransport.listenport __LISTEN_PORT_NUMBER__
+	SET tks.SpineToolsTransport.listenaddr  __LISTEN_ADDR__
+	SET tks.spinetools.transmit.ods __SUT_ODS__
+	SET tks.spinetools.transmit.partykey __SUT_PARTY_KEY__
+	SET tks.spinetools.transmit.myasid __TKWATM_ASID__
+	SET tks.spinetools.transmit.mypartykey __TKWATM_PARTY_KEY__
+END PROPERTYSETS
+
+BEGIN DATASOURCES
+patients circularwritabletdv __TKWROOT__/contrib/TKWAutotestManager/tstp/patients.tdv
+END DATASOURCES
+
+BEGIN PASSFAIL
+ok httpok
+inf_ack asynchronousxpath /itk:DistributionEnvelope/itk:payloads/itk:payload/itk:InfrastructureResponse exists
+inf_ack_test3 asyncmessagetrackingidtrackingidrefsmatch
+inf_ack_test4 asyncmessagetrackingidtrackingidnomatch
+inf_ack_test5 asynchronousxpath /itk:DistributionEnvelope/itk:payloads/itk:payload/itk:InfrastructureResponse/@result matches "OK"
+END PASSFAIL

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OOHWICFeed xmlns="urn:hl7-org:v3" xmlns:npfitlc="NPFIT:HL7:Localisation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" classCode="ENC" moodCode="EVN">
+	<id root="234" extension="2.16.840.1.113883.2.1.3.2.4.18.20"/>
+	<code code="OOHWIC" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.310"/>
+	<effectiveTime>
+		<low value="20110706090042"/>
+		<high value="20110706091642"/>
+	</effectiveTime>
+	<component2 typeCode="COMP">
+		<walkInEncounterType classCode="OBS" moodCode="EVN">
+			<code code="WIEF" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.286"/>
+			<value code="01" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.291"/>
+		</walkInEncounterType>
+	</component2>
+	<component12 typeCode="COMP">
+		<deleteFlag classCode="OBS" moodCode="EVN">
+			<code code="DF" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.286"/>
+			<value value="false"/>
+		</deleteFlag>
+	</component12>
+	<component17 typeCode="COMP">
+		<createdDate classCode="OBS" moodCode="EVN">
+			<code code="CDATE" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.286"/>
+			<value value="20110706090042"/>
+		</createdDate>
+	</component17>
+	<component18 typeCode="COMP">
+		<modifiedDate classCode="OBS" moodCode="EVN">
+			<code code="MDATE" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.286"/>
+			<value value="20110706097642"/>
+		</modifiedDate>
+	</component18>
+	<component19 typeCode="COMP">
+		<presentingComplaintCode classCode="OBS" moodCode="EVN">
+			<code code="PC" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.286"/>
+			<text>Headache</text>
+			<value code="XE0rh" codeSystem="2.16.840.1.113883.2.1.3.2.4.14"/>
+		</presentingComplaintCode>
+	</component19>
+	<component19 typeCode="COMP">
+		<presentingComplaintCode classCode="OBS" moodCode="EVN">
+			<code code="PC" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.286"/>
+			<text>Light hurts eyes</text>
+			<value code="F4817" codeSystem="2.16.840.1.113883.2.1.3.2.4.14"/>
+		</presentingComplaintCode>
+	</component19>
+	<component4 typeCode="COMP">
+		<cancelledEncounter classCode="OBS" moodCode="EVN">
+			<code code="CENC" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.286"/>
+			<value value="false"/>
+		</cancelledEncounter>
+	</component4>
+	<component21 typeCode="COMP">
+		<prescribedItems classCode="OBS" moodCode="EVN">
+			<code code="PIF" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.286"/>
+			<value>Paracetamol 120mg soluble tablets sugar free</value>
+			<consumable typeCode="CSM">
+				<manufacturedProduct classCode="MANU">
+					<manufacturedManufacturedMaterial classCode="MMAT" determinerCode="INSTANCE">
+						<code code="1002255"/>
+					</manufacturedManufacturedMaterial>
+				</manufacturedProduct>
+			</consumable>
+		</prescribedItems>
+	</component21>
+	<component23 typeCode="COMP">
+		<contactType classCode="OBS" moodCode="EVN">
+			<code code="CONTY" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.286"/>
+			<value code="01" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.292"/>
+		</contactType>
+	</component23>
+	<component24 typeCode="COMP">
+		<diagnosis classCode="OBS" moodCode="EVN">
+			<code code="DIAG" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.286"/>
+			<text>Migraine</text>
+			<value code="F26.." codeSystem="2.16.840.1.113883.2.1.3.2.4.14"/>
+		</diagnosis>
+	</component24>
+	<component25 typeCode="COMP">
+		<investigations classCode="OBS" moodCode="EVN">
+			<code code="INVES" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.286"/>
+			<text>Eye examination interpretation</text>
+			<value code="XM0A6" codeSystem="2.16.840.1.113883.2.1.3.2.4.14"/>
+		</investigations>
+	</component25>
+	<component27 typeCode="COMP">
+		<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCT_TP000018GB01#PMIContent"/>
+		<COCT_TP000018GB01.PMIContent classCode="OBS" moodCode="EVN">
+			<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCT_TP000018GB01#PMIContent"/>
+			<id/>
+			<code code="PMI" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.310"/>
+			<component1 typeCode="COMP">
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCT_TP000018GB01#component1"/>
+				<deleteFlag classCode="OBS" moodCode="EVN">
+					<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCT_TP000018GB01#deleteFlag"/>
+					<code code="DF" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.286"/>
+					<value value="false"/>
+				</deleteFlag>
+			</component1>
+			<component2 typeCode="COMP">
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCT_TP000018GB01#component2"/>
+				<createdDate classCode="OBS" moodCode="EVN">
+					<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCT_TP000018GB01#createdDate"/>
+					<code code="CDATE" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.286"/>
+					<value value="20000825"/>
+				</createdDate>
+			</component2>
+			<component3 typeCode="COMP">
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCT_TP000018GB01#component3"/>
+				<modifiedDate classCode="OBS" moodCode="EVN">
+					<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCT_TP000018GB01#modifiedDate"/>
+					<code code="MDATE" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.286"/>
+					<value value="20051105"/>
+				</modifiedDate>
+			</component3>
+			<subject typeCode="SBJ">
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCT_TP000018GB01#subject"/>
+				<patient classCode="PAT">
+					<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCT_TP000018GB01#patient"/>
+					<id root="2.16.840.1.113883.2.1.4.1" extension="2222222222"/>
+					<addr>
+						<postalCode>LS185QT</postalCode>
+					</addr>
+					<patientPerson classCode="PSN" determinerCode="INSTANCE">
+						<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCT_TP000018GB01#patientPerson"/>
+						<name>
+							<given>Terence</given>
+							<family>Test</family>
+						</name>
+						<administrativeGenderCode code="1" codeSystem="2.16.840.1.113883.2.1.3.2.4.16.25"/>
+						<birthTime value="19860528"/>
+						<ethnicGroupCode code="XaJQv"/>
+						<gPPractice classCode="SDLOC">
+							<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCT_TP000018GB01#gPPractice"/>
+							<code code="GPP" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.290"/>
+							<locationOrganization classCode="ORG" determinerCode="INSTANCE">
+								<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCT_TP000018GB01#locationOrganization"/>
+								<id root="2.16.840.1.113883.2.1.3.2.4.19.1" extension="B83023"/>
+							</locationOrganization>
+						</gPPractice>
+						<pCTOfRegistration classCode="SDLOC">
+							<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCT_TP000018GB01#pCTOfRegistration"/>
+							<code code="PCTREG" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.290"/>
+							<locationOrganization classCode="ORG" determinerCode="INSTANCE">
+								<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCT_TP000018GB01#locationOrganization"/>
+								<id root="2.16.840.1.113883.2.1.3.2.4.19.1" extension="5AO"/>
+							</locationOrganization>
+						</pCTOfRegistration>
+						<pCTOfResidence classCode="SDLOC">
+							<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCT_TP000018GB01#pCTOfResidence"/>
+							<code code="PCTRES" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.290"/>
+							<locationOrganization classCode="ORG" determinerCode="INSTANCE">
+								<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCT_TP000018GB01#locationOrganization"/>
+								<id root="2.16.840.1.113883.2.1.3.2.4.19.1" extension="5MJ"/>
+							</locationOrganization>
+						</pCTOfResidence>
+					</patientPerson>
+					<subject typeCode="SBJ">
+						<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCT_TP000018GB01#subject"/>
+						<overseasVisitorStatus classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCT_TP000018GB01#overseasVisitorStatus"/>
+							<code code="OVS" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.286"/>
+							<value code="1" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.302"/>
+						</overseasVisitorStatus>
+					</subject>
+				</patient>
+			</subject>
+		</COCT_TP000018GB01.PMIContent>
+	</component27>
+	<component5 typeCode="COMP">
+		<outcomeDescription classCode="OBS" moodCode="EVN">
+			<code code="OUTC" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.286"/>
+			<value>Prescribed Medication</value>
+		</outcomeDescription>
+	</component5>
+	<component7 typeCode="COMP">
+		<priorityAfterAssessment classCode="OBS" moodCode="EVN">
+			<code code="PAA" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.286"/>
+			<value code="3" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.311"/>
+		</priorityAfterAssessment>
+	</component7>
+	<component9 typeCode="COMP">
+		<caseNumber classCode="OBS" moodCode="EVN">
+			<code code="CN" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.286"/>
+			<value root="2.16.840.1.113883.2.1.3.2.4.18.26" extension="8452"/>
+		</caseNumber>
+	</component9>
+	<location typeCode="LOC">
+		<destinationOrganisation1 classCode="SDLOC">
+			<code code="DO" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.290"/>
+			<locationRoutingOrganization classCode="ORG" determinerCode="INSTANCE">
+				<id root="2.16.840.1.113883.2.1.3.2.4.19.1" extension="B83023"/>
+			</locationRoutingOrganization>
+		</destinationOrganisation1>
+	</location>
+	<location1 typeCode="LOC">
+		<locationType classCode="SDLOC">
+			<code code="C01" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.312"/>
+		</locationType>
+	</location1>
+	<location2 typeCode="LOC">
+		<serviceOrganisation classCode="SDLOC">
+			<locationOrganization classCode="ORG" determinerCode="INSTANCE">
+				<id root="2.16.840.1.113883.2.1.3.2.4.19.1" extension="OOH123"/>
+				<name>Training OOH PCC</name>
+			</locationOrganization>
+		</serviceOrganisation>
+	</location2>
+	<location3 typeCode="LOC">
+		<sourceOrganisation classCode="SDLOC">
+			<code code="SO" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.290"/>
+			<locationRoutingOrganization classCode="ORG" determinerCode="INSTANCE">
+				<id root="2.16.840.1.113883.2.1.3.2.4.19.1" extension="OOH123"/>
+			</locationRoutingOrganization>
+		</sourceOrganisation>
+	</location3>
+	<responsibleParty typeCode="RESP">
+		<assignedEntity classCode="ASSIGNED">
+			<id root="1.2.826.0.1285.0.2.0.65" extension="456452424878"/>
+			<id root="2.16.840.1.113883.2.1.3.2.4.18.29" extension="G1523259"/>
+			<assignedPerson1 classCode="PSN" determinerCode="INSTANCE">
+				<name>
+					<prefix>Dr</prefix>
+					<given>General</given>
+					<family>Practitioner</family>
+				</name>
+			</assignedPerson1>
+		</assignedEntity>
+	</responsibleParty>
+</OOHWICFeed>

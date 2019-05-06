@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vocabulary id="2.16.840.1.113883.2.1.3.2.4.17.298" status="created" name="AEDisposalMethod" version="1.0">
+	<concept code="01">
+		<displayName>Admitted to a hospital Bed /became a lodged patient of the same Health Care Provider</displayName>
+	</concept>
+	<concept code="02">
+		<displayName>Discharged - follow up treatment to be provided by general practitioner</displayName>
+	</concept>
+	<concept code="03">
+		<displayName>Discharged - did not require any follow up treatment</displayName>
+	</concept>
+	<concept code="04">
+		<displayName>Referred to A&amp;E Clinic</displayName>
+	</concept>
+		<concept code="05">
+		<displayName>Referred to Fracture Clinic</displayName>
+	</concept>
+		<concept code="06">
+		<displayName>Referred to other Out-Patient Clinic</displayName>
+	</concept>
+		<concept code="07">
+		<displayName>Transferred to other Health Care Provider</displayName>
+	</concept>
+		<concept code="10">
+		<displayName>Died in department</displayName>
+	</concept>
+		<concept code="11">
+		<displayName>Referred to other health care professional</displayName>
+	</concept>
+		<concept code="12">
+		<displayName>Left department before being treated</displayName>
+	</concept>
+		<concept code="13">
+		<displayName>Left department having refused treatment</displayName>
+	</concept>
+		<concept code="14">
+		<displayName>Other</displayName>
+	</concept>
+</vocabulary>

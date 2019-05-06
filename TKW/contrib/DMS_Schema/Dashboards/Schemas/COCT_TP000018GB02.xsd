@@ -1,0 +1,725 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xs:schema xmlns="urn:hl7-org:v3" elementFormDefault="qualified" targetNamespace="urn:hl7-org:v3" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <!--
+***************************************************************************
+* XML schema for message type COCT_TP000018GB02
+* Source information:
+* 
+* Rendered by: 	Static Model Designer
+* Rendered on: 	Tue Jan 24 10:26:41 GMT 2012
+* Version : 	02
+* 
+* 
+* Generated for National Health Service XMLITS version NHS CFH XSD ITS Transform 1.0.0
+* 
+* 
+* Copyright (c) 2008,2009,2010 National Health Service .
+*  All rights reserved.Redistribution and use in source and binary forms,
+*  with or without modification, are permitted provided that the following conditions
+*  are met:
+*  1. Redistributions of source code must retain the above copyright
+*     notice, this list of conditions and the following disclaimer.
+*  2. Redistributions in binary form must reproduce the above copyright
+*     notice, this list of conditions and the following disclaimer in the
+*     documentation and/or other materials provided with the distribution.
+*  3. All advertising materials mentioning features or use of this software
+*     must display the following acknowledgement:
+*       This product includes software developed by National Health Service.
+*  THIS SOFTWARE IS PROVIDED BY National Health Service. AND CONTRIBUTORS "AS IS" AND
+*  ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+*  IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+*  ARE DISCLAIMED.  IN NO EVENT SHALL THE REGENTS OR CONTRIBUTORS BE LIABLE
+*  FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+*  DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+*  OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+*  HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+*  LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+*  OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+*  SUCH DAMAGE.
+* 
+***************************************************************************
+-->
+    <xs:annotation>
+        <xs:documentation>
+            <p>RIM :DEFN=UK=RIM=0229R1</p>
+            <p>DATATYPE :DEFN=UV=DT=1.0;DEFN=UK=DT=3.6;</p>
+            <p>VOCABULARY :DEFN=UV=VO=913-20091020;DEFN=UK=VO=7.6;</p>
+        </xs:documentation>
+    </xs:annotation>
+    <xs:include schemaLocation="../dt/infrastructureRoot.xsd"/>
+    <xs:include schemaLocation="../dt/datatypeflavours.xsd"/>
+    <xs:group name="COCT_TP000018GB02">
+        <xs:sequence>
+            <xs:element name="COCT_TP000018GB02.PMIContent" type="COCT_TP000018GB02.PMIContent"/>
+        </xs:sequence>
+    </xs:group>
+    <xs:complexType name="COCT_TP000018GB02.Component1">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElementsGroup1"/>
+            <xs:element maxOccurs="1" minOccurs="1" name="templateId">
+                <xs:complexType>
+                    <xs:complexContent>
+                        <xs:restriction base="II">
+                            <xs:attribute name="root" use="required">
+                                <xs:simpleType>
+                                    <xs:restriction base="uid">
+                                        <xs:enumeration value="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:attribute>
+                            <xs:attribute name="extension" use="required">
+                                <xs:simpleType>
+                                    <xs:restriction base="st">
+                                        <xs:enumeration value="COCT_TP000018GB02#component1"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:attribute>
+                            <xs:attribute name="nullFlavor" type="cs_NullFlavor" use="prohibited"/>
+                            <xs:attribute name="updateMode" type="cs_UpdateMode" use="prohibited"/>
+                            <xs:attribute name="assigningAuthorityName" type="st" use="prohibited"/>
+                            <xs:attribute name="displayable" type="bl" use="prohibited"/>
+                        </xs:restriction>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element maxOccurs="1" minOccurs="1" name="deleteFlag" nillable="true" type="COCT_TP000018GB02.DeleteFlag"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute fixed="COMP" name="typeCode" type="cs" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="COCT_TP000018GB02.Component2">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElementsGroup1"/>
+            <xs:element maxOccurs="1" minOccurs="1" name="templateId">
+                <xs:complexType>
+                    <xs:complexContent>
+                        <xs:restriction base="II">
+                            <xs:attribute name="root" use="required">
+                                <xs:simpleType>
+                                    <xs:restriction base="uid">
+                                        <xs:enumeration value="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:attribute>
+                            <xs:attribute name="extension" use="required">
+                                <xs:simpleType>
+                                    <xs:restriction base="st">
+                                        <xs:enumeration value="COCT_TP000018GB02#component2"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:attribute>
+                            <xs:attribute name="nullFlavor" type="cs_NullFlavor" use="prohibited"/>
+                            <xs:attribute name="updateMode" type="cs_UpdateMode" use="prohibited"/>
+                            <xs:attribute name="assigningAuthorityName" type="st" use="prohibited"/>
+                            <xs:attribute name="displayable" type="bl" use="prohibited"/>
+                        </xs:restriction>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element maxOccurs="1" minOccurs="1" name="createdDate" nillable="true" type="COCT_TP000018GB02.CreatedDate"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute fixed="COMP" name="typeCode" type="cs" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="COCT_TP000018GB02.Component3">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElementsGroup1"/>
+            <xs:element maxOccurs="1" minOccurs="1" name="templateId">
+                <xs:complexType>
+                    <xs:complexContent>
+                        <xs:restriction base="II">
+                            <xs:attribute name="root" use="required">
+                                <xs:simpleType>
+                                    <xs:restriction base="uid">
+                                        <xs:enumeration value="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:attribute>
+                            <xs:attribute name="extension" use="required">
+                                <xs:simpleType>
+                                    <xs:restriction base="st">
+                                        <xs:enumeration value="COCT_TP000018GB02#component3"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:attribute>
+                            <xs:attribute name="nullFlavor" type="cs_NullFlavor" use="prohibited"/>
+                            <xs:attribute name="updateMode" type="cs_UpdateMode" use="prohibited"/>
+                            <xs:attribute name="assigningAuthorityName" type="st" use="prohibited"/>
+                            <xs:attribute name="displayable" type="bl" use="prohibited"/>
+                        </xs:restriction>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element maxOccurs="1" minOccurs="1" name="modifiedDate" nillable="true" type="COCT_TP000018GB02.ModifiedDate"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute fixed="COMP" name="typeCode" type="cs" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="COCT_TP000018GB02.CreatedDate">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElementsGroup1"/>
+            <xs:element maxOccurs="1" minOccurs="1" name="templateId">
+                <xs:complexType>
+                    <xs:complexContent>
+                        <xs:restriction base="II">
+                            <xs:attribute name="root" use="required">
+                                <xs:simpleType>
+                                    <xs:restriction base="uid">
+                                        <xs:enumeration value="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:attribute>
+                            <xs:attribute name="extension" use="required">
+                                <xs:simpleType>
+                                    <xs:restriction base="st">
+                                        <xs:enumeration value="COCT_TP000018GB02#createdDate"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:attribute>
+                            <xs:attribute name="nullFlavor" type="cs_NullFlavor" use="prohibited"/>
+                            <xs:attribute name="updateMode" type="cs_UpdateMode" use="prohibited"/>
+                            <xs:attribute name="assigningAuthorityName" type="st" use="prohibited"/>
+                            <xs:attribute name="displayable" type="bl" use="prohibited"/>
+                        </xs:restriction>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element maxOccurs="1" minOccurs="1" name="code">
+                <xs:complexType>
+                    <xs:complexContent>
+                        <xs:restriction base="CV.NHS.CodedValueType1">
+                            <xs:attribute fixed="CDATE" name="code" type="cs" use="required"/>
+                            <xs:attribute fixed="2.16.840.1.113883.2.1.3.2.4.17.286" name="codeSystem" type="uid" use="required"/>
+                        </xs:restriction>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element maxOccurs="1" minOccurs="1" name="value" type="TS.NHS.TimestampType5"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute fixed="OBS" name="classCode" type="cs" use="required"/>
+        <xs:attribute fixed="EVN" name="moodCode" type="cs" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="COCT_TP000018GB02.DeleteFlag">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElementsGroup1"/>
+            <xs:element maxOccurs="1" minOccurs="1" name="templateId">
+                <xs:complexType>
+                    <xs:complexContent>
+                        <xs:restriction base="II">
+                            <xs:attribute name="root" use="required">
+                                <xs:simpleType>
+                                    <xs:restriction base="uid">
+                                        <xs:enumeration value="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:attribute>
+                            <xs:attribute name="extension" use="required">
+                                <xs:simpleType>
+                                    <xs:restriction base="st">
+                                        <xs:enumeration value="COCT_TP000018GB02#deleteFlag"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:attribute>
+                            <xs:attribute name="nullFlavor" type="cs_NullFlavor" use="prohibited"/>
+                            <xs:attribute name="updateMode" type="cs_UpdateMode" use="prohibited"/>
+                            <xs:attribute name="assigningAuthorityName" type="st" use="prohibited"/>
+                            <xs:attribute name="displayable" type="bl" use="prohibited"/>
+                        </xs:restriction>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element maxOccurs="1" minOccurs="1" name="code">
+                <xs:complexType>
+                    <xs:complexContent>
+                        <xs:restriction base="CV.NHS.CodedValueType1">
+                            <xs:attribute fixed="DF" name="code" type="cs" use="required"/>
+                            <xs:attribute fixed="2.16.840.1.113883.2.1.3.2.4.17.286" name="codeSystem" type="uid" use="required"/>
+                        </xs:restriction>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element maxOccurs="1" minOccurs="1" name="value">
+                <xs:complexType>
+                    <xs:complexContent>
+                        <xs:restriction base="BL">
+                            <xs:attribute name="nullFlavor" type="cs_NullFlavor" use="optional"/>
+                            <xs:attribute name="updateMode" type="cs" use="prohibited"/>
+                            <xs:attribute name="value" type="bl" use="required"/>
+                        </xs:restriction>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute fixed="OBS" name="classCode" type="cs" use="required"/>
+        <xs:attribute fixed="EVN" name="moodCode" type="cs" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="COCT_TP000018GB02.GPPractice">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElementsGroup1"/>
+            <xs:element maxOccurs="1" minOccurs="1" name="templateId">
+                <xs:complexType>
+                    <xs:complexContent>
+                        <xs:restriction base="II">
+                            <xs:attribute name="root" use="required">
+                                <xs:simpleType>
+                                    <xs:restriction base="uid">
+                                        <xs:enumeration value="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:attribute>
+                            <xs:attribute name="extension" use="required">
+                                <xs:simpleType>
+                                    <xs:restriction base="st">
+                                        <xs:enumeration value="COCT_TP000018GB02#gPPractice"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:attribute>
+                            <xs:attribute name="nullFlavor" type="cs_NullFlavor" use="prohibited"/>
+                            <xs:attribute name="updateMode" type="cs_UpdateMode" use="prohibited"/>
+                            <xs:attribute name="assigningAuthorityName" type="st" use="prohibited"/>
+                            <xs:attribute name="displayable" type="bl" use="prohibited"/>
+                        </xs:restriction>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element maxOccurs="1" minOccurs="1" name="code">
+                <xs:complexType>
+                    <xs:complexContent>
+                        <xs:restriction base="CV.NHS.CodedValueType1">
+                            <xs:attribute fixed="GPP" name="code" type="cs" use="required"/>
+                            <xs:attribute fixed="2.16.840.1.113883.2.1.3.2.4.17.290" name="codeSystem" type="uid" use="required"/>
+                        </xs:restriction>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element maxOccurs="1" minOccurs="1" name="locationOrganization" type="COCT_TP000018GB02.Organization"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute fixed="SDLOC" name="classCode" type="cs" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="COCT_TP000018GB02.ModifiedDate">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElementsGroup1"/>
+            <xs:element maxOccurs="1" minOccurs="1" name="templateId">
+                <xs:complexType>
+                    <xs:complexContent>
+                        <xs:restriction base="II">
+                            <xs:attribute name="root" use="required">
+                                <xs:simpleType>
+                                    <xs:restriction base="uid">
+                                        <xs:enumeration value="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:attribute>
+                            <xs:attribute name="extension" use="required">
+                                <xs:simpleType>
+                                    <xs:restriction base="st">
+                                        <xs:enumeration value="COCT_TP000018GB02#modifiedDate"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:attribute>
+                            <xs:attribute name="nullFlavor" type="cs_NullFlavor" use="prohibited"/>
+                            <xs:attribute name="updateMode" type="cs_UpdateMode" use="prohibited"/>
+                            <xs:attribute name="assigningAuthorityName" type="st" use="prohibited"/>
+                            <xs:attribute name="displayable" type="bl" use="prohibited"/>
+                        </xs:restriction>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element maxOccurs="1" minOccurs="1" name="code">
+                <xs:complexType>
+                    <xs:complexContent>
+                        <xs:restriction base="CV.NHS.CodedValueType1">
+                            <xs:attribute fixed="MDATE" name="code" type="cs" use="required"/>
+                            <xs:attribute fixed="2.16.840.1.113883.2.1.3.2.4.17.286" name="codeSystem" type="uid" use="required"/>
+                        </xs:restriction>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element maxOccurs="1" minOccurs="1" name="value" type="TS.NHS.TimestampType5"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute fixed="OBS" name="classCode" type="cs" use="required"/>
+        <xs:attribute fixed="EVN" name="moodCode" type="cs" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="COCT_TP000018GB02.Organization">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElementsGroup1"/>
+            <xs:element maxOccurs="1" minOccurs="1" name="templateId">
+                <xs:complexType>
+                    <xs:complexContent>
+                        <xs:restriction base="II">
+                            <xs:attribute name="root" use="required">
+                                <xs:simpleType>
+                                    <xs:restriction base="uid">
+                                        <xs:enumeration value="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:attribute>
+                            <xs:attribute name="extension" use="required">
+                                <xs:simpleType>
+                                    <xs:restriction base="st">
+                                        <xs:enumeration value="COCT_TP000018GB02#locationOrganization"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:attribute>
+                            <xs:attribute name="nullFlavor" type="cs_NullFlavor" use="prohibited"/>
+                            <xs:attribute name="updateMode" type="cs_UpdateMode" use="prohibited"/>
+                            <xs:attribute name="assigningAuthorityName" type="st" use="prohibited"/>
+                            <xs:attribute name="displayable" type="bl" use="prohibited"/>
+                        </xs:restriction>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element maxOccurs="1" minOccurs="0" name="id" type="II.NHS.IdentifierType3"/>
+            <xs:element maxOccurs="1" minOccurs="0" name="name" type="ON"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute fixed="ORG" name="classCode" type="cs" use="required"/>
+        <xs:attribute fixed="INSTANCE" name="determinerCode" type="cs" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="COCT_TP000018GB02.OverseasVisitorStatus">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElementsGroup1"/>
+            <xs:element maxOccurs="1" minOccurs="1" name="templateId">
+                <xs:complexType>
+                    <xs:complexContent>
+                        <xs:restriction base="II">
+                            <xs:attribute name="root" use="required">
+                                <xs:simpleType>
+                                    <xs:restriction base="uid">
+                                        <xs:enumeration value="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:attribute>
+                            <xs:attribute name="extension" use="required">
+                                <xs:simpleType>
+                                    <xs:restriction base="st">
+                                        <xs:enumeration value="COCT_TP000018GB02#overseasVisitorStatus"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:attribute>
+                            <xs:attribute name="nullFlavor" type="cs_NullFlavor" use="prohibited"/>
+                            <xs:attribute name="updateMode" type="cs_UpdateMode" use="prohibited"/>
+                            <xs:attribute name="assigningAuthorityName" type="st" use="prohibited"/>
+                            <xs:attribute name="displayable" type="bl" use="prohibited"/>
+                        </xs:restriction>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element maxOccurs="1" minOccurs="1" name="code">
+                <xs:complexType>
+                    <xs:complexContent>
+                        <xs:restriction base="CV.NHS.CodedValueType1">
+                            <xs:attribute fixed="OVS" name="code" type="cs" use="required"/>
+                            <xs:attribute fixed="2.16.840.1.113883.2.1.3.2.4.17.286" name="codeSystem" type="uid" use="required"/>
+                        </xs:restriction>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element maxOccurs="1" minOccurs="1" name="value" type="CV.NHS.CodedValueType1"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute fixed="OBS" name="classCode" type="cs" use="required"/>
+        <xs:attribute fixed="EVN" name="moodCode" type="cs" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="COCT_TP000018GB02.Patient">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElementsGroup1"/>
+            <xs:element maxOccurs="1" minOccurs="1" name="templateId">
+                <xs:complexType>
+                    <xs:complexContent>
+                        <xs:restriction base="II">
+                            <xs:attribute name="root" use="required">
+                                <xs:simpleType>
+                                    <xs:restriction base="uid">
+                                        <xs:enumeration value="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:attribute>
+                            <xs:attribute name="extension" use="required">
+                                <xs:simpleType>
+                                    <xs:restriction base="st">
+                                        <xs:enumeration value="COCT_TP000018GB02#patient"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:attribute>
+                            <xs:attribute name="nullFlavor" type="cs_NullFlavor" use="prohibited"/>
+                            <xs:attribute name="updateMode" type="cs_UpdateMode" use="prohibited"/>
+                            <xs:attribute name="assigningAuthorityName" type="st" use="prohibited"/>
+                            <xs:attribute name="displayable" type="bl" use="prohibited"/>
+                        </xs:restriction>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element maxOccurs="2" minOccurs="1" name="id" type="II"/>
+            <xs:element maxOccurs="1" minOccurs="0" name="addr" type="AD.NHS.AddressType1"/>
+            <xs:element maxOccurs="1" minOccurs="1" name="patientPerson" type="COCT_TP000018GB02.Person"/>
+            <xs:element maxOccurs="1" minOccurs="0" name="subject" nillable="true" type="COCT_TP000018GB02.Subject1"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute fixed="PAT" name="classCode" type="cs" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="COCT_TP000018GB02.PCTOfRegistration">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElementsGroup1"/>
+            <xs:element maxOccurs="1" minOccurs="1" name="templateId">
+                <xs:complexType>
+                    <xs:complexContent>
+                        <xs:restriction base="II">
+                            <xs:attribute name="root" use="required">
+                                <xs:simpleType>
+                                    <xs:restriction base="uid">
+                                        <xs:enumeration value="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:attribute>
+                            <xs:attribute name="extension" use="required">
+                                <xs:simpleType>
+                                    <xs:restriction base="st">
+                                        <xs:enumeration value="COCT_TP000018GB02#pCTOfRegistration"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:attribute>
+                            <xs:attribute name="nullFlavor" type="cs_NullFlavor" use="prohibited"/>
+                            <xs:attribute name="updateMode" type="cs_UpdateMode" use="prohibited"/>
+                            <xs:attribute name="assigningAuthorityName" type="st" use="prohibited"/>
+                            <xs:attribute name="displayable" type="bl" use="prohibited"/>
+                        </xs:restriction>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element maxOccurs="1" minOccurs="1" name="code">
+                <xs:complexType>
+                    <xs:complexContent>
+                        <xs:restriction base="CV.NHS.CodedValueType1">
+                            <xs:attribute fixed="PCTREG" name="code" type="cs" use="required"/>
+                            <xs:attribute fixed="2.16.840.1.113883.2.1.3.2.4.17.290" name="codeSystem" type="uid" use="required"/>
+                        </xs:restriction>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element maxOccurs="1" minOccurs="1" name="locationOrganization" type="COCT_TP000018GB02.Organization"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute fixed="SDLOC" name="classCode" type="cs" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="COCT_TP000018GB02.PCTOfResidence">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElementsGroup1"/>
+            <xs:element maxOccurs="1" minOccurs="1" name="templateId">
+                <xs:complexType>
+                    <xs:complexContent>
+                        <xs:restriction base="II">
+                            <xs:attribute name="root" use="required">
+                                <xs:simpleType>
+                                    <xs:restriction base="uid">
+                                        <xs:enumeration value="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:attribute>
+                            <xs:attribute name="extension" use="required">
+                                <xs:simpleType>
+                                    <xs:restriction base="st">
+                                        <xs:enumeration value="COCT_TP000018GB02#pCTOfResidence"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:attribute>
+                            <xs:attribute name="nullFlavor" type="cs_NullFlavor" use="prohibited"/>
+                            <xs:attribute name="updateMode" type="cs_UpdateMode" use="prohibited"/>
+                            <xs:attribute name="assigningAuthorityName" type="st" use="prohibited"/>
+                            <xs:attribute name="displayable" type="bl" use="prohibited"/>
+                        </xs:restriction>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element maxOccurs="1" minOccurs="1" name="code">
+                <xs:complexType>
+                    <xs:complexContent>
+                        <xs:restriction base="CV.NHS.CodedValueType1">
+                            <xs:attribute fixed="PCTRES" name="code" type="cs" use="required"/>
+                            <xs:attribute fixed="2.16.840.1.113883.2.1.3.2.4.17.290" name="codeSystem" type="uid" use="required"/>
+                        </xs:restriction>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element maxOccurs="1" minOccurs="1" name="locationOrganization" type="COCT_TP000018GB02.Organization"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute fixed="SDLOC" name="classCode" type="cs" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="COCT_TP000018GB02.Person">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElementsGroup1"/>
+            <xs:element maxOccurs="1" minOccurs="1" name="templateId">
+                <xs:complexType>
+                    <xs:complexContent>
+                        <xs:restriction base="II">
+                            <xs:attribute name="root" use="required">
+                                <xs:simpleType>
+                                    <xs:restriction base="uid">
+                                        <xs:enumeration value="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:attribute>
+                            <xs:attribute name="extension" use="required">
+                                <xs:simpleType>
+                                    <xs:restriction base="st">
+                                        <xs:enumeration value="COCT_TP000018GB02#patientPerson"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:attribute>
+                            <xs:attribute name="nullFlavor" type="cs_NullFlavor" use="prohibited"/>
+                            <xs:attribute name="updateMode" type="cs_UpdateMode" use="prohibited"/>
+                            <xs:attribute name="assigningAuthorityName" type="st" use="prohibited"/>
+                            <xs:attribute name="displayable" type="bl" use="prohibited"/>
+                        </xs:restriction>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element maxOccurs="1" minOccurs="1" name="name" type="PN"/>
+            <xs:element maxOccurs="1" minOccurs="0" name="administrativeGenderCode" type="CV"/>
+            <xs:element maxOccurs="1" minOccurs="1" name="birthTime" type="TS.NHS.TimestampType1"/>
+            <xs:element maxOccurs="1" minOccurs="0" name="deceasedTime" type="TS.NHS.TimestampType1"/>
+            <xs:element maxOccurs="1" minOccurs="0" name="ethnicGroupCode" type="CV"/>
+            <xs:element maxOccurs="1" minOccurs="0" name="gPPractice" nillable="true" type="COCT_TP000018GB02.GPPractice"/>
+            <xs:element maxOccurs="1" minOccurs="0" name="pCTOfRegistration" nillable="true" type="COCT_TP000018GB02.PCTOfRegistration"/>
+            <xs:element maxOccurs="1" minOccurs="0" name="pCTOfResidence" nillable="true" type="COCT_TP000018GB02.PCTOfResidence"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute fixed="PSN" name="classCode" type="cs" use="required"/>
+        <xs:attribute fixed="INSTANCE" name="determinerCode" type="cs" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="COCT_TP000018GB02.PMIContent">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElementsGroup1"/>
+            <xs:element maxOccurs="1" minOccurs="1" name="templateId">
+                <xs:complexType>
+                    <xs:complexContent>
+                        <xs:restriction base="II">
+                            <xs:attribute name="root" use="required">
+                                <xs:simpleType>
+                                    <xs:restriction base="uid">
+                                        <xs:enumeration value="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:attribute>
+                            <xs:attribute name="extension" use="required">
+                                <xs:simpleType>
+                                    <xs:restriction base="st">
+                                        <xs:enumeration value="COCT_TP000018GB02#PMIContent"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:attribute>
+                            <xs:attribute name="nullFlavor" type="cs_NullFlavor" use="prohibited"/>
+                            <xs:attribute name="updateMode" type="cs_UpdateMode" use="prohibited"/>
+                            <xs:attribute name="assigningAuthorityName" type="st" use="prohibited"/>
+                            <xs:attribute name="displayable" type="bl" use="prohibited"/>
+                        </xs:restriction>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element maxOccurs="1" minOccurs="1" name="id">
+                <xs:complexType>
+                    <xs:complexContent>
+                        <xs:restriction base="II">
+                            <xs:attribute name="root" type="uid" use="optional"/>
+                            <xs:attribute name="extension" type="st" use="optional"/>
+                            <xs:attribute name="nullFlavor" type="cs_NullFlavor" use="optional"/>
+                            <xs:attribute name="updateMode" type="cs_UpdateMode" use="prohibited"/>
+                            <xs:attribute name="assigningAuthorityName" type="st" use="prohibited"/>
+                            <xs:attribute name="displayable" type="bl" use="prohibited"/>
+                        </xs:restriction>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element maxOccurs="1" minOccurs="1" name="code">
+                <xs:complexType>
+                    <xs:complexContent>
+                        <xs:restriction base="CV.NHS.CodedValueType1">
+                            <xs:attribute fixed="PMI" name="code" type="cs" use="required"/>
+                            <xs:attribute fixed="2.16.840.1.113883.2.1.3.2.4.17.310" name="codeSystem" type="uid" use="required"/>
+                        </xs:restriction>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element maxOccurs="1" minOccurs="1" name="component1" type="COCT_TP000018GB02.Component1"/>
+            <xs:element maxOccurs="1" minOccurs="1" name="component2" type="COCT_TP000018GB02.Component2"/>
+            <xs:element maxOccurs="1" minOccurs="0" name="component3" nillable="true" type="COCT_TP000018GB02.Component3"/>
+            <xs:element maxOccurs="1" minOccurs="1" name="subject" type="COCT_TP000018GB02.Subject"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute fixed="OBS" name="classCode" type="cs" use="required"/>
+        <xs:attribute fixed="EVN" name="moodCode" type="cs" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="COCT_TP000018GB02.Subject">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElementsGroup1"/>
+            <xs:element maxOccurs="1" minOccurs="1" name="templateId">
+                <xs:complexType>
+                    <xs:complexContent>
+                        <xs:restriction base="II">
+                            <xs:attribute name="root" use="required">
+                                <xs:simpleType>
+                                    <xs:restriction base="uid">
+                                        <xs:enumeration value="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:attribute>
+                            <xs:attribute name="extension" use="required">
+                                <xs:simpleType>
+                                    <xs:restriction base="st">
+                                        <xs:enumeration value="COCT_TP000018GB02#subject"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:attribute>
+                            <xs:attribute name="nullFlavor" type="cs_NullFlavor" use="prohibited"/>
+                            <xs:attribute name="updateMode" type="cs_UpdateMode" use="prohibited"/>
+                            <xs:attribute name="assigningAuthorityName" type="st" use="prohibited"/>
+                            <xs:attribute name="displayable" type="bl" use="prohibited"/>
+                        </xs:restriction>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element maxOccurs="1" minOccurs="1" name="patient" nillable="true" type="COCT_TP000018GB02.Patient"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute fixed="SBJ" name="typeCode" type="cs" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="COCT_TP000018GB02.Subject1">
+        <xs:sequence>
+            <xs:group ref="InfrastructureRootElementsGroup1"/>
+            <xs:element maxOccurs="1" minOccurs="1" name="templateId">
+                <xs:complexType>
+                    <xs:complexContent>
+                        <xs:restriction base="II">
+                            <xs:attribute name="root" use="required">
+                                <xs:simpleType>
+                                    <xs:restriction base="uid">
+                                        <xs:enumeration value="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:attribute>
+                            <xs:attribute name="extension" use="required">
+                                <xs:simpleType>
+                                    <xs:restriction base="st">
+                                        <xs:enumeration value="COCT_TP000018GB02#subject"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:attribute>
+                            <xs:attribute name="nullFlavor" type="cs_NullFlavor" use="prohibited"/>
+                            <xs:attribute name="updateMode" type="cs_UpdateMode" use="prohibited"/>
+                            <xs:attribute name="assigningAuthorityName" type="st" use="prohibited"/>
+                            <xs:attribute name="displayable" type="bl" use="prohibited"/>
+                        </xs:restriction>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element maxOccurs="1" minOccurs="1" name="overseasVisitorStatus" nillable="true" type="COCT_TP000018GB02.OverseasVisitorStatus"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="InfrastructureRootAttributes"/>
+        <xs:attribute fixed="SBJ" name="typeCode" type="cs" use="required"/>
+    </xs:complexType>
+</xs:schema>

@@ -1,0 +1,29 @@
+SCRIPT HL_PE_UE_XML
+# $Id: ADT_Client_skel.tst 87 2016-05-06 09:58:33Z sfarrow $
+# Section 5 ADT Correspondence Positive Client Tests Test Script File
+# Automatically generated from ADT_client_skel.tst 
+#
+
+VALIDATOR __TKWROOT__/config/ITK_ADT/validator_config/validator.conf
+
+SIMULATOR __SIMULATOR__
+
+STOP WHEN COMPLETE
+
+BEGIN SCHEDULES
+HL_PE_UE_XML TESTS HL_PE_UE_XML___SERVICE___test1
+END SCHEDULES
+
+BEGIN TESTS
+HL_PE_UE_XML___SERVICE___test1 ASYNC HL_PE_UE_XML___SERVICE___test1 PROMPT "Test Condition:__TEST_CONDITION__ - Send a __SYNC_MODE__ request message __SERVICE__ to __FROM_URL__/__FROM_CONTEXT_PATH__" WITH_PROPERTYSET base+webservices
+END TESTS
+
+BEGIN PROPERTYSETS
+webservices
+	SET tks.HttpTransport.listenport __LISTEN_PORT_NUMBER__
+	SET tks.HttpTransport.listenaddr  __LISTEN_ADDR__
+END PROPERTYSETS
+
+BEGIN PASSFAIL
+HL_PE_UE_XML___SERVICE___test1 asynchronousxpath /soap:Envelope/soap:Body/itk:DistributionEnvelope/itk:header/@service matches "^__SERVICE__$"
+END PASSFAIL

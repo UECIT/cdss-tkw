@@ -1,0 +1,1173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This example message is for scenario 3. This is valid and eligible checklist-->
+<ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:npfitlc="NPFIT:HL7:Localisation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 ..\..\Schemas\POCD_MT010007GB03.xsd" moodCode="EVN" classCode="DOCCLIN">
+	<code code="766781000000107" codeSystem="2.16.840.1.113883.2.1.3.2.4.15"/>
+	<confidentialityCode codeSystem="2.16.840.1.113883.5.25" code="V" displayName="very restricted"/>
+	<effectiveTime value="201010201515"/>
+	<id root="7D5E5B05-AE1A-11DB-96AB-B18E1E0994CD"/>
+	<npfitlc:messageType root="2.16.840.1.113883.2.1.3.2.4.18.17" extension="POCD_MT010007GB03"/>
+	<setId root="7D5E5B06-AE1A-11DB-96AC-B18E1E0994CD"/>
+	<title>NHS Continuing Healthcare Checklist Assessment</title>
+	<typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
+	<versionNumber value="1"/>
+	<author typeCode="AUT" contextControlCode="OP">
+		<npfitlc:contentId extension="COCD_TP145200GB01#AssignedAuthor" root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+		<functionCode codeSystem="2.16.840.1.113883.2.1.3.2.4.17.178" displayName="Originating Author" code="OA"/>
+		<time value="201010201515"/>
+		<COCD_TP145200GB01.AssignedAuthor classCode="ASSIGNED">
+			<code codeSystem="2.16.840.1.113883.2.1.3.2.4.17.124" code="NR0620" displayName="Staff Nurse"/>
+			<id root="2.16.840.1.113883.2.1.3.2.4.18.24" extension="1234512345"/>
+			<templateId extension="COCD_TP145200GB01#AssignedAuthor" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<assignedPerson classCode="PSN" determinerCode="INSTANCE">
+				<name>
+					<prefix>Mrs</prefix>
+					<family>Bradwick</family>
+					<given>June</given>
+				</name>
+				<templateId extension="COCD_TP145200GB01#assignedPerson" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			</assignedPerson>
+			<representedOrganization determinerCode="INSTANCE" classCode="ORG">
+				<id root="2.16.840.1.113883.2.1.3.2.4.19.1" extension="V396AA"/>
+				<name>East Cheshire NHS Trust</name>
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP145200GB01#representedOrganization"/>
+			</representedOrganization>
+		</COCD_TP145200GB01.AssignedAuthor>
+	</author>
+	<component typeCode="COMP" contextConductionInd="true">
+		<structuredBody moodCode="EVN" classCode="DOCBODY">
+			<component typeCode="COMP" contextConductionInd="true">
+				<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP146217GB01#ClassificationSection"/>
+				<COCD_TP146217GB01.ClassificationSection classCode="DOCSECT" moodCode="EVN">
+					<id root="7D5E5B00-AE1A-11DB-96AD-B18E1E0994CD"/>
+					<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146217GB01#ClassificationSection"/>
+					<component typeCode="COMP" contextConductionInd="true">
+						<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP146061UK02#Section1"/>
+						<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146217GB01#component"/>
+						<COCD_TP146061UK02.Section1 moodCode="EVN" classCode="DOCSECT">
+							<id root="7D5E5B00-AE1A-11DB-96AE-B18E1E0994CD"/>
+							<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146061UK02#Section1"/>
+							<title>Administrative Details</title>
+							<component1 typeCode="COMP" contextConductionInd="true">
+								<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146061UK02#component1"/>
+								<section2 moodCode="EVN" classCode="DOCSECT">
+									<id root="7D5E5B00-AE1A-11DB-96AF-B18E1E0994CD"/>
+									<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146061UK02#section2"/>
+									<text>
+										<table width="100%">
+											<tbody>
+												<tr char="10">
+													<td>
+														<content styleCode="Bold">Date of Completion of Checklist:</content>
+													</td>
+													<td>20-Oct-2010</td>
+												</tr>
+												<tr>
+													<td>
+														<content styleCode="Bold">Name:</content>
+													</td>
+													<td>Mrs Belinda Taylor</td>
+												</tr>
+											</tbody>
+										</table>
+										<br/>
+										<table width="100%">
+											<tbody>
+												<tr>
+													<td>
+														<content styleCode="Bold">Was the individual involved in the completion of the Checklist?</content>
+													</td>
+													<td colspan="3">No</td>
+												</tr>
+												<tr>
+													<td>
+														<content styleCode="Bold">Was the individual offered the opportunity to have a representative such as a family member or other advocate present when the Checklist was completed?</content>
+													</td>
+													<td colspan="3">Yes</td>
+												</tr>
+												<tr>
+													<td>
+														<content styleCode="Bold">If yes, did the representative attend the completion of the Checklist?</content>
+													</td>
+													<td colspan="3">Yes</td>
+												</tr>
+											</tbody>
+										</table>
+										<br/>
+										<table width="100%">
+											<tbody>
+												<tr>
+													<th colspan="4">Contact Details of the Representative:</th>
+												</tr>
+												<tr>
+													<td>
+														<content styleCode="Bold">Name:</content>
+													</td>
+													<td colspan="3">Mrs. Jeanette Dean</td>
+												</tr>
+												<tr valign="top" align="left">
+													<td>
+														<content styleCode="Bold">Address:</content>
+													</td>
+													<td colspan="3">
+														<paragraph>32, County Lodge Avenue</paragraph>
+														<paragraph>Woodley</paragraph>
+														<paragraph>Woodtown</paragraph>
+														<paragraph>Cheshire</paragraph>
+														<paragraph>CH7 FR3</paragraph>
+													</td>
+												</tr>
+												<tr align="left" valign="top">
+													<td colspan="1">
+														<content styleCode="Bold">Telephone Number:</content>
+													</td>
+													<td colspan="3">
+														<paragraph>01433 445234 or 07788 867244</paragraph>
+													</td>
+												</tr>
+												<tr align="left" valign="top">
+													<td>
+														<content styleCode="Bold">Email:</content>
+													</td>
+													<td colspan="3">
+														<paragraph>jeanette.dean@freeserve.co.uk</paragraph>
+													</td>
+												</tr>
+												<tr>
+													<td align="left">
+														<content styleCode="Bold">Gender:</content>
+													</td>
+													<td align="left" colspan="3">Female</td>
+												</tr>
+											</tbody>
+										</table>
+									</text>
+								</section2>
+							</component1>
+						</COCD_TP146061UK02.Section1>
+					</component>
+					<component typeCode="COMP" contextConductionInd="true">
+						<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP146061UK02#Section1"/>
+						<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146217GB01#component"/>
+						<COCD_TP146061UK02.Section1 moodCode="EVN" classCode="DOCSECT">
+							<id root="7D5E5B00-AE1A-19DB-96AE-B18E1F0994CD"/>
+							<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146061UK02#Section1"/>
+							<title>Mental Capacity</title>
+							<component1 typeCode="COMP" contextConductionInd="true">
+								<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146061UK02#component1"/>
+								<section2 moodCode="EVN" classCode="DOCSECT">
+									<id root="7D5E5B00-AE1A-12DB-96AF-B18E1E0994CD"/>
+									<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146061UK02#section2"/>
+									<text>
+										<table width="100%">
+											<tbody>
+												<tr>
+													<th colspan="2">Mental Capacity to Consent</th>
+												</tr>
+												<tr>
+													<td>
+														<content styleCode="Bold">Does the patient have the mental capacity to consent or dissent to the undertaking of the assessment?</content>
+													</td>
+													<td>Yes</td>
+												</tr>
+												<tr>
+													<td>
+														<content styleCode="Bold">If No, Has a Best Interests Decision has been made on behalf of the patient</content>
+													</td>
+													<td/>
+												</tr>
+												<tr>
+													<td>
+														<content styleCode="Bold">If No, Has a Third Party with Lasting Power of Attorney (Welfare), given consent on behalf of the patient</content>
+													</td>
+													<td/>
+												</tr>
+												<tr>
+													<td>
+														<content styleCode="Bold">If No, Has a Third Party appointed Welfare Deputy by the Court of Protection, given consent on behalf of the patient</content>
+													</td>
+													<td/>
+												</tr>
+												<tr>
+													<td>
+														<content styleCode="Bold">The Independent Mental Capacity Advocate has been consulted</content>
+													</td>
+													<td>No</td>
+												</tr>
+											</tbody>
+										</table>
+										<br/>
+										<table width="100%">
+											<tbody>
+												<tr>
+													<th colspan="2">
+														<content styleCode="Bold">The contact details of the individual providing consent on behalf of the patient</content>
+													</th>
+												</tr>
+												<tr align="left" valign="top">
+													<td>
+														<content styleCode="Bold">Name:</content>
+													</td>
+													<td/>
+												</tr>
+												<tr align="left" valign="top">
+													<td>
+														<content styleCode="Bold">Address:</content>
+													</td>
+													<td>
+														<paragraph/>
+														<paragraph/>
+														<paragraph/>
+														<paragraph/>
+														<paragraph/>
+													</td>
+												</tr>
+												<tr align="left" valign="top">
+													<td>
+														<content styleCode="Bold">Telephone Number:</content>
+													</td>
+													<td>
+														<content styleCode="Bold">Bleep Number:</content>
+													</td>
+												</tr>
+												<tr align="left" valign="top">
+													<td>
+														<content styleCode="Bold">Email:</content>
+													</td>
+													<td/>
+												</tr>
+											</tbody>
+										</table>
+									</text>
+								</section2>
+							</component1>
+						</COCD_TP146061UK02.Section1>
+					</component>
+					<component typeCode="COMP" contextConductionInd="true">
+						<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP146061UK02#Section1"/>
+						<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146217GB01#component"/>
+						<COCD_TP146061UK02.Section1 moodCode="EVN" classCode="DOCSECT">
+							<id root="7D5E5B00-AE1A-12DB-96AE-B18E1E0994CD"/>
+							<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146061UK02#Section1"/>
+							<title>Care Domains</title>
+							<component1 typeCode="COMP" contextConductionInd="true">
+								<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146061UK02#component1"/>
+								<section2 moodCode="EVN" classCode="DOCSECT">
+									<id root="7D5E5B00-AE1A-13DB-96AF-B18E1E0994CD"/>
+									<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146061UK02#section2"/>
+									<text>
+										<table width="100%">
+											<tbody>
+												<tr>
+													<td align="left">
+														<content styleCode="Bold">Care Domain</content>
+													</td>
+													<td align="left">
+														<content styleCode="Bold">Description</content>
+													</td>
+													<td align="left">
+														<content styleCode="Bold">Level of Need</content>
+													</td>
+													<td align="left">
+														<content styleCode="Bold">Evidence in records to support this level</content>
+													</td>
+													<td align="left">
+														<content styleCode="Bold">Date of Completion</content>
+													</td>
+												</tr>
+												<tr ID="CHRBEH">
+													<td>
+														<content styleCode="Bold">Behaviour*</content>
+													</td>
+													<td>No evidence of challenging behaviour.</td>
+													<td align="center">C</td>
+													<td>The individual has shown no evidence of challenging behaviour.</td>
+													<td>20-Oct-2010</td>
+												</tr>
+												<tr ID="CHRCOG">
+													<td>
+														<content styleCode="Bold">Cognition</content>
+													</td>
+													<td>
+                                                        No evidence of impairment, confusion or disorientation.
+                                                        <br/>
+														<content styleCode="Bold">OR</content>
+														<br/>
+                                                        Cognitive impairment (for example, difficulties in retrieving short-term memory) which requires some supervision, prompting or assistance with more complex activities of daily living, such as finance and medication, but awareness of basic risks that affect their safety is evident.
+                                                        <br/>
+														<content styleCode="Bold">OR</content>
+														<br/>
+                                                        Occasional difficulty with memory and decisions/choices requiring support, prompting or assistance. However, the individual has insight into their impairment.
+                                                    </td>
+													<td align="center">C</td>
+													<td>The individual has shown no evidence of challenging behaviour.</td>
+													<td>20-Oct-2010</td>
+												</tr>
+												<tr ID="CHRPSY">
+													<td>
+														<content styleCode="Bold">
+                                                            Psychological/
+                                                            Emotional
+                                                        </content>
+													</td>
+													<td>
+                                                        Mood disturbance or anxiety symptoms or periods of distress which do not readily respond to prompts and reassurance and have an increasing impact on the individual's health and/or well-being.
+                                                        <br/>
+														<content styleCode="Bold">OR</content>
+														<br/>
+                                                        Withdrawn from most attempts to engage them in support, care planning and/or daily activities.
+                                                    </td>
+													<td align="center">B</td>
+													<td>The individual has shown evidence of mood disturbance or anxiety symptoms or periods of distress which do not readily respond to prompts and reassurance and have an increasing impact on the individual's health and/or well-being.</td>
+													<td>20-Oct-2010</td>
+												</tr>
+												<tr ID="CHRCOM">
+													<td>
+														<content styleCode="Bold">Communication</content>
+													</td>
+													<td>Needs assistance to communicate their needs. Special effort may be needed to ensure accurate interpretation of needs or additional support may be needed either visually, through touch or with hearing.</td>
+													<td align="center">C</td>
+													<td>The individual has shown evidence of needing assistance to communicate, and require additional support with hearing issues.</td>
+													<td>20-Oct-2010</td>
+												</tr>
+												<tr ID="CHRMOB">
+													<td>
+														<content styleCode="Bold">Mobility</content>
+													</td>
+													<td>Independently mobile.</td>
+													<td align="center">C</td>
+													<td>The individual has shown evidence of being Independently mobile, for example they can ride a bicycle and drive a car.</td>
+													<td>20-Oct-2010</td>
+												</tr>
+												<tr ID="CHRNUT">
+													<td>
+														<content styleCode="Bold">Nutrition</content>
+													</td>
+													<td>Significant weight loss or gain due to an identified eating disorder.</td>
+													<td align="center">A</td>
+													<td>The individual has shown evidence of significant weight loss, after following a reduced calorie controlled diet, combined with a regular exercise routine.</td>
+													<td>20-Oct-2010</td>
+												</tr>
+												<tr ID="CHRCON">
+													<td>
+														<content styleCode="Bold">Continence</content>
+													</td>
+													<td>Continence care is problematic and requires timely and skilled intervention, beyond routine care.</td>
+													<td align="center">A</td>
+													<td>The individual has shown evidence of  requiring timely and skilled continence care, and has started Pelvic floor muscle training to to treat bowel incontinence.</td>
+													<td>20-Oct-2010</td>
+												</tr>
+												<tr ID="CHRSKI">
+													<td>
+														<content styleCode="Bold">Skin integrity</content>
+													</td>
+													<td>
+                                                        Risk of skin breakdown which requires preventative intervention several times each day, without which skin integrity would break down.
+                                                        <br/>
+														<content styleCode="Bold">OR</content>
+														<br/>
+                                                        Pressure damage or open wound(s), pressure ulcer(s) with ‘partial thickness skin loss involving epidermis and/or dermis', which is responding to treatment.
+                                                        <br/>
+														<content styleCode="Bold">OR</content>
+														<br/>
+                                                        A skin condition that requires a minimum of daily treatment, or daily monitoring/reassessment to ensure that it is responding to treatment.
+                                                    </td>
+													<td align="center">B</td>
+													<td>The individual has atopic eczema and has shown evidence of  requiring preventative intervention several times each day, without which skin integrity would break down.</td>
+													<td>20-Oct-2010</td>
+												</tr>
+												<tr ID="CHRBRE">
+													<td>
+														<content styleCode="Bold">Breathing*</content>
+													</td>
+													<td>Episodes of breathlessness that readily respond to management and have no impact on daily living activities.</td>
+													<td align="center">C</td>
+													<td>The individual has episodes of breathlessness caused by Asthma.  This condition is managed by regularly taking a corticosteroid inhaler in combination with a short-acting beta2-agonist inhaler, and so this condition has had no impact on daily living activities of the individual.</td>
+													<td>20-Oct-2010</td>
+												</tr>
+												<tr ID="CHRMED">
+													<td>
+														<content styleCode="Bold">Drug therapies and medication/ symptom control*</content>
+													</td>
+													<td>Symptoms are managed effectively and without any problems, and medication is not resulting in any unmanageable side-effects.</td>
+													<td align="center">C</td>
+													<td>The individual has managed the symptoms effectively and without any problems, and medication is not resulting in any unmanageable side-effects.</td>
+													<td>20-Oct-2010</td>
+												</tr>
+												<tr ID="CHRCONS">
+													<td>
+														<content styleCode="Bold">Altered states of consciousness*</content>
+													</td>
+													<td>Occasional episodes of ASC that require the supervision of a carer or care worker to minimise the risk of harm.</td>
+													<td align="center">B</td>
+													<td>The individual has suffered occasional episodes of ASC that require the supervision of a carer or care worker to minimise the risk of harm.</td>
+													<td>20-Oct-2010</td>
+												</tr>
+											</tbody>
+										</table>
+									</text>
+								</section2>
+							</component1>
+						</COCD_TP146061UK02.Section1>
+					</component>
+					<component typeCode="COMP" contextConductionInd="true">
+						<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP146061UK02#Section1"/>
+						<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146217GB01#component"/>
+						<COCD_TP146061UK02.Section1 moodCode="EVN" classCode="DOCSECT">
+							<id root="7D5E5B00-AE1A-13DB-96AE-B18E1E0994CD"/>
+							<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146061UK02#Section1"/>
+							<title>NHS Continuing Healthcare Checklist Scores</title>
+							<component1 typeCode="COMP" contextConductionInd="true">
+								<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146061UK02#component1"/>
+								<section2 moodCode="EVN" classCode="DOCSECT">
+									<id root="7D5E5B00-AE1A-14DB-96AF-B18E1E0994CD"/>
+									<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146061UK02#section2"/>
+									<text>
+										<table width="100%">
+											<tbody>
+												<tr align="left" valign="top">
+													<th>
+														<content styleCode="Bold">Care Domain</content>
+													</th>
+													<th colspan="4">Level of Need</th>
+												</tr>
+												<tr>
+													<td align="left">
+														<content styleCode="Bold"/>
+													</td>
+													<td align="center">
+														<content styleCode="Bold">C</content>
+													</td>
+													<td align="center">
+														<content styleCode="Bold">B</content>
+													</td>
+													<td align="center">
+														<content styleCode="Bold">A</content>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<content ID="a1">Behaviour*</content>
+													</td>
+													<td align="center">
+														<content ID="b1">&#10003;</content>
+													</td>
+													<td align="left">
+														<content>
+															<br/>
+														</content>
+													</td>
+													<td align="left">
+														<content>
+															<br/>
+														</content>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<content ID="a2">Cognition</content>
+													</td>
+													<td align="center">
+														<content ID="b2">&#10003;</content>
+													</td>
+													<td align="left">
+														<content>
+															<br/>
+														</content>
+													</td>
+													<td align="left">
+														<content>
+															<br/>
+														</content>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<content ID="a3">Psychological/Emotional</content>
+													</td>
+													<td align="left">
+														<content>
+															<br/>
+														</content>
+													</td>
+													<td align="center">
+														<content ID="b3">&#10003;</content>
+													</td>
+													<td align="left">
+														<content>
+															<br/>
+														</content>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<content ID="a4">Communication</content>
+													</td>
+													<td align="center">
+														<content ID="b4">&#10003;</content>
+													</td>
+													<td align="left">
+														<content>
+															<br/>
+														</content>
+													</td>
+													<td align="left">
+														<content>
+															<br/>
+														</content>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<content ID="a5">Mobility</content>
+													</td>
+													<td align="center">
+														<content ID="b5">&#10003;</content>
+													</td>
+													<td align="left">
+														<content>
+															<br/>
+														</content>
+													</td>
+													<td align="left">
+														<content>
+															<br/>
+														</content>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<content ID="a6">Nutrition</content>
+													</td>
+													<td align="left">
+														<content>
+															<br/>
+														</content>
+													</td>
+													<td align="left">
+														<content>
+															<br/>
+														</content>
+													</td>
+													<td align="center">
+														<content ID="b6">&#10003;</content>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<content ID="a7">Continence</content>
+													</td>
+													<td align="left">
+														<content>
+															<br/>
+														</content>
+													</td>
+													<td align="left">
+														<content>
+															<br/>
+														</content>
+													</td>
+													<td align="center">
+														<content ID="b7">&#10003;</content>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<content ID="a8">Skin integrity</content>
+													</td>
+													<td align="left">
+														<content>
+															<br/>
+														</content>
+													</td>
+													<td align="center">
+														<content ID="b8">&#10003;</content>
+													</td>
+													<td align="left">
+														<content>
+															<br/>
+														</content>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<content ID="a9">Breathing*</content>
+													</td>
+													<td align="center">
+														<content ID="b9">&#10003;</content>
+													</td>
+													<td align="left">
+														<content>
+															<br/>
+														</content>
+													</td>
+													<td align="left">
+														<content>
+															<br/>
+														</content>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<content ID="a10">Drug therapies and medication/ symptom control*</content>
+													</td>
+													<td align="center">
+														<content ID="b10">&#10003;</content>
+													</td>
+													<td align="left">
+														<content>
+															<br/>
+														</content>
+													</td>
+													<td align="left">
+														<content>
+															<br/>
+														</content>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<content ID="a11">Altered states of consciousness*</content>
+													</td>
+													<td align="left">
+														<content>
+															<br/>
+														</content>
+													</td>
+													<td align="center">
+														<content ID="b11">&#10003;</content>
+													</td>
+													<td align="left">
+														<content>
+															<br/>
+														</content>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<content styleCode="Bold">Totals</content>
+													</td>
+													<td align="center">
+														<content>6</content>
+													</td>
+													<td align="center">
+														<content>3</content>
+													</td>
+													<td align="center">
+														<content>2</content>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+										<br/>
+										<paragraph>
+											<content styleCode="Bold">*Note: Full assessment for NHS continuing healthcare is required if there are:</content>
+										</paragraph>
+										<list ID="NEW" listType="ordered">
+											<item ID="_1.19">
+												<paragraph>two or more domains selected in column A;</paragraph>
+											</item>
+											<item ID="_2.19">
+												<paragraph>five or more domains are selected in column B, or one selected in column A and four in B; or</paragraph>
+											</item>
+											<item ID="_3.19">
+												<paragraph>one domain selected in column A in one of the boxes marked with an asterisk (i.e. those domains that carry a priority level in Decision Support Tool), with any number of selections in the other two columns.</paragraph>
+											</item>
+										</list>
+									</text>
+								</section2>
+							</component1>
+						</COCD_TP146061UK02.Section1>
+					</component>
+					<component typeCode="COMP" contextConductionInd="true">
+						<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP146061UK02#Section1"/>
+						<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146217GB01#component"/>
+						<COCD_TP146061UK02.Section1 moodCode="EVN" classCode="DOCSECT">
+							<id root="7D5E5B00-AE1A-11DB-96B7-B18E1E0994CD"/>
+							<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146061UK02#Section1"/>
+							<title>Outcome Indicated by the Checklist</title>
+							<component1 typeCode="COMP" contextConductionInd="true">
+								<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146061UK02#component1"/>
+								<section2 moodCode="EVN" classCode="DOCSECT">
+									<id root="F4804C36-9317-4C0B-961A-8F2623B05D43"/>
+									<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146061UK02#section2"/>
+									<text>
+										<table width="100%">
+											<tbody>
+												<tr align="left">
+													<td align="left">1:
+													<content ID="a12">Requires referral for Full Assessment for NHS Continuing Healthcare</content>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</text>
+								</section2>
+							</component1>
+						</COCD_TP146061UK02.Section1>
+					</component>
+					<component typeCode="COMP" contextConductionInd="true">
+						<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP146061UK02#Section1"/>
+						<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146217GB01#component"/>
+						<COCD_TP146061UK02.Section1 moodCode="EVN" classCode="DOCSECT">
+							<id root="89B3C918-3049-448A-99AD-73A6CE560039"/>
+							<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146061UK02#Section1"/>
+							<title>Rationale for Decision</title>
+							<component1 typeCode="COMP" contextConductionInd="true">
+								<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146061UK02#component1"/>
+								<section2 moodCode="EVN" classCode="DOCSECT">
+									<id root="B4EBFBFA-1A0F-4644-841E-77916BA99237"/>
+									<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146061UK02#section2"/>
+									<text>
+										<table width="100%">
+											<tbody>
+												<tr align="left">
+													<td colspan="6">Mrs Taylor is assessed in Nutrition and Continence. Since 2 domains are selected in column A, she is eligible for NHS Continuing Healthcare.
+														<br/>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</text>
+								</section2>
+							</component1>
+						</COCD_TP146061UK02.Section1>
+					</component>
+					<component typeCode="COMP" contextConductionInd="true">
+						<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP146061UK02#Section1"/>
+						<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146217GB01#component"/>
+						<COCD_TP146061UK02.Section1 moodCode="EVN" classCode="DOCSECT">
+							<id root="EB586DB0-9767-4663-B6C9-CCD6843EB6C7"/>
+							<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146061UK02#Section1"/>
+							<title>Name and Contact Details of the Assessor(s)</title>
+							<component1 typeCode="COMP" contextConductionInd="true">
+								<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146061UK02#component1"/>
+								<section2 moodCode="EVN" classCode="DOCSECT">
+									<id root="55BF1FBE-613D-42EB-B282-5574C51D28A8"/>
+									<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146061UK02#section2"/>
+									<text>
+										<table width="100%">
+											<tbody>
+												<tr align="left" valign="top">
+													<th>
+														<content styleCode="Bold">Name of the assessor:</content>
+													</th>
+													<th>Mrs June Bradwick</th>
+												</tr>
+												<tr align="left" valign="top">
+													<td>
+														<content styleCode="Bold">Date:</content>
+													</td>
+													<td>
+														<paragraph>20-Oct-2010</paragraph>
+													</td>
+												</tr>
+												<tr align="left" valign="top">
+													<td>
+														<content styleCode="Bold">Role:</content>
+													</td>
+													<td>
+														<paragraph>Nurse</paragraph>
+													</td>
+												</tr>
+												<tr align="left" valign="top">
+													<td>
+														<content styleCode="Bold">Contact Details:</content>
+													</td>
+													<td>
+														<paragraph>Ward 10</paragraph>
+														<paragraph>East Cheshire NHS Trust</paragraph>
+														<paragraph>Queen Mary Building</paragraph>
+														<paragraph>Kings Street</paragraph>
+														<paragraph>Cheshire</paragraph>
+														<paragraph>CH24 5TR</paragraph>
+													</td>
+												</tr>
+												<tr align="left" valign="top">
+													<td>
+														<content styleCode="Bold">Telephone Number:</content>
+													</td>
+													<td>
+														<paragraph>01433 256788</paragraph>
+													</td>
+												</tr>
+												<tr align="left" valign="top">
+													<td>
+														<content styleCode="Bold">Email:</content>
+													</td>
+													<td>
+														<paragraph>June.Bradwick@nhs.net</paragraph>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</text>
+								</section2>
+							</component1>
+						</COCD_TP146061UK02.Section1>
+					</component>
+					<entry typeCode="COMP" contextConductionInd="true">
+						<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP146203GB02#ChecklistOutcome"/>
+						<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146217GB01#entry"/>
+						<COCD_TP146203GB02.ChecklistOutcome classCode="BATTERY" moodCode="EVN">
+							<code code="CO" displayName="Checklist Outcome" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.220"/>
+							<effectiveTime>
+								<low value="20101020"/>
+								<high value="20101020"/>
+							</effectiveTime>
+							<id root="6D5E5B03-AE1A-11DB-96AB-B18E1E0994CD"/>
+							<statusCode code="Completed"/>
+							<templateId extension="COCD_TP146203GB02#ChecklistOutcome" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+							<component typeCode="COMP" contextConductionInd="true">
+								<seperatableInd value="false"/>
+								<sequenceNumber value="1"/>
+								<templateId extension="COCD_TP146203GB02#component" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<checklistCareDomainOutcome classCode="OBS" moodCode="EVN">
+									<code codeSystem="2.16.840.1.113883.2.1.3.2.4.17.276" code="CHRBEH" displayName="Behaviour">
+										<originalText>
+											<reference value="#a1"/>
+										</originalText>
+									</code>
+									<effectiveTime value="20101020"/>
+									<templateId extension="COCD_TP146203GB02#checklistCareDomainOutcome" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<value code="C" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.278" displayName="No or Low Needs Identified">
+										<originalText>
+											<reference value="#b1"/>
+										</originalText>
+									</value>
+								</checklistCareDomainOutcome>
+							</component>
+							<component typeCode="COMP" contextConductionInd="true">
+								<seperatableInd value="false"/>
+								<sequenceNumber value="2"/>
+								<templateId extension="COCD_TP146203GB02#component" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<checklistCareDomainOutcome classCode="OBS" moodCode="EVN">
+									<code codeSystem="2.16.840.1.113883.2.1.3.2.4.17.276" code="CHRCOG" displayName="Cognition">
+										<originalText>
+											<reference value="#a2"/>
+										</originalText>
+									</code>
+									<effectiveTime value="20101020"/>
+									<templateId extension="COCD_TP146203GB02#checklistCareDomainOutcome" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<value code="C" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.278" displayName="No or Low Needs Identified">
+										<originalText>
+											<reference value="#b2"/>
+										</originalText>
+									</value>
+								</checklistCareDomainOutcome>
+							</component>
+							<component typeCode="COMP" contextConductionInd="true">
+								<seperatableInd value="false"/>
+								<sequenceNumber value="3"/>
+								<templateId extension="COCD_TP146203GB02#component" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<checklistCareDomainOutcome classCode="OBS" moodCode="EVN">
+									<code codeSystem="2.16.840.1.113883.2.1.3.2.4.17.276" code="CHRPSY" displayName="Psychological/Emotional">
+										<originalText>
+											<reference value="#a3"/>
+										</originalText>
+									</code>
+									<effectiveTime value="20101020"/>
+									<templateId extension="COCD_TP146203GB02#checklistCareDomainOutcome" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<value code="B" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.278" displayName="Some Level of Need Identified">
+										<originalText>
+											<reference value="#b3"/>
+										</originalText>
+									</value>
+								</checklistCareDomainOutcome>
+							</component>
+							<component typeCode="COMP" contextConductionInd="true">
+								<seperatableInd value="false"/>
+								<sequenceNumber value="4"/>
+								<templateId extension="COCD_TP146203GB02#component" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<checklistCareDomainOutcome classCode="OBS" moodCode="EVN">
+									<code codeSystem="2.16.840.1.113883.2.1.3.2.4.17.276" code="CHRCOM" displayName="Communication">
+										<originalText>
+											<reference value="#a4"/>
+										</originalText>
+									</code>
+									<effectiveTime value="20101020"/>
+									<templateId extension="COCD_TP146203GB02#checklistCareDomainOutcome" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<value code="C" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.278" displayName="No or Low Needs Identified">
+										<originalText>
+											<reference value="#b4"/>
+										</originalText>
+									</value>
+								</checklistCareDomainOutcome>
+							</component>
+							<component typeCode="COMP" contextConductionInd="true">
+								<seperatableInd value="false"/>
+								<sequenceNumber value="5"/>
+								<templateId extension="COCD_TP146203GB02#component" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<checklistCareDomainOutcome classCode="OBS" moodCode="EVN">
+									<code codeSystem="2.16.840.1.113883.2.1.3.2.4.17.276" code="CHRMOB" displayName="Mobility">
+										<originalText>
+											<reference value="#a5"/>
+										</originalText>
+									</code>
+									<effectiveTime value="20101020"/>
+									<templateId extension="COCD_TP146203GB02#checklistCareDomainOutcome" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<value code="C" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.278" displayName="No or Low Needs Identified">
+										<originalText>
+											<reference value="#b5"/>
+										</originalText>
+									</value>
+								</checklistCareDomainOutcome>
+							</component>
+							<component typeCode="COMP" contextConductionInd="true">
+								<seperatableInd value="false"/>
+								<sequenceNumber value="6"/>
+								<templateId extension="COCD_TP146203GB02#component" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<checklistCareDomainOutcome classCode="OBS" moodCode="EVN">
+									<code codeSystem="2.16.840.1.113883.2.1.3.2.4.17.276" code="CHRNUT" displayName="Nutrition">
+										<originalText>
+											<reference value="#a6"/>
+										</originalText>
+									</code>
+									<effectiveTime value="20101020"/>
+									<templateId extension="COCD_TP146203GB02#checklistCareDomainOutcome" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<value code="A" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.278" displayName="Great Level of Need identified">
+										<originalText>
+											<reference value="#b6"/>
+										</originalText>
+									</value>
+								</checklistCareDomainOutcome>
+							</component>
+							<component typeCode="COMP" contextConductionInd="true">
+								<seperatableInd value="false"/>
+								<sequenceNumber value="7"/>
+								<templateId extension="COCD_TP146203GB02#component" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<checklistCareDomainOutcome classCode="OBS" moodCode="EVN">
+									<code codeSystem="2.16.840.1.113883.2.1.3.2.4.17.276" code="CHRCON" displayName="Continence">
+										<originalText>
+											<reference value="#a7"/>
+										</originalText>
+									</code>
+									<effectiveTime value="20101020"/>
+									<templateId extension="COCD_TP146203GB02#checklistCareDomainOutcome" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<value code="A" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.278" displayName="Great Level of Need identified">
+										<originalText>
+											<reference value="#b7"/>
+										</originalText>
+									</value>
+								</checklistCareDomainOutcome>
+							</component>
+							<component typeCode="COMP" contextConductionInd="true">
+								<seperatableInd value="false"/>
+								<sequenceNumber value="8"/>
+								<templateId extension="COCD_TP146203GB02#component" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<checklistCareDomainOutcome classCode="OBS" moodCode="EVN">
+									<code codeSystem="2.16.840.1.113883.2.1.3.2.4.17.276" code="CHRSKI" displayName="Skin integrity">
+										<originalText>
+											<reference value="#a8"/>
+										</originalText>
+									</code>
+									<effectiveTime value="20101020"/>
+									<templateId extension="COCD_TP146203GB02#checklistCareDomainOutcome" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<value code="B" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.278" displayName="Some Level of Need Identified">
+										<originalText>
+											<reference value="#b8"/>
+										</originalText>
+									</value>
+								</checklistCareDomainOutcome>
+							</component>
+							<component typeCode="COMP" contextConductionInd="true">
+								<seperatableInd value="false"/>
+								<sequenceNumber value="9"/>
+								<templateId extension="COCD_TP146203GB02#component" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<checklistCareDomainOutcome classCode="OBS" moodCode="EVN">
+									<code codeSystem="2.16.840.1.113883.2.1.3.2.4.17.276" code="CHRBRE" displayName="Breathing">
+										<originalText>
+											<reference value="#a9"/>
+										</originalText>
+									</code>
+									<effectiveTime value="20101020"/>
+									<templateId extension="COCD_TP146203GB02#checklistCareDomainOutcome" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<value code="C" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.278" displayName="No or Low Needs Identified">
+										<originalText>
+											<reference value="#b9"/>
+										</originalText>
+									</value>
+								</checklistCareDomainOutcome>
+							</component>
+							<component typeCode="COMP" contextConductionInd="true">
+								<seperatableInd value="false"/>
+								<sequenceNumber value="10"/>
+								<templateId extension="COCD_TP146203GB02#component" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<checklistCareDomainOutcome classCode="OBS" moodCode="EVN">
+									<code codeSystem="2.16.840.1.113883.2.1.3.2.4.17.276" code="CHRMED" displayName="Drug therapies and medication/ symptom control">
+										<originalText>
+											<reference value="#a10"/>
+										</originalText>
+									</code>
+									<effectiveTime value="20101020"/>
+									<templateId extension="COCD_TP146203GB02#checklistCareDomainOutcome" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<value code="C" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.278" displayName="No or Low Needs Identified">
+										<originalText>
+											<reference value="#b10"/>
+										</originalText>
+									</value>
+								</checklistCareDomainOutcome>
+							</component>
+							<component typeCode="COMP" contextConductionInd="true">
+								<seperatableInd value="false"/>
+								<sequenceNumber value="11"/>
+								<templateId extension="COCD_TP146203GB02#component" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<checklistCareDomainOutcome classCode="OBS" moodCode="EVN">
+									<code codeSystem="2.16.840.1.113883.2.1.3.2.4.17.276" code="CHRCONS" displayName="Altered states of consciousness">
+										<originalText>
+											<reference value="#a11"/>
+										</originalText>
+									</code>
+									<effectiveTime value="20101020"/>
+									<templateId extension="COCD_TP146203GB02#checklistCareDomainOutcome" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<value code="B" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.278" displayName="Some Level of Need Identified">
+										<originalText>
+											<reference value="#b11"/>
+										</originalText>
+									</value>
+								</checklistCareDomainOutcome>
+							</component>
+							<component1 typeCode="COMP" contextConductionInd="true">
+								<seperatableInd value="false"/>
+								<templateId extension="COCD_TP146203GB02#component1" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<cHCReferralStatus classCode="OBS" moodCode="EVN">
+									<code code="CHCRS" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.220" displayName="CHC Referral Status"/>
+									<templateId extension="COCD_TP146203GB02#cHCReferralStatus" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<value code="CHCR" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.280" displayName="Requires referral for Full Assessment for NHS Continuing Healthcare">
+										<originalText>
+											<reference value="#a12"/>
+										</originalText>
+									</value>
+								</cHCReferralStatus>
+							</component1>
+						</COCD_TP146203GB02.ChecklistOutcome>
+					</entry>
+				</COCD_TP146217GB01.ClassificationSection>
+			</component>
+		</structuredBody>
+	</component>
+	<componentOf typeCode="COMP">
+		<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP146200GB01#EncompassingEncounter"/>
+		<COCD_TP146200GB01.EncompassingEncounter classCode="ENC" moodCode="EVN">
+			<code code="772081000000100" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Continuing Healthcare Process Encounter"/>
+			<dischargeDispositionCode nullFlavor="NA"/>
+			<effectiveTime>
+				<low value="20101010"/>
+			</effectiveTime>
+			<id root="9D616840-AE1A-11DB-9739-B18E1E0994CD"/>
+			<templateId extension="COCD_TP146200GB01#EncompassingEncounter" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<location typeCode="LOC">
+				<npfitlc:contentId extension="COCD_TP145211GB01#HealthCareFacility" root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+				<templateId extension="COCD_TP146200GB01#location" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+				<COCD_TP145211GB01.HealthCareFacility classCode="SDLOC">
+					<code code="30629002" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="retirement home"/>
+					<id root="2.16.840.1.113883.2.1.3.2.4.19.2" extension="V396A"/>
+					<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP145211GB01#HealthCareFacility"/>
+				</COCD_TP145211GB01.HealthCareFacility>
+			</location>
+			<responsibleParty typeCode="RESP">
+				<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP145210GB01#AssignedEntity"/>
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146200GB01#responsibleParty"/>
+				<COCD_TP145210GB01.AssignedEntity classCode="ASSIGNED">
+					<code code="CO" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.124" displayName="Consultant"/>
+					<id root="2.16.840.1.113883.2.1.3.2.4.19.2" extension="1234512352"/>
+					<templateId extension="COCD_TP145210GB01#AssignedEntity" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+					<assignedPerson classCode="PSN" determinerCode="INSTANCE">
+						<name>Mr Pearson</name>
+						<templateId extension="COCD_TP145210GB01#assignedPerson" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+					</assignedPerson>
+					<representedOrganization classCode="ORG" determinerCode="INSTANCE">
+						<id root="2.16.840.1.113883.2.1.3.2.4.19.1" extension="V396A"/>
+						<name>East Cheshire NHS Trust</name>
+						<templateId extension="COCD_TP145210GB01#representedOrganization" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+					</representedOrganization>
+				</COCD_TP145210GB01.AssignedEntity>
+			</responsibleParty>
+		</COCD_TP146200GB01.EncompassingEncounter>
+	</componentOf>
+	<custodian typeCode="CST">
+		<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP145018UK03#AssignedCustodian"/>
+		<COCD_TP145018UK03.AssignedCustodian classCode="ASSIGNED">
+			<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP145018UK03#AssignedCustodian"/>
+			<representedCustodianOrganization determinerCode="INSTANCE" classCode="ORG">
+				<id root="2.16.840.1.113883.2.1.3.2.4.19.1" extension="V396"/>
+				<name>East Cheshire NHS Trust</name>
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP145018UK03#representedCustodianOrganization"/>
+			</representedCustodianOrganization>
+		</COCD_TP145018UK03.AssignedCustodian>
+	</custodian>
+	<informationRecipient typeCode="PRCP">
+		<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP145204GB02#RecipientWorkgroup"/>
+		<COCD_TP145204GB02.RecipientWorkgroup classCode="ASSIGNED">
+			<id root="2.16.840.1.113883.2.1.3.2.4.18.24" extension="102016309999"/>
+			<npfitlc:recipientRoleCode code="01" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.266" displayName="CHC Team"/>
+			<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP145204GB02#RecipientWorkgroup"/>
+			<representedOrganization classCode="ORG" determinerCode="INSTANCE">
+				<id extension="V396A" root="2.16.840.1.113883.2.1.3.2.4.19.1"/>
+				<name>East Cheshire NHS Trust</name>
+				<templateId extension="COCD_TP145204GB02#representedOrganization" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			</representedOrganization>
+		</COCD_TP145204GB02.RecipientWorkgroup>
+	</informationRecipient>
+	<recordTarget typeCode="RCT" contextControlCode="OP">
+		<npfitlc:contentId extension="COCD_TP145201GB02#PatientRole" root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+		<COCD_TP145201GB02.PatientRole classCode="PAT">
+			<addr use="H">
+				<streetAddressLine>21, County Lodge</streetAddressLine>
+				<streetAddressLine>Woodtown</streetAddressLine>
+				<city>Cheshire</city>
+				<postalCode>CH7 FS1</postalCode>
+			</addr>
+			<addr use="PHYS">
+				<streetAddressLine>The Woodtown Retirement Home</streetAddressLine>
+				<streetAddressLine>23, Seawood Road</streetAddressLine>
+				<streetAddressLine>Woodtown</streetAddressLine>
+				<city>Cheshire</city>
+				<postalCode>CH7 FS5</postalCode>
+			</addr>
+			<id extension="L12345" root="2.16.840.1.113883.2.1.3.2.4.18.24"/>
+			<id extension="1234567891" root="2.16.840.1.113883.2.1.3.2.4.18.23"/>
+			<telecom value="tel:01433 445667" use="H"/>
+			<telecom value="tel:01433 631628" use="HV"/>
+			<telecom value="mailto: belinda.taylor@emailfree.co.uk" use="H"/>
+			<templateId extension="COCD_TP145201GB02#PatientRole" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<patientPatient classCode="PSN" determinerCode="INSTANCE">
+				<administrativeGenderCode codeSystem="2.16.840.1.113883.2.1.3.2.4.16.25" displayName="Female" code="2"/>
+				<birthTime value="19410101"/>
+				<name>
+					<prefix>Mrs</prefix>
+					<family>Taylor</family>
+					<given>Belinda</given>
+				</name>
+				<templateId extension="COCD_TP145201GB02#patientPatient" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+				<languageCommunication>
+					<languageCode  code="en"/>
+					<templateId extension="COCD_TP145201GB02#languageCommunication" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+				</languageCommunication>
+			</patientPatient>
+			<providerOrganization classCode="ORG" determinerCode="INSTANCE">
+				<addr use="WP">
+					<streetAddressLine>Springer Street</streetAddressLine>
+					<city>Cheshire</city>
+					<postalCode>CH12 5TY</postalCode>
+				</addr>
+				<id root="2.16.840.1.113883.2.1.3.2.4.19.1" extension="V396F"/>
+				<name>Northgate Medical Practice</name>
+				<standardIndustryClassCode code="001" displayName="GP Practice" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.289"/>
+				<telecom value="tel:01433 111222" use="WP"/>
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP145201GB02#providerOrganization"/>
+			</providerOrganization>
+		</COCD_TP145201GB02.PatientRole>
+	</recordTarget>
+	<tracker typeCode="TRC">
+		<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP145203GB02#IntendedRecipient"/>
+		<COCD_TP145203GB02.IntendedRecipient classCode="ASSIGNED">
+			<telecom nullFlavor="NI"/>
+			<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP145203GB02#IntendedRecipient"/>
+			<representedOrganization classCode="ORG" determinerCode="INSTANCE">
+				<id root="2.16.840.1.113883.2.1.3.2.4.19.1" extension="V396B"/>
+				<name>Central and Eastern Cheshire PCT</name>
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP145203GB02#representedOrganization"/>
+			</representedOrganization>
+		</COCD_TP145203GB02.IntendedRecipient>
+	</tracker>
+</ClinicalDocument>

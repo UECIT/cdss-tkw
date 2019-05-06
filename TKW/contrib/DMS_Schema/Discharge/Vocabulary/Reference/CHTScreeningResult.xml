@@ -1,0 +1,25 @@
+<Vocabularies xmlns="urn:nhs-itk:ns:201005">
+	<vocabulary version="1.0" status="active" name="CHTScreeningResult" id="">
+		<concept code="01">
+			<displayName>Specimen received in laboratory</displayName>
+		</concept>
+		<concept code="02">
+			<displayName>Screening declined</displayName>
+		</concept>
+		<concept code="03">
+			<displayName>Repeat / further sample required</displayName>
+		</concept>
+		<concept code="04">
+			<displayName>Condition not suspected</displayName>
+		</concept>
+		<concept code="07">
+			<displayName>Condition not suspected, other disorders follow up</displayName>
+		</concept>
+		<concept code="08">
+			<displayName>Condition suspected</displayName>
+		</concept>
+		<concept code="09">
+			<displayName>Not screened/screening incomplete</displayName>
+		</concept>
+	</vocabulary>
+</Vocabularies>

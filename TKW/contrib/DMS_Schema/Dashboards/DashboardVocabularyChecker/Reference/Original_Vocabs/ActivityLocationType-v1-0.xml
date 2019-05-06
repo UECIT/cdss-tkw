@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vocabulary id="2.16.840.1.113883.2.1.3.2.4.17.312" status="created" name="ActivityLocationType" version="1.0">
+	<concept code="A01">
+		<displayName>Patient's Home</displayName>
+	</concept>
+	<concept code="A02">
+		<displayName>Carer's Home</displayName>
+	</concept>
+	<concept code="A03">
+		<displayName>Patient's Workplace</displayName>
+	</concept>
+	<concept code="A04">
+		<displayName>Other Patient Related Location</displayName>
+	</concept>
+	<concept code="B01">
+		<displayName>Primary Care Health Facility</displayName>
+	</concept>
+	<concept code="B02">
+		<displayName>Polyclinic</displayName>
+	</concept>
+	<concept code="C01">
+		<displayName>General Medical Practitioner Practice</displayName>
+	</concept>
+	<concept code="C02">
+		<displayName>General Dental Practice</displayName>
+	</concept>
+	<concept code="C03">
+		<displayName>Ophthamic Medical Practitioner Premises</displayName>
+	</concept>
+	<concept code="D01">
+		<displayName>Walk In Centre</displayName>
+	</concept>
+	<concept code="D02">
+		<displayName>Out of Hours Centre</displayName>
+	</concept>
+	<concept code="D03">
+		<displayName>Emergency Community Dental Services</displayName>
+	</concept>
+	<concept code="E01">
+		<displayName>Out-Patient Clinic</displayName>
+	</concept>
+	<concept code="E02">
+		<displayName>Ward</displayName>
+	</concept>
+	<concept code="E03">
+		<displayName>Day Hospital</displayName>
+	</concept>
+	<concept code="E04">
+		<displayName>Accident and Emergency or Minor Injuries Department</displayName>
+	</concept>
+	<concept code="E99">
+		<displayName>Other Departments</displayName>
+	</concept>
+	<concept code="F01">
+		<displayName>Hospice</displayName>
+	</concept>
+	<concept code="G01">
+		<displayName>Residential Care Home</displayName>
+	</concept>
+	<concept code="G02">
+		<displayName>Nursing Home</displayName>
+	</concept>
+	<concept code="G03">
+		<displayName>Children's Home</displayName>
+	</concept>
+	<concept code="H01">
+		<displayName>Day Centre</displayName>
+	</concept>
+	<concept code="J01">
+		<displayName>Resource Centre</displayName>
+	</concept>
+	<concept code="K01">
+		<displayName>Sure Start Children's Centre</displayName>
+	</concept>
+	<concept code="K02">
+		<displayName>Child Development Centre</displayName>
+	</concept>
+	<concept code="L01">
+		<displayName>School</displayName>
+	</concept>
+	<concept code="L02">
+		<displayName>Further Education College</displayName>
+	</concept>
+	<concept code="L03">
+		<displayName>University</displayName>
+	</concept>
+	<concept code="L04">
+		<displayName>Nursery Premises</displayName>
+	</concept>
+	<concept code="L05">
+		<displayName>Other Childcare Premises</displayName>
+	</concept>
+	<concept code="L06">
+		<displayName>Training Establishments</displayName>
+	</concept>
+	<concept code="L99">
+		<displayName>Other Educational Premises</displayName>
+	</concept>
+	<concept code="M01">
+		<displayName>Premises</displayName>
+	</concept>
+	<concept code="M02">
+		<displayName>Probation Service Premises</displayName>
+	</concept>
+	<concept code="M03">
+		<displayName>Police Station</displayName>
+	</concept>
+	<concept code="M04">
+		<displayName>Young Offenders Institution</displayName>
+	</concept>
+	<concept code="M05">
+		<displayName>Immigration Centre</displayName>
+	</concept>
+	<concept code="N01">
+		<displayName>Street or other public open space</displayName>
+	</concept>
+	<concept code="N02">
+		<displayName>Other publicly accessible area or building</displayName>
+	</concept>
+	<concept code="N03">
+		<displayName>Voluntary or charitable agency premises</displayName>
+	</concept>
+	<concept code="N04">
+		<displayName>Dispensing Optician Premises</displayName>
+	</concept>
+	<concept code="N05">
+		<displayName>Dispensing Pharmacy Premises</displayName>
+	</concept>
+	<concept code="X01">
+		<displayName>Other locations not elsewhere classified</displayName>
+	</concept>
+</vocabulary>

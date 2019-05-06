@@ -1,0 +1,61 @@
+#
+#=================================================================================================================================================================================================================================================
+#HEADER
+#=================================================================================================================================================================================================================================================
+#
+# Simulator rule definition file for ITK Testbench
+# Acknowledgements
+# v5.2 Template
+#
+#=================================================================================================================================================================================================================================================
+#RESPONSES
+#=================================================================================================================================================================================================================================================
+#
+BEGIN RESPONSES
+INCLUDE	/workspace/app/TKW/contrib/Common/simulator_packs/_all_ITK_services/responses.conf
+INCLUDE	/workspace/app/TKW/contrib/Common/simulator_packs/fault/responses.conf
+INCLUDE	/workspace/app/TKW/contrib/Common/simulator_packs/autotest/responses.conf
+INCLUDE	/workspace/app/TKW/contrib/Common/simulator_packs/acknowledgment_framework_2_1/responses.conf
+do_process	NONE	0
+END RESPONSES
+#
+#=================================================================================================================================================================================================================================================
+#SUBSTITUTIONS
+#=================================================================================================================================================================================================================================================
+#
+BEGIN SUBSTITUTIONS
+INCLUDE	/workspace/app/TKW/contrib/Common/simulator_packs/_all_ITK_services/substitutions.conf
+END SUBSTITUTIONS
+#
+#=================================================================================================================================================================================================================================================
+#EXPRESSIONS
+#=================================================================================================================================================================================================================================================
+#
+BEGIN EXPRESSIONS
+INCLUDE	/workspace/app/TKW/contrib/Common/simulator_packs/_all_ITK_services/expressions.conf
+INCLUDE	/workspace/app/TKW/contrib/Common/simulator_packs/fault/expressions.conf
+INCLUDE	/workspace/app/TKW/contrib/Common/simulator_packs/autotest/expressions.conf
+INCLUDE	/workspace/app/TKW/contrib/Common/simulator_packs/acknowledgment_framework_2_1/expressions.conf
+passthrough	Always
+END EXPRESSIONS
+#
+#=================================================================================================================================================================================================================================================
+#RULES
+#=================================================================================================================================================================================================================================================
+#
+BEGIN RULE
+urn:nhs-itk:services:201005:SendInfrastructureAck-v1-0
+INCLUDE	/workspace/app/TKW/contrib/Common/simulator_packs/_all_ITK_services/rules.conf
+INCLUDE	/workspace/app/TKW/contrib/Common/simulator_packs/fault/rules.conf
+INCLUDE	/workspace/app/TKW/contrib/Common/simulator_packs/autotest/rules.conf
+INCLUDE	/workspace/app/TKW/contrib/Common/simulator_packs/acknowledgment_framework_2_1/rules.conf
+END RULE
+
+BEGIN RULE
+urn:nhs-itk:services:201005:SendBusinessAck-v1-0
+INCLUDE	/workspace/app/TKW/contrib/Common/simulator_packs/_all_ITK_services/rules.conf
+INCLUDE	/workspace/app/TKW/contrib/Common/simulator_packs/fault/rules.conf
+INCLUDE	/workspace/app/TKW/contrib/Common/simulator_packs/autotest/rules.conf
+INCLUDE	/workspace/app/TKW/contrib/Common/simulator_packs/autotest/rules_ProfileID.conf
+INCLUDE	/workspace/app/TKW/contrib/Common/simulator_packs/acknowledgment_framework_2_1/rules.conf
+END RULE

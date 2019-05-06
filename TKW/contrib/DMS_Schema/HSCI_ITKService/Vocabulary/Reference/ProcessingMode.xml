@@ -1,0 +1,16 @@
+<Vocabularies xmlns="urn:nhs-itk:ns:201005">
+	<vocabulary version="2.0" status="active" name="ProcessingMode" id="">
+		<concept code="A">
+			<displayName>Archive mode</displayName>
+		</concept>
+		<concept code="I">
+			<displayName>Initial load</displayName>
+		</concept>
+		<concept code="R">
+			<displayName>Restore from Archive</displayName>
+		</concept>
+		<concept code="T">
+			<displayName>Current processing</displayName>
+		</concept>
+	</vocabulary>
+</Vocabularies>

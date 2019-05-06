@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CDAReference>
+	<dms dmsName="OutOfHours" messageName="Out of Hours Report" messageType="POCD_MT020001UK01">
+		<BodyChoice>
+			<ClassificationSection>
+				<CodedEntry>
+					<constraintTemplate includedTemplate="NPFIT-000033_Section" TemplateSchemaName="NPFIT-000033_Section">
+						<schema Schema="COCD_TP146024UK04" SchemaName="COCD_TP146024UK04.AdministrativeProcedure" snomedOID="false" snomedOIDrequired="false"/>
+						<schema Schema="COCD_TP146003UK04" SchemaName="COCD_TP146003UK04.AlcoholIntake" snomedOID="false" snomedOIDrequired="false"/>
+						<schema Schema="COCD_TP146022UK04" SchemaName="COCD_TP146022UK04.AllergyEvent" snomedOID="false" snomedOIDrequired="false"/>
+						<schema Schema="COCD_TP146025UK04" SchemaName="COCD_TP146025UK04.Allergy" snomedOID="false" snomedOIDrequired="false"/>
+						<schema Schema="COCD_TP146013UK04" SchemaName="COCD_TP146013UK04.BloodPressure" snomedOID="true" snomedOIDrequired="true"/>
+						<schema Schema="COCD_TP146005UK04" SchemaName="COCD_TP146005UK04.CareEvent" snomedOID="false" snomedOIDrequired="false"/>
+						<schema Schema="COCD_TP146005UK05" SchemaName="COCD_TP146005UK05.CareEvent" snomedOID="false" snomedOIDrequired="false"/>
+						<schema Schema="COCD_TP146011UK04" SchemaName="COCD_TP146011UK04.Diagnosis" snomedOID="false" snomedOIDrequired="false"/>
+						<schema Schema="COCD_TP146018UK04" SchemaName="COCD_TP146018UK04.FamilyHistory" snomedOID="false" snomedOIDrequired="false"/>
+						<schema Schema="COCD_TP146012UK04" SchemaName="COCD_TP146012UK04.Finding" snomedOID="false" snomedOIDrequired="false"/>
+						<schema Schema="COCD_TP146015UK04" SchemaName="COCD_TP146015UK04.Height" snomedOID="false" snomedOIDrequired="false"/>
+						<schema Schema="COCD_TP146019UK04" SchemaName="COCD_TP146019UK04.Investigation" snomedOID="false" snomedOIDrequired="false"/>
+						<schema Schema="COCD_TP146001UK04" SchemaName="COCD_TP146001UK04.LifeStyle" snomedOID="false" snomedOIDrequired="false"/>
+						<schema Schema="COCD_TP146007UK04" SchemaName="COCD_TP146007UK04.LinkAssertion" snomedOID="false" snomedOIDrequired="false"/>
+						<schema Schema="COCD_TP146030UK04" SchemaName="COCD_TP146030UK04.MedicationAdministrationCourse" snomedOID="true" snomedOIDrequired="true"/>
+						<schema Schema="COCD_TP146029UK04" SchemaName="COCD_TP146029UK04.MedicationAdministrationDose" snomedOID="true" snomedOIDrequired="true"/>
+						<schema Schema="COCD_TP146017UK04" SchemaName="COCD_TP146017UK04.FindingOrganizer" snomedOID="false" snomedOIDrequired="false"/>
+						<schema Schema="COCD_TP146037UK04" SchemaName="COCD_TP146037UK04.PatientMovement" snomedOID="true" snomedOIDrequired="true"/>
+						<schema Schema="COCD_TP146020UK04" SchemaName="COCD_TP146020UK04.PersonalPreference" snomedOID="false" snomedOIDrequired="false"/>
+						<schema Schema="COCD_TP146006UK04" SchemaName="COCD_TP146006UK04.Problem" snomedOID="true" snomedOIDrequired="true"/>
+						<schema Schema="COCD_TP146009UK04" SchemaName="COCD_TP146009UK04.ProblemLinkAssertion" snomedOID="true" snomedOIDrequired="true"/>
+						<schema Schema="COCD_TP146008UK04" SchemaName="COCD_TP146008UK04.ProblemMemberAssertion" snomedOID="true" snomedOIDrequired="true"/>
+						<schema Schema="COCD_TP146023UK04" SchemaName="COCD_TP146023UK04.ProvisionOfAdviceAndInformation" snomedOID="false" snomedOIDrequired="false"/>
+						<schema Schema="COCD_TP146032UK04" SchemaName="COCD_TP146032UK04.RequestMedicationSupply" snomedOID="false" snomedOIDrequired="false"/>
+						<schema Schema="COCD_TP146026UK04" SchemaName="COCD_TP146026UK04.RiskToPatient" snomedOID="true" snomedOIDrequired="true"/>
+						<schema Schema="COCD_TP146010UK04" SchemaName="COCD_TP146010UK04.RiskToPerson" snomedOID="false" snomedOIDrequired="false"/>
+						<schema Schema="COCD_TP146021UK05" SchemaName="COCD_TP146021UK05.Service" snomedOID="false" snomedOIDrequired="false"/>
+						<schema Schema="COCD_TP146021UK06" SchemaName="COCD_TP146021UK06.Service" snomedOID="false" snomedOIDrequired="false"/>
+						<schema Schema="COCD_TP146002UK04" SchemaName="COCD_TP146002UK04.Smoking" snomedOID="false" snomedOIDrequired="false"/>
+						<schema Schema="COCD_TP146004UK04" SchemaName="COCD_TP146004UK04.SocialOrPersonalCircumstance" snomedOID="false" snomedOIDrequired="false"/>
+						<schema Schema="COCD_TP146033UK04" SchemaName="COCD_TP146033UK04.SupplyMedication" snomedOID="true" snomedOIDrequired="true"/>
+						<schema Schema="COCD_TP146033UK05" SchemaName="COCD_TP146033UK05.SupplyMedication" snomedOID="true" snomedOIDrequired="true"/>
+						<schema Schema="COCD_TP146016UK04" SchemaName="COCD_TP146016UK04.Temperature" snomedOID="false" snomedOIDrequired="false"/>
+						<schema Schema="COCD_TP146027UK04" SchemaName="COCD_TP146027UK04.Treatment" snomedOID="false" snomedOIDrequired="false"/>
+						<schema Schema="COCD_TP146014UK04" SchemaName="COCD_TP146014UK04.Weight" snomedOID="false" snomedOIDrequired="false"/>
+						<schema Schema="COCD_TP146324GB01" SchemaName="COCD_TP146324GB01.AdministrativeProcedure" snomedOID="false" snomedOIDrequired="false"/>
+						<schema Schema="COCD_TP146303GB01" SchemaName="COCD_TP146303GB01.AlcoholIntake" snomedOID="false" snomedOIDrequired="false"/>
+						<schema Schema="COCD_TP146322GB01" SchemaName="COCD_TP146322GB01.AllergyEvent" snomedOID="false" snomedOIDrequired="false"/>
+						<schema Schema="COCD_TP146325GB01" SchemaName="COCD_TP146325GB01.Allergy" snomedOID="false" snomedOIDrequired="false"/>
+						<schema Schema="COCD_TP146313GB01" SchemaName="COCD_TP146313GB01.BloodPressure" snomedOID="false" snomedOIDrequired="false"/>
+						<schema Schema="COCD_TP146305GB02" SchemaName="COCD_TP146305GB02.CareEvent" snomedOID="false" snomedOIDrequired="false"/>
+						<schema Schema="COCD_TP146311GB01" SchemaName="COCD_TP146311GB01.Diagnosis" snomedOID="false" snomedOIDrequired="false"/>
+						<schema Schema="COCD_TP146318GB01" SchemaName="COCD_TP146318GB01.FamilyHistory" snomedOID="false" snomedOIDrequired="false"/>
+						<schema Schema="COCD_TP146312GB01" SchemaName="COCD_TP146312GB01.Finding" snomedOID="false" snomedOIDrequired="false"/>
+						<schema Schema="COCD_TP146315GB01" SchemaName="COCD_TP146315GB01.Height" snomedOID="false" snomedOIDrequired="false"/>
+						<schema Schema="COCD_TP146319GB01" SchemaName="COCD_TP146319GB01.Investigation" snomedOID="false" snomedOIDrequired="false"/>
+						<schema Schema="COCD_TP146301GB01" SchemaName="COCD_TP146301GB01.LifeStyle" snomedOID="false" snomedOIDrequired="false"/>
+						<schema Schema="COCD_TP146307GB01" SchemaName="COCD_TP146307GB01.LinkAssertion" snomedOID="false" snomedOIDrequired="false"/>
+						<schema Schema="COCD_TP146330GB01" SchemaName="COCD_TP146330GB01.MedicationAdministrationCourse" snomedOID="false" snomedOIDrequired="false"/>
+						<schema Schema="COCD_TP146329GB01" SchemaName="COCD_TP146329GB01.MedicationAdministrationDose" snomedOID="false" snomedOIDrequired="false"/>
+						<schema Schema="COCD_TP146317GB01" SchemaName="COCD_TP146317GB01.FindingOrganizer" snomedOID="false" snomedOIDrequired="false"/>
+						<schema Schema="COCD_TP146337GB01" SchemaName="COCD_TP146337GB01.PatientMovement" snomedOID="false" snomedOIDrequired="false"/>
+						<schema Schema="COCD_TP146320GB01" SchemaName="COCD_TP146320GB01.PersonalPreference" snomedOID="false" snomedOIDrequired="false"/>
+						<schema Schema="COCD_TP146306GB01" SchemaName="COCD_TP146306GB01.Problem" snomedOID="false" snomedOIDrequired="false"/>
+						<schema Schema="COCD_TP146309GB01" SchemaName="COCD_TP146309GB01.ProblemLinkAssertion" snomedOID="false" snomedOIDrequired="false"/>
+						<schema Schema="COCD_TP146308GB01" SchemaName="COCD_TP146308GB01.ProblemMemberAssertion" snomedOID="false" snomedOIDrequired="false"/>
+						<schema Schema="COCD_TP146323GB01" SchemaName="COCD_TP146323GB01.ProvisionOfAdviceAndInformation" snomedOID="false" snomedOIDrequired="false"/>
+						<schema Schema="COCD_TP146332GB01" SchemaName="COCD_TP146332GB01.RequestMedicationSupply" snomedOID="false" snomedOIDrequired="false"/>
+						<schema Schema="COCD_TP146326GB01" SchemaName="COCD_TP146326GB01.RiskToPatient" snomedOID="false" snomedOIDrequired="false"/>
+						<schema Schema="COCD_TP146310GB01" SchemaName="COCD_TP146310GB01.RiskToPerson" snomedOID="false" snomedOIDrequired="false"/>
+						<schema Schema="COCD_TP146321GB02" SchemaName="COCD_TP146321GB02.Service" snomedOID="false" snomedOIDrequired="false"/>
+						<schema Schema="COCD_TP146302GB01" SchemaName="COCD_TP146302GB01.Smoking" snomedOID="false" snomedOIDrequired="false"/>
+						<schema Schema="COCD_TP146304GB01" SchemaName="COCD_TP146304GB01.SocialOrPersonalCircumstance" snomedOID="false" snomedOIDrequired="false"/>
+						<schema Schema="COCD_TP146333GB01" SchemaName="COCD_TP146333GB01.SupplyMedication" snomedOID="false" snomedOIDrequired="false"/>
+						<schema Schema="COCD_TP146316GB01" SchemaName="COCD_TP146316GB01.Temperature" snomedOID="false" snomedOIDrequired="false"/>
+						<schema Schema="COCD_TP146327GB01" SchemaName="COCD_TP146327GB01.Treatment" snomedOID="false" snomedOIDrequired="false"/>
+						<schema Schema="COCD_TP146314GB01" SchemaName="COCD_TP146314GB01.Weight" snomedOID="false" snomedOIDrequired="false"/>
+						<schema Schema="COCD_TP146224GB01" SchemaName="COCD_TP146224GB01.ObservationMedia" snomedOID="false" snomedOIDrequired="false"/>
+						<schema Schema="COCD_TP146224GB02" SchemaName="COCD_TP146224GB02.ObservationMedia" snomedOID="false" snomedOIDrequired="false"/>
+					</constraintTemplate>
+				</CodedEntry>
+				<SectionChoice><constraintTemplate includedTemplate="NPFIT-000001_Section" TemplateSchemaName="NPFIT-000001_Section">
+						<sectionitem sectionName="COCD_TP146061UK01" codedValue="false" displayName="TextSection"/>
+						<template>
+							<templateItem SectionSchema="COCD_TP146061UK01" SectionSchemaName="COCD_TP146061UK01.Section1">
+								<constraintTemplate includedTemplate="../TemplateSchemas/NPFIT-000001_Role.xsd" TemplateSchemaName="NPFIT-000001_Role">
+									<schema Schema="COCD_TP145001UK03" SchemaName="COCD_TP145001UK03.AssignedAuthorSDS" snomedOID="false" snomedOIDrequired="false"/>
+									<schema Schema="COCD_TP145002UK03" SchemaName="COCD_TP145002UK03.AssignedAuthor" snomedOID="false" snomedOIDrequired="false"/>
+									<schema Schema="COCD_TP145003UK03" SchemaName="COCD_TP145003UK03.AssignedAuthor" snomedOID="false" snomedOIDrequired="false"/>
+									<schema Schema="COCD_TP145200GB01" SchemaName="COCD_TP145200GB01.AssignedAuthor" snomedOID="false" snomedOIDrequired="false"/>
+								</constraintTemplate>
+							</templateItem>
+						</template>
+						<sectionitem sectionName="COCD_TP146061UK02" codedValue="false" displayName="TextSection"/>
+						<template>
+							<templateItem SectionSchema="COCD_TP146061UK02" SectionSchemaName="COCD_TP146061UK02.Section1">
+								<constraintTemplate includedTemplate="../TemplateSchemas/NPFIT-000001_Role.xsd" TemplateSchemaName="NPFIT-000001_Role">
+									<schema Schema="COCD_TP145001UK03" SchemaName="COCD_TP145001UK03.AssignedAuthorSDS" snomedOID="false" snomedOIDrequired="false"/>
+									<schema Schema="COCD_TP145002UK03" SchemaName="COCD_TP145002UK03.AssignedAuthor" snomedOID="false" snomedOIDrequired="false"/>
+									<schema Schema="COCD_TP145003UK03" SchemaName="COCD_TP145003UK03.AssignedAuthor" snomedOID="false" snomedOIDrequired="false"/>
+									<schema Schema="COCD_TP145200GB01" SchemaName="COCD_TP145200GB01.AssignedAuthor" snomedOID="false" snomedOIDrequired="false"/>
+								</constraintTemplate>
+							</templateItem>
+						</template>
+					</constraintTemplate>
+</SectionChoice>
+			</ClassificationSection>
+		</BodyChoice>
+		<Vocabularies>
+			<Vocabulary codeSystem="2.16.840.1.113883.5.14" codeSystemName="ActStatus" snomedOID="false"/>
+			<Vocabulary codeSystem="2.16.840.1.113883.2.1.3.2.4.17.178" codeSystemName="AuthorFunctionType" snomedOID="false"/>
+			<Vocabulary codeSystem="2.16.840.1.113883.2.1.3.2.4.17.185" codeSystemName="CDAAdministrationType" snomedOID="false"/>
+			<Vocabulary codeSystem="2.16.840.1.113883.2.1.3.2.4.17.223" codeSystemName="CDADocumentSectionType" snomedOID="false"/>
+			<Vocabulary codeSystem="2.16.840.1.113883.2.1.3.2.4.17.186" codeSystemName="CDAJobRoleName" snomedOID="false"/>
+			<Vocabulary codeSystem="2.16.840.1.113883.2.1.3.2.4.17.289" codeSystemName="CDAOrganizationProviderType" snomedOID="false"/>
+			<Vocabulary codeSystem="2.16.840.1.113883.2.1.3.2.4.17.191" codeSystemName="CDAOrganizationType" snomedOID="false"/>
+			<Vocabulary codeSystem="2.16.840.1.113883.2.1.3.2.4.16.45" codeSystemName="CDAPersonRelationshipType" snomedOID="false"/>
+			<Vocabulary codeSystem="2.16.840.1.113883.2.1.3.2.4.17.192" codeSystemName="CDAPrescriptionAnnotation" snomedOID="false"/>
+			<Vocabulary codeSystem="2.16.840.1.113883.2.1.3.2.4.17.314" codeSystemName="CodedEntryCode" snomedOID="false"/>
+			<Vocabulary codeSystem="2.16.840.1.113883.5.30" codeSystemName="EntityDeterminer" snomedOID="false"/>
+			<Vocabulary codeSystem="2.16.840.1.113883.2.1.3.2.4.17.70" codeSystemName="HumanLanguage" snomedOID="false"/>
+			<Vocabulary codeSystem="2.16.840.1.113883.2.1.3.2.4.17.124" codeSystemName="JobRoleName" snomedOID="false"/>
+			<Vocabulary codeSystem="2.16.840.1.113883.5.60" codeSystemName="LanguageAbilityMode" snomedOID="false"/>
+			<Vocabulary codeSystem="2.16.840.1.113883.5.61" codeSystemName="LanguageAbilityProficiency" snomedOID="false"/>
+			<Vocabulary codeSystem="2.16.840.1.113883.2.1.3.2.4.17.332" codeSystemName="ManufacturerModelName" snomedOID="false"/>
+			<Vocabulary codeSystem="2.16.840.1.113883.5.83" codeSystemName="ObservationInterpretation" snomedOID="false"/>
+			<Vocabulary codeSystem="2.16.840.1.113883.5.1064" codeSystemName="ParticipationMode" snomedOID="false"/>
+			<Vocabulary codeSystem="2.16.840.1.113883.1.11.19563" codeSystemName="PersonalRelationshipRoleType" snomedOID="false"/>
+			<Vocabulary codeSystem="2.16.840.1.113883.1.11.16100" codeSystemName="PlaceEntityType" snomedOID="false"/>
+			<Vocabulary codeSystem="2.16.840.1.113883.2.1.3.2.4.17.196" codeSystemName="SDSJobRoleName" snomedOID="false"/>
+			<Vocabulary codeSystem="2.16.840.1.113883.2.1.3.2.4.16.25" codeSystemName="Sex" snomedOID="false"/>
+			<Vocabulary codeSystem="2.16.840.1.113883.2.1.3.2.4.15" codeSystemName="SocialOrPersonalCircumstanceSnCT" snomedOID="true"/>
+			<Vocabulary codeSystem="2.16.840.1.113883.2.1.3.2.4.17.333" codeSystemName="SoftwareName" snomedOID="false"/>
+			<Vocabulary codeSystem="2.16.840.1.113883.5.137" codeSystemName="TargetAwareness" snomedOID="false"/>
+			<Vocabulary codeSystem="2.16.840.1.113883.2.1.3.2.4.17.266" codeSystemName="WorkgroupRoleName" snomedOID="false"/>
+			<Vocabulary codeSystem="2.16.840.1.113883.1.11.16926" codeSystemName="x_BasicConfidentialityKind" snomedOID="false"/>
+			<Vocabulary codeSystem="2.16.840.1.113883.1.11.19368" codeSystemName="x_DocumentSubject" snomedOID="false"/>
+			<Vocabulary codeSystem="2.16.840.1.113883.1.11.19600" codeSystemName="x_EncounterParticipant" snomedOID="false"/>
+		</Vocabularies>
+	</dms>
+</CDAReference>

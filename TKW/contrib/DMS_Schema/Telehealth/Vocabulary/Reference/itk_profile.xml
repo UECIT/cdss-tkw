@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProfileConfigs>
+	<ProfileConfig xmlns:iops="urn:GB-en-NHS:iops">
+		<profileId root="2.16.840.1.113883.2.1.3.2.4.18.28" extension="urn:nhs-en:profile:TelehealthReport-v3-0"/>
+		<messageType codeSystem="2.16.840.1.113883.2.1.3.2.4.18.17" displayName="Telehealth Report" code="POCD_MT190001UK03"/>
+		<configGroup type="Templates">
+			<configItem code="COCD_TP145007UK03" displayName="RelatedEntity" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP145018UK03" displayName="CustodianOrganizationUniversal" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP145027UK02" displayName="DeviceRole" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP145028UK02" displayName="NonClinicalAuthor" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP145200GB01" displayName="AuthorPersonUniversal" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP145201GB01" displayName="PatientUniversal" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP145202GB02" displayName="RecipientPersonUniversal" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP145203GB03" displayName="RecipientOrganizationUniversal" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP145204GB03" displayName="RecipientWorkgroupUniversal" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP145205GB01" displayName="PersonUniversal" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP145207GB01" displayName="AuthorDeviceUniversal" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP145208GB01" displayName="AuthorNonNamedPersonUniversal" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP145210GB01" displayName="PersonWithOrganizationUniversal" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP145212GB02" displayName="WorkgroupUniversal" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP145214GB01" displayName="DocumentParticipantUniversal" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP145223GB01" displayName="LocationUniversal" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP145225GB01" displayName="HealthCareFacilityUniversal" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP146226GB02" displayName="Consent" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP146249GB01" displayName="EncompassingEncounter" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP146250GB01" displayName="TextSection" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP146251GB01" displayName="ServiceEvent" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP146252GB02" displayName="BloodPressureThreshold" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP146262GB01" displayName="BloodGlucose" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP146263GB01" displayName="OxygenSaturation" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP146264GB01" displayName="PeakFlow" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP146265GB01" displayName="BloodCoagulation" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP146266GB01" displayName="FEV" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP146267GB01" displayName="ForcedVitalCapacity" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP146268GB01" displayName="Cholesterol" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP146269GB01" displayName="Triglycerides" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP146270GB01" displayName="CarbonMonoxide" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP146271GB01" displayName="BloodPressure" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP146272GB01" displayName="BodyMassIndex" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP146273GB01" displayName="BodyTemperature" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP146274GB01" displayName="Height" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP146275GB01" displayName="MeanBloodPressure" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP146276GB01" displayName="PulseRate" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP146277GB01" displayName="Weight" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP146278GB01" displayName="WaveformImage" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP146279GB01" displayName="DeviceDefinition" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP146280GB02" displayName="WeightThreshold" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP146281GB02" displayName="PulseRateThreshold" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP146282GB02" displayName="MeanBloodPressureThreshold" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP146283GB02" displayName="BloodGlucoseThreshold" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP146284GB02" displayName="PeakFlowThreshold" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP146285GB02" displayName="ForcedVitalCapacityThreshold" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP146286GB02" displayName="BodyTemperatureThreshold" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP146287GB02" displayName="BodyMassIndexThreshold" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP146288GB02" displayName="FEVThreshold" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP146289GB02" displayName="TriglyceridesThreshold" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP146292GB02" displayName="CholesterolThreshold" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP146293GB02" displayName="OxygenSaturationThreshold" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP146294GB02" displayName="CarbonMonoxideThreshold" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP146295GB02" displayName="ProthrombinTimeThreshold" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP146296GB02" displayName="APTTThreshold" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP146297GB01" displayName="Attachment" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP146423GB01" displayName="AlertEvent" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP146424GB01" displayName="TelehealthPatientAlertEvent" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP147252GB02" displayName="BloodPressureThresholdRef" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP147274GB01" displayName="HeightRef" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP147277GB01" displayName="WeightRef" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP147280GB02" displayName="WeightThresholdRef" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP147281GB02" displayName="PulseRateThresholdRef" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP147282GB02" displayName="MeanBloodPressureThresholdRef" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP147283GB02" displayName="BloodGlucoseThresholdRef" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP147284GB02" displayName="PeakFlowThresholdRef" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP147285GB02" displayName="ForcedVitalCapacityThresholdRef" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP147286GB02" displayName="BodyTemperatureThresholdRef" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP147287GB02" displayName="BodyMassIndexThresholdRef" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP147288GB02" displayName="FEVThresholdRef" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP147289GB02" displayName="TriglyceridesThresholdRef" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP147292GB02" displayName="CholesterolThresholdRef" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP147293GB02" displayName="OxygenSaturationThresholdRef" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP147294GB02" displayName="CarbonMonoxideThresholdRef" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP147295GB02" displayName="ProthrombinTimeThresholdRef" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP147296GB02" displayName="APTTThresholdRef" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<configItem code="COCD_TP148027UK02" displayName="DeviceRoleRef" codeSystem="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+		</configGroup>
+		<configGroup type="Vocabularies">
+			<configItem codeSystem="2.16.840.1.113883.5.14" codeSystemName="ActStatus" codeSystemVersion="1.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.17.178" codeSystemName="AuthorFunctionType" codeSystemVersion="2.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.15" codeSystemName="BloodCoagulationSnCT" codeSystemVersion="1.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.15" codeSystemName="BloodPressureSnCT" codeSystemVersion="3.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.17.223" codeSystemName="CDADocumentSectionType" codeSystemVersion="6.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.17.220" codeSystemName="CDAObservationType" codeSystemVersion="6.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.17.289" codeSystemName="CDAOrganizationProviderType" codeSystemVersion="2.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.17.191" codeSystemName="CDAOrganizationType" codeSystemVersion="1.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.16.45" codeSystemName="CDAPersonRelationshipType" codeSystemVersion="4.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.15" codeSystemName="DocumentConsentSnCT" codeSystemVersion="1.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.15" codeSystemName="FEVSnCT" codeSystemVersion="1.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.15" codeSystemName="HeightSnCT" codeSystemVersion="4.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.17.70" codeSystemName="HumanLanguage" codeSystemVersion="4.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.17.124" codeSystemName="JobRoleName" codeSystemVersion="4.0"/>
+			<configItem codeSystem="2.16.840.1.113883.5.60" codeSystemName="LanguageAbilityMode" codeSystemVersion="1.0"/>
+			<configItem codeSystem="2.16.840.1.113883.5.61" codeSystemName="LanguageAbilityProficiency" codeSystemVersion="2.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.15" codeSystemName="LateralitySnCT" codeSystemVersion="1.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.17.332" codeSystemName="ManufacturerModelName" codeSystemVersion="1.0"/>
+			<configItem codeSystem="2.16.840.1.113883.5.88" codeSystemName="ParticipationFunction" codeSystemVersion="1.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.1.5.90.11.1" codeSystemName="ParticipationType" codeSystemVersion="2.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.15" codeSystemName="ReadingSiteSnCT" codeSystemVersion="1.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.15" codeSystemName="RemoteMonitoringSettingSnCT" codeSystemVersion="1.0"/>
+			<configItem codeSystem="2.16.840.1.113883.1.11.19313" codeSystemName="RoleClassAssociative" codeSystemVersion="1.0"/>
+			<configItem codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode" codeSystemVersion="1.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.17.265" codeSystemName="ServiceEventType" codeSystemVersion="2.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.16.25" codeSystemName="Sex" codeSystemVersion="1.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.15" codeSystemName="SnomedCT" codeSystemVersion="1.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.17.333" codeSystemName="SoftwareName" codeSystemVersion="1.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.17.476" codeSystemName="TelehealthAlertClinicalInterpretation" codeSystemVersion="1.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.17.477" codeSystemName="TelehealthAlertPriority" codeSystemVersion="1.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.15" codeSystemName="TelehealthAlertReasonSnCT" codeSystemVersion="1.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.15" codeSystemName="TelehealthBodyWeightSnCT" codeSystemVersion="1.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.15" codeSystemName="TelehealthDeviceTypeSnCT" codeSystemVersion="1.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.15" codeSystemName="TelehealthDispositionSnCT" codeSystemVersion="1.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.15" codeSystemName="TelehealthDocumentTypeSnCT" codeSystemVersion="1.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.17.479" codeSystemName="TelehealthPatientRelatedAlertType" codeSystemVersion="1.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.17.481" codeSystemName="TelehealthThresholdAlertType" codeSystemVersion="1.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.15" codeSystemName="TemperatureSnCT" codeSystemVersion="1.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.17.431" codeSystemName="WaveformImageType" codeSystemVersion="1.0"/>
+			<configItem codeSystem="2.16.840.1.113883.2.1.3.2.4.17.266" codeSystemName="WorkgroupRoleName" codeSystemVersion="1.0"/>
+			<configItem codeSystem="2.16.840.1.113883.1.11.16926" codeSystemName="x_BasicConfidentialityKind" codeSystemVersion="1.0"/>
+			<configItem codeSystem="2.16.840.1.113883.1.11.19600" codeSystemName="x_EncounterParticipant" codeSystemVersion="1.0"/>
+		</configGroup>
+		<configGroup type="TemplateConstraints">
+			<configItem name="NPFIT-000051#Act" version="2.0"/>
+			<configItem name="NPFIT-000101#Act" version="1.0"/>
+			<configItem name="NPFIT-000101#Section" version="1.0"/>
+			<configItem name="NPFIT-000102#Act" version="1.0"/>
+			<configItem name="NPFIT-000102#Role" version="1.0"/>
+			<configItem name="NPFIT-000103#Role" version="1.0"/>
+			<configItem name="NPFIT-000104#Role" version="1.0"/>
+			<configItem name="NPFIT-000107#Role" version="1.0"/>
+			<configItem name="NPFIT-000108#Role" version="1.0"/>
+			<configItem name="NPFIT-000110#Role" version="1.0"/>
+			<configItem name="NPFIT-000114#Role" version="1.0"/>
+			<configItem name="NPFIT-000116#Role" version="1.0"/>
+			<configItem name="NPFIT-000119#Role" version="1.0"/>
+			<configItem name="NPFIT-000124#Role" version="1.0"/>
+			<configItem name="NPFIT-000126#Role" version="1.0"/>
+			<configItem name="NPFIT-000127#Role" version="1.0"/>
+			<configItem name="NPFIT-000128#ActRef" version="1.0"/>
+			<configItem name="NPFIT-000128#Role" version="1.0"/>
+			<configItem name="NPFIT-000129#ActRef" version="1.0"/>
+			<configItem name="NPFIT-000131#ActRef" version="1.0"/>
+			<configItem name="NPFIT-000132#ActRef" version="1.0"/>
+			<configItem name="NPFIT-000133#ActRef" version="1.0"/>
+			<configItem name="NPFIT-000135#ActRef" version="1.0"/>
+			<configItem name="NPFIT-000136#ActRef" version="1.0"/>
+			<configItem name="NPFIT-000137#ActRef" version="1.0"/>
+			<configItem name="NPFIT-000137#Role" version="1.0"/>
+			<configItem name="NPFIT-000137#RoleRef" version="1.0"/>
+			<configItem name="NPFIT-000138#ActRef" version="1.0"/>
+			<configItem name="NPFIT-000138#Role" version="1.0"/>
+			<configItem name="NPFIT-000139#ActRef" version="1.0"/>
+			<configItem name="NPFIT-000140#ActRef" version="1.0"/>
+			<configItem name="NPFIT-000140#Role" version="1.0"/>
+			<configItem name="NPFIT-000141#ActRef" version="1.0"/>
+			<configItem name="NPFIT-000143#ActRef" version="1.0"/>
+			<configItem name="NPFIT-000144#ActRef" version="1.0"/>
+			<configItem name="NPFIT-000144#Role" version="1.0"/>
+			<configItem name="NPFIT-000146#ActRef" version="1.0"/>
+			<configItem name="NPFIT-000147#ActRef" version="1.0"/>
+			<configItem name="NPFIT-000148#ActRef" version="1.0"/>
+			<configItem name="NPFIT-000148#Section" version="1.0"/>
+			<configItem name="NPFIT-000149#ActRef" version="1.0"/>
+			<configItem name="NPFIT-000181#Role" version="1.0"/>
+		</configGroup>
+		<configGroup type="CoreSchemas">
+			<configItem schemaName="CDAVocab.xsd" version="3.0"/>
+			<configItem schemaName="InfVocab.xsd" version="2.0"/>
+			<configItem schemaName="datatypes.xsd" version="2.0"/>
+			<configItem schemaName="datatypeflavours.xsd" version="2.0"/>
+			<configItem schemaName="infrastructureRoot.xsd" version="1.0"/>
+			<configItem schemaName="datatypes-2005.xsd" version="1.0"/>
+			<configItem schemaName="NarrativeBlock.xsd" version="1.0"/>
+			<configItem schemaName="NHSLocalisation.xsd" version="1.0"/>
+			<configItem schemaName="NHSVocab.xsd" version="2.0"/>
+			<configItem schemaName="commonInclude.xsd" version="1.0"/>
+			<configItem schemaName="voc.xsd" version="1.0"/>
+		</configGroup>
+	</ProfileConfig>
+</ProfileConfigs>

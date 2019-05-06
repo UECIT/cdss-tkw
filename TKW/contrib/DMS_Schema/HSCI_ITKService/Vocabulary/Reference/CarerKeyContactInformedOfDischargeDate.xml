@@ -1,0 +1,10 @@
+<Vocabularies xmlns="urn:nhs-itk:ns:201005">
+	<vocabulary version="1.0" status="active" name="CarerKeyContactInformedOfDischargeDate" id="">
+		<concept code="CKCIDD">
+			<displayName>Carer or Key Contact Informed of the Discharge Date.</displayName>
+		</concept>
+		<concept code="CCKNIDD">
+			<displayName>Carer or Key Contact not Informed of the Discharge Date.</displayName>
+		</concept>
+	</vocabulary>
+</Vocabularies>

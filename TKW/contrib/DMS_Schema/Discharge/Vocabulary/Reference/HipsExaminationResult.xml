@@ -1,0 +1,37 @@
+<Vocabularies xmlns="urn:nhs-itk:ns:201005">
+	<vocabulary version="1.0" status="active" name="HipsExaminationResult" id="">
+		<concept code="00">
+			<displayName>Not tested</displayName>
+		</concept>
+		<concept code="01">
+			<displayName>No abnormalities and no risk factors</displayName>
+		</concept>
+		<concept code="02">
+			<displayName>No abnormalities with risk factors</displayName>
+		</concept>
+		<concept code="03">
+			<displayName>Unilateral abnormality suspected (Right) with risk factors</displayName>
+		</concept>
+		<concept code="04">
+			<displayName>Unilateral abnormality suspected (Right) with no risk</displayName>
+		</concept>
+		<concept code="05">
+			<displayName>Unilateral abnormality suspected (Left) with risk factors</displayName>
+		</concept>
+		<concept code="06">
+			<displayName>Unilateral abnormality suspected (Left) with no risk factors</displayName>
+		</concept>
+		<concept code="07">
+			<displayName>Bi-lateral abnormality suspected with risk factors</displayName>
+		</concept>
+		<concept code="08">
+			<displayName>Bi-lateral abnormality suspected with no risk factors</displayName>
+		</concept>
+		<concept code="09">
+			<displayName>Screen declined</displayName>
+		</concept>
+		<concept code="98">
+			<displayName>Incomplete</displayName>
+		</concept>
+	</vocabulary>
+</Vocabularies>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vocabulary id="2.16.840.1.113883.2.1.3.2.4.17.297" status="created" name="AEAttendanceCategory" version="1.0">
+	<concept code="1">
+		<displayName>First Accident And Emergency Attendance - the first in a series, or the only attendance, in a particular Accident And Emergency Episode</displayName>
+	</concept>
+	<concept code="2">
+		<displayName>Follow-up Accident And Emergency Attendance - planned: a subsequent planned attendance at the same department, and for the same incident as the first attendance</displayName>
+	</concept>
+	<concept code="3">
+		<displayName>Follow-up Accident And Emergency Attendance - unplanned: a subsequent unplanned attendance at the same department, and for the same incident as the first attendance</displayName>
+	</concept>
+</vocabulary>

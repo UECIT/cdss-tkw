@@ -1,0 +1,910 @@
+<html>
+<head>
+<title>TKW Installer Release Notes</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body bgcolor="#FFFFFF">
+<center>
+<h1>
+TKW Installer Release Notes<br>
+<p>
+Version: 3.11<br>
+Release Notes
+</h1>
+</center>
+
+<p>TKW Installer is a package which contains the TKW (Toolkit Workbench) application, associated domain configurations (/config), and supporting data for test execution (/contrib)</p>
+<hr/>
+
+<h2>Release History</h2>
+
+<dt><b>June 2014 &#x2022; Version 3.11</b></dt>
+<p>This latest version of TKW installer is hosted on the Solution Assurance Message Test Tools site - http://systems.hscic.gov.uk/satools</p>
+</ul> 
+ <blockquote>
+ 		<p>Contains:</p>
+		<ul>
+			<li>TKW Version: HSCIC Interoperability Toolkit Testbench v3.0.37-XENC-20140509-1</li>
+			<li>ATM Version: 78</li>
+			<li>ReqSheet Version: 6.5</li>
+			<li>Config SVN: 286</li>
+		</ul>
+		<p>Known issues:</p>
+		<ul>
+			<li>Please refer to the Shared Documents area of the ITK Accreditations Sharepoint Site for other TKWAutotestManager issues</li>
+		</ul>
+		<p>Bugs fixed:</p>
+		<ul>
+<li>#XXX - TBC</li>
+</ul>
+		<p>Other changes and additions:</p>
+			<li>TKW/ATM Support for ChildHealthDataSharing Accreditation</li>
+		<ul>
+		</ul>
+		</ul>
+		<p>Fully Supported (<u>formal accreditation or assurance process available</u>) Domain Message Specifications used for validation and message examples by TKW.jar:</p>
+		<ul>
+			<li>Urgent Care Dashboards - NPFIT-FNT-TO-DSD-0212 Version: 1.0; Status: RC4</li>
+			<li>HL7V2 ADT - NPFIT-FNT-TO-DSD-0210 Version: 1.0; Status: RC2</li>
+			<li>ITK Core (Infrastructure and Business (N)acks) - NPFIT-FNT-TO-DSD-0206 Version: 1.0; Status: RC2</li>
+			<li>Correspondence: Ambulance NPFIT-FNT-TO-DSD-0200 Version: 2.0; Status: RC2</li>
+			<li>Correspondence: Discharge NPFIT-FNT-TO-DSD-0201 Version: 4.0; Status: RC2</li>
+			<li>Correspondence: Emergency Department NPFIT-FNT-TO-DSD-0202 Version: 4.0; Status: RC2</li>
+			<li>Correspondence: Non-Coded CDA Document NPFIT-FNT-TO-DSD-0205 Version: 1.0; Status: RC2</li>
+			<li>Correspondence: Out of Hours NPFIT-FNT-TO-DSD-0203 Version: 2.0; Status: RC2</li>
+			<li>Correspondence: Outpatients NPFIT-FNT-TO-DSD-0204 Version: 2.0; Status: RC2</li>
+			<li>ITK Telehealth: Version: 2.0; Status: RC2</li>
+			<li>Embedded within TKW.jar - CDALikeToTrueCDA_v2.xst and associated transforms taken from pre-release of HSCI DMS.</li>
+			<li>Spine messages conform with relevant Spine domain specification, MIM and EIS</li>
+			<li>HSCI: NPFIT-FNT-TO-DSD-0199 Version: 4.0; Status: Draft A</li>
+			<li>Child Screening: NPFIT-FNT-TO-DSD-0238 Version: 2.0; Status: RC1</li>
+			<li>NHS111: Version: 1.0; Status: RC2</li>
+		</ul>
+		<p>Other (<u>No ITK accreditation or assurance currently available</u>) Domain Message Specifications used for validation and message examples by TKW.jar:</p>
+		<ul>
+			<li>CP-IS: Version: 1.0; Status: RC3</li>
+		</ul>
+</blockquote>
+
+<dt><b>March 2014 &#x2022; Version 3.10</b></dt>
+<p>This latest version of TKW installer is hosted on the Solution Assurance Message Test Tools site - http://systems.hscic.gov.uk/satools</p>
+</ul> 
+ <blockquote>
+ 		<p>Contains:</p>
+		<ul>
+			<li>TKW Version: v3.0.36-FIXA-20140314-1</li>
+			<li>ATM Version: 75</li>
+			<li>ReqSheet Version: 6.5</li>
+			<li>Config SVN: 266</li>
+		</ul>
+		<p>Known issues:</p>
+		<ul>
+			<li>Please refer to the Shared Documents area of the ITK Accreditations Sharepoint Site for other TKWAutotestManager issues</li>
+		</ul>
+		<p>Bugs fixed:</p>
+		<ul>
+<li>#439 - High Supplier Raised - Change the version in ADT messages from "iTKv1.0" to "ITK2.01"</li>
+<li>#647 - Low Issues using requirements spreadsheet on MAC</li>
+<li>#772 - Need a SOAP Header check on the created and expired timestamps for xs:dateTime regex check</li>
+<li>#1043 - SMSP example message is wrong</li>
+<li>#1224 - Enhancement request for ATM to update auditIdentity in DE header</li>
+<li>#1246 - TKW Validation - Acknowledgement Config - Does not validate that the Service attribute is correct</li>
+<li>#1273 - The autotest manager does not produce infra ack response if the CDA responder parameter is not manually set in the tkw.properties file</li>
+<li>#1326 - autotest.jar should be directly under the TKW folder</li>
+<li>#1349 - Version number of 3.7_3 is not visible when running autotest</li>
+<li>#1407 - Child Screening - CS_RA_NULLIFY_urn:nhs-itk:interaction:nullifyChildScreeningReport-v1-0_test4 is returning a fail by autotest manager</li>
+<li>#1410 - HSCI - HS_CHC_CANCEL_39_response.out - Validation failed: Unrecognised service: urn:nhs-itk:services:201005:SendCHCCancellation-v1-0Response</li>
+<li>#1411 - Single Run Mode - unable to delete message from transmitter 'source file name' pane</li>
+<li>#1473 - Add OID vocab checker to the validation function</li>
+<li>#1527 - Simulator Ruleset error in 111 causing 500 Responses for example messages - cause also present in Acks config</li>
+<li>#1574 - Simulator Issue - For Test SO_USRSUB in ATM, Simulator should reject a message with "Known" in the Username element</li>
+<li>#1580 - File validator (Spine OMVT) should have a specific validation for SMSP to check Author</li>
+<li>#1585 - All SMSP witness test messages have an incorrect GP identifier</li>
+<li>#1586 - example SPINE messages supplied for SMSP do not have the author element</li>
+<li>#1596 - Client Negative Acknowledgement Testing - SO_EXHEAD and SO_EXHDMU fail because ATM is looking for wrong Action in response message</li>
+<li>#1597 - Host Testing - For Correspondence Bundle Basic Document Transmission, DE_INVPID, DE_MISPID and DE_EMPPID should not be presented</li>
+
+			
+		</ul>
+		<p>Other changes and additions:</p>
+			<li>TKW/ATM Support for HPEN Accreditation</li>
+			<li>TKW Support for Content Ready Only Accreditation</li>
+		<ul>
+		</ul>
+		</ul>
+		<p>Fully Supported (<u>formal accreditation or assurance process available</u>) Domain Message Specifications used for validation and message examples by TKW.jar:</p>
+		<ul>
+			<li>Urgent Care Dashboards - NPFIT-FNT-TO-DSD-0212 Version: 1.0; Status: RC4</li>
+			<li>HL7V2 ADT - NPFIT-FNT-TO-DSD-0210 Version: 1.0; Status: RC2</li>
+			<li>ITK Core (Infrastructure and Business (N)acks) - NPFIT-FNT-TO-DSD-0206 Version: 1.0; Status: RC2</li>
+			<li>Correspondence: Ambulance NPFIT-FNT-TO-DSD-0200 Version: 2.0; Status: RC2</li>
+			<li>Correspondence: Discharge NPFIT-FNT-TO-DSD-0201 Version: 4.0; Status: RC2</li>
+			<li>Correspondence: Emergency Department NPFIT-FNT-TO-DSD-0202 Version: 4.0; Status: RC2</li>
+			<li>Correspondence: Non-Coded CDA Document NPFIT-FNT-TO-DSD-0205 Version: 1.0; Status: RC2</li>
+			<li>Correspondence: Out of Hours NPFIT-FNT-TO-DSD-0203 Version: 2.0; Status: RC2</li>
+			<li>Correspondence: Outpatients NPFIT-FNT-TO-DSD-0204 Version: 2.0; Status: RC2</li>
+			<li>ITK Telehealth: Version: 2.0; Status: RC1</li>
+			<li>Embedded within TKW.jar - CDALikeToTrueCDA_v2.xst and associated transforms taken from pre-release of HSCI DMS.</li>
+			<li>Spine messages conform with relevant Spine domain specification, MIM and EIS</li>
+			<li>HSCI: NPFIT-FNT-TO-DSD-0199 Version: 4.0; Status: Draft A</li>
+			<li>Child Screening: NPFIT-FNT-TO-DSD-0238 Version: 1.0; Status: RC1</li>
+			<li>NHS111: Version: 1.0; Status: RC2</li>
+		</ul>
+		<p>Other (<u>No ITK accreditation or assurance currently available</u>) Domain Message Specifications used for validation and message examples by TKW.jar:</p>
+		<ul>
+			<li>CP-IS: Version: 1.0; Status: RC3</li>
+		</ul>
+</blockquote>
+
+
+
+<dt><b>January 2014 &#x2022; Version 3.9</b></dt>
+<p>This latest version of TKW installer is hosted on the Solution Assurance Message Test Tools site - http://systems.hscic.gov.uk/satools</p>
+</ul> 
+ <blockquote>
+ 		<p>Contains:</p>
+		<ul>
+			<li>TKW Version: TKW Version: v3.0.27-MLLP-20131219-1</li>
+			<li>ATM Version: 65</li>
+			<li>ReqSheet Version: 6.4</li>
+			<li>Config SVN: 207a</li>
+		</ul>
+		<p>Known issues:</p>
+		<ul>
+			<li>Please refer to the Shared Documents area of the ITK Accreditations Sharepoint Site for other TKWAutotestManager issues</li>
+		</ul>
+		<p>Bugs fixed:</p>
+		<ul>
+			<li>#List TBC</li> 
+			<li>...</li>
+		</ul>
+		<p>Other changes and additions:</p>
+			<li>TKW/ATM Support for NHS111 Accreditation process</li>
+			<li>...</li>
+		<ul>
+		</ul>
+		</ul>
+		<p>Fully Supported (<u>formal accreditation or assurance process available</u>) Domain Message Specifications used for validation and message examples by TKW.jar:</p>
+		<ul>
+			<li>Urgent Care Dashboards - NPFIT-FNT-TO-DSD-0212 Version: 1.0; Status: RC4</li>
+			<li>HL7V2 ADT - NPFIT-FNT-TO-DSD-0210 Version: 1.0; Status: RC2</li>
+			<li>ITK Core (Infrastructure and Business (N)acks) - NPFIT-FNT-TO-DSD-0206 Version: 1.0; Status: RC2</li>
+			<li>Correspondence: Ambulance NPFIT-FNT-TO-DSD-0200 Version: 2.0; Status: RC2</li>
+			<li>Correspondence: Discharge NPFIT-FNT-TO-DSD-0201 Version: 4.0; Status: RC2</li>
+			<li>Correspondence: Emergency Department NPFIT-FNT-TO-DSD-0202 Version: 4.0; Status: RC2</li>
+			<li>Correspondence: Non-Coded CDA Document NPFIT-FNT-TO-DSD-0205 Version: 1.0; Status: RC2</li>
+			<li>Correspondence: Out of Hours NPFIT-FNT-TO-DSD-0203 Version: 2.0; Status: RC2</li>
+			<li>Correspondence: Outpatients NPFIT-FNT-TO-DSD-0204 Version: 2.0; Status: RC2</li>
+			<li>ITK Telehealth: Version: 2.0; Status: RC1</li>
+			<li>Embedded within TKW.jar - CDALikeToTrueCDA_v2.xst and associated transforms taken from pre-release of HSCI DMS.</li>
+			<li>Spine messages conform with relevant Spine domain specification, MIM and EIS</li>
+			<li>HSCI: NPFIT-FNT-TO-DSD-0199 Version: 4.0; Status: Draft A</li>
+			<li>Child Screening: NPFIT-FNT-TO-DSD-0238 Version: 1.0; Status: RC1</li>
+			<li>NHS111: Version: 1.0; Status: RC2</li>
+		</ul>
+		<p>Other (<u>No ITK accreditation or assurance currently available</u>) Domain Message Specifications used for validation and message examples by TKW.jar:</p>
+		<ul>
+			<li>CP-IS: Version: 1.0; Status: RC3</li>
+		</ul>
+</blockquote>
+
+
+<dt><b>October 2013 &#x2022; Version 3.8</b></dt>
+<p>Limited release to support CP-IS Suppliers</p>
+
+<dt><b>September 2013 &#x2022; Version 3.7</b></dt>
+<p>This latest version of TKW installer is hosted on the Solution Assurance Message Test Tools site - http://systems.hscic.gov.uk/satools</p>
+</ul> 
+<blockquote>
+		<p>Known issues:</p>
+		<ul>
+			<li>Please refer to the Shared Documents area of the ITK Accreditations Sharepoint Site for other TKWAutotestManager issues</li>
+		</ul>
+		<p>Bugs fixed:</p>
+		<ul>
+			<li>#405 - Supplier Raised - Relevance of "ITK_SendCDADocument_20110418" to the current ITK 2.01</li>
+			<li>#507 - In autotest manager test WS_SO_014 invalid username is overwritten - supplier raised</li>
+			<li>#510 - Add vertical scroll bars to TKW Window - supplier raised</li>
+			<li>#515 - In autotest manager test WS_SO_011 and 12 return 200 but autotest expects 500 - supplier raised</li>
+			<li>#630 - test message in correspondence is incorrect - POCD_MT150001UK06_SOAPandDIST_non_xml_Primary.xml - supplier raised</li>
+			<li>#631 - all the correspondence nullify tests should be filtered as optional - supplier raised</li>
+			<li>#641 - Supplier Raised - Document update - Operating system support in auto test manager guide and TKW release notes as applicable</li>
+			<li>#643 - example messages do not have mustunderstand ="1" in a known element - supplier raised</li>
+			<li>#704 - Autotest Manager - Does not populate wsa:address in message from the From URL: should it? Supplier raised - see description</li>
+			<li>#705 - Autotest Manager - Does not save configurations - supplier raised see description</li>
+			<li>#712 - ProfileID is omitted from BusinessAcks generated by TKW - supplier raised</li>
+			<li>#723 - example message for acknowledgement has wrong timestamp in body - supplier raised</li>
+			<li>#724 - autotest sends wrong value in interaction in handling spec - supplier raised</li>
+			<li>#725 - autotest sends wrong value in profileid - supplier raised</li>
+			<li>#751 - Autotest not handling incoming signed acks - Supplier raised</li>
+			<li>#753 - Incorrect namespace for mustUnderstand element in TKW Autotest Manager - Test WS_SO_013 - supplier raised</li>
+			<li>#754 - Incorrect namespace for mustUnderstand element in TKW Message Example - Test WS_SO_013 - supplier raised</li>
+			<li>#755 - Autotest does not support signed messages - supplier raised</li>
+			<li>#767 - simulator replies with an invalid (lowercase) tracking ID for test case CO-NCC-001 - supplier raised</li>
+			<li>#771 - The expected result for test case 'CM_ER_011' has been queried by a supplier. </li>
+			<li>#780 - Autotest HS_HSC_002 even though it is returning a simple response it is reporting that the test has failed due to Null HTTP </li>
+			<li>#784 - non anonymouse replyto send back a 202 - supplier raised</li>
+			<li>#803 - Autotest WS_SO_13 Fails if ToolkitErrorInfo Block is removed</li>
+			<li>#836 - Inconsistent simulator listen ip address</li>
+			<li>#926 - Test Case CM_DE_001 requests response of 2200 but some suppliers are sending bacl 1000</li>
+			<li>#941 - TKWROOT\config\ITK_Autotest\tkw.properties contains a spurious entry</li>
+		</ul>
+		
+		<p>Other changes and additions:</p>
+		<ul>
+			<li>TKW Autotest Manager Tests have been extended and renamed</li>
+			<li>TKW Autotest Manager reports have been updated to make them more readable</li>
+			<li>TKW Autotest Manager Support for Client Tests</li>
+			<li>TKW Autotest Manager Support for Single Run Mode</li>
+		</ul>
+		<p>Fully Supported (<u>formal accreditation or assurance process available</u>) Domain Message Specifications used for validation and message examples by TKW.jar:</p>
+		<ul>
+			<li>Urgent Care Dashboards - NPFIT-FNT-TO-DSD-0212 Version: 1.0; Status: RC4</li>
+			<li>HL7V2 ADT - NPFIT-FNT-TO-DSD-0210 Version: 1.0; Status: RC2</li>
+			<li>ITK Core (Infrastructure and Business (N)acks) - NPFIT-FNT-TO-DSD-0206 Version: 1.0; Status: RC2</li>
+			<li>Correspondence: Ambulance NPFIT-FNT-TO-DSD-0200 Version: 2.0; Status: RC2</li>
+			<li>Correspondence: Discharge NPFIT-FNT-TO-DSD-0201 Version: 4.0; Status: RC2</li>
+			<li>Correspondence: Emergency Department NPFIT-FNT-TO-DSD-0202 Version: 4.0; Status: RC2</li>
+			<li>Correspondence: Non-Coded CDA Document NPFIT-FNT-TO-DSD-0205 Version: 1.0; Status: RC2</li>
+			<li>Correspondence: Out of Hours NPFIT-FNT-TO-DSD-0203 Version: 2.0; Status: RC2</li>
+			<li>Correspondence: Outpatients NPFIT-FNT-TO-DSD-0204 Version: 2.0; Status: RC2</li>
+			<li>ITK Telehealth: Version: 2.0; Status: RC1</li>
+			<li>Embedded within TKW.jar - CDALikeToTrueCDA_v2.xst and associated transforms taken from pre-release of HSCI DMS.</li>
+			<li>Spine messages conform with relevant Spine domain specification, MIM and EIS</li>
+			<li>HSCI: NPFIT-FNT-TO-DSD-0199 Version: 4.0; Status: Draft A</li>
+			<li>Child Screening: NPFIT-FNT-TO-DSD-0238 Version: 1.0; Status: RC1</li>
+		</ul>
+		<p>Other (<u>No ITK accreditation or assurance currently available</u>) Domain Message Specifications used for validation and message examples by TKW.jar:</p>
+		<ul>
+			<li>NHS111: Version: 1.0; Status: RC2</li>
+		</ul>
+</blockquote>
+
+
+<dt><b>May 2013 &#x2022; Version 3.6</b></dt>
+<p>This latest version of TKW installer is hosted on the Solution Assurance Message Test Tools site - http://systems.hscic.gov.uk/satools</p>
+<p>As well as bug fixes, this version also make generally available functionality included in supplier limited releases 3.5.1 and 3.5.2.</p>
+</ul> 
+ <blockquote>
+		<p>Known issues:</p>
+		<ul>
+			<li>Please refer to the Shared Documents area of the ITK Accreditations Sharepoint Site for other TKWAutotestManager issues</li>
+		</ul>
+		<p>Bugs fixed:</p>
+		<ul>
+			<li>#762 - Quicksilva - Chunking used causing issues with Autotest manager</li> 
+			<li>#905 Infrastructure Ack that is returned by Simulator fails validation</li>  
+			<li>#831 TKW Autotest manager From URL port number should match TKW properties listen port number</li> 
+			<li>#781 New Schema is available for the Business Ack - this needs updating in TKW</li> 
+			<li>#768 HSCI Planning assessments (sendcda) return infrastructureack but validator does not recognise this</li> 
+			<li>#767 simulator replies with an invalid (lowercase) tracking ID for test case CO-NCC-001 - supplier raised</li> 
+			<li>#765 running autotest for new HSCI get java.lang.Exception: Unknown record id annebloggs_no_bus_ack in data source patients</li> 
+			<li>#753 Incorrect namespace for mustUnderstand element in TKW Autotest Manager - Test WS_SO_013 - supplier raised</li> 
+			<li>#725 autotest sends wrong value in profileid - supplier raised</li> 
+			<li>#724 autotest sends wrong value in interaction in handling spec - supplier raised</li> 
+			<li>#712 ProfileID is omitted from BusinessAcks generated by TKW - supplier raised</li> 
+			<li>#705 Autotest Manager - Does not save configurations - supplier raised see description</li> 
+			<li>#629 The TrackingID on the Business Acknowledgement returned from TKW Simulator is incorrect</li> 
+			<li>#610 Sendinfrastructureack fails validation on addresslist</li> 
+			<li>#609 Telehealth acknowledgement test does not validate the acknowledgement</li> 
+			<li>#607 payload/@id and manifestitem/@id checks in the Distribution envelope failing schema</li> 
+			<li>#602 When leaving autotest you are always prompted to Save even if you have just saved</li> 
+			<li>#599 ACKS and BUSINESSACKs do not work in autotest for HSCI and Telehealth</li> 
+			<li>#484 Test CO_ACK_001 - the validation report fails because of invalid messages - probably TKW Configs somewhere</li> 
+		</ul>
+		<p>Other changes and additions:</p>
+		<ul>
+			<li>Support for suppliers implementing the Child Screening CDA domain.</li>
+			<li>HSCI Validation has been updated to align with the latest DMS. Includes updated messages for Contact Assessment and Assessment Notification Section 2.</li>
+		</ul>
+		</ul>
+		<p>Fully Supported (<u>formal accreditation or assurance process available</u>) Domain Message Specifications used for validation and message examples by TKW.jar:</p>
+		<ul>
+			<li>Urgent Care Dashboards - NPFIT-FNT-TO-DSD-0212 Version: 1.0; Status: RC4</li>
+			<li>HL7V2 ADT - NPFIT-FNT-TO-DSD-0210 Version: 1.0; Status: RC2</li>
+			<li>ITK Core (Infrastructure and Business (N)acks) - NPFIT-FNT-TO-DSD-0206 Version: 1.0; Status: RC2</li>
+			<li>Correspondence: Ambulance NPFIT-FNT-TO-DSD-0200 Version: 2.0; Status: RC2</li>
+			<li>Correspondence: Discharge NPFIT-FNT-TO-DSD-0201 Version: 4.0; Status: RC2</li>
+			<li>Correspondence: Emergency Department NPFIT-FNT-TO-DSD-0202 Version: 4.0; Status: RC2</li>
+			<li>Correspondence: Non-Coded CDA Document NPFIT-FNT-TO-DSD-0205 Version: 1.0; Status: RC2</li>
+			<li>Correspondence: Out of Hours NPFIT-FNT-TO-DSD-0203 Version: 2.0; Status: RC2</li>
+			<li>Correspondence: Outpatients NPFIT-FNT-TO-DSD-0204 Version: 2.0; Status: RC2</li>
+			<li>ITK Telehealth: Version: 2.0; Status: RC1</li>
+			<li>Embedded within TKW.jar - CDALikeToTrueCDA_v2.xst and associated transforms taken from pre-release of HSCI DMS.</li>
+			<li>Spine messages conform with relevant Spine domain specification, MIM and EIS</li>
+			<li>HSCI: NPFIT-FNT-TO-DSD-0199 Version: 4.0; Status: Draft A</li>
+			<li>Child Screening: NPFIT-FNT-TO-DSD-0238 Version: 1.0; Status: RC1</li>
+		</ul>
+		<p>Other (<u>No ITK accreditation or assurance currently available</u>) Domain Message Specifications used for validation and message examples by TKW.jar:</p>
+		<ul>
+
+			<li>NHS111: Version: 1.0; Status: RC2</li>
+		</ul>
+</blockquote>
+
+<dt><b>January 2013 &#x2022; Version 3.5</b></dt>
+<p>This latest version of TKW installer hosted on the CFH NICA Website - http://www.connectingforhealth.nhs.uk/industry/liaison/validator</p>
+</ul>
+ 
+ <blockquote>
+		<p>Known issues:</p>
+		<ul>
+			<li>Please refer to the Shared Documents area of the ITK Accreditations Sharepoint Site for other TKWAutotestManager issues</li>
+		</ul>
+		<p>Bugs fixed:</p>
+		<ul>
+			<li>#507 - AutoTestManager: When running WS_SO_014 the invalid username was being overwritten</li>
+			<li>#510 - AutoTestManager: Vertical scroll bars added to TKW Output Window</li>
+			<li>#515 - AutoTestManager: When running test WS_SO_011 and 12 now return Error 500</li>
+			<li>#516 - TKW: Correspondence Schematrons Updated</li>
+			<li>#517 - TKW: Rendering issue resolved</li>
+		</ul>
+		<p>Other changes and additions:</p>
+		<ul>
+			<li>Resilience added for metadata and multiple payloads</li>
+					<ul>
+			<li>Validates only the first occurrence of Clinical Document payload against the template schema. The other occurrences are ignored and have to be validated manually</li>
+			<li>Metadata payloads are ignored. Metadata payload validation is a planned enhancement</li>
+		</ul>
+		</ul>
+		<p>Fully Supported (<u>formal accreditation or assurance process available</u>) Domain Message Specifications used for validation and message examples by TKW.jar:</p>
+		<ul>
+			<li>Urgent Care Dashboards - NPFIT-FNT-TO-DSD-0212 Version: 1.0; Status: RC4</li>
+			<li>HL7V2 ADT - NPFIT-FNT-TO-DSD-0210 Version: 1.0; Status: RC2</li>
+			<li>ITK Core (Infrastructure and Business (N)acks) - NPFIT-FNT-TO-DSD-0206 Version: 1.0; Status: RC2</li>
+			<li>Correspondence: Ambulance NPFIT-FNT-TO-DSD-0200 Version: 2.0; Status: RC2</li>
+			<li>Correspondence: Discharge NPFIT-FNT-TO-DSD-0201 Version: 4.0; Status: RC2</li>
+			<li>Correspondence: Emergency Department NPFIT-FNT-TO-DSD-0202 Version: 4.0; Status: RC2</li>
+			<li>Correspondence: Non-Coded CDA Document NPFIT-FNT-TO-DSD-0205 Version: 1.0; Status: RC2</li>
+			<li>Correspondence: Out of Hours NPFIT-FNT-TO-DSD-0203 Version: 2.0; Status: RC2</li>
+			<li>Correspondence: Outpatients NPFIT-FNT-TO-DSD-0204 Version: 2.0; Status: RC2</li>
+			<li>ITK Telehealth: Version: 2.0; Status: RC1</li>
+			<li>Embedded within TKW.jar - CDALikeToTrueCDA_v2.xst and associated transforms taken from pre-release of HSCI DMS.</li>
+			<li>Spine messages conform with relevant Spine domain specification, MIM and EIS</li>
+			<li>HSCI: NPFIT-FNT-TO-DSD-0199 Version: 4.0; Status: Draft A</li>
+		</ul>
+		<p>Other (<u>No ITK accreditation or assurance currently available</u>) Domain Message Specifications used for validation and message examples by TKW.jar:</p>
+		<ul>
+
+			<li>NHS111: Version: 1.0; Status: RC2</li>
+		</ul>
+</blockquote>
+
+<dt><b>December 2012 &#x2022; Version 3.4.1</b></dt>
+<p>This latest version of TKW installer hosted on the CFH NICA Website - http://www.connectingforhealth.nhs.uk/industry/liaison/validator</p>
+</ul>
+ 
+ <blockquote>
+		<p>Known issues:</p>
+		<ul>
+			<li>Please refer to the Shared Documents area of the ITK Accreditations Sharepoint Site for other TKWAutotestManager issues</li>
+		</ul>
+		<p>Bugs fixed:</p>
+		<ul>
+			<li>Context path issue in TKWAutoTestManager, Please note that The 'To URL' on the TKWAutoTestManager Configuration Tab MUST include the host, port and context path of the system under test and that context path MUST be omitted from the 'From URL:'</li>
+		</ul>
+		<p>Other changes and additions:</p>
+		<ul>
+			<li>None</li>
+		</ul>
+		<p>Fully Supported (<u>formal accreditation or assurance process available</u>) Domain Message Specifications used for validation and message examples by TKW.jar:</p>
+		<ul>
+			<li>Urgent Care Dashboards - NPFIT-FNT-TO-DSD-0212 Version: 1.0; Status: RC4</li>
+			<li>HL7V2 ADT - NPFIT-FNT-TO-DSD-0210 Version: 1.0; Status: RC2</li>
+			<li>ITK Core (Infrastructure and Business (N)acks) - NPFIT-FNT-TO-DSD-0206 Version: 1.0; Status: RC2</li>
+			<li>Correspondence: Ambulance NPFIT-FNT-TO-DSD-0200 Version: 2.0; Status: RC2</li>
+			<li>Correspondence: Discharge NPFIT-FNT-TO-DSD-0201 Version: 4.0; Status: RC2</li>
+			<li>Correspondence: Emergency Department NPFIT-FNT-TO-DSD-0202 Version: 4.0; Status: RC2</li>
+			<li>Correspondence: Non-Coded CDA Document NPFIT-FNT-TO-DSD-0205 Version: 1.0; Status: RC2</li>
+			<li>Correspondence: Out of Hours NPFIT-FNT-TO-DSD-0203 Version: 2.0; Status: RC2</li>
+			<li>Correspondence: Outpatients NPFIT-FNT-TO-DSD-0204 Version: 2.0; Status: RC2</li>
+			<li>ITK Telehealth: Version: 2.0; Status: RC1</li>
+			<li>Embedded within TKW.jar - CDALikeToTrueCDA_v2.xst and associated transforms taken from pre-release of HSCI DMS.</li>
+			<li>Spine messages conform with relevant Spine domain specification, MIM and EIS</li>
+			<li>HSCI: NPFIT-FNT-TO-DSD-0199 Version: 4.0; Status: Draft A</li>
+		</ul>
+		<p>Other (<u>No ITK accreditation or assurance currently available</u>) Domain Message Specifications used for validation and message examples by TKW.jar:</p>
+		<ul>
+
+			<li>NHS111: Version: 1.0; Status: RC2</li>
+		</ul>
+</blockquote>
+
+<dt><b>November 2012 &#x2022; Version 3.4</b></dt>
+<p>This latest version of TKW installer hosted on the CFH NICA Website - http://www.connectingforhealth.nhs.uk/industry/liaison/validator</p>
+</ul>
+ 
+ <blockquote>
+		<p>Known issues:</p>
+		<ul>
+			<li>If TKWAutotestManager is closed before the background workbench process has completed then this workbench process is not ended. This will cause subsequent executions of TKWAutotestManager to fail. Should this occur please end all java processes and retry</li>
+			<li>Please refer to the Shared Documents area of the ITK Accreditations Sharepoint Site for other TKWAutotestManager issues</li>
+		</ul>
+		<p>Bugs fixed:</p>
+		<ul>
+			<li>None</li>
+		</ul>
+		<p>Other changes and additions:</p>
+		<ul>
+			<li>TKW.jar - NHS CfH Interoperability Toolkit Testbench v2.0.26-sec-20121128-2 SVN:127</li>
+			<li>AutoTest - Functionality has been added to support supplier testing and standardise evidence generation, see 'TKW AutoTest Guide' for details</li>
+			<li>Header  Signing - functionality is supported but following requirement deprecation the tkw.properties file setting tks.transmitter.includesigner now defaults to 'No' for each config</li>
+			<li>Acknowledgement Framework - Infrastructure and Business Acknowledgment framework is now supported by TKW for the Correspondence, HSCI, Telehealth domains</li>
+			<li>CDA Template Check - A list of all templates used in the message has been added to the Validation Report for all clinical documents</li>
+			<li>CDA Renderer - A render check and link to rendered CDA content has been added to the Validation Report for the Correspondence domain</li>
+			<li>TestRun - Batch files to simplify the running of test files through TKW have been added to contrib\Additional_Tools\TestRun folder - see ReadMe.txt in that folder for details</li>
+		</ul>
+		<p>Fully Supported (<u>formal accreditation or assurance process available</u>) Domain Message Specifications used for validation and message examples by TKW.jar:</p>
+		<ul>
+			<li>Urgent Care Dashboards - NPFIT-FNT-TO-DSD-0212 Version: 1.0; Status: RC4</li>
+			<li>HL7V2 ADT - NPFIT-FNT-TO-DSD-0210 Version: 1.0; Status: RC2</li>
+			<li>ITK Core (Infrastructure and Business (N)acks) - NPFIT-FNT-TO-DSD-0206 Version: 1.0; Status: RC2</li>
+			<li>Correspondence: Ambulance NPFIT-FNT-TO-DSD-0200 Version: 2.0; Status: RC2</li>
+			<li>Correspondence: Discharge NPFIT-FNT-TO-DSD-0201 Version: 4.0; Status: RC2</li>
+			<li>Correspondence: Emergency Department NPFIT-FNT-TO-DSD-0202 Version: 4.0; Status: RC2</li>
+			<li>Correspondence: Non-Coded CDA Document NPFIT-FNT-TO-DSD-0205 Version: 1.0; Status: RC2</li>
+			<li>Correspondence: Out of Hours NPFIT-FNT-TO-DSD-0203 Version: 2.0; Status: RC2</li>
+			<li>Correspondence: Outpatients NPFIT-FNT-TO-DSD-0204 Version: 2.0; Status: RC2</li>
+			<li>ITK Telehealth: Version: 2.0; Status: RC1</li>
+			<li>Embedded within TKW.jar - CDALikeToTrueCDA_v2.xst and associated transforms taken from pre-release of HSCI DMS.</li>
+			<li>Spine messages conform with relevant Spine domain specification, MIM and EIS</li>
+			<li>HSCI: NPFIT-FNT-TO-DSD-0199 Version: 4.0; Status: Draft A</li>
+		</ul>
+		<p>Other (<u>No ITK accreditation or assurance currently available</u>) Domain Message Specifications used for validation and message examples by TKW.jar:</p>
+		<ul>
+
+			<li>NHS111: Version: 1.0; Status: RC2</li>
+		</ul>
+</blockquote>
+
+
+<dt><b>November 2012 &#x2022; Version 3.3</b></dt>
+<p>This latest version of TKW installer hosted on the CFH NICA Website - http://www.connectingforhealth.nhs.uk/industry/liaison/validator</p>
+ 
+ <blockquote> 
+		<p>Bugs fixed:</p>
+		<ul>
+			<li>None</li>
+		</ul>
+		<p>Other changes and additions:</p>
+		<ul>
+			<li>TKW.jar - NHS CfH Interoperability Toolkit Testbench v2.0.22-oph-20121029-1 SVN:106</li>
+		</ul>
+		<p>Fully Supported (<u>formal accreditation or assurance process available</u>) Domain Message Specifications used for validation and message examples by TKW.jar:</p>
+		<ul>
+			<li>Urgent Care Dashboards - NPFIT-FNT-TO-DSD-0212 Version: 1.0; Status: RC4</li>
+			<li>HL7V2 ADT - NPFIT-FNT-TO-DSD-0210 Version: 1.0; Status: RC2</li>
+			<li>ITK Core (Infrastructure and Business (N)acks) - NPFIT-FNT-TO-DSD-0206 Version: 1.0; Status: RC2</li>
+			<li>Correspondence: Ambulance NPFIT-FNT-TO-DSD-0200 Version: 2.0; Status: RC2</li>
+			<li>Correspondence: Discharge NPFIT-FNT-TO-DSD-0201 Version: 4.0; Status: RC2</li>
+			<li>Correspondence: Emergency Department NPFIT-FNT-TO-DSD-0202 Version: 4.0; Status: RC2</li>
+			<li>Correspondence: Non-Coded CDA Document NPFIT-FNT-TO-DSD-0205 Version: 1.0; Status: RC2</li>
+			<li>Correspondence: Out of Hours NPFIT-FNT-TO-DSD-0203 Version: 2.0; Status: RC2</li>
+			<li>Correspondence: Outpatients NPFIT-FNT-TO-DSD-0204 Version: 2.0; Status: RC2</li>
+			<li>ITK Telehealth: Version: 2.0; Status: RC1</li>
+			<li>Embedded within TKW.jar - CDALikeToTrueCDA_v2.xst and associated transforms taken from pre-release of HSCI DMS.</li>
+			<li>Spine messages conform with relevant Spine domain specification, MIM and EIS</li>
+		</ul>
+		<p>Other (<u>No ITK accreditation or assurance currently available</u>) Domain Message Specifications used for validation and message examples by TKW.jar:</p>
+		<ul>
+			<li>HSCI: NPFIT-FNT-TO-DSD-0199 Version: 4.0; Status: Draft A</li>
+			<li>NHS111: Version: 1.0; Status: RC2</li>
+		</ul>
+</blockquote>
+
+<dt><b>October 2012 &#x2022; Version 3.2</b></dt>
+<p>This latest version of TKW installer hosted on the CFH NICA Website - http://www.connectingforhealth.nhs.uk/industry/liaison/validator</p>
+
+<blockquote>
+		<p>Bugs fixed:</p>
+		<ul>
+			<li>None</li>
+		</ul>
+		<p>Other changes and additions:</p>
+		<ul>
+			<li>TKW.jar - NHS CfH Interoperability Toolkit Testbench v2.0.17-unt-20121003-1</li>
+			<li>Fixes the pipe and hat problem in the HL7 v2 pack found in TKW_v3.1</li>
+			<li>Included the renewed certs in all the domains</li>
+		</ul>
+		<p>Fully Supported (<u>formal accreditation or assurance process available</u>) Domain Message Specifications used for validation and message examples by TKW.jar:</p>
+		<ul>
+			<li>Urgent Care Dashboards - NPFIT-FNT-TO-DSD-0212 Version: 1.0; Status: RC4</li>
+			<li>HL7V2 ADT - NPFIT-FNT-TO-DSD-0210 Version: 1.0; Status: RC2</li>
+			<li>ITK Core (Infrastructure and Business (N)acks) - NPFIT-FNT-TO-DSD-0206 Version: 1.0; Status: RC2</li>
+			<li>Correspondence: Ambulance NPFIT-FNT-TO-DSD-0200 Version: 2.0; Status: RC2</li>
+			<li>Correspondence: Discharge NPFIT-FNT-TO-DSD-0201 Version: 4.0; Status: RC2</li>
+			<li>Correspondence: Emergency Department NPFIT-FNT-TO-DSD-0202 Version: 4.0; Status: RC2</li>
+			<li>Correspondence: Non-Coded CDA Document NPFIT-FNT-TO-DSD-0205 Version: 1.0; Status: RC2</li>
+			<li>Correspondence: Out of Hours NPFIT-FNT-TO-DSD-0203 Version: 2.0; Status: RC2</li>
+			<li>Correspondence: Outpatients NPFIT-FNT-TO-DSD-0204 Version: 2.0; Status: RC2</li>
+			<li>ITK Telehealth: Version: 2.0; Status: RC1</li>
+			<li>Embedded within TKW.jar - CDALikeToTrueCDA_v2.xst and associated transforms taken from pre-release of HSCI DMS.</li>
+			<li>Spine messages conform with relevant Spine domain specification, MIM and EIS</li>
+		</ul>
+		<p>Other (<u>No ITK accreditation or assurance currently available</u>) Domain Message Specifications used for validation and message examples by TKW.jar:</p>
+		<ul>
+			<li>HSCI: NPFIT-FNT-TO-DSD-0199 Version: 4.0; Status: Draft A</li>
+			<li>NHS111: Version: 1.0; Status: RC2</li>
+		</ul>
+</blockquote>
+
+<dt><b>September 2012 &#x2022; Version 3.1</b></dt>
+<p>This latest version of TKW installer hosted on the CFH NICA Website - http://www.connectingforhealth.nhs.uk/industry/liaison/validator</p>
+
+<blockquote>
+		<p>Bugs fixed:</p>
+		<ul>
+			<li>None</li>
+		</ul>
+		<p>Other changes and additions:</p>
+		<ul>
+			<li>TKW.jar - NHS CfH Interoperability Toolkit Testbench v2.0.17-unt-20121003-1</li>
+			<li>Enhancements of message validation configurations and test data for: </li>
+				<ul>
+				<li>NHS111</li>
+				<li>Fixed the colon issue in filename when running TKW in simulator mode on Windows</li>
+				<li>Fixed the Ambulance message profileid check - v1-0 replaces v2-0</li>
+				</ul>
+		<li>Updates to certificates</li>
+		<li>Changes to HSCI for London Adapter.</li>
+		</ul>
+		<p>Fully Supported (<u>formal accreditation or assurance process available</u>) Domain Message Specifications used for validation and message examples by TKW.jar:</p>
+		<ul>
+			<li>Urgent Care Dashboards - NPFIT-FNT-TO-DSD-0212 Version: 1.0; Status: RC4</li>
+			<li>HL7V2 ADT - NPFIT-FNT-TO-DSD-0210 Version: 1.0; Status: RC2</li>
+			<li>ITK Core (Infrastructure and Business (N)acks) - NPFIT-FNT-TO-DSD-0206 Version: 1.0; Status: RC2</li>
+			<li>Correspondence: Ambulance NPFIT-FNT-TO-DSD-0200 Version: 2.0; Status: RC2</li>
+			<li>Correspondence: Discharge NPFIT-FNT-TO-DSD-0201 Version: 4.0; Status: RC2</li>
+			<li>Correspondence: Emergency Department NPFIT-FNT-TO-DSD-0202 Version: 4.0; Status: RC2</li>
+			<li>Correspondence: Non-Coded CDA Document NPFIT-FNT-TO-DSD-0205 Version: 1.0; Status: RC2</li>
+			<li>Correspondence: Out of Hours NPFIT-FNT-TO-DSD-0203 Version: 2.0; Status: RC2</li>
+			<li>Correspondence: Outpatients NPFIT-FNT-TO-DSD-0204 Version: 2.0; Status: RC2</li>
+			<li>ITK Telehealth: Version: 2.0; Status: RC1</li>
+			<li>Embedded within TKW.jar - CDALikeToTrueCDA_v2.xst and associated transforms taken from pre-release of HSCI DMS.</li>
+			<li>Spine messages conform with relevant Spine domain specification, MIM and EIS</li>
+		</ul>
+		<p>Other (<u>No ITK accreditation or assurance currently available</u>) Domain Message Specifications used for validation and message examples by TKW.jar:</p>
+		<ul>
+			<li>HSCI: NPFIT-FNT-TO-DSD-0199 Version: 4.0; Status: Draft A</li>
+			<li>NHS111: Version: 1.0; Status: RC2</li>
+		</ul>
+</blockquote>
+
+<dt><b>August 2012 &#x2022; Version 2.5</b></dt>
+<p>This latest version of TKW installer hosted on the CFH NICA Website - http://www.connectingforhealth.nhs.uk/industry/liaison/validator</p>
+
+<blockquote>
+		<p>Bugs fixed:</p>
+		<ul>
+			<li>None</li>
+		</ul>
+		<p>Other changes and additions:</p>
+		<ul>
+			<li>TKW.jar - NHS CfH Interoperability Toolkit Workbench v2.0.12-iss-20120823-1</li>
+			<li>Addition of message validation configurations and test data for: </li>
+				<ul>
+				<li>Telehealth</li>
+				</ul>
+			<li> Updates to CRL server to implement GET</li>
+		</ul>
+		<p>Fully Supported (<u>formal accreditation or assurance process available</u>) Domain Message Specifications used for validation and message examples by TKW.jar:</p>
+		<ul>
+			<li>Urgent Care Dashboards - NPFIT-FNT-TO-DSD-0212 Version: 1.0; Status: RC4</li>
+			<li>HL7V2 ADT - NPFIT-FNT-TO-DSD-0210 Version: 1.0; Status: RC2</li>
+			<li>ITK Core (Infrastructure and Business (N)acks) - NPFIT-FNT-TO-DSD-0206 Version: 1.0; Status: RC2</li>
+			<li>Correspondence: Ambulance NPFIT-FNT-TO-DSD-0200 Version: 2.0; Status: RC2</li>
+			<li>Correspondence: Discharge NPFIT-FNT-TO-DSD-0201 Version: 4.0; Status: RC2</li>
+			<li>Correspondence: Emergency Department NPFIT-FNT-TO-DSD-0202 Version: 4.0; Status: RC2</li>
+			<li>Correspondence: Non-Coded CDA Document NPFIT-FNT-TO-DSD-0205 Version: 1.0; Status: RC2</li>
+			<li>Correspondence: Out of Hours NPFIT-FNT-TO-DSD-0203 Version: 2.0; Status: RC2</li>
+			<li>Correspondence: Outpatients NPFIT-FNT-TO-DSD-0204 Version: 2.0; Status: RC2</li>
+			<li>ITK Telehealth: Version: 2.0; Status: RC1</li>
+			<li>Embedded within TKW.jar - CDALikeToTrueCDA_v2.xst and associated transforms taken from pre-release of HSCI DMS.</li>
+			<li>Spine messages conform with relevant Spine domain specification, MIM and EIS</li>
+		</ul>
+		<p>Other (<u>No ITK accreditation or assurance currently available</u>) Domain Message Specifications used for validation and message examples by TKW.jar:</p>
+		<ul>
+			<li>HSCI: NPFIT-FNT-TO-DSD-0199 Version: 3.2; Status: RC1</li>
+			<li>NHS111: Version: 1.0; Status: RC2</li>
+		</ul>
+</blockquote>
+
+<dt><b>August 2012 &#x2022; Version 2.4</b></dt>
+<p>This latest version of TKW installer hosted on the CFH NICA Website - http://www.connectingforhealth.nhs.uk/industry/liaison/validator</p>
+
+<blockquote>
+		<p>Bugs fixed:</p>
+		<ul>
+			<li>None</li>
+		</ul>
+		<p>Other changes and additions:</p>
+		<ul>
+			<li>TKW.jar - NHS CfH Interoperability Toolkit Workbench v2.0.11-iss-20120816-1</li>
+			<li>Addition of message validation configurations and test data for: </li>
+			<ul>
+			<li>NHS111</li>
+			</ul>
+			<li>Further updates to support for TLS Mutual Authentication. See user guide for full details.</li>
+		</ul>
+		<p>Fully Supported (<u>formal accreditation or assurance process available</u>) Domain Message Specifications used for validation and message examples by TKW.jar:</p>
+		<ul>
+			<li>Urgent Care Dashboards - NPFIT-FNT-TO-DSD-0212 Version: 1.0; Status: RC4</li>
+			<li>HL7V2 ADT - NPFIT-FNT-TO-DSD-0210 Version: 1.0; Status: RC2</li>
+			<li>ITK Core (Infrastructure and Business (N)acks) - NPFIT-FNT-TO-DSD-0206 Version: 1.0; Status: RC2</li>
+			<li>Correspondence: Ambulance NPFIT-FNT-TO-DSD-0200 Version: 2.0; Status: RC2</li>
+			<li>Correspondence: Discharge NPFIT-FNT-TO-DSD-0201 Version: 4.0; Status: RC2</li>
+			<li>Correspondence: Emergency Department NPFIT-FNT-TO-DSD-0202 Version: 4.0; Status: RC2</li>
+			<li>Correspondence: Non-Coded CDA Document NPFIT-FNT-TO-DSD-0205 Version: 1.0; Status: RC2</li>
+			<li>Correspondence: Out of Hours NPFIT-FNT-TO-DSD-0203 Version: 2.0; Status: RC2</li>
+			<li>Correspondence: Outpatients NPFIT-FNT-TO-DSD-0204 Version: 2.0; Status: RC2</li>
+			<li>Embedded within TKW.jar - CDALikeToTrueCDA_v2.xst and associated transforms taken from pre-release of HSCI DMS.</li>
+			<li>Spine messages conform with relevant Spine domain specification, MIM and EIS</li>
+		</ul>
+		<p>Other (<u>No ITK accreditation or assurance currently available</u>) Domain Message Specifications used for validation and message examples by TKW.jar:</p>
+		<ul>
+			<li>HSCI: NPFIT-FNT-TO-DSD-0199 Version: 3.2; Status: RC1</li>
+			<li>NHS111: Version: 1.0; Status: RC2</li>
+		</ul>
+</blockquote>
+
+<dt><b>July 2012 &#x2022; Version 2.3</b></dt>
+<p>This latest version of TKW installer hosted on the CFH NICA Website - http://www.connectingforhealth.nhs.uk/industry/liaison/validator</p>
+ 
+<blockquote>
+		<p>Bugs fixed:</p>
+  <ul>
+      <table width="95%" border="1">
+      <tr>
+        <th width="27%">
+          <div align="center">
+            Bug Id</div>
+        </th>
+        <th width="73%">Summary</th>
+      </tr>
+      <tr>
+        <td width="27%" height="15">
+          <div align="center">
+          <p>QC15</p></div>
+        </td>
+        <td width="73%" height="15">
+          <p>SMSP - latest test bench released yesterday appear to use ITK 1.1 schemas</p> 
+        </td>
+	</tr>
+	      <tr>
+        <td width="27%" height="15">
+          <div align="center">
+          <p>QC19</p></div>
+        </td>
+        <td width="73%" height="15">
+          <p>Validation of message id has loose check of MessageID does not match "uuid.*. Changed to UUID Regex check for all domains.</p> 
+        </td>
+	</tr>
+		      <tr>
+        <td width="27%" height="15">
+          <div align="center">
+          <p>QC20</p></div>
+        </td>
+        <td width="73%" height="15">
+          <p>ADT validation doesn't include a check for profile id of not present or null.</p> 
+        </td>
+	</tr>
+			      <tr>
+        <td width="27%" height="15">
+          <div align="center">
+          <p>QC21</p></div>
+        </td>
+        <td width="73%" height="15">
+          <p>Adding trackingID for the response messages (OK and Error) from Simulator in Testbench. Required for test automation harness.</p> 
+        </td>
+	</tr>
+      <tr>
+        <td width="27%" height="15">
+          <div align="center">
+          <p>QC30</p></div>
+        </td>
+        <td width="73%" height="15">
+          <p>ITK Installer 2.3 - TKW_ROOT substitution tags not being replaced for \SendCDADocument_20110418 directory</p> 
+        </td>
+	</tr>
+	<tr>
+		<td width="27%" height="15">
+          <div align="center">
+          <p>QC31</p></div>
+        </td>
+        <td width="73%" height="15">
+          <p>TKW multiple message transmission issue, misreporting of transmission in log.</p> 
+        </td>
+      </tr>
+	  	<tr>
+		<td width="27%" height="15">
+          <div align="center">
+          <p>QC36</p></div>
+        </td>
+        <td width="73%" height="15">
+          <p>Validator config change in SMSP Provider to count attribute in manifestitem, payload elements.</p> 
+        </td>
+      </tr>
+	  	  	  	<tr>
+		<td width="27%" height="15">
+          <div align="center">
+          <p>QC16</p></div>
+        </td>
+        <td width="73%" height="15">
+          <p>Testbench does not account for daylight saving. Fixed in TKW.jar version v2.0.1-dev-20120503-1</p> 
+        </td>
+      </tr>
+	  	<tr>
+		<td width="27%" height="15">
+          <div align="center">
+          <p>QC26</p></div>
+        </td>
+        <td width="73%" height="15">
+          <p>"TKW for ADT returns a HTTP 200 in async mode - it should be an empty 202". Code change to TKW so that asynchronous service request acknowledgements are now a HTTP202 with 0 content length.</p> 
+        </td>
+      </tr>
+    </table>
+</ul>
+   
+      <p>Other changes and additions:</p>
+      <ul>
+	    <li>TKW.jar - NHS CfH Interoperability Toolkit Workbench v2.0.10-iss-20120723-1</li>
+	    <li>Addition of Spine message validation configurations and test data for: </li>
+			<ul>
+			<li>ETP Dispensing messaging</li>
+			<li>ETP Prescribing messaging</li>
+			<li>Spine Generic messaging</li>
+			<li>PDS messaging</li>
+			<li>GPES messaging</li>
+			</ul>
+		<li>Updated supported for TLS Mutual Authentication. See user guide for full details.</li>
+		<li>Any true CDA to CDA like transform errors are by default redirected from console to the log file. To disable enter the following in the tkw.properties file:  tks.redirect.transform.errors No</li>
+		<li>TrackingID is now included within the simple message and fault response payloads, to support a future test harness.</li>
+		<li>All validations now include a check for requirement WS-STD-01 xsi:schemaLocation attribute MUST NOT be used.</li>
+		<li>Simple message response validation checks against the Response appended soap actions added for; Acknowledgements_20111004, ADT_20110418, Correspondence_20111010.</li>
+		<li>MustUnderstand attribute for security element. Disabled by default, to enable in tkw.properties file: tks.signer.mustunderstandsecurity Yes</li>
+		<li>BusinessAck message example in contrib directory has been updated. The original example was missing the profileId attribute.</li>
+		<li>The simulator error response template has been changed for all responses, as the child elements of soap:fault were erroneously prefixed within the soap envelope namespace.</li>
+		<li>Support for ADT HL7v2 Pipe and Hat payload content validation</li>
+		<li>Within the ADT validation, ITKEvents_RSP_K22-2010-05.xsd line 32 edited to change element name to RSP_K22. Change request submitted to have the change implemented within the next uplift of the HL7V2 ADT Domain message specification.</li>
+		<li>Added async properties to TKW.properties file: tks.transmitter.replyto.url and tks.transmitter.faultto.url. These properties are used to replace the __FAULTTO__ and __REPLYTO__ substitution tags within the async message templates.</li>
+		<li>Async ADT HL7v2 templates now included within the contrib directory</li>
+		<li>All message timestamps are now UTC regardless of local time settings. Previously timestamps had been local host time.</li>
+		<li>Fix to validation to allow either "CN=" to be present or missing, and still pass validation.</li>
+		<li>Added queue collection messages to the contrib directory under "Test_Messages_ITK2\Core\QueueCollection"</li>
+		</ul>
+
+		<p>Fully Supported (<u>formal accreditation or assurance process available</u>) Domain Message Specifications used for validation and message examples by TKW.jar:</p>
+		<ul>
+		<li>Urgent Care Dashboards - NPFIT-FNT-TO-DSD-0212 Version: 1.0; Status: RC4</li>
+		<li>HL7V2 ADT - NPFIT-FNT-TO-DSD-0210 Version: 1.0; Status: RC2</li>
+		<li>ITK Core (Infrastructure and Business (N)acks) - NPFIT-FNT-TO-DSD-0206 Version: 1.0; Status: RC2</li>
+		<li>Correspondence: Ambulance NPFIT-FNT-TO-DSD-0200 Version: 2.0; Status: RC2</li>
+		<li>Correspondence: Discharge NPFIT-FNT-TO-DSD-0201 Version: 4.0; Status: RC2</li>
+		<li>Correspondence: Emergency Department NPFIT-FNT-TO-DSD-0202 Version: 4.0; Status: RC2</li>
+		<li>Correspondence: Non-Coded CDA Document NPFIT-FNT-TO-DSD-0205 Version: 1.0; Status: RC2</li>
+		<li>Correspondence: Out of Hours NPFIT-FNT-TO-DSD-0203 Version: 2.0; Status: RC2</li>
+		<li>Correspondence: Outpatients NPFIT-FNT-TO-DSD-0204 Version: 2.0; Status: RC2</li>
+		<li>Embedded within TKW.jar - CDALikeToTrueCDA_v2.xst and associated transforms taken from pre-release of HSCI DMS.</li>
+		<li>Spine messages conform with relevant Spine domain specification, MIM and EIS</li>
+		</ul>
+		<p>Other (<u>No accreditation or assurance currently available</u>) Domain Message Specifications used for validation and message examples by TKW.jar:</p>
+		<ul>
+		<li>HSCI: NPFIT-FNT-TO-DSD-0199 Version: 3.2; Status: RC1</li>
+		</ul>
+</blockquote>
+
+<dt><b>December 2011 &#x2022; Version 2.2</b></dt>
+<p>This latest version of TKW installer is to be incorporated within the TRUD hosted ITK accreditation pack.</p>
+
+<blockquote>
+		<p>Bugs fixed:</p>
+  <ul>
+    <table width="95%" border="1">
+      <tr>
+        <th width="27%">
+          <div align="center">
+            Bug Id</div>
+        </th>
+        <th width="73%">Summary</th>
+      </tr>
+
+      <tr>
+        <td width="27%" height="15">
+          <div align="center">
+          <p>QC06</p></div>
+        </td>
+        <td width="73%" height="15">
+          <p>TKW Schema reference incorrect for Dashboards</p> 
+        </td>
+      </tr>
+	  
+	        <tr>
+        <td width="27%" height="15">
+          <div align="center">
+          <p>QC07</p></div>
+        </td>
+        <td width="73%" height="15">
+          <p>TKW Schema reference is wrong for Acknowledgement Validation</p> 
+        </td>
+      </tr>
+	  <tr>
+        <td width="27%" height="15">
+          <div align="center">
+          <p>QC08</p></div>
+        </td>
+        <td width="73%" height="15">
+          <p>Missing Correspondence test messages for Primary, Copy, Nullification</p> 
+        </td>
+      </tr>
+	  
+	  <tr>
+        <td width="27%" height="15">
+          <div align="center">
+          <p>QC10</p></div>
+        </td>
+        <td width="73%" height="15">
+          <p>Missing ADT validation for Response Messages</p> 
+        </td>
+      </tr>
+      
+    </table>
+</ul>
+      <p>Other changes and additions:</p>
+      <ul>
+	    <li>TKW.jar version v1.34-svt-20111206</li>
+		<li>Reinstatement of /SendCDADocument_20110418. Included to allow backwards compatibility testing of ITK1.1 SendCDADocument-v1-0 web service</li>
+	    <li>PH Base64 encoded SOAP wrapped message examples included under contrib\Test_Messages_ITK2\HL7v2\ADT SOAP - PH Payload directory</li>
+	    <li>SMSP SOAP wrapped message examples.</li>
+		<li>Correspondence message examples for all conformance type.</li>
+	    <li>Enhanced SMSP simulator support for all provider and requester web service requests.</li>
+		<li>A single simulator function has been included for all ITK web services. This does not replace the individual domain simulators, rather it offers a
+		single simulator function for all ITK web services.</li>
+		<li>Enhancements to the SMSP distribution envelope validation function. Aligns with the cardinality rules specified with the ITK SMSP domain pack.</li>
+		<li>ADT simulator support for all PH web services.</li>	
+	    <li>TKW now supports SHA-1 (default) and SHA-2 for 256 and 515 block sizes for the DigestMethod. Configured in twk.properties file using tks.signer.digestalgorithm SHA-1 OR SHA-256 OR SHA-512. Please note: the SignatureMethod is RSA SHA-1.</li>
+		<li>TKW Signed modification to add "ValueType" attribute to Security Token Reference as per http://www.ws-i.org/Profiles/BasicSecurityProfile-1.1.html#SecurityTokenReference_to_X.509_Token</li>
+  </ul>
+</blockquote>
+
+<dt><b>October 2011 &#x2022; Version 2.1</b></dt>
+<p>This latest version of TKW installer is to be incorporated within the TRUD hosted ITK accreditation pack.</p>
+<blockquote>
+		<p>Bugs fixed:</p> 
+
+  <blockquote>
+   <ul>
+    <table width="95%" border="1">
+      <tr>
+        <th width="27%">
+          <div align="center">
+            Bug Id</div>
+        </th>
+        <th width="73%">Summary</th>
+      </tr>
+      <tr>
+        <td width="27%" height="15">
+          <div align="center">
+          <p>----</p></div>
+        </td>
+        <td width="73%" height="15">
+          <p>----</p> 
+        </td>
+      </tr>
+    </table>
+
+  </ul>
+       <p>Other changes and additions:</p>
+      <ul>
+        <li>TKW.jar version 1.28-xdr-20111018</li>
+		<li>Full support for ITK2 Correspondence Bundles</li>
+		<li>Correspondence domain includes full automated validation functions. The correspondence domain validation is selected by checking the node value contain within the hl7:ClinicalDocument/npfitlc:messageType/@extension.</li></li>
+		<li>
+		Fault response validation</li>
+		<li>ITK2 Acknowledgement framework</li>
+		<li>ITK2 Dashboard data feed validation for all services</li>
+	    <li>Removal of ITK1.1 SendCDADocument-v1-0</li>
+      </ul>
+    </blockquote>
+</body>
+</html>

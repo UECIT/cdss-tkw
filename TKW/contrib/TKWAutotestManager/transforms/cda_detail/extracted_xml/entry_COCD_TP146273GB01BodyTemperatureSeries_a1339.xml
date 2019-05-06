@@ -1,0 +1,67 @@
+<entry xmlns="urn:hl7-org:v3" xmlns:hl7v2="urn:hl7-org:v2xml" xmlns:itk="urn:nhs-itk:ns:201005" xmlns:npfitlc="NPFIT:HL7:Localisation" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:wsa="http://www.w3.org/2005/08/addressing" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" typeCode="COMP" contextConductionInd="true">
+	<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP146273GB01#BodyTemperatureSeries"/>
+	<observation classCode="OBSSER" moodCode="EVN">
+		<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146273GB01#BodyTemperatureSeries"/>
+		<id root="FEE0ECF4-AD12-A902-E040-950AE0737DEC"/>
+		<code codeSystem="2.16.840.1.113883.2.1.3.2.4.17.220" code="BTOBSSER" displayName="Body Temperature Observation Series">
+			<originalText>
+				<reference value="#a1339"/>
+			</originalText>
+		</code>
+		<statusCode code="completed"/>
+		<effectiveTime>
+			<low value="20140619214358"/>
+			<high value="20140619214425"/>
+		</effectiveTime>
+		<participant contextControlCode="OP" typeCode="LOC">
+			<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146273GB01#location"/>
+			<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP145223GB01#Location"/>
+			<participantRole classCode="ROL">
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP145223GB01#Location"/>
+				<code code="309984004" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="General surgical department"/>
+				<playingEntity determinerCode="INSTANCE" classCode="PLC">
+					<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP145223GB01#playingPlace"/>
+					<name>PlaceName</name>
+				</playingEntity>
+				<scopingEntity determinerCode="INSTANCE" classCode="ORG">
+					<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP145223GB01#scopingOrganization"/>
+					<id root="2.16.840.1.113883.2.1.3.2.4.19.1" extension="RES"/>
+					<desc>NORTH MERSEY COMMUNITY NHS TRUST</desc>
+				</scopingEntity>
+			</participantRole>
+		</participant>
+		<participant contextControlCode="OP" typeCode="DEV">
+			<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146273GB01#participant"/>
+			<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP148027UK02#DeviceRoleRef"/>
+			<participantRole classCode="MANU">
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP148027UK02#DeviceRoleRef"/>
+				<id root="FEE0ECF4-A778-A902-E040-950AE0737DEC"/>
+			</participantRole>
+		</participant>
+		<entryRelationship typeCode="COMP" contextConductionInd="true">
+			<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146273GB01#entryRelationship"/>
+			<seperatableInd value="false"/>
+			<observation classCode="OBS" moodCode="EVN">
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146273GB01#bodyTemperature"/>
+				<id root="FEE0ECF4-AD38-A902-E040-950AE0737DEC"/>
+				<code code="415945006" displayName="Oral temperature" codeSystem="2.16.840.1.113883.2.1.3.2.4.15">
+					<originalText>
+						<reference value="#C101975"/>
+					</originalText>
+				</code>
+				<effectiveTime value="20140619214358"/>
+				<value xsi:type="PQ" value="36.9" unit="Cel"/>
+			</observation>
+		</entryRelationship>
+		<entryRelationship typeCode="REFR" contextConductionInd="false">
+			<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146273GB01#entryRelationship1"/>
+			<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP147286GB02#BodyTemperatureThresholdRef"/>
+			<seperatableInd value="false"/>
+			<observation classCode="OBS" moodCode="EVN">
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP147286GB02#BodyTemperatureThresholdRef"/>
+				<id root="FEE0ECF4-AD10-A902-E040-950AE0737DEC"/>
+				<code nullFlavor="NA"/>
+			</observation>
+		</entryRelationship>
+	</observation>
+</entry>

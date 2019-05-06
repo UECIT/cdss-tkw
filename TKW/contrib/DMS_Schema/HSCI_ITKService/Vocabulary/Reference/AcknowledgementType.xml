@@ -1,0 +1,13 @@
+<Vocabularies xmlns="urn:nhs-itk:ns:201005">
+	<vocabulary version="4.0" status="active" name="AcknowledgementType" id="">
+		<concept code="AA">
+			<displayName>Application Acknowledgement Accept</displayName>
+		</concept>
+		<concept code="AE">
+			<displayName>Application Acknowledgement Error</displayName>
+		</concept>
+		<concept code="AR">
+			<displayName>Application Acknowledgement Reject</displayName>
+		</concept>
+	</vocabulary>
+</Vocabularies>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CDAReference>
+	<dms dmsName="ChildScreening" messageName="ChildScreening" messageType="POCD_MT010000GB01">
+		<BodyChoice>
+			<ClassificationSection>
+				<CodedEntry>
+					<constraintTemplate includedTemplate="NPFIT-000167_Section" TemplateSchemaName="NPFIT-000167_Section">
+						<schema Schema="COCD_TP146004GB01" SchemaName="COCD_TP146004GB01.NewBornPhysicalExamination" snomedOID="true" snomedOIDrequired="true"/>
+						<schema Schema="COCD_TP146005GB03" SchemaName="COCD_TP146005GB03.BloodSpotScreening" snomedOID="false" snomedOIDrequired="false"/>
+						<schema Schema="COCD_TP000028GB01" SchemaName="COCD_TP000028GB01.NewBornBirthDetails" snomedOID="true" snomedOIDrequired="true"/>
+						<schema Schema="COCD_TP146003GB02" SchemaName="COCD_TP146003GB02.NewBornHearingScreening" snomedOID="false" snomedOIDrequired="false"/>
+					</constraintTemplate>
+				</CodedEntry>
+				<SectionChoice><constraintTemplate includedTemplate="NPFIT-000168_Section" TemplateSchemaName="NPFIT-000168_Section"/>
+</SectionChoice>
+			</ClassificationSection>
+		</BodyChoice>
+		<Vocabularies>
+			<Vocabulary codeSystem="2.16.840.1.113883.5.14" codeSystemName="ActStatus" snomedOID="false"/>
+			<Vocabulary codeSystem="2.16.840.1.113883.2.1.3.2.4.17.178" codeSystemName="AuthorFunctionType" snomedOID="false"/>
+			<Vocabulary codeSystem="2.16.840.1.113883.2.1.3.2.4.17.490" codeSystemName="BSLaboratoryInterpretationCode" snomedOID="false"/>
+			<Vocabulary codeSystem="2.16.840.1.113883.2.1.3.2.4.17.486" codeSystemName="BSScreeningLocStatus" snomedOID="false"/>
+			<Vocabulary codeSystem="2.16.840.1.113883.2.1.3.2.4.17.487" codeSystemName="BSScreeningStatusSubCodes" snomedOID="false"/>
+			<Vocabulary codeSystem="2.16.840.1.113883.2.1.3.2.4.17.223" codeSystemName="CDADocumentSectionType" snomedOID="false"/>
+			<Vocabulary codeSystem="2.16.840.1.113883.2.1.3.2.4.15" codeSystemName="CDADocumentTypeSnCT" snomedOID="true"/>
+			<Vocabulary codeSystem="2.16.840.1.113883.2.1.3.2.4.17.220" codeSystemName="CDAObservationType" snomedOID="false"/>
+			<Vocabulary codeSystem="2.16.840.1.113883.2.1.3.2.4.17.289" codeSystemName="CDAOrganizationProviderType" snomedOID="false"/>
+			<Vocabulary codeSystem="2.16.840.1.113883.2.1.3.2.4.17.191" codeSystemName="CDAOrganizationType" snomedOID="false"/>
+			<Vocabulary codeSystem="2.16.840.1.113883.2.1.3.2.4.15" codeSystemName="DocumentConsentSnCT" snomedOID="true"/>
+			<Vocabulary codeSystem="2.16.840.1.113883.2.1.3.2.4.17.448" codeSystemName="EyesExaminationResult" snomedOID="false"/>
+			<Vocabulary codeSystem="2.16.840.1.113883.2.1.3.2.4.17.478" codeSystemName="GuardianOrganisationType" snomedOID="false"/>
+			<Vocabulary codeSystem="2.16.840.1.113883.2.1.3.2.4.16.454" codeSystemName="GuardianRoleType" snomedOID="false"/>
+			<Vocabulary codeSystem="2.16.840.1.113883.2.1.3.2.4.17.447" codeSystemName="HeartExaminationResult" snomedOID="false"/>
+			<Vocabulary codeSystem="2.16.840.1.113883.2.1.3.2.4.17.446" codeSystemName="HipsExaminationResult" snomedOID="false"/>
+			<Vocabulary codeSystem="2.16.840.1.113883.2.1.3.2.4.17.468" codeSystemName="HipsExpertManagementPlanType" snomedOID="false"/>
+			<Vocabulary codeSystem="2.16.840.1.113883.2.1.3.2.4.17.467" codeSystemName="HipsUltraSoundOutcomeDecision" snomedOID="false"/>
+			<Vocabulary codeSystem="2.16.840.1.113883.2.1.3.2.4.17.124" codeSystemName="JobRoleName" snomedOID="false"/>
+			<Vocabulary codeSystem="2.16.840.1.113883.2.1.3.2.4.17.332" codeSystemName="ManufacturerModelName" snomedOID="false"/>
+			<Vocabulary codeSystem="2.16.840.1.113883.2.1.3.2.4.17.512 " codeSystemName="NewbornBloodSpotScreeningResultStatus" snomedOID="false"/>
+			<Vocabulary codeSystem="2.16.840.1.113883.2.1.3.2.4.15" codeSystemName="NewbornBloodSpotScreeningTestProceduresSnCT" snomedOID="true"/>
+			<Vocabulary codeSystem="2.16.840.1.113883.2.1.3.2.4.15" codeSystemName="NewBornHearingScreeningOutcomeSnCT" snomedOID="true"/>
+			<Vocabulary codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode" snomedOID="false"/>
+			<Vocabulary codeSystem="2.16.840.1.113883.2.1.3.2.4.16.25" codeSystemName="Sex" snomedOID="false"/>
+			<Vocabulary codeSystem="2.16.840.1.113883.2.1.3.2.4.15" codeSystemName="SnomedCT" snomedOID="true"/>
+			<Vocabulary codeSystem="2.16.840.1.113883.2.1.3.2.4.17.333" codeSystemName="SoftwareName" snomedOID="false"/>
+			<Vocabulary codeSystem="2.16.840.1.113883.2.1.3.2.4.17.449" codeSystemName="TestesExaminationResult" snomedOID="false"/>
+			<Vocabulary codeSystem="2.16.840.1.113883.2.1.3.2.4.17.266" codeSystemName="WorkgroupRoleName" snomedOID="false"/>
+			<Vocabulary codeSystem="2.16.840.1.113883.1.11.16926" codeSystemName="x_BasicConfidentialityKind" snomedOID="false"/>
+		</Vocabularies>
+	</dms>
+</CDAReference>

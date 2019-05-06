@@ -1,0 +1,52 @@
+SCRIPT CO_NCC_COPY
+# $Id: CO_ITK_Trunk_skel.tst 74 2016-03-07 13:03:27Z sfarrow $
+# Section 6 - Correspondence Positive Tests Test Script File
+# Automatically generated from CO_ITK_Trunk_skel.tst 
+
+VALIDATOR __TKWROOT__/config/ITK_Correspondence/validator_config/validator.conf
+
+SIMULATOR __SIMULATOR__
+
+STOP WHEN COMPLETE
+
+BEGIN SCHEDULES
+CO_NCC_COPY TESTS CO_NCC_COPY___INTERACTION_ID___test1 CO_NCC_COPY___INTERACTION_ID___test2 CO_NCC_COPY___INTERACTION_ID___test3 CO_NCC_COPY___INTERACTION_ID___test4 CO_NCC_COPY___INTERACTION_ID___test5
+END SCHEDULES
+
+BEGIN TESTS
+CO_NCC_COPY___INTERACTION_ID___test1 SEND_TKW CO_NCC_COPY TO __TO_URL__ FROM __FROM_URL__ __PROFILE_ID_SECTION__ PRETRANSFORM __TKWROOT__/contrib/TKWAutotestManager/transforms/extract_payload.xslt APPLYPRETRANSFORMTO data SYNC ok CORRELATIONCOUNT 2 CORRELATOR BasicTrackingIdCorrelator WITH_PROPERTYSET base+spinetools
+CO_NCC_COPY___INTERACTION_ID___test2 CHAIN ASYNC inf_ack
+CO_NCC_COPY___INTERACTION_ID___test3 CHAIN ASYNC inf_ack_test3
+CO_NCC_COPY___INTERACTION_ID___test4 CHAIN ASYNC inf_ack_test4
+CO_NCC_COPY___INTERACTION_ID___test5 CHAIN ASYNC inf_ack_test5
+END TESTS
+
+BEGIN MESSAGES
+CO_NCC_COPY USING CO_NCC_COPY___INTERACTION_ID___template WITH patients ID __INTERACTION_ID___IA_T_BA_T DISTRIBUTIONENVELOPEWRAP AUDITIDENTITY urn:nhs-uk:identity:AAA:XZ901 SOAPACTION urn:nhs-itk:services:201005:SendCDADocument-v2-0 MIMETYPE __MIME_TYPE__ 
+END MESSAGES
+
+BEGIN TEMPLATES
+CO_NCC_COPY___INTERACTION_ID___template __TKWROOT__/contrib/ITK_2_01_Test_Messages/__SAMPLE_FILE__
+END TEMPLATES
+
+BEGIN PROPERTYSETS
+spinetools
+	SET tks.SpineToolsTransport.listenport __LISTEN_PORT_NUMBER__
+	SET tks.SpineToolsTransport.listenaddr  __LISTEN_ADDR__
+	SET tks.spinetools.transmit.ods __SUT_ODS__
+	SET tks.spinetools.transmit.partykey __SUT_PARTY_KEY__
+	SET tks.spinetools.transmit.myasid __TKWATM_ASID__
+	SET tks.spinetools.transmit.mypartykey __TKWATM_PARTY_KEY__
+END PROPERTYSETS
+
+BEGIN DATASOURCES
+patients circularwritabletdv __TKWROOT__/contrib/TKWAutotestManager/tstp/patients.tdv
+END DATASOURCES
+
+BEGIN PASSFAIL
+ok httpok
+inf_ack asynchronousxpath /itk:DistributionEnvelope/itk:payloads/itk:payload/itk:InfrastructureResponse exists
+inf_ack_test3 asyncmessagetrackingidtrackingidrefsmatch
+inf_ack_test4 asyncmessagetrackingidtrackingidnomatch
+inf_ack_test5 asynchronousxpath /itk:DistributionEnvelope/itk:payloads/itk:payload/itk:InfrastructureResponse/@result matches "OK"
+END PASSFAIL

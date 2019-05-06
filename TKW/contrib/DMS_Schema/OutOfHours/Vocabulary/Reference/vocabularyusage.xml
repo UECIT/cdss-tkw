@@ -1,0 +1,10 @@
+<Vocabularies xmlns="urn:nhs-itk:ns:201005">
+	<vocabulary version="" status="" name="Vocabulary Usage" id="">
+		<concept code="COCD_TP146029UK04">
+			<displayName>MedicationAdministrationDose</displayName>
+		</concept>
+		<concept code="COCD_TP146030UK04">
+			<displayName>MedicationAdministrationCourse</displayName>
+		</concept>
+	</vocabulary>
+</Vocabularies>

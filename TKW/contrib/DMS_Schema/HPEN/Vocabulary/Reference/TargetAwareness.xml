@@ -1,0 +1,22 @@
+<Vocabularies xmlns="urn:nhs-itk:ns:201005">
+	<vocabulary version="1.0" status="active" name="TargetAwareness" id="">
+		<concept code="D">
+			<displayName>denying</displayName>
+		</concept>
+		<concept code="F">
+			<displayName>full awareness</displayName>
+		</concept>
+		<concept code="I">
+			<displayName>incapable</displayName>
+		</concept>
+		<concept code="M">
+			<displayName>marginal</displayName>
+		</concept>
+		<concept code="P">
+			<displayName>partial</displayName>
+		</concept>
+		<concept code="U">
+			<displayName>uninformed</displayName>
+		</concept>
+	</vocabulary>
+</Vocabularies>

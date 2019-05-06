@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  
+*****************************************************************************************************************
+* 
+* 	Copyright (c) 2010 NHS Conneccting For Health. All rights reserved.
+*   
+*  	Redistribution and use in source and binary forms, with or without
+*  	modification, are permitted provided that the following conditions
+*  	are met:
+*  		1. Redistributions of source code must retain the above copyright
+*     		notice, this list of conditions and the following disclaimer.
+*  		2. Redistributions in binary form must reproduce the above copyright
+*     		notice, this list of conditions and the following disclaimer in the
+*     		documentation and/or other materials provided with the distribution.
+*  		3. All advertising materials mentioning features or use of this software
+*     		must display the following acknowledgement:
+*       This product includes software developed by Health Level Seven.
+*  	THIS SOFTWARE IS PROVIDED BY NHS Conneccting For Health. AND CONTRIBUTORS "AS IS" AND
+*  	ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+*  	IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+*  	ARE DISCLAIMED.  IN NO EVENT SHALL THE REGENTS OR CONTRIBUTORS BE LIABLE
+*  	FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+*  	DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+*  	OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+*  	HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+*  	LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+*  	OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+*  	SUCH DAMAGE.
+*
+* CHANGE HISTORY:
+*
+* VERSION   DATE       AUTHOR                   LABEL   DESCRIPTION
+* =======   ========== ======================   ======  ===========================================================
+* 1.0       31-03-2010 Cord Oestmann                    Created this WSDL
+* 2.0       16-05-2010 Interoperability Team            Amended this WSDL to make changes to the namespace declarations and the action and callbacks.
+* 3.0       06-02-2013 Interoperability Team            Amended to add support for A01, A08, A11 message events
+*******************************************************************************************************************************************************************************
+-->
+<wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:itk="urn:nhs-itk:ns:201005" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="patientEncounterManagementUpdateMaster" targetNamespace="urn:nhs-itk:ns:201005">
+	<wsdl:types>
+		<xsd:schema targetNamespace="urn:nhs-itk:ns:201005" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+			<xsd:include schemaLocation="../distributionEnvelope-v2-0.xsd"/>
+			<xsd:include schemaLocation="../ITKMessageTypes-2010-05.xsd"/>
+		</xsd:schema>
+	</wsdl:types>
+	<wsdl:message name="dischargePatientRequest">
+		<wsdl:part name="dischargePatientRequest" element="itk:DistributionEnvelope"/>
+	</wsdl:message>
+	<wsdl:message name="registerOutpatientRequest">
+		<wsdl:part name="registerOutpatientRequest" element="itk:DistributionEnvelope"/>
+	</wsdl:message>
+	<wsdl:message name="cancelDischargePatientRequest">
+		<wsdl:part name="cancelDischargePatientRequest" element="itk:DistributionEnvelope"/>
+	</wsdl:message>
+	<wsdl:message name="admitPatientRequest">
+		<wsdl:part name="admitPatientRequest" element="itk:DistributionEnvelope"/>
+	</wsdl:message>
+	<wsdl:message name="updateEncounterInfoRequest">
+		<wsdl:part name="updateEncounterInfoRequest" element="itk:DistributionEnvelope"/>
+	</wsdl:message>
+	<wsdl:message name="cancelAdmitPatientRequest">
+		<wsdl:part name="cancelAdmitPatientRequest" element="itk:DistributionEnvelope"/>
+	</wsdl:message>
+	<wsdl:message name="acknowledgementHL7v2">
+		<wsdl:part name="acknowledgementHL7v2" element="itk:DistributionEnvelope"/>
+	</wsdl:message>
+	<wsdl:message name="acknowledgementResponse">
+		<wsdl:part name="acknowledgementResponse" element="itk:SimpleMessageResponse"/>
+	</wsdl:message>
+	<wsdl:message name="faultResponse">
+		<wsdl:part name="faultResponse" element="itk:ToolkitErrorInfo"/>
+	</wsdl:message>
+	<wsdl:portType name="registerOutpatientUpdateMaster_ptt">
+		<wsdl:operation name="registerOutpatientUpdateMaster-v1-0">
+			<wsdl:input message="itk:registerOutpatientRequest"/>
+			<wsdl:output message="itk:acknowledgementHL7v2"/>
+			<wsdl:fault name="standardFault" message="itk:faultResponse"/>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:portType name="dischargePatientUpdateMaster_ptt">
+		<wsdl:operation name="dischargePatientUpdateMaster-v1-0">
+			<wsdl:input message="itk:dischargePatientRequest"/>
+			<wsdl:output message="itk:acknowledgementHL7v2"/>
+			<wsdl:fault name="standardFault" message="itk:faultResponse"/>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:portType name="cancelDischargePatientUpdateMaster_ptt">
+		<wsdl:operation name="cancelDischargePatientUpdateMaster-v1-0">
+			<wsdl:input message="itk:cancelDischargePatientRequest"/>
+			<wsdl:output message="itk:acknowledgementHL7v2"/>
+			<wsdl:fault name="standardFault" message="itk:faultResponse"/>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:portType name="admitPatientMaster_ptt">
+		<wsdl:operation name="admitPatientMaster-v1-0">
+			<wsdl:input message="itk:admitPatientRequest"/>
+			<wsdl:output message="itk:acknowledgementHL7v2"/>
+			<wsdl:fault name="standardFault" message="itk:faultResponse"/>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:portType name="updateEncounterMaster_ptt">
+		<wsdl:operation name="updateEncounterMaster-v1-0">
+			<wsdl:input message="itk:updateEncounterInfoRequest"/>
+			<wsdl:output message="itk:acknowledgementHL7v2"/>
+			<wsdl:fault name="standardFault" message="itk:faultResponse"/>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:portType name="cancelAdmitPatientMaster_ptt">
+		<wsdl:operation name="cancelAdmitPatientMaster-v1-0">
+			<wsdl:input message="itk:cancelAdmitPatientRequest"/>
+			<wsdl:output message="itk:acknowledgementHL7v2"/>
+			<wsdl:fault name="standardFault" message="itk:faultResponse"/>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:binding name="registerOutpatientUpdateMaster_pttBinding" type="itk:registerOutpatientUpdateMaster_ptt">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdl:operation name="registerOutpatientUpdateMaster-v1-0">
+			<soap:operation soapAction="urn:nhs-itk:services:201005:registerOutpatientUpdateMaster-v1-0" style="document"/>
+			<wsdl:input>
+				<soap:body parts="registerOutpatientRequest" use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body parts="acknowledgementHL7v2" use="literal"/>
+			</wsdl:output>
+			<wsdl:fault name="standardFault">
+				<soap:fault name="standardFault" use="literal"/>
+			</wsdl:fault>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:binding name="dischargePatientUpdateMaster_pttBinding" type="itk:dischargePatientUpdateMaster_ptt">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdl:operation name="dischargePatientUpdateMaster-v1-0">
+			<soap:operation soapAction="urn:nhs-itk:services:201005:dischargePatientUpdateMaster-v1-0" style="document"/>
+			<wsdl:input>
+				<soap:body parts="dischargePatientRequest" use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body parts="acknowledgementHL7v2" use="literal"/>
+			</wsdl:output>
+			<wsdl:fault name="standardFault">
+				<soap:fault name="standardFault" use="literal"/>
+			</wsdl:fault>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:binding name="cancelDischargePatientUpdateMaster_pttBinding" type="itk:cancelDischargePatientUpdateMaster_ptt">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdl:operation name="cancelDischargePatientUpdateMaster-v1-0">
+			<soap:operation soapAction="urn:nhs-itk:services:201005:cancelDischargePatientUpdateMaster-v1-0" style="document"/>
+			<wsdl:input>
+				<soap:body parts="cancelDischargePatientRequest" use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body parts="acknowledgementHL7v2" use="literal"/>
+			</wsdl:output>
+			<wsdl:fault name="standardFault">
+				<soap:fault name="standardFault" use="literal"/>
+			</wsdl:fault>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:binding name="admitPatientMaster_pttBinding" type="itk:admitPatientMaster_ptt">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdl:operation name="admitPatientMaster-v1-0">
+			<soap:operation soapAction="urn:nhs-itk:services:201005:admitPatientMaster-v1-0" style="document"/>
+			<wsdl:input>
+				<soap:body parts="admitPatientRequest" use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body parts="acknowledgementHL7v2" use="literal"/>
+			</wsdl:output>
+			<wsdl:fault name="standardFault">
+				<soap:fault name="standardFault" use="literal"/>
+			</wsdl:fault>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:binding name="updateEncounterMaster_pttBinding" type="itk:updateEncounterMaster_ptt">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdl:operation name="updateEncounterMaster-v1-0">
+			<soap:operation soapAction="urn:nhs-itk:services:201005:updateEncounterMaster-v1-0" style="document"/>
+			<wsdl:input>
+				<soap:body parts="updateEncounterInfoRequest" use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body parts="acknowledgementHL7v2" use="literal"/>
+			</wsdl:output>
+			<wsdl:fault name="standardFault">
+				<soap:fault name="standardFault" use="literal"/>
+			</wsdl:fault>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:binding name="cancelAdmitPatientMaster_pttBinding" type="itk:cancelAdmitPatientMaster_ptt">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdl:operation name="cancelAdmitPatientMaster-v1-0">
+			<soap:operation soapAction="urn:nhs-itk:services:201005:cancelAdmitPatientMaster-v1-0" style="document"/>
+			<wsdl:input>
+				<soap:body parts="cancelAdmitPatientRequest" use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body parts="acknowledgementHL7v2" use="literal"/>
+			</wsdl:output>
+			<wsdl:fault name="standardFault">
+				<soap:fault name="standardFault" use="literal"/>
+			</wsdl:fault>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:service name="registerOutpatientUpdateMaster-v1-0">
+		<wsdl:documentation>This service is used to trigger the RegisterOutpatient Event ADT^A04 on the Patient Master data store.
+                          </wsdl:documentation>
+		<wsdl:port name="registerOutpatientUpdateMaster_pttPort" binding="itk:registerOutpatientUpdateMaster_pttBinding">
+			<soap:address location="http://server:80/interoperability.toolkit/HL7v2/registerOutpatientUpdateMaster-v1-0"/>
+		</wsdl:port>
+	</wsdl:service>
+	<wsdl:service name="dischargePatientUpdateMaster-v1-0">
+		<wsdl:documentation>This service is used to trigger the dischargePatient Event ADT^A03 on the Patient Master data store.
+                          </wsdl:documentation>
+		<wsdl:port name="dischargePatientUpdateMaster_pttPort" binding="itk:dischargePatientUpdateMaster_pttBinding">
+			<soap:address location="http://server:80/interoperability.toolkit/HL7v2/dischargePatientUpdateMaster-v1-0"/>
+		</wsdl:port>
+	</wsdl:service>
+	<wsdl:service name="cancelDischargePatientUpdateMaster-v1-0">
+		<wsdl:documentation>This service is used to trigger the cancelDischargePatient Event ADT^A13 on the Patient Master data store.
+                          </wsdl:documentation>
+		<wsdl:port name="cancelDischargePatientUpdateMaster_pttPort" binding="itk:cancelDischargePatientUpdateMaster_pttBinding">
+			<soap:address location="http://server:80/interoperability.toolkit/HL7v2/cancelDischargePatientUpdateMaster-v1-0"/>
+		</wsdl:port>
+	</wsdl:service>
+	<wsdl:service name="admitPatientMaster-v1-0">
+		<wsdl:documentation>This service is used to trigger the admitPatient Event ADT^A01 on the Patient Master data store.</wsdl:documentation>
+		<wsdl:port name="admitPatientMaster_pttPort" binding="itk:admitPatientMaster_pttBinding">
+			<soap:address location="http://server:80/interoperability.toolkit/HL7v2/admitPatientMaster-v1-0"/>
+		</wsdl:port>
+	</wsdl:service>
+	<wsdl:service name="updateEncounterMaster-v1-0">
+		<wsdl:documentation>This service is used to trigger the updateEncounterInfo Event ADT^A08on the Patient Master data store.</wsdl:documentation>
+		<wsdl:port name="updateEncounterMaster_pttPort" binding="itk:updateEncounterMaster_pttBinding">
+			<soap:address location="http://server:80/interoperability.toolkit/HL7v2/updateEncounterMaster-v1-0"/>
+		</wsdl:port>
+	</wsdl:service>
+	<wsdl:service name="cancelAdmitPatientMaster-v1-0">
+		<wsdl:documentation>This service is used to trigger the cancelAdmitPatient Event ADT^A11 on the Patient Master data store.</wsdl:documentation>
+		<wsdl:port name="cancelAdmitPatientMaster_pttPort" binding="itk:cancelAdmitPatientMaster_pttBinding">
+			<soap:address location="http://server:80/interoperability.toolkit/HL7v2/cancelAdmitPatientMaster-v1-0"/>
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>

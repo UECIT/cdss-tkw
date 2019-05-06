@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  
+*****************************************************************************************************************
+* 
+* 	Copyright (c) 2010 NHS Conneccting For Health. All rights reserved.
+*   
+*  	Redistribution and use in source and binary forms, with or without
+*  	modification, are permitted provided that the following conditions
+*  	are met:
+*  		1. Redistributions of source code must retain the above copyright
+*     		notice, this list of conditions and the following disclaimer.
+*  		2. Redistributions in binary form must reproduce the above copyright
+*     		notice, this list of conditions and the following disclaimer in the
+*     		documentation and/or other materials provided with the distribution.
+*  		3. All advertising materials mentioning features or use of this software
+*     		must display the following acknowledgement:
+*       This product includes software developed by Health Level Seven.
+*  	THIS SOFTWARE IS PROVIDED BY NHS Conneccting For Health. AND CONTRIBUTORS "AS IS" AND
+*  	ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+*  	IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+*  	ARE DISCLAIMED.  IN NO EVENT SHALL THE REGENTS OR CONTRIBUTORS BE LIABLE
+*  	FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+*  	DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+*  	OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+*  	HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+*  	LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+*  	OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+*  	SUCH DAMAGE.
+*
+* CHANGE HISTORY:
+*
+* VERSION   DATE       AUTHOR                   LABEL   DESCRIPTION
+* =======   ========== ======================   ======  ===========================================================
+* 1.0       31-03-2010 Cord Oestmann                    Created this WSDL
+* 2.0       16-05-2010 Interoperability Team            Amended this WSDL to make changes to the namespace declarations and the action and callbacks.
+*
+********************************************************************************************************************
+-->
+<wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:itk="urn:nhs-itk:ns:201005" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="queryPatientDemographicsAndVisit" targetNamespace="urn:nhs-itk:ns:201005">
+	<wsdl:types>
+		<xsd:schema targetNamespace="urn:nhs-itk:ns:201005" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+			<xsd:include schemaLocation="../distributionEnvelope-v2-0.xsd"/>
+			<xsd:include schemaLocation="../ITKMessageTypes-2010-05.xsd"/>
+		</xsd:schema>
+	</wsdl:types>
+	<wsdl:message name="patientDemographicsAndVisitRequest">
+		<wsdl:part name="patientDemographicsAndVisitRequest" element="itk:DistributionEnvelope"/>
+	</wsdl:message>
+	<wsdl:message name="patientDemographicsAndVisitResponse">
+		<wsdl:part name="patientDemographicsAndVisitResponse" element="itk:DistributionEnvelope"/>
+	</wsdl:message>
+	<wsdl:message name="patientDemographicsRequest">
+		<wsdl:part name="patientDemographicsRequest" element="itk:DistributionEnvelope"/>
+	</wsdl:message>
+	<wsdl:message name="patientDemographicsResponse">
+		<wsdl:part name="patientDemographicsResponse" element="itk:DistributionEnvelope"/>
+	</wsdl:message>
+	<wsdl:message name="findCandidatesQueryRequest">
+		<wsdl:part name="findCandidatesQueryRequest" element="itk:DistributionEnvelope"/>
+	</wsdl:message>
+	<wsdl:message name="findCandidatesQueryResponse">
+		<wsdl:part name="findCandidatesQueryResponse" element="itk:DistributionEnvelope"/>
+	</wsdl:message>
+	<wsdl:message name="acknowledgementResponse">
+		<wsdl:part name="acknowledgementResponse" element="itk:SimpleMessageResponse"/>
+	</wsdl:message>
+	<wsdl:message name="faultResponse">
+		<wsdl:part name="faultResponse" element="itk:ToolkitErrorInfo"/>
+	</wsdl:message>
+	<wsdl:message name="cancelQueryRequest">
+		<wsdl:part name="cancelQueryRequest" element="itk:DistributionEnvelope"/>
+	</wsdl:message>
+	<wsdl:portType name="queryPatientDemographicsAndVisit_ptt">
+		<wsdl:operation name="queryPatientDemographicsAndVisit-v1-0">
+			<wsdl:input message="itk:patientDemographicsAndVisitRequest"/>
+			<wsdl:output message="itk:patientDemographicsAndVisitResponse"/>
+			<wsdl:fault name="standardFault" message="itk:faultResponse"/>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:portType name="queryPatientDemographics_ptt">
+		<wsdl:operation name="queryPatientDemographics-v1-0">
+			<wsdl:input message="itk:patientDemographicsRequest"/>
+			<wsdl:output message="itk:patientDemographicsResponse"/>
+			<wsdl:fault name="standardFault" message="itk:faultResponse"/>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:portType name="findCandidatesQuery_ptt">
+		<wsdl:operation name="findCandidatesQuery-v1-0">
+			<wsdl:input message="itk:findCandidatesQueryRequest"/>
+			<wsdl:output message="itk:findCandidatesQueryResponse"/>
+			<wsdl:fault name="standardFault" message="itk:faultResponse"/>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:portType name="cancelQuery_ptt">
+		<wsdl:operation name="cancelQuery-v1-0">
+			<wsdl:input message="itk:cancelQueryRequest"/>
+			<wsdl:output message="itk:acknowledgementResponse"/>
+			<wsdl:fault name="standardFault" message="itk:faultResponse"/>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:binding name="queryPatientDemographicsAndVisit_pttBinding" type="itk:queryPatientDemographicsAndVisit_ptt">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdl:operation name="queryPatientDemographicsAndVisit-v1-0">
+			<soap:operation soapAction="urn:nhs-itk:services:201005:queryPatientDemographicsAndVisit-v1-0" style="document"/>
+			<wsdl:input>
+				<soap:body parts="patientDemographicsAndVisitRequest" use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body parts="patientDemographicsAndVisitResponse" use="literal"/>
+			</wsdl:output>
+			<wsdl:fault name="standardFault">
+				<soap:fault name="standardFault" use="literal"/>
+			</wsdl:fault>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:binding name="queryPatientDemographics_pttBinding" type="itk:queryPatientDemographics_ptt">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdl:operation name="queryPatientDemographics-v1-0">
+			<soap:operation soapAction="urn:nhs-itk:services:201005:queryPatientDemographics-v1-0" style="document"/>
+			<wsdl:input>
+				<soap:body parts="patientDemographicsRequest" use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body parts="patientDemographicsResponse" use="literal"/>
+			</wsdl:output>
+			<wsdl:fault name="standardFault">
+				<soap:fault name="standardFault" use="literal"/>
+			</wsdl:fault>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:binding name="findCandidatesQuery_pttBinding" type="itk:findCandidatesQuery_ptt">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdl:operation name="findCandidatesQuery-v1-0">
+			<soap:operation soapAction="urn:nhs-itk:services:201005:findCandidatesQuery-v1-0" style="document"/>
+			<wsdl:input>
+				<soap:body parts="findCandidatesQueryRequest" use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body parts="findCandidatesQueryResponse" use="literal"/>
+			</wsdl:output>
+			<wsdl:fault name="standardFault">
+				<soap:fault name="standardFault" use="literal"/>
+			</wsdl:fault>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:binding name="cancelQuery_pttBinding" type="itk:cancelQuery_ptt">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdl:operation name="cancelQuery-v1-0">
+			<soap:operation soapAction="urn:nhs-itk:services:201005:cancelQuery-v1-0" style="document"/>
+			<wsdl:input>
+				<soap:body parts="cancelQueryRequest" use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body parts="acknowledgementResponse" use="literal"/>
+			</wsdl:output>
+			<wsdl:fault name="standardFault">
+				<soap:fault name="standardFault" use="literal"/>
+			</wsdl:fault>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:service name="queryPatientDemographicsAndVisit-v1-0">
+		<wsdl:documentation>This service is a synchronous request (QBP^ZV1)/response (RSP^ZV2) interaction
+            to retrieve patient demographic and visit information</wsdl:documentation>
+		<wsdl:port name="queryPatientDemographicsAndVisit_pttPort" binding="itk:queryPatientDemographicsAndVisit_pttBinding">
+			<soap:address location="http://server:80/interoperability.toolkit/HL7v2/queryPatientDemographicsAndVisit-v1-0"/>
+		</wsdl:port>
+	</wsdl:service>
+	<wsdl:service name="queryPatientDemographics-v1-0">
+		<wsdl:documentation>This service is a synchronous request (QBP^Q21)/response (RSP^K21) interaction
+            to retrieve patient demographic information</wsdl:documentation>
+		<wsdl:port name="queryPatientDemographics_pttPort" binding="itk:queryPatientDemographics_pttBinding">
+			<soap:address location="http://server:80/interoperability.toolkit/HL7v2/queryPatientDemographics-v1-0"/>
+		</wsdl:port>
+	</wsdl:service>
+	<wsdl:service name="findCandidatesQuery-v1-0">
+		<wsdl:documentation>This service is a synchronous request (QBP^Q22)/response (RSP^K22) interaction
+            to retrieve patient demographic information</wsdl:documentation>
+		<wsdl:port name="findCandidatesQuery_pttPort" binding="itk:findCandidatesQuery_pttBinding">
+			<soap:address location="http://server:80/interoperability.toolkit/HL7v2/findCandidatesQuery-v1-0"/>
+		</wsdl:port>
+	</wsdl:service>
+	<wsdl:service name="cancelQuery-v1-0">
+		<wsdl:documentation>This service is a request to cancel a query.</wsdl:documentation>
+		<wsdl:port name="cancelQuery_pttPort" binding="itk:cancelQuery_pttBinding">
+			<soap:address location="http://server:80/interoperability.toolkit/HL7v2/cancelQuery-v1-0"/>
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>

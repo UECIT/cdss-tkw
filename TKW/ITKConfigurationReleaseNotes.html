@@ -1,0 +1,1603 @@
+<html>
+	<head>
+		<title>TKW Installer Release Notes</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+			<style>
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+}
+th {
+    text-align: left;
+}
+			</style>
+
+		</head>
+
+		<body bgcolor="#FFFFFF">
+
+
+			<center>
+				<h1>
+ITK Ruleset Configuration Release Notes<br>
+						<p>
+Version: 5.2<br>
+Release Notes
+							</h1>
+						</center>
+
+						<p>This covers the config and contrib directories which are supplied within the ITK TKW Installer.</p>
+						<hr/>
+
+						<h2>Release History</h2>
+						<b>	May 2017 &#x2022; Version 5.2</b>
+					</dt>
+					<p>This latest version of TKW installer is hosted on the Solution Assurance Message Test Tools site - http://systems.hscic.gov.uk/satools</p>
+
+				</ul> 
+
+				<p>Contains:</p>
+				<ul>
+					<li>ReqSheet Version: 8.7</li>
+					<li>Config SVN: 683</li>
+				</ul>
+				<p>Known issues:</p>
+				<ul>
+					<li>Please refer to the Shared Documents area of the ITK Accreditations Sharepoint Site for a list of known issues</li>
+				</ul>
+				<p>Bugs fixed:</p>
+				<table style="width:100%">
+					<tr>
+						<th>Redmine</th>
+						<th>Description</th>
+					</tr>
+					<tr>
+						<td>1379</td>
+						<td>	Autotest Manager - Include support for ER_INVTIM test in ATM</td>
+					</tr>
+					<tr>
+						<td>1380</td>
+						<td>	Autotest Manager - Include support for ER_INVXML test in ATM Host Tests</td>
+					</tr>
+					<tr>
+						<td>1683</td>
+						<td>	TKW Autotest Guide 2.0 needs updating to reflect the new directory for TKWAutotestManager.jar</td>
+					</tr>
+					<tr>
+						<td>1955</td>
+						<td>	Documentation issue in the "TKW Autotest Guide 2.0" (version date 24/09/2013)</td>
+					</tr>
+					<tr>
+						<td>2037</td>
+						<td>	TKW example messages - Businessack does not have ack requested</td>
+					</tr>
+					<tr>
+						<td>2061</td>
+						<td>	Correspondence simulator parse payload exception when receiving a urn:nhs-itk:services:201005:SendDocument-v1-0 (Basic Transmission)</td>
+					</tr>
+					<tr>
+						<td>2107</td>
+						<td>	Contents of code and codesystem differ but validate correctly</td>
+					</tr>
+					<tr>
+						<td>2108</td>
+						<td>	TOC Compositional Grammar Validation - Space at end of item is NOT rejected</td>
+					</tr>
+					<tr>
+						<td>2116</td>
+						<td>	New contrib folder for ITK V2.2 Messages?</td>
+					</tr>
+					<tr>
+						<td>2119</td>
+						<td>	TKW Validation - ChildScreening sample messages have errors when validated</td>
+					</tr>
+					<tr>
+						<td>2127</td>
+						<td>	Validator issues in SPINE_CPIS_Validationwith sample messages</td>
+					</tr>
+					<tr>
+						<td>2148</td>
+						<td>	Validation fails for ITK 2.2 Acknowledgement Files with Unrecognised service: urn:nhs-itk:services:201005:sendDistEnvelope</td>
+					</tr>
+					<tr>
+						<td>2150</td>
+						<td>	Unformated FGM Request message is generating spurious incorrect messages</td>
+					</tr>
+					<tr>
+						<td>2153</td>
+						<td>	Enhance TKW Validation to include validation for MESH ctl files</td>
+					</tr> 
+					<tr>
+						<td>2155</td>
+						<td>	ProfileID incorrect for NonCoded CDA Sample Message</td>
+					</tr>
+					<tr>
+						<td>2156</td>
+						<td>	xpathexists not returning expected result</td>
+					</tr>
+					<tr>
+						<td>2157</td>
+						<td>	ATM edit boxes read only using installer built from SVN 643</td>
+					</tr>
+					<tr>
+						<td>2412</td>
+						<td>	TKW returns the wrong SMSP PDS message for the DEMOG-0022 test</td>
+					</tr>
+					<tr>
+						<td>2426</td>
+						<td>	TKW not validating AuditIdentity</td>
+					</tr>
+					<tr>
+						<td>2437</td>
+						<td>	Exceptions in ATM 111 Negative Tests</td>
+					</tr>
+				</table
+				</br>
+				<p>Other changes and additions:</p>
+				<ul>
+					<li>Additional tool created to support MESH testing</li>
+				</ul>
+				<dt>Supported Domain Message Specifications:</dt>
+				<ul>
+					<p>Fully Supported (<u>formal accreditation or assurance process available</u>) Domain Message Specifications used for validation and message examples by TKW.jar:</p>
+				</ul>
+				<table style="width:100%">
+					<tr>
+						<th>Domain</th>
+						<th>Version</th>
+						<th>Status</th>
+					</tr>
+					<tr>
+						<td>Ambulance</td>
+						<td>2.1</td>
+						<td>Final</td>
+					</tr>
+					<tr>
+						<td>Child Health Data Sharing</td>
+						<td>1.0</td>
+						<td>RC 1</td>
+					</tr>
+					<tr>
+						<td>Child Protection Information Sharing</td>
+						<td>1.0</td>
+						<td>RC 5 Patch A</td>
+					</tr>
+					<tr>
+						<td>Child Screening</td>
+						<td>2.1</td>
+						<td>RC 2</td>
+					</tr>
+					<tr>
+						<td>Discharge</td>
+						<td>4.1</td>
+						<td>Final</td>
+					</tr>
+					<tr>
+						<td>Emergency Department</td>
+						<td>4.1</td>
+						<td>Final</td>
+					</tr>
+					<tr>
+						<td>Health and Social Care Integration</td>
+						<td>4.0</td>
+						<td>Draft A</td>
+					</tr>
+					<tr>
+						<td>Health Protection Electronic Notification (HPEN)</td>
+						<td>1.0</td>
+						<td>RC 1</td>
+					</tr>
+					<tr>
+						<td>NHS 111</td>
+						<td>1.0</td>
+						<td>RC 2</td>
+					</tr>
+					<tr>
+						<td>NHS CP-IS Spine Mini Service</td>
+						<td>1.0</td>
+						<td>RC 1</td>
+					</tr>
+					<tr>
+						<td>NHS Interoperability Toolkit Dashboards</td>
+						<td>1.1</td>
+						<td>Final</td>
+					</tr>
+					<tr>
+						<td>NHS Interoperability Toolkit HL7 v2</td>
+						<td>1.1</td>
+						<td>Final</td>
+					</tr>
+					<tr>
+						<td>Non-coded CDA Document</td>
+						<td>1.1</td>
+						<td>Final</td>
+					</tr>
+					<tr>
+						<td>Out of Hours</td>
+						<td>2.1</td>
+						<td>Final</td>
+					</tr>
+					<tr>
+						<td>Outpatients</td>
+						<td>2.1</td>
+						<td>Final</td>
+					</tr>
+					<tr>
+						<td>PDS Mini Service</td>
+						<td>1.1</td>
+						<td>Final</td>
+					</tr>
+					<tr>
+						<td>Telehealth</td>
+						<td>2.0</td>
+						<td>RC 2</td>
+					</tr>
+					<tr>
+						<td>BusinessAcknowledgement</td>
+						<td>1.1</td>
+						<td>Final</td>
+					</tr>
+					<tr>
+						<td>DistributionEnvelope</td>
+						<td>1.1</td>
+						<td>Final</td>
+					</tr>
+					<tr>
+						<td>GenericCDA</td>
+						<td>2.2</td>
+						<td>Final</td>
+					</tr>
+					<tr>
+						<td>Nullification</td>
+						<td>2.2</td>
+						<td>Final</td>
+					</tr>
+					<tr>
+						<td>SCR Mini Service</td>
+						<td>1.0</td>
+						<td>RC 2</td>
+					</tr>
+					<tr>
+						<td>Transfer Of Care</td>
+						<td>1.0</td>
+						<td>Draft B</td>
+					</tr>
+					<tr>
+						<td>FGM FHIR</td>
+						<td>1.0</td>
+						<td>Draft F</td>
+					</tr>
+					<tr>
+						<td>FGM FHIR</td>
+						<td>2.0</td>
+						<td>Draft D</td>
+					</tr>
+				</table>
+
+<br>
+				<b>	May 2016 &#x2022; Version 5.1</b>
+			</dt>
+			<p>This latest version of TKW installer is hosted on the Solution Assurance Message Test Tools site - http://systems.hscic.gov.uk/satools</p>
+
+		</ul> 
+
+		<p>Contains:</p>
+		<ul>
+			<li>ReqSheet Version: 8.4</li>
+			<li>Config SVN: 624</li>
+		</ul>
+		<p>Known issues:</p>
+		<ul>
+			<li>Please refer to the Shared Documents area of the ITK Accreditations Sharepoint Site for a list of known issues</li>
+		</ul>
+		<p>Bugs fixed:</p>
+		<table style="width:100%">
+			<tr>
+				<th>Redmine</th>
+				<th>Description</th>
+			</tr>
+			<tr>
+				<td>2115</td>
+				<td>ATM PDS Mini Services</td>
+			</tr>
+			<tr>
+				<td>2117</td>
+				<td>ATM TOC Single run simulator</td>
+			</tr>
+			<tr>
+				<td>2118</td>
+				<td>ATM TOC errors</td>
+			</tr>
+
+			<tr>
+				<td>2123</td>
+				<td>Validator for ITK_SCR_SMSP_provider will not run.</td>
+			</tr>
+			<tr>
+				<td>2124</td>
+				<td>FGM TestRun\Transmit_TestFiles batch file</td>
+			</tr>
+			<tr>
+				<td>2125</td>
+				<td>ATM HSCI Discharge Notifications to Social Care Errors</td>
+			</tr>
+			<tr>
+				<td>2126</td>
+				<td>TKW Validation - TOC, all sample messages fail with same one erorr ?</td>
+			</tr>
+			<tr>
+				<td>2128</td>
+				<td>ToC eDischarge example messages fail validation</td>
+			</tr>
+			<tr>
+				<td>2130</td>
+				<td>Query about whether SNOMED Coded Section Headings make a document Level 2B</td>
+			</tr>
+
+			<tr>
+				<td>2131</td>
+				<td>SMSP ITK message fail</td>
+			</tr>
+			<tr>
+				<td>2133</td>
+				<td>Correspondence / Emergency errors</td>
+			</tr>
+			<tr>
+				<td>2134</td>
+				<td>Correspondence / NonCodedCDA errors</td>
+			</tr>
+			<tr>
+				<td>2135</td>
+				<td>Correspondence/OOH Errors</td>
+			</tr>
+			<tr>
+				<td>2136</td>
+				<td>ATM fails to run tests for Client applications under test with several domains</td>
+			</tr>
+			<tr>
+				<td>2137</td>
+				<td>Correspondence/Outpatients errors</td>
+			</tr>
+			<tr>
+				<td>2138</td>
+				<td>ChildScreening validation errors/td>
+				</tr>
+				<tr>
+					<td>2139</td>
+					<td>HPEN validation errors</td>
+				</tr>
+				<tr>
+					<td>2140</td>
+					<td>Incorrect service name in 2 SCR SMS Example meaasges</td>
+				</tr>
+				<tr>
+					<td>2142</td>
+					<td>Vocabulary checker not functioning correctly for 2.1 Correspondence Domains</td>
+				</tr>
+				<tr>
+					<td>2143</td>
+					<td>Simulator listening, replyto & fault port values.</td>
+				</tr>
+				<tr>
+					<td>2144</td>
+					<td>TOC - Busness Acknowledgement Generates an error response when a 200 was expected</td>
+				</tr>
+				<tr>
+					<td>2146</td>
+					<td>\contrib\DMS_Schema\FGM has unreferenced subfolders</td>
+				</tr>
+			</table
+			</br>
+			<p>Other changes and additions:</p>
+			<ul>
+				<li>Support for FGM FHIR DMS Draft F</li>
+			</ul>
+			<dt>Supported Domain Message Specifications:</dt>
+			<ul>
+				<p>Fully Supported (<u>formal accreditation or assurance process available</u>) Domain Message Specifications used for validation and message examples by TKW.jar:</p>
+			</ul>
+			<table style="width:100%">
+				<tr>
+					<th>Domain</th>
+					<th>Version</th>
+					<th>Status</th>
+				</tr>
+				<tr>
+					<td>Ambulance</td>
+					<td>2.1</td>
+					<td>Final</td>
+				</tr>
+				<tr>
+					<td>Child Health Data Sharing</td>
+					<td>1.0</td>
+					<td>RC 1</td>
+				</tr>
+				<tr>
+					<td>Child Protection Information Sharing</td>
+					<td>1.0</td>
+					<td>RC 5 Patch A</td>
+				</tr>
+				<tr>
+					<td>Child Screening</td>
+					<td>2.1</td>
+					<td>RC 2</td>
+				</tr>
+				<tr>
+					<td>Discharge</td>
+					<td>4.1</td>
+					<td>Final</td>
+				</tr>
+				<tr>
+					<td>Emergency Department</td>
+					<td>4.1</td>
+					<td>Final</td>
+				</tr>
+				<tr>
+					<td>Health and Social Care Integration</td>
+					<td>4.0</td>
+					<td>Draft A</td>
+				</tr>
+				<tr>
+					<td>Health Protection Electronic Notification (HPEN)</td>
+					<td>1.0</td>
+					<td>RC 1</td>
+				</tr>
+				<tr>
+					<td>NHS 111</td>
+					<td>1.0</td>
+					<td>RC 2</td>
+				</tr>
+				<tr>
+					<td>NHS CP-IS Spine Mini Service</td>
+					<td>1.0</td>
+					<td>RC 1</td>
+				</tr>
+				<tr>
+					<td>NHS Interoperability Toolkit Dashboards</td>
+					<td>1.1</td>
+					<td>Final</td>
+				</tr>
+				<tr>
+					<td>NHS Interoperability Toolkit HL7 v2</td>
+					<td>1.1</td>
+					<td>Final</td>
+				</tr>
+				<tr>
+					<td>Non-coded CDA Document</td>
+					<td>1.1</td>
+					<td>Final</td>
+				</tr>
+				<tr>
+					<td>Out of Hours</td>
+					<td>2.1</td>
+					<td>Final</td>
+				</tr>
+				<tr>
+					<td>Outpatients</td>
+					<td>2.1</td>
+					<td>Final</td>
+				</tr>
+				<tr>
+					<td>PDS Mini Services</td>
+					<td>1.1</td>
+					<td>Final</td>
+				</tr>
+				<tr>
+					<td>Telehealth</td>
+					<td>2.0</td>
+					<td>RC 2</td>
+				</tr>
+				<tr>
+					<td>BusinessAcknowledgement</td>
+					<td>1.1</td>
+					<td>Final</td>
+				</tr>
+				<tr>
+					<td>DistributionEnvelope</td>
+					<td>1.1</td>
+					<td>Final</td>
+				</tr>
+				<tr>
+					<td>GenericCDA</td>
+					<td>2.2</td>
+					<td>Final</td>
+				</tr>
+				<tr>
+					<td>Nullification</td>
+					<td>2.2</td>
+					<td>Final</td>
+				</tr>
+				<tr>
+					<td>SCRMiniService</td>
+					<td>1.0</td>
+					<td>RC 2</td>
+				</tr>
+				<tr>
+					<td>Transfer Of Care</td>
+					<td>1.0</td>
+					<td>Draft B</td>
+				</tr>
+			</table>
+		</br>					
+		<dt>
+			<b>	March 2016 &#x2022; Version 5.0</b>
+		</dt>
+		<p>This latest version of TKW installer is hosted on the Solution Assurance Message Test Tools site - http://systems.hscic.gov.uk/satools</p>
+
+	</ul> 
+
+	<p>Contains:</p>
+	<ul>
+		<li>ReqSheet Version: 8.4</li>
+		<li>Config SVN: 593</li>
+	</ul>
+	<p>Known issues:</p>
+	<ul>
+		<li>Please refer to the Shared Documents area of the ITK Accreditations Sharepoint Site for a list of known issues</li>
+	</ul>
+	<p>Bugs fixed:</p>
+	<table style="width:100%">
+		<tr>
+			<th>Redmine</th>
+			<th>Description</th>
+		</tr>
+		<tr>
+			<td>2076</td>
+			<td>Parent Task to track TKW and ATM Tasks required to update TKW 4.1.1 (supporting ITK 2.1) to TKW 5.0 (supporting 2.1 and 2.2)</td>
+		</tr>
+	</table
+	</br>
+	<p>Other changes and additions:</p>
+	<ul>
+		<li>Transfer of Care v1.0 Draft B is fully supported</li>
+	</ul>
+	<ul>
+		<li>Health and Social Care Integration 5.0 Draft A is supported for message validation only</li>
+	</ul>
+	<dt>Supported Domain Message Specifications:</dt>
+	<ul>
+		<p>Fully Supported (<u>formal accreditation or assurance process available</u>) Domain Message Specifications used for validation and message examples by TKW.jar:</p>
+	</ul>
+	<table style="width:100%">
+		<tr>
+			<th>Domain</th>
+			<th>Version</th>
+			<th>Status</th>
+		</tr>
+		<tr>
+			<td>Ambulance</td>
+			<td>2.1</td>
+			<td>Final</td>
+		</tr>
+		<tr>
+			<td>Child Health Data Sharing</td>
+			<td>1.0</td>
+			<td>RC 1</td>
+		</tr>
+		<tr>
+			<td>Child Protection Information Sharing</td>
+			<td>1.0</td>
+			<td>RC 5 Patch A</td>
+		</tr>
+		<tr>
+			<td>Child Screening</td>
+			<td>2.1</td>
+			<td>RC 2</td>
+		</tr>
+		<tr>
+			<td>Discharge</td>
+			<td>4.1</td>
+			<td>Final</td>
+		</tr>
+		<tr>
+			<td>Emergency Department</td>
+			<td>4.1</td>
+			<td>Final</td>
+		</tr>
+		<tr>
+			<td>Health and Social Care Integration</td>
+			<td>4.0</td>
+			<td>Draft A</td>
+		</tr>
+		<tr>
+			<td>Health Protection Electronic Notification (HPEN)</td>
+			<td>1.0</td>
+			<td>RC 1</td>
+		</tr>
+		<tr>
+			<td>NHS 111</td>
+			<td>1.0</td>
+			<td>RC 2</td>
+		</tr>
+		<tr>
+			<td>NHS CP-IS Spine Mini Service</td>
+			<td>1.0</td>
+			<td>RC 1</td>
+		</tr>
+		<tr>
+			<td>NHS Interoperability Toolkit Dashboards</td>
+			<td>1.1</td>
+			<td>Final</td>
+		</tr>
+		<tr>
+			<td>NHS Interoperability Toolkit HL7 v2</td>
+			<td>1.1</td>
+			<td>Final</td>
+		</tr>
+		<tr>
+			<td>Non-coded CDA Document</td>
+			<td>1.1</td>
+			<td>Final</td>
+		</tr>
+		<tr>
+			<td>Out of Hours</td>
+			<td>2.1</td>
+			<td>Final</td>
+		</tr>
+		<tr>
+			<td>Outpatients</td>
+			<td>2.1</td>
+			<td>Final</td>
+		</tr>
+		<tr>
+			<td>PDS Mini Services</td>
+			<td>1.1</td>
+			<td>Final</td>
+		</tr>
+		<tr>
+			<td>Telehealth</td>
+			<td>2.0</td>
+			<td>RC 2</td>
+		</tr>
+		<tr>
+			<td>BusinessAcknowledgement</td>
+			<td>1.1</td>
+			<td>Final</td>
+		</tr>
+		<tr>
+			<td>DistributionEnvelope</td>
+			<td>1.1</td>
+			<td>Final</td>
+		</tr>
+		<tr>
+			<td>GenericCDA</td>
+			<td>2.2</td>
+			<td>Final</td>
+		</tr>
+		<tr>
+			<td>Nullification</td>
+			<td>2.2</td>
+			<td>Final</td>
+		</tr>
+		<tr>
+			<td>SCRMiniService</td>
+			<td>1.0</td>
+			<td>RC 2</td>
+		</tr>
+		<tr>
+			<td>Transfer Of Care</td>
+			<td>1.0</td>
+			<td>Draft B</td>
+		</tr>
+	</table>
+</br>					
+<dt>
+	<b>January 2016 &#x2022; Version 4.1.1</b>
+</dt>
+<p>This latest version of TKW installer is hosted on the Solution Assurance Message Test Tools site - http://systems.hscic.gov.uk/satools</p>
+
+</ul> 
+
+<p>Contains:</p>
+<ul>
+	<li>ReqSheet Version: 8.0</li>
+	<li>Config SVN: 532</li>
+</ul>
+<p>Known issues:</p>
+<ul>
+	<li>Please refer to the Shared Documents area of the ITK Accreditations Sharepoint Site for a list of known issues</li>
+</ul>
+<p>Bugs fixed:</p>
+<table style="width:100%">
+	<tr>
+		<th>Redmine</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>NA</td>
+		<td>NA</td>
+	</tr>
+</table
+</br>
+<p>Other changes and additions:</p>
+<ul>
+	<li>Health and Social Care Integration 5.0 Draft A is supported for message validation only</li>
+</ul>
+<dt>Supported Domain Message Specifications:</dt>
+<ul>
+	<p>Fully Supported (<u>formal accreditation or assurance process available</u>) Domain Message Specifications used for validation and message examples by TKW.jar:</p>
+</ul>
+<table style="width:100%">
+	<tr>
+		<th>Domain</th>
+		<th>Version</th>
+		<th>Status</th>
+	</tr>
+	<tr>
+		<td>Ambulance</td>
+		<td>2.1</td>
+		<td>Final</td>
+	</tr>
+	<tr>
+		<td>Child Health Data Sharing</td>
+		<td>1.0</td>
+		<td>RC 1</td>
+	</tr>
+	<tr>
+		<td>Child Protection Information Sharing</td>
+		<td>1.0</td>
+		<td>RC 5 Patch A</td>
+	</tr>
+	<tr>
+		<td>Child Screening</td>
+		<td>2.1</td>
+		<td>RC 2</td>
+	</tr>
+	<tr>
+		<td>Discharge</td>
+		<td>4.1</td>
+		<td>Final</td>
+	</tr>
+	<tr>
+		<td>Emergency Department</td>
+		<td>4.1</td>
+		<td>Final</td>
+	</tr>
+	<tr>
+		<td>Health and Social Care Integration</td>
+		<td>4.0</td>
+		<td>Draft A</td>
+	</tr>
+	<tr>
+		<td>Health Protection Electronic Notification (HPEN)</td>
+		<td>1.0</td>
+		<td>RC 1</td>
+	</tr>
+	<tr>
+		<td>NHS 111</td>
+		<td>1.0</td>
+		<td>RC 2</td>
+	</tr>
+	<tr>
+		<td>NHS CP-IS Spine Mini Service</td>
+		<td>1.0</td>
+		<td>RC 1</td>
+	</tr>
+	<tr>
+		<td>NHS Interoperability Toolkit Dashboards</td>
+		<td>1.1</td>
+		<td>Final</td>
+	</tr>
+	<tr>
+		<td>NHS Interoperability Toolkit HL7 v2</td>
+		<td>1.1</td>
+		<td>Final</td>
+	</tr>
+	<tr>
+		<td>Non-coded CDA Document</td>
+		<td>1.1</td>
+		<td>Final</td>
+	</tr>
+	<tr>
+		<td>Out of Hours</td>
+		<td>2.1</td>
+		<td>Final</td>
+	</tr>
+	<tr>
+		<td>Outpatients</td>
+		<td>2.1</td>
+		<td>Final</td>
+	</tr>
+	<tr>
+		<td>PDS Mini Services</td>
+		<td>1.1</td>
+		<td>Final</td>
+	</tr>
+	<tr>
+		<td>Telehealth</td>
+		<td>2.0</td>
+		<td>RC 2</td>
+	</tr>
+	<tr>
+		<td>BusinessAcknowledgement</td>
+		<td>1.1</td>
+		<td>Final</td>
+	</tr>
+	<tr>
+		<td>DistributionEnvelope</td>
+		<td>1.1</td>
+		<td>Final</td>
+	</tr>
+	<tr>
+		<td>GenericCDA</td>
+		<td>2.2</td>
+		<td>Final</td>
+	</tr>
+	<tr>
+		<td>Nullification</td>
+		<td>2.2</td>
+		<td>Final</td>
+	</tr>
+	<tr>
+		<td>SCRMiniService</td>
+		<td>1.0</td>
+		<td>RC 2</td>
+	</tr>
+</table>    
+</br>
+<dt>
+	<b>September 2015 &#x2022; Version 4.1.0</b>
+</dt>
+<p>This latest version of TKW installer is hosted on the Solution Assurance Message Test Tools site - http://systems.hscic.gov.uk/satools</p>
+
+</ul> 
+
+<p>Contains:</p>
+<ul>
+	<li>ReqSheet Version: 7.4</li>
+	<li>Config SVN: 455</li>
+	<li>TKW:467 ToC:492 DETools: 475</li>
+</ul>
+<p>Known issues:</p>
+<ul>
+	<li>The TransferOfCare simulator will synchronously respond to valid messages with a 200 Simple OK soap message (as per existing ITK Correspondence functionality)</li>                    
+	<li>This behaviour is not conformant with the ITKService.wsdl – a 0 length 200 is expected</li>
+	<li>Please refer to the Shared Documents area of the ITK Accreditations Sharepoint Site for a list of known issues</li>
+</ul>
+<p>Bugs fixed:</p>
+<table style="width:100%">
+	<tr>
+		<th>Redmine</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>NA</td>
+		<td>NA</td>
+	</tr>
+
+</table
+	<li/>
+	<p>Other changes and additions:</p>
+	<ul>
+		<li>TKW Support for Transfer Of Care DMS</li>
+
+	</ul>
+	<dt>Supported Domain Message Specifications:</dt>
+	<ul>
+		<p>Fully Supported (<u>formal accreditation or assurance process available</u>) Domain Message Specifications used for validation and message examples by TKW.jar:</p>
+	</ul>
+	<table style="width:100%">
+		<tr>
+			<th>Domain</th>
+			<th>Document Reference</th>
+			<th>Version</th>
+			<th>Status</th>
+		</tr>
+		<tr>
+			<td>111</td>
+			<td>NPFIT-FNT-TO-DSD-0214</td>
+			<td>1.0</td>
+			<td>RC2</td>
+		</tr>
+		<tr>
+			<td>Acknowledgements (Infrastructure and Business (N)acks</td>
+			<td>NPFIT-FNT-TO-DSD-0206</td>
+			<td>1.0</td>
+			<td>Final</td>
+		</tr> 
+		<tr>
+			<td>HL7V2 ADT</td>
+			<td>NPFIT-FNT-TO-DSD-0210</td>
+			<td>1.1</td>
+			<td>Final</td>
+		</tr> 
+		<tr>
+			<td>Child Health Data Sharing</td>
+			<td/>
+			<td>1.0</td>
+			<td>RC1</td>
+		</tr> 
+		<tr>
+			<td>Child Screening</td>
+			<td>NPFIT-FNT-TO-DSD-0238</td>
+			<td>2.0</td>
+			<td>RC1</td>
+		</tr> 
+		<tr>
+			<td>Correspondence: Ambulance</td>
+			<td>NPFIT-FNT-TO-DSD-0200</td>
+			<td>2.1</td>
+			<td>Final</td>
+		</tr>
+		<tr>
+			<td>Correspondence: Discharge</td>
+			<td>NPFIT-FNT-TO-DSD-0201</td>
+			<td>4.0</td>
+			<td>RC2</td>
+		</tr>
+		<tr>
+			<td>Correspondence: Emergency Department</td>
+			<td>NPFIT-FNT-TO-DSD-0202</td>
+			<td>4.0</td>
+			<td>RC2</td>
+		</tr>
+		<tr>
+			<td>Correspondence: Non-Coded CDA Document</td>
+			<td>NPFIT-FNT-TO-DSD-0205</td>
+			<td>1.0</td>
+			<td>RC2</td>
+		</tr>
+		<tr>
+			<td>Correspondence: Out of Hours</td>
+			<td>NPFIT-FNT-TO-DSD-0203</td>
+			<td>2.0</td>
+			<td>RC2</td>
+		</tr>
+		<tr>
+			<td>Correspondence: Outpatients</td>
+			<td>NPFIT-FNT-TO-DSD-0204</td>
+			<td>2.0</td>
+			<td>RC2</td>
+		</tr>
+		<tr>
+			<td>Child Protection Information Service (CP-IS)</td>
+			<td/>
+			<td>1.0</td>
+			<td>RC5</td>
+		</tr>
+		<tr>
+			<td>Urgent Care Dashboards</td>
+			<td>NPFIT-FNT-TO-DSD-0212</td>
+			<td>1.1</td>
+			<td>Final</td>
+		</tr>
+		<tr>
+			<td>Health Protection Electronic Notification (HPEN)</td>
+			<td/>
+			<td>1.0</td>
+			<td>RC1</td>
+		</tr>
+		<tr>
+			<td>Health and Social Care Integration (HSCI)</td>
+			<td>NPFIT-FNT-TO-DSD-0199</td>
+			<td>4.0</td>
+			<td>Draft A</td>
+		</tr>
+		<tr>
+			<td>Spine Mini Services Provider</td>
+			<td/>
+			<td>2.1</td>
+			<td>Final</td>
+		</tr>
+		<tr>
+			<td>Spine Mini Service Requestor</td>
+			<td/>
+			<td>2.1</td>
+			<td>Final</td>
+		</tr>
+		<tr>
+			<td>Telehealth</td>
+			<td>NPFIT-FNT-TO-DSD-0226</td>
+			<td>2.0</td>
+			<td>RC2</td>
+		</tr>
+		<tr>
+			<td>SCR Spine Mini Service</td>
+			<td/>
+			<td>1.0</td>
+			<td>RC2</td>
+		</tr>
+		<tr>
+			<td>Transfer Of Care</td>
+			<td/>
+			<td>1.0</td>
+			<td>Draft B</td>
+		</tr>
+
+	</table>    
+
+	<ul>
+		<li>Embedded within TKW.jar - CDALikeToTrueCDA_v2.xst and associated transforms taken from pre-release of HSCI DMS.</li>
+	</ul>
+
+	<dt>
+		<b>June 2015 &#x2022; Version 4.0</b>
+	</dt>
+	<p>This latest version of TKW installer is hosted on the Solution Assurance Message Test Tools site - http://systems.hscic.gov.uk/satools</p>
+
+</ul> 
+
+<p>Contains:</p>
+<ul>
+	<li>ReqSheet Version: 7.4</li>
+	<li>Config SVN: 455</li>
+</ul>
+<p>Known issues:</p>
+<ul>
+	<li>Please refer to the Shared Documents area of the ITK Accreditations Sharepoint Site for a list of known issues</li>
+</ul>
+<p>Bugs fixed:</p>
+<table style="width:100%">
+	<tr>
+		<th>Redmine</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>NA</td>
+		<td>NA</td>
+	</tr>
+</table
+	<p>Other changes and additions:</p>
+	<ul>
+		<li>TKW Support for CP-IS Spine Mini Services</li>
+		<li>TKW Support for TMS Transport<li>
+			</ul>
+			<dt>Supported Domain Message Specifications:</dt>
+			<ul>
+				<p>Fully Supported (<u>formal accreditation or assurance process available</u>) Domain Message Specifications used for validation and message examples by TKW.jar:</p>
+			</ul>
+			<table style="width:100%">
+				<tr>
+					<th>Domain</th>
+					<th>Document Reference</th>
+					<th>Version</th>
+					<th>Status</th>
+				</tr>
+				<tr>
+					<td>111</td>
+					<td>NPFIT-FNT-TO-DSD-0214</td>
+					<td>1.0</td>
+					<td>RC2</td>
+				</tr>
+				<tr>
+					<td>Acknowledgements (Infrastructure and Business (N)acks</td>
+					<td>NPFIT-FNT-TO-DSD-0206</td>
+					<td>1.0</td>
+					<td>Final</td>
+				</tr> 
+				<tr>
+					<td>HL7V2 ADT</td>
+					<td>NPFIT-FNT-TO-DSD-0210</td>
+					<td>1.1</td>
+					<td>Final</td>
+				</tr> 
+				<tr>
+					<td>Child Health Data Sharing</td>
+					<td/>
+					<td>1.0</td>
+					<td>RC1</td>
+				</tr> 
+				<tr>
+					<td>Child Screening</td>
+					<td>NPFIT-FNT-TO-DSD-0238</td>
+					<td>2.0</td>
+					<td>RC1</td>
+				</tr> 
+				<tr>
+					<td>Correspondence: Ambulance</td>
+					<td>NPFIT-FNT-TO-DSD-0200</td>
+					<td>2.1</td>
+					<td>Final</td>
+				</tr>
+				<tr>
+					<td>Correspondence: Discharge</td>
+					<td>NPFIT-FNT-TO-DSD-0201</td>
+					<td>4.0</td>
+					<td>RC2</td>
+				</tr>
+				<tr>
+					<td>Correspondence: Emergency Department</td>
+					<td>NPFIT-FNT-TO-DSD-0202</td>
+					<td>4.0</td>
+					<td>RC2</td>
+				</tr>
+				<tr>
+					<td>Correspondence: Non-Coded CDA Document</td>
+					<td>NPFIT-FNT-TO-DSD-0205</td>
+					<td>1.0</td>
+					<td>RC2</td>
+				</tr>
+				<tr>
+					<td>Correspondence: Out of Hours</td>
+					<td>NPFIT-FNT-TO-DSD-0203</td>
+					<td>2.0</td>
+					<td>RC2</td>
+				</tr>
+				<tr>
+					<td>Correspondence: Outpatients</td>
+					<td>NPFIT-FNT-TO-DSD-0204</td>
+					<td>2.0</td>
+					<td>RC2</td>
+				</tr>
+				<tr>
+					<td>Child Protection Information Service (CP-IS)</td>
+					<td/>
+					<td>1.0</td>
+					<td>RC5</td>
+				</tr>
+				<tr>
+					<td>Urgent Care Dashboards</td>
+					<td>NPFIT-FNT-TO-DSD-0212</td>
+					<td>1.1</td>
+					<td>Final</td>
+				</tr>
+				<tr>
+					<td>Health Protection Electronic Notification (HPEN)</td>
+					<td/>
+					<td>1.0</td>
+					<td>RC1</td>
+				</tr>
+				<tr>
+					<td>Health and Social Care Integration (HSCI)</td>
+					<td>NPFIT-FNT-TO-DSD-0199</td>
+					<td>4.0</td>
+					<td>Draft A</td>
+				</tr>
+				<tr>
+					<td>Spine Mini Services Provider</td>
+					<td>2.1</td>
+					<td/>
+					<td>Final</td>
+				</tr>
+				<tr>
+					<td>Spine Mini Service Requestor</td>
+					<td>2.1</td>
+					<td/>
+					<td>Final</td>
+				</tr>
+				<tr>
+					<td>Telehealth</td>
+					<td>NPFIT-FNT-TO-DSD-0226</td>
+					<td>2.0</td>
+					<td>RC2</td>
+				</tr>
+				<tr>
+					<td>SCR Spine Mini Service</td>
+					<td/>
+					<td>1.0</td>
+					<td>RC2</td>
+				</tr>
+			</table>    
+
+			<ul>
+				<li>Embedded within TKW.jar - CDALikeToTrueCDA_v2.xst and associated transforms taken from pre-release of HSCI DMS.</li>
+			</ul>
+-------------------------------------------------------------------
+
+
+			<dt>
+				<b>January 2015 &#x2022; Version 3.13</b>
+			</dt>
+			<p>This latest version of TKW installer is hosted on the Solution Assurance Message Test Tools site - http://systems.hscic.gov.uk/satools</p>
+
+		</ul> 
+
+		<p>Contains:</p>
+		<ul>
+			<li>ReqSheet Version: 7.3</li>
+			<li>Config SVN: 367</li>
+		</ul>
+		<p>Known issues:</p>
+		<ul>
+			<li>Please refer to the Shared Documents area of the ITK Accreditations Sharepoint Site for a list of known issues</li>
+		</ul>
+		<p>Bugs fixed:</p>
+		<table style="width:100%">
+			<tr>
+				<th>Redmine</th>
+				<th>Description</th>
+			</tr>
+			<tr>
+				<td>NA</td>
+				<td>NA</td>
+			</tr>
+		</table
+			<p>Other changes and additions:</p>
+			<ul>
+				<li>TKW/ATM Support for SCR Spine Mini Services</li>
+			</ul>
+			<dt>Supported Domain Message Specifications:</dt>
+			<ul>
+				<p>Fully Supported (<u>formal accreditation or assurance process available</u>) Domain Message Specifications used for validation and message examples by TKW.jar:</p>
+			</ul>
+			<table style="width:100%">
+				<tr>
+					<th>Domain</th>
+					<th>Document Reference</th>
+					<th>Version</th>
+					<th>Status</th>
+				</tr>
+				<tr>
+					<td>111</td>
+					<td>NPFIT-FNT-TO-DSD-0214</td>
+					<td>1.0</td>
+					<td>RC2</td>
+				</tr>
+				<tr>
+					<td>Acknowledgements (Infrastructure and Business (N)acks</td>
+					<td>NPFIT-FNT-TO-DSD-0206</td>
+					<td>1.0</td>
+					<td>Final</td>
+				</tr> 
+				<tr>
+					<td>HL7V2 ADT</td>
+					<td>NPFIT-FNT-TO-DSD-0210</td>
+					<td>1.1</td>
+					<td>Final</td>
+				</tr> 
+				<tr>
+					<td>Child Health Data Sharing</td>
+					<td/>
+					<td>1.0</td>
+					<td>RC1</td>
+				</tr> 
+				<tr>
+					<td>Child Screening</td>
+					<td>NPFIT-FNT-TO-DSD-0238</td>
+					<td>2.0</td>
+					<td>RC1</td>
+				</tr> 
+				<tr>
+					<td>Correspondence: Ambulance</td>
+					<td>NPFIT-FNT-TO-DSD-0200</td>
+					<td>2.1</td>
+					<td>Final</td>
+				</tr>
+				<tr>
+					<td>Correspondence: Discharge</td>
+					<td>NPFIT-FNT-TO-DSD-0201</td>
+					<td>4.0</td>
+					<td>RC2</td>
+				</tr>
+				<tr>
+					<td>Correspondence: Emergency Department</td>
+					<td>NPFIT-FNT-TO-DSD-0202</td>
+					<td>4.0</td>
+					<td>RC2</td>
+				</tr>
+				<tr>
+					<td>Correspondence: Non-Coded CDA Document</td>
+					<td>NPFIT-FNT-TO-DSD-0205</td>
+					<td>1.0</td>
+					<td>RC2</td>
+				</tr>
+				<tr>
+					<td>Correspondence: Out of Hours</td>
+					<td>NPFIT-FNT-TO-DSD-0203</td>
+					<td>2.0</td>
+					<td>RC2</td>
+				</tr>
+				<tr>
+					<td>Correspondence: Outpatients</td>
+					<td>NPFIT-FNT-TO-DSD-0204</td>
+					<td>2.0</td>
+					<td>RC2</td>
+				</tr>
+				<tr>
+					<td>Child Protection Information Service (CP-IS)</td>
+					<td/>
+					<td>1.0</td>
+					<td>RC5</td>
+				</tr>
+				<tr>
+					<td>Urgent Care Dashboards</td>
+					<td>NPFIT-FNT-TO-DSD-0212</td>
+					<td>1.1</td>
+					<td>Final</td>
+				</tr>
+				<tr>
+					<td>Health Protection Electronic Notification (HPEN)</td>
+					<td/>
+					<td>1.0</td>
+					<td>RC1</td>
+				</tr>
+				<tr>
+					<td>Health and Social Care Integration (HSCI)</td>
+					<td>NPFIT-FNT-TO-DSD-0199</td>
+					<td>4.0</td>
+					<td>Draft A</td>
+				</tr>
+				<tr>
+					<td>Spine Mini Services Provider</td>
+					<td>2.1</td>
+					<td/>
+					<td>Final</td>
+				</tr>
+				<tr>
+					<td>Spine Mini Service Requestor</td>
+					<td>2.1</td>
+					<td/>
+					<td>Final</td>
+				</tr>
+				<tr>
+					<td>Telehealth</td>
+					<td>NPFIT-FNT-TO-DSD-0226</td>
+					<td>2.0</td>
+					<td>RC2</td>
+				</tr>
+				<tr>
+					<td>SCR Spine Mini Service</td>
+					<td/>
+					<td>1.0</td>
+					<td>RC2</td>
+				</tr>
+			</table>    
+
+			<ul>
+				<li>Embedded within TKW.jar - CDALikeToTrueCDA_v2.xst and associated transforms taken from pre-release of HSCI DMS.</li>
+			</ul>
+
+
+
+
+
+			<dt>
+				<b>October 2014 &#x2022; Version 3.12</b>
+			</dt>
+			<p>
+				<b>PLEASE NOTE: Installation of JRE 1.7.0 is a pre-requisite for TKW 3.12</b>
+			</p>
+			<p>This latest version of TKW installer is hosted on the Solution Assurance Message Test Tools site - http://systems.hscic.gov.uk/satools</p>
+
+		</ul> 
+
+		<p>Contains:</p>
+		<ul>
+			<li>ReqSheet Version: 7.3</li>
+			<li>Config SVN: 335</li>
+		</ul>
+		<p>Known issues:</p>
+		<ul>
+			<li>Please refer to the Shared Documents area of the ITK Accreditations Sharepoint Site for a list of known issues</li>
+		</ul>
+		<p>Bugs fixed:</p>
+		<table style="width:100%">
+			<tr>
+				<th>Redmine</th>
+				<th>Description</th>
+			</tr>
+			<tr>
+				<td>759</td>
+				<td>tests HS_HSC_012 and HS_HSC_013 cannot be run in autotest</td>
+			</tr>
+			<tr>
+				<td>808</td>
+				<td>should we change validator to allow lower case alpha in messageid</td>
+			</tr>
+			<tr>
+				<td>1101</td>
+				<td>validator needs a check to make sure trackingid is not the same as messageid</td>
+			</tr>
+		</tr>
+		<tr>
+			<td>1284</td>
+			<td>Autotest manager - single run mode - We need an ability to start a second simulator for the Reply to URL and Fault to URL from autotest manager</td>
+		</tr>
+	</tr>
+	<tr>
+		<td>1345</td>
+		<td>Runtime exceptions when stop on fail is off and there is not SUT present</td>
+	</tr>
+	<tr>
+		<td>1371</td>
+		<td>SO_INVATO returns simple OK instead of 500 error through Simulator for negative correspondence messages</td>
+	</tr>
+	<tr>
+		<td>1371</td>
+		<td>SO_INVATO returns simple OK instead of 500 error through Simulator for negative correspondence messages</td>
+	</tr>
+	<tr>
+		<td>1392</td>
+		<td>Host Testing - Running test HL_PIUM_PH_ASYNC shows an exception message in the Testbench Output Window</td>
+	</tr>
+	<tr>
+		<td>1408</td>
+		<td>Test Results Log Test for simple message response is not as expected</td>
+	</tr>
+	<tr>
+		<td>1519</td>
+		<td>Automated Test Report column heading is misleading</td>
+	</tr>
+	<tr>
+		<td>1600</td>
+		<td>Consider moving Java development to Java 7 JR</td>
+	</tr>
+	<tr>
+		<td>1647</td>
+		<td>Autotest does not display HS_HSC_PR_ICSP and HS_HSC_CP_ICSP test cases</td>
+	</tr>
+	<tr>
+		<td>1697</td>
+		<td>CO_OOH_PR_NXML is not displayed as a supported testcase in Autotest Manager for Host applications</td>
+	</tr>
+	<tr>
+		<td>1699</td>
+		<td>Update TKW Config to use the new "ATM_" audit identifier tag</td>
+	</tr>
+	<tr>
+		<td>1704</td>
+		<td>TKW 3.9 is not reporting failures correctly when checking for receipt of infrastructure responses </td>
+	</tr>
+	<tr>
+		<td>1720</td>
+		<td>Test DE_INVMPI is not included in the NHS 111 Test Tools - should be in Spreadsheet and ATM</td>
+	</tr>
+	<tr>
+		<td>1732</td>
+		<td>TKW ATM should include tests ER_POSMAX and ER_INVMAX for the NHS 111 Bundle</td>
+	</tr>
+	<tr>
+		<td> 1775</td>
+		<td>Auto Test Manager adds ATM_ to auditidentity which makes it schema invalid</td>
+	</tr>
+	<tr>
+		<td>1822</td>
+		<td>Missing tests on Requirements spreadsheet when selecting Child Health Data Sharing bundle</td>
+	</tr>
+	<tr>
+		<td>1829</td>
+		<td>Defect/Incident Auto Test Manager adds ATM_ to auditidentity which makes it schema invalid - HPEN</td>
+	</tr>
+	<tr>
+		<td>1851</td>
+		<td>SO_CONFRJ should only be visible on the Requirements spreadsheet if additional validation module is selected</td>
+	</tr> 
+	<tr>
+		<td>1858</td>
+		<td>Child Screening Nullification Message has wrong interaction and also check that the validation is correct in TKW</td>
+	</tr>
+	<tr>
+		<td>1913</td>
+		<td>Certified Requirements spreadsheet Testcases Macro does not filter Acknowledgement framework test correctly for Non-coded CDA</td>
+	</tr>
+</table>
+<p>Other changes and additions:</p>
+<ul>
+	<li>TKW/ATM Support for ChildHealthDataSharing Accreditation</li>
+</ul>
+<dt>Supported Domain Message Specifications:</dt>
+<ul>
+	<p>Fully Supported (<u>formal accreditation or assurance process available</u>) Domain Message Specifications used for validation and message examples by TKW.jar:</p>
+</ul>
+<table style="width:100%">
+	<tr>
+		<th>Domain</th>
+		<th>Document Reference</th>
+		<th>Version</th>
+		<th>Status</th>
+	</tr>
+	<tr>
+		<td>111</td>
+		<td>NPFIT-FNT-TO-DSD-0214</td>
+		<td>1.0</td>
+		<td>RC2</td>
+	</tr>
+	<tr>
+		<td>Acknowledgements (Infrastructure and Business (N)acks</td>
+		<td>NPFIT-FNT-TO-DSD-0206</td>
+		<td>1.0</td>
+		<td>Final</td>
+	</tr> 
+	<tr>
+		<td>HL7V2 ADT</td>
+		<td>NPFIT-FNT-TO-DSD-0210</td>
+		<td>1.1</td>
+		<td>Final</td>
+	</tr> 
+	<tr>
+		<td>Child Health Data Sharing</td>
+		<td/>
+		<td>1.0</td>
+		<td>RC1</td>
+	</tr> 
+	<tr>
+		<td>Child Screening</td>
+		<td>NPFIT-FNT-TO-DSD-0238</td>
+		<td>2.0</td>
+		<td>RC1</td>
+	</tr> 
+	<tr>
+		<td>Correspondence: Ambulance</td>
+		<td>NPFIT-FNT-TO-DSD-0200</td>
+		<td>2.1</td>
+		<td>Final</td>
+	</tr>
+	<tr>
+		<td>Correspondence: Discharge</td>
+		<td>NPFIT-FNT-TO-DSD-0201</td>
+		<td>4.0</td>
+		<td>RC2</td>
+	</tr>
+	<tr>
+		<td>Correspondence: Emergency Department</td>
+		<td>NPFIT-FNT-TO-DSD-0202</td>
+		<td>4.0</td>
+		<td>RC2</td>
+	</tr>
+	<tr>
+		<td>Correspondence: Non-Coded CDA Document</td>
+		<td>NPFIT-FNT-TO-DSD-0205</td>
+		<td>1.0</td>
+		<td>RC2</td>
+	</tr>
+	<tr>
+		<td>Correspondence: Out of Hours</td>
+		<td>NPFIT-FNT-TO-DSD-0203</td>
+		<td>2.0</td>
+		<td>RC2</td>
+	</tr>
+	<tr>
+		<td>Correspondence: Outpatients</td>
+		<td>NPFIT-FNT-TO-DSD-0204</td>
+		<td>2.0</td>
+		<td>RC2</td>
+	</tr>
+	<tr>
+		<td>Child Protection Information Service (CP-IS)</td>
+		<td/>
+		<td>1.0</td>
+		<td>RC5</td>
+	</tr>
+	<tr>
+		<td>Urgent Care Dashboards</td>
+		<td>NPFIT-FNT-TO-DSD-0212</td>
+		<td>1.1</td>
+		<td>Final</td>
+	</tr>
+	<tr>
+		<td>Health Protection Electronic Notification (HPEN)</td>
+		<td/>
+		<td>1.0</td>
+		<td>RC1</td>
+	</tr>
+	<tr>
+		<td>Health and Social Care Integration (HSCI)</td>
+		<td>NPFIT-FNT-TO-DSD-0199</td>
+		<td>4.0</td>
+		<td>Draft A</td>
+	</tr>
+	<tr>
+		<td>Spine Mini Services Provider</td>
+		<td>2.1</td>
+		<td/>
+		<td>Final</td>
+	</tr>
+	<tr>
+		<td>Spine Mini Service Requestor</td>
+		<td>2.1</td>
+		<td/>
+		<td>Final</td>
+	</tr>
+	<tr>
+		<td>Telehealth</td>
+		<td>NPFIT-FNT-TO-DSD-0226</td>
+		<td>2.0</td>
+		<td>RC2</td>
+	</tr>
+</table>    
+
+<ul>
+	<li>Embedded within TKW.jar - CDALikeToTrueCDA_v2.xst and associated transforms taken from pre-release of HSCI DMS.</li>
+</ul>
+
+
+<dt>
+	<b>Pre-July 2014 &#8226;Version: 3.11</b>
+</dt>
+<p>Prior to July 2014 the Release Notes were covered in the 
+ArchiveReleaseNotes.html document</p>
+</body>
+</html>
